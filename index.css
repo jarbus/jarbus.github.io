@@ -1,60 +1,29 @@
-
 *{
-	font-family: Raleway;
+font-family: 'EB Garamond', serif;
 }
-body{
-	background-color: white;
+#header{
+text-align:center;
+margin-bottom:0px;
+font-size:80px;
+max-width: 120ch;
 }
-picture{
+#header2{
+margin-bottom:0px;
+font-size:40px;
 }
-h3{
-	
+#menu{
+word-spacing:30px;
+} 
+main{
+  max-width: 70ch;
+  padding: 1.5rem;
+  margin: auto;
 }
-#Contact p{
-	text-align: center;
+p{
+padding: 0.5rem;
 }
-#Resume p{
-	text-align: center;
+a{
+  color: black; 
+  background-color: transparent; 
+  text-decoration: none;
 }
-
-.nav{
-	border:0px solid #ccc;
-	font-family: Roboto, serif;
-	text-align: justify;
-	text-align-last: justify;
-}
-.nav button{
-	background-color: inherit;
-	float:left;
-	border: none;
-	border-bottom: 1px solid rgba(0,0,0,0);
-	outline: none;
-	cursor: pointer;
-	padding: 14px 16px;
-	transition: 0.3s;
-	width:32%;
-}
-.nav button:hover{
-	border-bottom-color: rgba(0,0,0,.25);
-}
-.nav button.active{
-	border-bottom-color: #000;
-}
-.tabcontent{
-	display: none;
-	padding: 6px 12px;
-	border: 0px solid #ccc;
-	border-top:none;
-}
-
-.top{
-width:50%; 
-margin-left:20%;
-overflow:auto; 
-}
-.meat{
-width:80%; 
-margin-left:20%;
-overflow:auto; 
-}
-
