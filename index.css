@@ -27,3 +27,6 @@ a{
   background-color: transparent; 
   text-decoration: none;
 }
+#post{
+ padding:0.25rem;
+}
