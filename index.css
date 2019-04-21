@@ -1,6 +1,9 @@
 *{
 font-family: 'EB Garamond', serif;
 }
+hr{
+margin-top:0;
+}
 #header{
 text-align:center;
 margin-bottom:0px;
@@ -27,12 +30,9 @@ padding: 0.5rem;
   background-color: transparent; 
   text-decoration: none;
 }
-#post{
+a{
   padding:0.5rem;
   color: black; 
   background-color: transparent; 
   text-decoration: underline black;
-}
-hr{
-margin-top:0;
 }
