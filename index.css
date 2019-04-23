@@ -8,14 +8,14 @@ hr{
 text-align:center;
 margin-bottom:0px;
 font-size:80px;
-max-width: 120ch;
+max-width: 70ch;
 }
 #header2{
 margin-bottom:0px;
 font-size:30px;
 }
 #menu{
-word-spacing:30px;
+  word-spacing:30px;
 } 
 main{
   max-width: 70ch;
