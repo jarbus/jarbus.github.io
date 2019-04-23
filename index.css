@@ -6,9 +6,10 @@ hr{
 }
 #header{
 text-align:center;
-margin-bottom:0px;
+margin-bottom: 0px;
 font-size:80px;
 max-width: 70ch;
+padding:1.5rem;
 }
 #header2{
 margin-bottom:0px;
