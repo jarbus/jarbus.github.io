@@ -22,6 +22,7 @@ main{
   max-width: 70ch;
   padding: 1.5rem;
   margin: auto;
+  text-align: justify;
 }
 #post{
 padding: 0.5rem;
