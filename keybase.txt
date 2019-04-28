@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jarbus
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jarbus.net
+  * I am jarbus (https://keybase.io/jarbus) on keybase.
+  * I have a public key ASCL_H6DLVighC0Ke6cGrURv8-T0Lv_HL6zSc9rXgDBYqQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206a66759f458f459ab4c16e31a0bdb5838a3beff23cf9c210d7452e1cde3a7c6d0a",
+      "host": "keybase.io",
+      "kid": "01208bfc7e832d58a0842d0a7ba706ad446ff3e4f42effc72facd273dad7803058a90a",
+      "uid": "297e45b9afc8d73c2f3d694ad226dd19",
+      "username": "jarbus"
+    },
+    "merkle_root": {
+      "ctime": 1556416407,
+      "hash": "55797f905f2822ddeea74c9a7b703d6f70a6b388b8798a21ad9acb6a006eae2da0cae455079e4772d13c691eeaf60e72ad7bfc60c3f50a3e2cb1bb8ab655c9b5",
+      "hash_meta": "b3c677cc07d2bc232db3b92f689d7206ce36fff7bdc4f31378fe40f92b736146",
+      "seqno": 5255929
+    },
+    "service": {
+      "entropy": "FcNsR92o1NAr88Mq7ls4nqbB",
+      "hostname": "jarbus.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.2.2"
+  },
+  "ctime": 1556416461,
+  "expire_in": 504576000,
+  "prev": "14278740c45358b6250f9229c50a718b989adae82f7af2a7e2ef00c9f3f19233",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgi/x+gy1YoIQtCnunBq1Eb/Pk9C7/xy+s0nPa14AwWKkKp3BheWxvYWTESpcCCMQgFCeHQMRTWLYlD5IpxQpxi5ia2ugvevKn4u8AyfPxkjPEIJ32yP775gDuPFT7UOSONA8yODYd/KOpr9TbjD6zmHtfAgHCo3NpZ8RAWCbV15P5saCqbMMBZ8N80HmIhCZag6vr4zLaXVuEERQxJCAIfT1m3LGohyp+dJYFxzNcNFTyh1/QZ4YpSYiABqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMrwmqpcwK/5g2WuskO/TKGwfMumnu1HNMuQV/Ol8on7o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jarbus
+
+==================================================================
