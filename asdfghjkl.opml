@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<opml version="1.0">
+  <head>
+    <title>newsboat - Exported Feeds</title>
+  </head>
+  <body>
+    <outline type="rss" xmlUrl="http://www.quantamagazine.org/feed/" htmlUrl="https://www.quantamagazine.org/" title="Quanta Magazine"/>
+    <outline type="rss" xmlUrl="http://www.sciencedaily.com/rss/space_time.xml" htmlUrl="https://www.sciencedaily.com/news/space_time/" title="Space &amp; Time News -- ScienceDaily"/>
+    <outline type="rss" xmlUrl="http://news.mit.edu/rss/topic/artificial-intelligence2" htmlUrl="http://news.mit.edu/topic/mitartificial-intelligence2-rss.xml" title="MIT News - Artificial intelligence"/>
+    <outline type="rss" xmlUrl="http://nautil.us/rss/all" htmlUrl="http://nautil.us/rss/all" title="Nautilus"/>
+    <outline type="rss" xmlUrl="https://www.quantamagazine.org/category/abstractions/feed/" htmlUrl="https://www.quantamagazine.org/" title="Abstractions blog &#x2013; Quanta Magazine"/>
+    <outline type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw" htmlUrl="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" title="3Blue1Brown"/>
+    <outline type="rss" xmlUrl="http://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml" htmlUrl="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/" title="Artificial Intelligence News -- ScienceDaily"/>
+    <outline type="rss" xmlUrl="http://web.mit.edu/newsoffice/topic/mitcomputers-rss.xml" htmlUrl="http://news.mit.edu/topic/mitcomputer-science-and-artificial-intelligence-laboratory-csail-rss.xml" title="MIT News - Computer Science and Artificial Intelligence Laboratory (CSAIL)"/>
+    <outline type="rss" xmlUrl="https://lexfridman.com/category/ai/feed/" htmlUrl="https://lexfridman.com/ai/" title="Artificial Intelligence | Lex | MIT AI"/>
+    <outline type="rss" xmlUrl="http://bearlamp.com.au/feed/" htmlUrl="http://bearlamp.com.au/" title="BearLamp"/>
+    <outline type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA" htmlUrl="https://www.youtube.com/channel/UC2eYFnH61tmytImy1mTYvhA" title="Luke Smith"/>
+    <outline type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCiRiQGCHGjDLT9FQXFW0I3A" htmlUrl="https://www.youtube.com/channel/UCiRiQGCHGjDLT9FQXFW0I3A" title="Academy of Ideas"/>
+    <outline type="rss" xmlUrl="http://xkcd.com/rss.xml" htmlUrl="https://xkcd.com/" title="xkcd.com"/>
+    <outline type="rss" xmlUrl="http://philosophizethis.libsyn.com/rss" htmlUrl="http://www.philosophizethis.org/" title="Philosophize This!"/>
+    <outline type="rss" xmlUrl="http://slatestarcodex.com/feed/" htmlUrl="https://slatestarcodex.com/" title="Slate Star Codex"/>
+    <outline type="rss" xmlUrl="http://seancarroll.libsyn.com/rss" htmlUrl="https://art19.com/shows/sean-carrolls-mindscape" title="Sean Carroll's Mindscape: Science, Society, Philosophy, Culture, Arts, and Ideas"/>
+    <outline type="rss" xmlUrl="http://twitrss.me/twitter_user_to_rss/?user=david_perell" htmlUrl="https://twitter.com/david_perell" title="David Perell Twitter"/>
+    <outline type="rss" xmlUrl="http://www.perell.com/blog?format=RSS" htmlUrl="https://www.perell.com/" title="David Perell Blog"/>
+    <outline type="rss" xmlUrl="https://academyofideas.com/feed/podcast/" htmlUrl="https://academyofideas.com/" title="Academy of Ideas Podcast"/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/Techcrunch" htmlUrl="https://techcrunch.com/" title="TechCrunch"/>
+    <outline type="rss" xmlUrl="http://www.engadget.com/rss-full.xml" htmlUrl="https://www.engadget.com/rss-full.xml" title="Engadget RSS Feed"/>
+    <outline type="rss" xmlUrl="http://news.ycombinator.com/rss" htmlUrl="https://news.ycombinator.com/" title="Hacker News"/>
+    <outline type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC3rK4_AbQfu1Lv9GI1tKp4A" htmlUrl="https://www.youtube.com/channel/UC3rK4_AbQfu1Lv9GI1tKp4A" title="Rene Ritchie YouTube"/>
+    <outline type="rss" xmlUrl="http://feeds.arstechnica.com/arstechnica/technology-lab" htmlUrl="https://arstechnica.com/" title="Biz &amp; IT &#x2013; Ars Technica"/>
+    <outline type="rss" xmlUrl="http://www.theverge.com/rss/full.xml" htmlUrl="https://www.theverge.com/" title="The Verge -  All Posts"/>
+    <outline type="rss" xmlUrl="http://9to5mac.com/feed/" htmlUrl="https://9to5mac.com/" title="9to5Mac"/>
+    <outline type="rss" xmlUrl="http://www.macrumors.com/macrumors.xml" htmlUrl="https://www.macrumors.com/" title="MacRumors: Mac News and Rumors - Front Page"/>
+  </body>
+</opml>
