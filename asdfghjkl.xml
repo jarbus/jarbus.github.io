@@ -13,6 +13,12 @@
     <outline type="rss" xmlUrl="http://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml" htmlUrl="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/" title="Artificial Intelligence News -- ScienceDaily"/>
     <outline type="rss" xmlUrl="http://web.mit.edu/newsoffice/topic/mitcomputers-rss.xml" htmlUrl="http://news.mit.edu/topic/mitcomputer-science-and-artificial-intelligence-laboratory-csail-rss.xml" title="MIT News - Computer Science and Artificial Intelligence Laboratory (CSAIL)"/>
     <outline type="rss" xmlUrl="https://lexfridman.com/category/ai/feed/" htmlUrl="https://lexfridman.com/ai/" title="Artificial Intelligence | Lex | MIT AI"/>
+    <outline type="rss" xmlUrl="http://arxiv.org/rss/cs" htmlUrl="http://arxiv.org/" title="arXiv CS"/>
+    <outline type="rss" xmlUrl="http://arxiv.org/rss/cs.NE" htmlUrl="http://arxiv.org/" title="arXiv Neural and Evolutionary Computing"/>
+    <outline type="rss" xmlUrl="http://arxiv.org/rss/cs.CL" htmlUrl="http://arxiv.org/" title="arXiv Computation and Language"/>
+    <outline type="rss" xmlUrl="http://arxiv.org/rss/cs.MA" htmlUrl="http://arxiv.org/" title="arXiv Multiagent Systems"/>
+    <outline type="rss" xmlUrl="http://arxiv.org/rss/cs.GT" htmlUrl="http://arxiv.org/" title="arXiv Computer Science and Game Theory"/>
+    <outline type="rss" xmlUrl="http://arxiv.org/rss/cs.AI" htmlUrl="http://arxiv.org/" title="arXiv Artifical Intelligence"/>
     <outline type="rss" xmlUrl="http://bearlamp.com.au/feed/" htmlUrl="http://bearlamp.com.au/" title="BearLamp"/>
     <outline type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA" htmlUrl="https://www.youtube.com/channel/UC2eYFnH61tmytImy1mTYvhA" title="Luke Smith"/>
     <outline type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCiRiQGCHGjDLT9FQXFW0I3A" htmlUrl="https://www.youtube.com/channel/UCiRiQGCHGjDLT9FQXFW0I3A" title="Academy of Ideas"/>
