@@ -1,6 +1,6 @@
 *{
-//font-family: 'EB Garamond', serif;
-color: black;
+/*font-family: 'EB Garamond', serif;*/
+/*color: black;*/
 }
 hr{
 //margin-top:0;
@@ -18,7 +18,7 @@ font-size:30px;
 }
 #menu{
   word-spacing:30px;
-} 
+}
 main{
   max-width: 70ch;
   padding: 1.5rem;
@@ -29,13 +29,13 @@ main{
 padding: 0.5rem;
 }
 #menuitem{
-  color: black; 
-  background-color: transparent; 
+  color: black;
+  background-color: transparent;
   text-decoration: none;
 }
 a{
-  color: black; 
-  background-color: transparent; 
+  color: black;
+  background-color: transparent;
   text-decoration: underline black;
 }
 figure{
@@ -57,3 +57,23 @@ img {
     margin-left: auto;
 }
 
+ @media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+    color: #e4e4e4;
+  }
+  a {
+    color: #e4e4e4;
+    text-decoration: underline white;
+  }
+  p,h1,h2, title{
+    color: #e4e4e4
+  }
+  img {
+    filter: grayscale(30%);
+  }
+  #menuitem{
+    color: #e4e4e4
+  }
+
+}
