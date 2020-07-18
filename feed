@@ -1,20 +1,20 @@
-<feed  xml:lang="en">
-<updated>2020-07-17T02:19:43+00:00</updated>
-<id>https://jarbus.net/feed</id>
-<title>Jarbus.net</title>
-<subtitle>
-Posts from jarbus.net
-</subtitle>
-<author>
-<name>Jack</name>
-</author>
-<entry>
-<title>Critical Thinking</title>
-<link href="https://www.jarbus.net/Critical-Thinking" rel="alternate" type="text/html" title="Critical Thinking"/>
-https://www.jarbus.net/Critical-Thinking
-</link>
-<id>Critical Thinking</id>
-<published>2020-07-15T00:00:00+00:00</published>
-</entry>
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>W3Schools Home Page</title>
+  <link>https://www.w3schools.com</link>
+  <description>Free web building tutorials</description>
+  <item>
+    <title>RSS Tutorial</title>
+    <link>https://www.w3schools.com/xml/xml_rss.asp</link>
+    <description>New RSS tutorial on W3Schools</description>
+  </item>
+  <item>
+    <title>XML Tutorial</title>
+    <link>https://www.w3schools.com/xml</link>
+    <description>New XML tutorial on W3Schools</description>
+  </item>
 </channel>
-</feed>
+
+</rss>
