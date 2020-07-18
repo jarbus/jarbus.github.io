@@ -27,6 +27,83 @@
         New Post: Short: Aftermath
     </description>
   </item>
+  <item>
+    <title>
+      Anonymity
+    </title>
+    <link>
+      https://www.jarbus.net/Anonymity
+    </link>
+    <description>
+        New Post: Anonymity
+    </description>
+  </item>
+   <item>
+    <title>
+      Forgiveness
+    </title>
+    <link>
+      https://www.jarbus.net/Forgiveness
+    </link>
+    <description>
+        New Post: Forgiveness
+    </description>
+  </item>
+ <item>
+    <title>
+      Happiness
+    </title>
+    <link>
+      https://www.jarbus.net/Happiness
+    </link>
+    <description>
+        New Post: Happiness
+    </description>
+  </item>
+ <item>
+    <title>
+      AI Index
+    </title>
+    <link>
+      https://www.jarbus.net/AI-Index
+    </link>
+    <description>
+        New Post: AI Index
+    </description>
+  </item>
+ <item>
+    <title>
+      Balance
+    </title>
+    <link>
+      https://www.jarbus.net/Balance
+    </link>
+    <description>
+        New Post: Balance
+    </description>
+  </item>
+ <item>
+    <title>
+      Bitcoin Whitepaper, Explained
+    </title>
+    <link>
+      https://www.jarbus.net/Bitcoin-Whitepaper,-Explained
+    </link>
+    <description>
+        New Post: Bitcoin Whitepaper, Explained
+    </description>
+  </item>
+ <item>
+    <title>
+      Visualization of a Basic Neural Network in Python
+    </title>
+    <link>
+      https://www.jarbus.net/Visualization-of-a-Basic-Neural-Network-in-Python
+    </link>
+    <description>
+        New Post: Visualization of a Basic Neural Network in Python
+    </description>
+  </item>
 </channel>
 
 </rss>
