@@ -4,11 +4,12 @@
 <title>Jarbus.net</title>
 <link>https://jarbus.net</link>
 <description>Latest posts from Jack</description>
-<item>
+<entry>
 <title>Critical Thinking</title>
 <link href="https://www.jarbus.net/Critical-Thinking">
 <id>Critical Thinking</id>
-<description>New Post: How to think for yourself.</description>
-</item>
+<published>2020-07-15T00:00:00+00:00</published>
+<content>New Post: How to think for yourself.</content>
+</entry>
 </channel>
 </rss>
