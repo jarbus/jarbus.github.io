@@ -1,6 +1,9 @@
 *{
 /*font-family: 'EB Garamond', serif;*/
 /*color: black;*/
+  background-color: black;
+  color: white;
+
 }
 hr{
 //margin-top:0;
@@ -29,14 +32,14 @@ main{
 padding: 0.5rem;
 }
 #menuitem{
-  color: black;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 a{
-  color: black;
+  color: white;
   background-color: transparent;
-  text-decoration: underline black;
+  text-decoration: underline white;
 }
 figure{
   float: center;
@@ -55,25 +58,4 @@ img {
     height: auto;
     margin-right: auto;
     margin-left: auto;
-}
-
- @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000000;
-    color: #e4e4e4;
-  }
-  a {
-    color: #e4e4e4;
-    text-decoration: underline white;
-  }
-  p,h1,h2, title{
-    color: #e4e4e4
-  }
-  img {
-    filter: grayscale(30%);
-  }
-  #menuitem{
-    color: #e4e4e4
-  }
-
 }
