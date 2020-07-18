@@ -1,9 +1,8 @@
-*{
+ *{
 /*font-family: 'EB Garamond', serif;*/
 /*color: black;*/
-  background-color: black;
+  background-color: #111111;
   color: white;
-
 }
 hr{
 //margin-top:0;
@@ -11,7 +10,7 @@ hr{
 #header{
 text-align:center;
 margin-bottom: 0px;
-font-size:80px;
+font-size:70px;
 max-width: 70ch;
 padding:1.5rem;
 }
@@ -27,6 +26,7 @@ main{
   padding: 1.5rem;
   margin: auto;
   text-align: justify;
+  font-size:20px;
 }
 #post{
 padding: 0.5rem;
