@@ -6,17 +6,8 @@
 <description>Latest posts from Jack</description>
 <item>
 <title>Critical Thinking</title>
-<link>https://www.jarbus.net/Critical-Thinking</link>
-<guid>https://www.jarbus.net/Critical-Thinking</guid>
-<pubDate>Fri, 17 Jul 2020 13:20:00 EST</pubDate>
+<link href="https://www.jarbus.net/Critical-Thinking">
+<id>Critical Thinking</id>
 <description>New Post: How to think for yourself.</description>
-</item>
-<item>
-<title>Short: Aftermath</title>
-<link>https://www.jarbus.net/Short-Aftermath</link>
-<guid>https://www.jarbus.net/Short-Aftermath</guid>
-<pubDate>Fri, 17 Jul 2020 13:10:00 EST</pubDate>
-<description>New Post: Is it wrong to not sacrifice yourself?</description>
-</item>
 </channel>
 </rss>
