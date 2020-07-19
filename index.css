@@ -16,7 +16,8 @@ padding:1.5rem;
 }
 #header2{
 margin-bottom:0px;
-font-size:30px;
+text-align:center;
+font-size:40px;
 }
 #menu{
   word-spacing:30px;
@@ -26,7 +27,7 @@ main{
   padding: 1.5rem;
   margin: auto;
   text-align: justify;
-  font-size:20px;
+  font-size:25px;
 }
 #post{
 padding: 0.5rem;
