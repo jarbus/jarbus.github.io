@@ -60,3 +60,8 @@ img {
     margin-right: auto;
     margin-left: auto;
 }
+pre code {
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
