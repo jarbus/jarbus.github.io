@@ -5,6 +5,14 @@
   <title>Jarbus.net</title>
   <link>https://www.jarbus.net</link>
   <description>Posts from Jarbus</description>
+ <item>
+    <title>
+        Blogging with Shell Scripts and Markdown
+    </title>
+    <link>
+      https://jarbus.net/Blogging-with-Shell-Scripts-and-Markdown
+    </link>
+  </item>
    <item>
     <title>
         Tesla and False Advertising in AI
