@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "jarbus.net"
 ---
 Favorite Posts:
 
