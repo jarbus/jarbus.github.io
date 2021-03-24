@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "jarbus.net"
 theme = "researcher"
 relativeURLs = true
+publishDir = "docs"
 
 enableEmoji = true
 math = true          # enable KaTeX (https://katex.org/) globally

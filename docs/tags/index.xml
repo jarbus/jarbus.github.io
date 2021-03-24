@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on jarbus.net</title>
+    <link>https://jarbus.net/tags/</link>
+    <description>Recent content in Tags on jarbus.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Mar 2021 11:25:49 -0400</lastBuildDate><atom:link href="https://jarbus.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ai</title>
+      <link>https://jarbus.net/tags/ai/</link>
+      <pubDate>Fri, 19 Mar 2021 11:25:49 -0400</pubDate>
+      
+      <guid>https://jarbus.net/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>technology</title>
+      <link>https://jarbus.net/tags/technology/</link>
+      <pubDate>Fri, 19 Mar 2021 11:25:49 -0400</pubDate>
+      
+      <guid>https://jarbus.net/tags/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>philosophy</title>
+      <link>https://jarbus.net/tags/philosophy/</link>
+      <pubDate>Wed, 20 Jan 2021 11:25:49 -0400</pubDate>
+      
+      <guid>https://jarbus.net/tags/philosophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>psychology</title>
+      <link>https://jarbus.net/tags/psychology/</link>
+      <pubDate>Wed, 20 Jan 2021 11:25:49 -0400</pubDate>
+      
+      <guid>https://jarbus.net/tags/psychology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shorts</title>
+      <link>https://jarbus.net/tags/shorts/</link>
+      <pubDate>Mon, 27 Apr 2020 11:25:49 -0400</pubDate>
+      
+      <guid>https://jarbus.net/tags/shorts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>internet</title>
+      <link>https://jarbus.net/tags/internet/</link>
+      <pubDate>Thu, 02 Jan 2020 11:25:49 -0400</pubDate>
+      
+      <guid>https://jarbus.net/tags/internet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>privacy</title>
+      <link>https://jarbus.net/tags/privacy/</link>
+      <pubDate>Thu, 02 Jan 2020 11:25:49 -0400</pubDate>
+      
+      <guid>https://jarbus.net/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>speech</title>
+      <link>https://jarbus.net/tags/speech/</link>
+      <pubDate>Thu, 02 Jan 2020 11:25:49 -0400</pubDate>
+      
+      <guid>https://jarbus.net/tags/speech/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

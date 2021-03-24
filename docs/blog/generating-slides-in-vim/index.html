@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content=''>
+
+    
+    <link rel="stylesheet" href="../../sass/researcher.min.css">
+
+    
+
+    </head>
+
+    <body><div class="container mt-5" >
+    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+            <div style="float:left">
+            <a class="navbar-brand mx-0 mr-sm-auto" href="https://jarbus.net">
+              
+              Generating Slides in Vim
+            </a>
+
+            </div>
+
+    </nav>
+<br>
+<br>
+<hr>
+
+            <div class="navbar-nav flex-row flex-wrap justify-content-center" style="display:inline-block;float:right" >
+                
+                    
+                    
+                        <a class="nav-item nav-link" href="../../">/home</a>
+                    
+                        <a class="nav-item nav-link" href="../../about">/about</a>
+                    
+                        <a class="nav-item nav-link" href="../../blog">/blog</a>
+                    
+                        <a class="nav-item nav-link" href="../../contact">/contact</a>
+                    
+                        <a class="nav-item nav-link" href="../../blog/index.xml">/rss</a>
+                    
+                
+            </div>
+
+<br>
+<br>
+</div>
+<div id="content">
+<div class="container">
+    <p>There is a great tool known as <a href="https://pandoc.org/">pandoc</a> that can convert documents from one filetype to another. For example, you can convert a Microsoft Word document to a PDF, without even needing to own a copy of Microsoft Word! However, we care about Pandoc&rsquo;s ability to convert a Markdown document to a slideshow presentation using LaTeX Beamer as a rendering engine.</p>
+<p>There is a great writeup about this basic feature <a href="https://ashwinschronicles.github.io/beamer-slides-using-markdown-and-pandoc">here</a>.</p>
+<blockquote>
+<p>TL;DR: With Pandoc installed and markdown file <code>Demo.md</code>, executing <code>pandoc -t beamer Demo.md -o Demo.pdf</code> will generate a slideshow as a pdf, with each section heading as the title of a new slide.</p>
+</blockquote>
+<p>Different themes can be specified with the <code>-V</code> option; I&rsquo;m currently using the <a href="https://github.com/matze/mtheme">Metropolis</a> beamer theme and <a href="https://github.com/rchurchley/beamercolortheme-owl">Owl</a> colorscheme. After installing these themes, I can run:</p>
+<pre><code>pandoc -t beamer
+       -V fontsize=14pt
+       -V theme=metropolis
+       -V colortheme=owl
+       -s
+       Demo.md -o Demo.pdf
+</code></pre><p>to produce my presentation. <strong>Note: All code blocks are single-line commands/<code>.vimrc</code> entries, and are displayed as multi-line for readability.</strong></p>
+<p>Unfortunately, it&rsquo;s a pain to recompile a document every time I want to view my changes. Luckily, as a (Neo)Vim user, I can automatically run commands everytime I write a file. To avoid generating presentations with non-presentation markdown files, I instead write presentations in plaintext files that end with <code>.slides</code>. In the example above, I&rsquo;d be using <code>Demo.slides</code> instead of <code>Demo.md</code>. When I add:</p>
+<pre><code>autocmd! BufWritePost *.slides silent !pandoc
+    -t beamer
+    -V fontsize=14pt
+    -V theme=metropolis
+    -V colortheme=owl
+    -s
+    % -o &quot;%:p:h/.%:t:r.pdf&quot;
+</code></pre><p>to my <code>.vimrc</code>, everytime I save changes in a <code>FILENAME.slides</code> file, it will generate a presentation located in <code>.FILENAME.pdf</code>. I choose to add a leading period in the output to hide the PDF from my file manager, feel free to remove it.</p>
+<p>To enable markdown syntax highlighting in our <code>.slides</code> file, add:</p>
+<pre><code>autocmd BufRead,BufNewFile *.slides :set filetype=markdown
+</code></pre><p>to your <code>.vimrc</code>.</p>
+<p>Now Vim generates a PDF presentation for us everytime we save a <code>.slides</code> file. For easy viewing, I added another keybind, <code>Z</code>, to open the corresponding PDF in my PDF viewer of choice, <a href="https://pwmt.org/projects/zathura/">Zathura</a>:</p>
+<pre><code>nnoremap Z :silent !zathura --fork %:p:h/.%:t:r.pdf&lt;CR&gt;
+</code></pre><p>Zathura automatically refreshes the view whenever changes to an open document is detected. This means that I can open a <code>.slides</code> file in Vim, save changes, and press <code>Z</code> to view my changes in Zathura. I can then immediately view any additional changes I make in the open Zathura window, just by saving the <code>.slides</code> file.</p>
+
+</div>
+
+        </div><div id="footer" class="mb-5">
+    
+</div>
+
+</body>
+</html>

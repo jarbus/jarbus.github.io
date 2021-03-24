@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ai on jarbus.net</title>
+    <link>https://jarbus.net/tags/ai/</link>
+    <description>Recent content in ai on jarbus.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Mar 2021 11:25:49 -0400</lastBuildDate><atom:link href="https://jarbus.net/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Index</title>
+      <link>https://jarbus.net/blog/ai-index/</link>
+      <pubDate>Fri, 19 Mar 2021 11:25:49 -0400</pubDate>
+      
+      <guid>https://jarbus.net/blog/ai-index/</guid>
+      <description>An ever-expanding list of concepts in the field of AI to give myself and others an easy reference. Each item in the list contains a short, rudimentary definition I&amp;rsquo;ve written, as well as a link to a resource that can explain it better.
+ Ablation Study: Removing some parts of a machine learning model to measure impact on performance Advantage Function: The difference between a Q-value for a state-action pair and a value for the state.</description>
+    </item>
+    
+    <item>
+      <title>Tesla and False Advertising in AI</title>
+      <link>https://jarbus.net/blog/tesla-and-false-advertising-in-ai/</link>
+      <pubDate>Wed, 22 Jul 2020 11:25:49 -0400</pubDate>
+      
+      <guid>https://jarbus.net/blog/tesla-and-false-advertising-in-ai/</guid>
+      <description>Here&amp;rsquo;s the problem with advertising AI-based technology that doesn&amp;rsquo;t exist:
+You cannot promise anything about your product.
+We&amp;rsquo;ve all seen AI advertised to the masses that doesn&amp;rsquo;t work as advertised, just look at any voice-to-text system. When I got my Apple Watch, I hoped to use it to respond to messages without getting distracted by my phone. I quickly realized that wasn&amp;rsquo;t a viable solution: I had to repeat my message multiple times per text in order to get the correct dictation.</description>
+    </item>
+    
+    <item>
+      <title>Visualization of a Neural Network</title>
+      <link>https://jarbus.net/blog/visualization-of-a-basic-neural-network-in-python/</link>
+      <pubDate>Tue, 08 Oct 2019 11:25:49 -0400</pubDate>
+      
+      <guid>https://jarbus.net/blog/visualization-of-a-basic-neural-network-in-python/</guid>
+      <description>Note: This article was originally published on medium. I copied this article here to have all my writing in one place.
+Building a neural network is a challenging task, but due to the abstract nature of neural nets it is entirely possible to program one without any understanding of how it works in its given context! In this article, we’ll attempt to understand what a neural network trained off of a portion of the MNIST database is actually looking for.</description>
+    </item>
+    
+  </channel>
+</rss>
