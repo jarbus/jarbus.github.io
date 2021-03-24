@@ -15,7 +15,6 @@ All posts, sorted by recency:
 - [Generating Slides In Vim](blog/generating-slides-in-vim)
 - [Would You Rather Be Uninformed Or Misinformed?](blog/would-you-rather-be-uninformed-or-misinformed)
 - [Soft Rules](blog/soft-rules)
-- [Blogging with Shell Scripts and Markdown](blog/blogging-with-shell-scripts-and-markdown)
 - [Tesla and False Advertising in AI](blog/tesla-and-false-advertising-in-ai)
 - [Critical Thinking](blog/critical-thinking)
 - [Short: Aftermath](blog/short-aftermath)
