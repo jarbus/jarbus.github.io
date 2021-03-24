@@ -1,0 +1,46 @@
+baseURL = "https://jarbus.net"
+languageCode = "en-us"
+title = "jarbus.net"
+theme = "researcher"
+relativeURLs = true
+
+enableEmoji = true
+math = true          # enable KaTeX (https://katex.org/) globally
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  [params.style]  # appearance options (can be omitted)
+    fontFamily = "Inconsolata"
+    pageWidth = "960px"
+    avatarSize = "90px"
+
+[permalinks]
+  "/" = "/:filename"
+
+[menu]
+
+  [[menu.main]]
+    name = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "about"
+    url = "/about"
+    weight = 2
+  [[menu.main]]
+    name = "blog"
+    url = "/blog"
+    weight = 3
+  [[menu.main]]
+    name = "contact"
+    url = "/contact"
+    weight = 4
+  [[menu.main]]
+    name = "rss"
+    url = "/blog/index.xml"
+    weight = 5
+
+[markup.goldmark.renderer]
+  unsafe = true  # allow raw HTML in markdown files
