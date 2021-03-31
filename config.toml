@@ -14,7 +14,7 @@ math = true          # enable KaTeX (https://katex.org/) globally
 [params]
   [params.style]  # appearance options (can be omitted)
     fontFamily = "Inconsolata"
-    pageWidth = "960px"
+    pageWidth = "100%"
     avatarSize = "90px"
 
 [permalinks]

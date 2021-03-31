@@ -6,7 +6,16 @@
     <description>Recent content on jarbus.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Mar 2021 11:25:49 -0400</lastBuildDate><atom:link href="https://jarbus.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Mar 2021 02:52:33 -0400</lastBuildDate><atom:link href="https://jarbus.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Take the Road Most Documented</title>
+      <link>https://jarbus.net/blog/take-the-road-most-documented/</link>
+      <pubDate>Sat, 27 Mar 2021 02:52:33 -0400</pubDate>
+      
+      <guid>https://jarbus.net/blog/take-the-road-most-documented/</guid>
+      <description>How great would it be if the solution to most errors you face were in the first place you looked? That&amp;rsquo;s what the Arch-Wiki has been for me: a massive wealth of information and troubleshooting resources to help me navigate configuration and installation issues I encounter day-to-day. Some people claim Arch Linux is too difficult for new users, but for me it&amp;rsquo;s been the only distribution I&amp;rsquo;ve been able to get working, and it&amp;rsquo;s all thanks to the detailed documentation.</description>
+    </item>
+    
     <item>
       <title>AI Index</title>
       <link>https://jarbus.net/blog/ai-index/</link>
