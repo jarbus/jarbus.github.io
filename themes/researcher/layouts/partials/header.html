@@ -1,0 +1,28 @@
+<div class="container mt-5" >
+    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+            <div style="float:right">
+            <a class="navbar-brand mx-0 mr-sm-auto" href="{{ .Site.BaseURL }}">
+              {{ with .Site.Params.logo }}
+                <img src="{{ . | absURL }}" alt="logo">
+              {{ end }}
+              {{ if .Title }}{{ .Title }}{{ end }}
+            </a>
+            </div>
+    </nav>
+<br>
+<br>
+<br>
+<hr>
+
+            <div class="navbar-nav flex-row flex-wrap justify-content-center" style="display:inline-block;float:right" >
+                {{ with .Site.Menus.main }}
+                    {{ $navbar_len := len . }}
+                    {{ range $i, $nav_item := . }}
+                        <a class="nav-item nav-link" href="{{ $nav_item.URL }}">/{{ $nav_item.Name }}</a>
+                    {{ end }}
+                {{ end }}
+            </div>
+
+<br>
+<br>
+</div>

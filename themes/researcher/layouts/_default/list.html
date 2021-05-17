@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ range .Site.Taxonomies.tags }}
+<a href="{{ .Page.Permalink }}">{{ .Page.Title }}({{ .Count }})</a>
+{{ end }}
+<br>
+<br>
+<div class="container">
+    <ul>
+        {{ range .Pages }}
+        <li style="margin:2"><a href="{{ .Permalink }}" style="">{{ .Date.Format "2006" }} {{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

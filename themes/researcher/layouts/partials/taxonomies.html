@@ -1,0 +1,3 @@
+{{ range .Site.Taxonomies.tags }}
+<a href="{{ .Page.Permalink }}">{{ .Page.Title }}({{ .Count }})</a>
+{{ end }}

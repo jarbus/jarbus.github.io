@@ -1,0 +1,19 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta name="author" content='{{ .Site.Params.author }}'>
+
+    {{ $style := resources.Get "sass/researcher.scss" | resources.ExecuteAsTemplate "sass/researcher.scss" . | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    {{ with .Site.Params.favicon }}
+        <link rel="icon" type="image/ico" href="{{ . | absURL }}">
+    {{ end }}
+
+    {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
+</head>
