@@ -14,7 +14,8 @@
       
       <guid>https://jarbus.net/blog/ai-index/</guid>
       <description>An ever-expanding list of concepts in the field of AI to give myself and others an easy reference. Each item in the list contains a short, rudimentary definition I&amp;rsquo;ve written, as well as a link to a resource that can explain it better.
- Ablation Study: Removing some parts of a machine learning model to measure impact on performance Advantage Function: The difference between a Q-value for a state-action pair and a value for the state.</description>
+Ablation Study: Removing some parts of a machine learning model to measure impact on performance
+Advantage Function: The difference between a Q-value for a state-action pair and a value for the state.</description>
     </item>
     
     <item>

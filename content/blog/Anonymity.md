@@ -3,7 +3,7 @@ title: "Anonymity"
 date: 2020-01-02T11:25:49-04:00
 tags: ["privacy", "speech", "internet"]
 ---
-What happened to "Don't give out your name on the internet?" Within the past 15 years, the desire for online anonymity has vanished -- as ``normal people'' joined the digital world, the number of ''creepy people'' worth hiding your identity from seems to have dropped in comparison. Despite the perceived safety of the online world, remaining anonymous still has its merits.
+What happened to "Don't give out your name on the internet?" Within the past 15 years, the desire for online anonymity has vanished -- as "normal people" joined the digital world, the number of "creepy people" worth hiding your identity from seems to have dropped in comparison. Despite the perceived safety of the online world, remaining anonymous still has its merits.
 
 ## Anonymity addresses ideas
 
@@ -20,7 +20,7 @@ Freedom of speech ensures individuals can not be legally punished for publicly e
 
 ## Anonymity ensures authenticity
 
-``Give a man a mask and he'll show his true face'' is a favorite quote of mine. It can act as an attack against anonymity, claiming people will act badly if able to avoid social and legal backlash. This can be interpreted in a different way; **people have the freedom to be who they are when they don't have to worry about backlash**. Is it just to not feel safe showing one's true face in modern society?
+"Give a man a mask and he'll show his true face" is a favorite quote of mine. It can act as an attack against anonymity, claiming people will act badly if able to avoid social and legal backlash. This can be interpreted in a different way; **people have the freedom to be who they are when they don't have to worry about backlash**. Is it just to not feel safe showing one's true face in modern society?
 
 Surveillance acts partially as a way to collect information on a populus, and partially as a way to enforce good behavior; if you see a camera at a stoplight, you are more likely to act in good behavior whether or not the camera is actually on. In an ideal world, everyone acts in good behavior and gets along, but on their own terms and not because they are being watched. Remaining anonymous ensures good behavior is not done in hopes of receiving praise or gaining social acceptance, but rather for the sake of being good. An example could be comparing a person who drives safely in case there might be a cop versus a person who drives safely because they don't wish to risk anyone's life.
 

@@ -10,11 +10,11 @@ $green: {{ .Param "style.colorGreen" | default "#00f000" }};
 
 // Font
 $font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }};
-$font-size: {{ .Param "style.fontSize" | default "14" }};
+$font-size: {{ .Param "style.fontSize" | default "18" }};
 
 // Margins
-$y-small: 0.6rem;
-$y-medium: 1.0rem;
+$y-small: 1.5rem;
+$y-medium: 6.0rem;
 
 
 
@@ -58,9 +58,6 @@ $y-medium: 1.0rem;
     font-family: $font-family;
 }
 body {
-    margin-left:3em;
-    margin-top:2em;
-    margin-right:3em;
     padding:2em;
     font-size: $font-size
 }
@@ -77,19 +74,27 @@ body {
 .container {
     max-width: $max-width;
 }
+
+.mt-5 {
+    max-width:  60ch;
+	margin: auto;
+}
 // title
 .navbar-brand {
     @extend %link-dark;
-    font-size: 3rem;
+    font-size: $font-size;
 }
 
 .nav-link {
     @extend %link-default;
-    font-size: 1.5rem;
+    font-size: 0.5*$font-size;
 }
 #content {
-    *{
         margin: auto;
+        max-width:  60ch;
+
+    *{
+
     }
     a {
         @extend %link-default;
