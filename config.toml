@@ -5,6 +5,7 @@ theme = "researcher"
 relativeURLs = true
 publishDir = "docs"
 
+
 enableEmoji = true
 math = true          # enable KaTeX (https://katex.org/) globally
 
