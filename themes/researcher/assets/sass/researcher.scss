@@ -56,6 +56,7 @@ $y-medium: 6.0rem;
     color: $white;
     background: $black;
     font-family: $font-family;
+	word-break: break-word;
 }
 body {
     padding:2em;
