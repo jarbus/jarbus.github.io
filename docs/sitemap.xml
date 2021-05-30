@@ -38,6 +38,9 @@
     <loc>https://jarbus.net/blog/critical-thinking/</loc>
     <lastmod>2020-09-22T11:25:49-04:00</lastmod>
   </url><url>
+    <loc>https://jarbus.net/blog/blogging-with-shell-scripts-and-markdown/</loc>
+    <lastmod>2020-07-23T11:25:49-04:00</lastmod>
+  </url><url>
     <loc>https://jarbus.net/blog/tesla-and-false-advertising-in-ai/</loc>
     <lastmod>2020-07-22T11:25:49-04:00</lastmod>
   </url><url>
@@ -73,6 +76,15 @@
   </url><url>
     <loc>https://jarbus.net/blog/balance/</loc>
     <lastmod>2019-07-09T11:25:49-04:00</lastmod>
+  </url><url>
+    <loc>https://jarbus.net/perspective/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://jarbus.net/shorts/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://jarbus.net/technology/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://jarbus.net/about/</loc>
   </url><url>

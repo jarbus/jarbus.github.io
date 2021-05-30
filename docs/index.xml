@@ -60,6 +60,16 @@ TL;DR: Don&amp;rsquo;t get fooled by facts if they have no context, don&amp;rsqu
     </item>
     
     <item>
+      <title>Blogging with Shell Scripts and Markdown</title>
+      <link>https://jarbus.net/blog/blogging-with-shell-scripts-and-markdown/</link>
+      <pubDate>Thu, 23 Jul 2020 11:25:49 -0400</pubDate>
+      
+      <guid>https://jarbus.net/blog/blogging-with-shell-scripts-and-markdown/</guid>
+      <description>I (used to) manage this website with markdown and a shell scripts. Here&amp;rsquo;s how.
+What I wanted when designing my site:  Fast load time Minimal interface A site directory Readable URLs  What I didn&amp;rsquo;t want when designing my site:  JavaScript A fancy framework Site analytics/admin interface Large files Ads  How it works: I spent some time in HTML/CSS designing a header for the site. This includes a generic title for each page, an &amp;ldquo;About&amp;rdquo; tab, &amp;ldquo;Posts&amp;rdquo; tab, &amp;ldquo;Contact&amp;rdquo; tab, and horizontal bar to separate the header from the body.</description>
+    </item>
+    
+    <item>
       <title>Tesla and False Advertising in AI</title>
       <link>https://jarbus.net/blog/tesla-and-false-advertising-in-ai/</link>
       <pubDate>Wed, 22 Jul 2020 11:25:49 -0400</pubDate>
@@ -141,6 +151,36 @@ Building a neural network is a challenging task, but due to the abstract nature 
       
       <guid>https://jarbus.net/blog/balance/</guid>
       <description>Choosing sides is fun. Be it politics or pop culture, nothing validates an opinion better than classifying opposing opinions as wrong. Sometimes, as seen by Holocaust deniers or the anti-vaccine movement, it&amp;rsquo;s possible people can be completely and utterly wrong. However, in the general case, both sides have merits and both sides have pitfalls. When trying to gain a perspective of the bigger picture, it&amp;rsquo;s best to position oneself somewhere in the middle.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jarbus.net/perspective/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jarbus.net/perspective/</guid>
+      <description>Posts sharing my perspective on life.
+ Would You Rather Be Uninformed Or Misinformed? Critical-Thinking Anonymity Forgiveness Happiness Soft Rules Balance  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jarbus.net/shorts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jarbus.net/shorts/</guid>
+      <description>All short stories I&amp;rsquo;ve written:
+ Aftermath  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jarbus.net/technology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jarbus.net/technology/</guid>
+      <description>Posts relating to all things technology:
+ Generating Slides In Vim Blogging with Shell Scripts and Markdown Tesla and False Advertising in AI Anonymity AI Index Bitcoin Whitepaper, Explained Visualization of a Basic Neural Network in Python  </description>
     </item>
     
     <item>

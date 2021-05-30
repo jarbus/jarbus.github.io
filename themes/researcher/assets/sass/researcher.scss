@@ -82,7 +82,7 @@ body {
 // title
 .navbar-brand {
     @extend %link-dark;
-    font-size: $font-size;
+    font-size: 0.9*$font-size;
 }
 
 .nav-link {
