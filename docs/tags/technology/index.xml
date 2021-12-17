@@ -13,7 +13,7 @@
       <pubDate>Fri, 17 Dec 2021 14:28:41 -0500</pubDate>
       
       <guid>https://jarbus.net/blog/write-latex-without-latex/</guid>
-      <description>I love the look of LaTeX but hate the experience of writing in LaTeX. Luckily, Pandoc can convert Markdown files to PDFs using a LaTeX engine as the renderer. Pandoc has a custom Markdown specification that can fill almost all my LaTeX needs.
+      <description>I love the look of LaTeX but hate the experience of writing in LaTeX, at least compared to Markdown. Luckily, Pandoc can convert Markdown files to PDFs using a LaTeX engine as the renderer. Pandoc has a custom Markdown specification that can fill almost all my LaTeX needs.
 First, let&amp;rsquo;s talk about where Pandoc Markdown falls short:
  No custom LaTeX style guides (although citation style files are supported) No Section Numbering Referencing labels doesn&amp;rsquo;t work well (Supposedly the pandoc-crossref filter fixes this but I couldn&amp;rsquo;t get it to work) Don&amp;rsquo;t even bother with complex page layouts or precise figure placements  This might be a deal breaker for some, but for others who are writing lots of documents (such as students), this may not be a big deal.</description>
     </item>

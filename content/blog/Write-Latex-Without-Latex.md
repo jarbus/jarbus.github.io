@@ -4,7 +4,7 @@ date: 2021-12-17T14:28:41-05:00
 tags: ["technology"]
 ---
 
-I love the look of LaTeX but hate the experience of writing in LaTeX. Luckily, [Pandoc can convert Markdown files to PDFs using a LaTeX engine as the renderer](https://pandoc.org/MANUAL.html#pandocs-Markdown). Pandoc has a custom Markdown specification that can fill almost all my LaTeX needs.
+I love the look of LaTeX but hate the experience of writing in LaTeX, at least compared to Markdown. Luckily, [Pandoc can convert Markdown files to PDFs using a LaTeX engine as the renderer](https://pandoc.org/MANUAL.html#pandocs-Markdown). Pandoc has a custom Markdown specification that can fill almost all my LaTeX needs.
 
 First, let's talk about where Pandoc Markdown falls short:
 * No custom LaTeX style guides (although citation style files are supported)
