@@ -6,7 +6,18 @@
     <description>Recent content in technology on jarbus.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Mar 2021 11:25:49 -0400</lastBuildDate><atom:link href="https://jarbus.net/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Dec 2021 14:28:41 -0500</lastBuildDate><atom:link href="https://jarbus.net/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to write LaTeX without writing LaTeX</title>
+      <link>https://jarbus.net/blog/write-latex-without-latex/</link>
+      <pubDate>Fri, 17 Dec 2021 14:28:41 -0500</pubDate>
+      
+      <guid>https://jarbus.net/blog/write-latex-without-latex/</guid>
+      <description>I love the look of LaTeX but hate the experience of writing in LaTeX. Luckily, Pandoc can convert Markdown files to PDFs using a LaTeX engine as the renderer. Pandoc has a custom Markdown specification that can fill almost all my LaTeX needs.
+First, let&amp;rsquo;s talk about where Pandoc Markdown falls short:
+ No custom LaTeX style guides (although citation style files are supported) No Section Numbering Referencing labels doesn&amp;rsquo;t work well (Supposedly the pandoc-crossref filter fixes this but I couldn&amp;rsquo;t get it to work) Don&amp;rsquo;t even bother with complex page layouts or precise figure placements  This might be a deal breaker for some, but for others who are writing lots of documents (such as students), this may not be a big deal.</description>
+    </item>
+    
     <item>
       <title>AI Index</title>
       <link>https://jarbus.net/blog/ai-index/</link>
@@ -47,16 +58,6 @@ We&amp;rsquo;ve all seen AI advertised to the masses that doesn&amp;rsquo;t work
       <guid>https://jarbus.net/blog/bitcoin-whitepaper-explained/</guid>
       <description>Introduction In this essay we will give a brief history of crytocurrency leading up to Bitcoin, give an overview of the Bitcoin protocol by summarizing key sections of the whitepaper, and briefly discuss Bitcoin&amp;rsquo;s use of cryptographical proof and computational security instead of trusted third parties within the protocol.
 History Bitcoin is far from original. Digital currencies date back as far as 1982, where David Chaum released a paper called &amp;quot;Blind Signatures&amp;quot;, which formed the basis of a digital currency known as eCash.</description>
-    </item>
-    
-    <item>
-      <title>Visualization of a Neural Network</title>
-      <link>https://jarbus.net/blog/visualization-of-a-basic-neural-network-in-python/</link>
-      <pubDate>Tue, 08 Oct 2019 11:25:49 -0400</pubDate>
-      
-      <guid>https://jarbus.net/blog/visualization-of-a-basic-neural-network-in-python/</guid>
-      <description>Note: This article was originally published on medium. I copied this article here to have all my writing in one place.
-Building a neural network is a challenging task, but due to the abstract nature of neural nets it is entirely possible to program one without any understanding of how it works in its given context! In this article, we’ll attempt to understand what a neural network trained off of a portion of the MNIST database is actually looking for.</description>
     </item>
     
   </channel>

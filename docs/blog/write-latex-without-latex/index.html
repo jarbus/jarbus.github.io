@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content=''>
+
+    
+    <link rel="stylesheet" href="../../sass/researcher.min.css">
+ 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+    
+
+    </head>
+
+    <body><div class="container mt-5" >
+    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+            <div style="float:right">
+            <a class="navbar-brand mx-0 mr-sm-auto" href="https://jarbus.net">
+              
+              How to write LaTeX without writing LaTeX
+            </a>
+            </div>
+    </nav>
+<br>
+<br>
+<hr>
+
+            <div class="navbar-nav flex-row flex-wrap justify-content-center" style="display:inline-block;float:right" >
+                
+                    
+                    
+                        <a class="nav-item nav-link" href="../../">/home</a>
+                    
+                        <a class="nav-item nav-link" href="../../about">/about</a>
+                    
+                        <a class="nav-item nav-link" href="../../blog">/blog</a>
+                    
+                        <a class="nav-item nav-link" href="../../contact">/contact</a>
+                    
+                        <a class="nav-item nav-link" href="../../blog/index.xml">/rss</a>
+                    
+                
+            </div>
+
+<br>
+<br>
+<br>
+</div>
+<div id="content">
+<div class="container">
+    <p>I love the look of LaTeX but hate the experience of writing in LaTeX. Luckily, <a href="https://pandoc.org/MANUAL.html#pandocs-Markdown">Pandoc can convert Markdown files to PDFs using a LaTeX engine as the renderer</a>. Pandoc has a custom Markdown specification that can fill almost all my LaTeX needs.</p>
+<p>First, let&rsquo;s talk about where Pandoc Markdown falls short:</p>
+<ul>
+<li>No custom LaTeX style guides (although citation style files are supported)</li>
+<li>No Section Numbering</li>
+<li>Referencing labels doesn&rsquo;t work well (Supposedly the pandoc-crossref filter fixes this but I couldn&rsquo;t get it to work)</li>
+<li>Don&rsquo;t even bother with complex page layouts or precise figure placements</li>
+</ul>
+<p>This might be a deal breaker for some, but for others who are writing lots of documents (such as students), this may not be a big deal. Now for the benefits:</p>
+<ul>
+<li>Produce a document with Markdown that looks like it was written in LaTeX</li>
+<li>Use LaTeX math notation in Markdown</li>
+<li>Easy BibTeX citations in Markdown</li>
+<li>Figures and Captions are supported</li>
+<li>Two Columns are supported</li>
+<li>Use your favorite editor instead of some LaTeX IDE</li>
+<li>Write and preview offline</li>
+<li>Build a document in one command</li>
+</ul>
+<p>If you are reading this, you probably know how both Markdown and Latex work, and you probably know how to read the <a href="https://pandoc.org/MANUAL.html#pandocs-Markdown">Pandoc Markdown Documentation</a>, so instead, below is a template document that I wish I had when first starting out. It covers most things you&rsquo;d need to write simple papers in Markdown. Configuration for document settings is done in the YAML block at the top of the document.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">---
+title: How to Succeed in LaTeX without even trying
+subtitle: For the lazy writer
+author:
+<span style="color:#66d9ef">-</span> jarbus.net
+geometry:
+<span style="color:#66d9ef">-</span> margin=1in
+linkcolor: black
+urlcolor: blue
+bibliography: example.bib
+csl: nature.csl
+header-includes: |
+    \usepackage{package_here}
+classoption:
+<span style="color:#66d9ef">-</span> twocolumn
+abstract: |
+    This is the abstract
+---
+
+# Introduction
+
+According to all known laws
+of aviation, there is now way
+that a bee should be able to fly. [@seinfeld2007]
+
+| &#34;This is a quote&#34;
+
+![<span style="color:#f92672">Caption here</span>](<span style="color:#a6e22e">bee.png</span>){width=50% }
+
+$\forall b , y = mx+b$
+
+$$
+a^2 + b^2 = c^2
+$$
+
+# References
+
+::: {#refs}
+:::
+
+# Appendix
+</code></pre></div><p>Then, to compile your document to a PDF, simply run:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pandoc <span style="color:#e6db74">&#34;file.md&#34;</span> -o <span style="color:#e6db74">&#34;file.pdf&#34;</span> --citeproc
+</code></pre></div><p>to generate a document that looks like this:</p>
+<p><img src="../../final-document.png" alt=""></p>
+<p>The <code>--citeproc</code> option is needed for compiling a bibliography. For cross-references inside a document, take a look at <a href="https://github.com/lierdakil/pandoc-crossref">pandoc-crossref</a>, which will require the use of <code>--filter pandoc-crossref</code> if it works for you.</p>
+<p>I mapped a modified version of the build command above to a key in Neovim, so now pressing <code>Space+b</code> in my Markdown buffer compiles my document automatically, no matter what file name I&rsquo;m using:</p>
+<pre><code class="language-Vimscript" data-lang="Vimscript">autocmd BufRead,BufNewFile *.md nnoremap &lt;Leader&gt;b
+    \ :silent !md-pdf &quot;%:p:h&quot; &amp;&amp; pandoc % -o &quot;%:p:h/%:t:r.pdf&quot;
+    \ --filter pandoc-crossref --citeproc &amp;&lt;CR&gt;&lt;CR&gt;
+</code></pre><p>And that&rsquo;s how I write LaTeX documents offline in Markdown.</p>
+
+</div>
+
+        </div><div id="footer" class="mb-5">
+    
+</div>
+
+</body>
+</html>

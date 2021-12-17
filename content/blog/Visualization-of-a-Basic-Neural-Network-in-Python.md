@@ -2,6 +2,7 @@
 title: "Visualization of a Neural Network"
 date: 2019-10-08T11:25:49-04:00
 tags: ["technology", "ai"]
+draft: true
 ---
 **Note:** This article was originally published [on medium](https://medium.com/@jackgarbus/visualization-of-a-basic-neural-network-in-python-7f1d6770f00b). I copied this article here to have all my writing in one place.
 

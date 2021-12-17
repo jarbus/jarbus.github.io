@@ -2,22 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jarbus.net/blog/</loc>
+    <lastmod>2021-12-17T14:28:41-05:00</lastmod>
+  </url><url>
+    <loc>https://jarbus.net/blog/write-latex-without-latex/</loc>
+    <lastmod>2021-12-17T14:28:41-05:00</lastmod>
+  </url><url>
+    <loc>https://jarbus.net/</loc>
+    <lastmod>2021-12-17T14:28:41-05:00</lastmod>
+  </url><url>
+    <loc>https://jarbus.net/tags/</loc>
+    <lastmod>2021-12-17T14:28:41-05:00</lastmod>
+  </url><url>
+    <loc>https://jarbus.net/tags/technology/</loc>
+    <lastmod>2021-12-17T14:28:41-05:00</lastmod>
+  </url><url>
     <loc>https://jarbus.net/tags/ai/</loc>
     <lastmod>2021-03-19T11:25:49-04:00</lastmod>
   </url><url>
     <loc>https://jarbus.net/blog/ai-index/</loc>
-    <lastmod>2021-03-19T11:25:49-04:00</lastmod>
-  </url><url>
-    <loc>https://jarbus.net/blog/</loc>
-    <lastmod>2021-03-19T11:25:49-04:00</lastmod>
-  </url><url>
-    <loc>https://jarbus.net/</loc>
-    <lastmod>2021-03-19T11:25:49-04:00</lastmod>
-  </url><url>
-    <loc>https://jarbus.net/tags/</loc>
-    <lastmod>2021-03-19T11:25:49-04:00</lastmod>
-  </url><url>
-    <loc>https://jarbus.net/tags/technology/</loc>
     <lastmod>2021-03-19T11:25:49-04:00</lastmod>
   </url><url>
     <loc>https://jarbus.net/blog/generating-slides-in-vim/</loc>
@@ -67,9 +70,6 @@
   </url><url>
     <loc>https://jarbus.net/tags/speech/</loc>
     <lastmod>2020-01-02T11:25:49-04:00</lastmod>
-  </url><url>
-    <loc>https://jarbus.net/blog/visualization-of-a-basic-neural-network-in-python/</loc>
-    <lastmod>2019-10-08T11:25:49-04:00</lastmod>
   </url><url>
     <loc>https://jarbus.net/blog/forgiveness/</loc>
     <lastmod>2019-07-27T11:25:49-04:00</lastmod>
