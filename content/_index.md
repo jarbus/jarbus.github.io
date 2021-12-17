@@ -3,6 +3,7 @@ title: "jarbus.net"
 ---
 Favorite Posts:
 
+- [How to write Latex without writing Latex](blog/write-latex-without-latex)
 - [Would You Rather Be Uninformed Or Misinformed?](blog/would-you-rather-be-uninformed-or-misinformed)
 - [Short: Aftermath](blog/short-aftermath)
 - [Forgiveness](blog/forgiveness)
@@ -12,6 +13,7 @@ Favorite Posts:
 
 All posts, sorted by recency:
 
+- [How to write Latex without writing Latex](blog/write-latex-without-latex)
 - [Generating Slides In Vim](blog/generating-slides-in-vim)
 - [Would You Rather Be Uninformed Or Misinformed?](blog/would-you-rather-be-uninformed-or-misinformed)
 - [Soft Rules](blog/soft-rules)
