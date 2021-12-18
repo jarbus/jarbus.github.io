@@ -12,7 +12,7 @@ First, let's talk about where Pandoc Markdown falls short:
 * Referencing labels doesn't work well (Supposedly the pandoc-crossref filter fixes this but I couldn't get it to work)
 * Don't even bother with complex page layouts or precise figure placements
 
-This might be a deal breaker for some, but for others who are writing lots of documents (such as students), this may not be a big deal. Now for the benefits:
+This might be a deal breaker for some, but for others who are writing lots of documents (such as students), this may not be. Now for the benefits:
 
 * Produce a document with Markdown that looks like it was written in LaTeX
 * Use LaTeX math notation in Markdown
