@@ -8,7 +8,7 @@ I love the look of LaTeX but hate the experience of writing in LaTeX, at least c
 
 First, let's talk about where Pandoc Markdown falls short:
 * No custom LaTeX style guides (although citation style files are supported)
-* No Section Numbering
+* ~~No Section Numbering~~ There is, thanks to naruhodo on Hacker News for the correction
 * Referencing labels doesn't work well (Supposedly the pandoc-crossref filter fixes this but I couldn't get it to work)
 * Don't even bother with complex page layouts or precise figure placements
 
@@ -31,6 +31,8 @@ title: How to Succeed in LaTeX without even trying
 subtitle: For the lazy writer
 author:
 - jarbus.net
+numbersections: true
+toc: true
 geometry:
 - margin=1in
 linkcolor: black
