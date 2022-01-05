@@ -71,16 +71,6 @@ TL;DR: Don&amp;rsquo;t get fooled by facts if they have no context, don&amp;rsqu
     </item>
     
     <item>
-      <title>blogging-with-shell-scripts-and-markdown</title>
-      <link>https://jarbus.net/blog/blogging-with-shell-scripts-and-markdown/</link>
-      <pubDate>Thu, 23 Jul 2020 11:25:49 -0400</pubDate>
-      
-      <guid>https://jarbus.net/blog/blogging-with-shell-scripts-and-markdown/</guid>
-      <description>I (used to) manage this website with markdown and a shell scripts. Here&amp;rsquo;s how.
-What I wanted when designing my site:  Fast load time Minimal interface A site directory Readable URLs  What I didn&amp;rsquo;t want when designing my site:  JavaScript A fancy framework Site analytics/admin interface Large files Ads  How it works: I spent some time in HTML/CSS designing a header for the site. This includes a generic title for each page, an &amp;ldquo;About&amp;rdquo; tab, &amp;ldquo;Posts&amp;rdquo; tab, &amp;ldquo;Contact&amp;rdquo; tab, and horizontal bar to separate the header from the body.</description>
-    </item>
-    
-    <item>
       <title>Tesla and False Advertising in AI</title>
       <link>https://jarbus.net/blog/tesla-and-false-advertising-in-ai/</link>
       <pubDate>Wed, 22 Jul 2020 11:25:49 -0400</pubDate>

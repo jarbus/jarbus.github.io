@@ -1,6 +1,7 @@
 ---
-title: "blogging-with-shell-scripts-and-markdown"
+title: "Blogging with Shell Scripts and Markdown"
 date: 2020-07-23T11:25:49-04:00
+draft: true
 ---
 I (used to) manage this website with markdown and a shell scripts. Here's how.
 
