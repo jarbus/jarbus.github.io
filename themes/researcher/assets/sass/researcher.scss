@@ -1,6 +1,5 @@
 // Sizes
 $max-width: {{ .Param "style.pageWidth" | default "100%;" }};
-$avatar-size: {{ .Param "style.avatarSize" | default "90px;" }};
 
 // Colors
 $black: {{ .Param "style.colorBlack" | default "#222222" }};
@@ -72,9 +71,6 @@ body {
     padding:0.5em;
     }
 }
-.container {
-    max-width: $max-width;
-}
 
 .mt-5 {
     max-width:  60ch;
@@ -83,19 +79,19 @@ body {
 // title
 .navbar-brand {
     @extend %link-dark;
-    font-size: 0.9*$font-size;
+    font-size: 2*$font-size;
 }
 
 .nav-link {
     @extend %link-default;
-    font-size: 0.5*$font-size;
+    font-size: $font-size;
 }
 #content {
         margin: auto;
         max-width:  60ch;
 
     *{
-        line-height: 2.8ch;
+        line-height: 2.5ch;
 
     }
     a {
@@ -120,13 +116,6 @@ body {
         display: block;
         margin: $y-medium auto;
         max-width: 100%;
-    }
-    .avatar > img {
-        border-radius: 50%;
-        float: right;
-        margin: -8px 0 0 16px;
-        height: $avatar-size;
-        width: $avatar-size;
     }
 
     li{
@@ -179,14 +168,20 @@ body {
         border: 1px solid #cccccc;
         border-radius: 0%;
         padding: 0px 4px;
+
     }
     pre code {
         all: unset;
+
+            width: 100%;
+            overflow-x: scroll; //horizonal scroll bar for code blocks
     }
     .highlight {
         margin: $y-medium auto;
         & > pre {
             padding: 8px 8px;
+            width: 100%;
+            overflow-x: scroll; //horizonal scroll bar for code blocks
         }
     }
 }
@@ -195,4 +190,3 @@ body {
         @extend %link-dark;
     }
 }
-

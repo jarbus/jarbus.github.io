@@ -15,8 +15,8 @@ math = true          # enable KaTeX (https://katex.org/) globally
 [params]
   [params.style]  # appearance options (can be omitted)
     fontFamily = "Courier New"
-    fontSize = "1.9em"
-    pageWidth = "80ch"
+    fontSize = "25.0px"
+    pageWidth = "60ch"
     avatarSize = "90px"
 
 [permalinks]

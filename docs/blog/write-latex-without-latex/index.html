@@ -19,7 +19,6 @@
     <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
             <div style="float:right">
             <a class="navbar-brand mx-0 mr-sm-auto" href="https://jarbus.net">
-              
               How to write LaTeX without writing LaTeX
             </a>
             </div>
@@ -120,10 +119,10 @@ $$
 <p><img src="../../final-document.png" alt=""></p>
 <p>The <code>--citeproc</code> option is needed for compiling a bibliography. For cross-references inside a document, take a look at <a href="https://github.com/lierdakil/pandoc-crossref">pandoc-crossref</a>, which will require the use of <code>--filter pandoc-crossref</code> if it works for you.</p>
 <p>I mapped a modified version of the build command above to a key in Neovim, so now pressing <code>Space+b</code> in my Markdown buffer compiles my document automatically, no matter what file name I&rsquo;m using:</p>
-<pre><code class="language-Vimscript" data-lang="Vimscript">autocmd BufRead,BufNewFile *.md nnoremap &lt;Leader&gt;b
-    \ :silent !md-pdf &quot;%:p:h&quot; &amp;&amp; pandoc % -o &quot;%:p:h/%:t:r.pdf&quot;
-    \ --filter pandoc-crossref --citeproc &amp;&lt;CR&gt;&lt;CR&gt;
-</code></pre><p>And that&rsquo;s how I write LaTeX documents offline in Markdown.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">autocmd BufRead,BufNewFile *.md nnoremap &lt;Leader&gt;b
+    <span style="color:#ae81ff">\ </span>:silent !md-pdf <span style="color:#e6db74">&#34;%:p:h&#34;</span> <span style="color:#f92672">&amp;&amp;</span> pandoc % -o <span style="color:#e6db74">&#34;%:p:h/%:t:r.pdf&#34;</span>
+    <span style="color:#ae81ff">\ </span>--filter pandoc-crossref --citeproc &amp;&lt;CR&gt;&lt;CR&gt;
+</code></pre></div><p>And that&rsquo;s how I write LaTeX documents offline in Markdown.</p>
 
 </div>
 

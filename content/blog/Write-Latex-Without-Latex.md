@@ -85,7 +85,7 @@ The `--citeproc` option is needed for compiling a bibliography. For cross-refere
 
 I mapped a modified version of the build command above to a key in Neovim, so now pressing `Space+b` in my Markdown buffer compiles my document automatically, no matter what file name I'm using:
 
-```Vimscript
+```bash
 autocmd BufRead,BufNewFile *.md nnoremap <Leader>b
     \ :silent !md-pdf "%:p:h" && pandoc % -o "%:p:h/%:t:r.pdf"
     \ --filter pandoc-crossref --citeproc &<CR><CR>
