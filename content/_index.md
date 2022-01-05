@@ -26,4 +26,3 @@ All posts, sorted by recency:
 - [AI-Index](blog/ai-index)
 - [Balance](blog/balance)
 - [Bitcoin Whitepaper, Explained](blog/bitcoin-whitepaper-explained)
-- [Visualization of a Basic Neural Network in Python](blog/visualization-of-a-basic-neural-network-in-python)
