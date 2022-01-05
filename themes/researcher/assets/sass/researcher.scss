@@ -8,7 +8,7 @@ $white: {{ .Param "style.colorWhite" | default "#f8f8f8" }};
 $green: {{ .Param "style.colorGreen" | default "#00f000" }};
 
 // Font
-$font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }}, "Arial", serif ;
+$font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }}, "Arial";
 $font-size: {{ .Param "style.fontSize" | default "18" }};
 
 // Margins
