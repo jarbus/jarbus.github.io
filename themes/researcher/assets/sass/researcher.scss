@@ -7,8 +7,6 @@ $red: {{ .Param "style.colorRed" | default "#dc0045" }};
 $white: {{ .Param "style.colorWhite" | default "#f8f8f8" }};
 $green: {{ .Param "style.colorGreen" | default "#00f000" }};
 
-// Font
-$font-family: "Arial", {{ .Param "style.fontFamily" | default "Inconsolata" }};
 $font-size: {{ .Param "style.fontSize" | default "18" }};
 
 // Margins
@@ -54,7 +52,6 @@ $y-medium: 6.0rem;
 * {
     color: $white;
     background: $black;
-    font-family: $font-family;
 	word-break: break-word;
 }
 body {
