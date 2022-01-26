@@ -15,7 +15,7 @@
 
     </head>
 
-    <body><div class="container mt-5" >
+    <body><div class="container header" >
     <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
             <div style="float:right">
             <a class="navbar-brand mx-0 mr-sm-auto" href="https://jarbus.net">
@@ -70,15 +70,15 @@
 <li>Build a document in one command</li>
 </ul>
 <p>If you are reading this, you probably know how both Markdown and Latex work, and you probably know how to read the <a href="https://pandoc.org/MANUAL.html#pandocs-Markdown">Pandoc Markdown Documentation</a>, so instead, below is a template document that I wish I had when first starting out. It covers most things you&rsquo;d need to write simple papers in Markdown. Configuration for document settings is done in the YAML block at the top of the document.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">---
+<pre><code>---
 title: How to Succeed in LaTeX without even trying
 subtitle: For the lazy writer
 author:
-<span style="color:#66d9ef">-</span> jarbus.net
+- jarbus.net
 numbersections: true
 toc: true
 geometry:
-<span style="color:#66d9ef">-</span> margin=1in
+- margin=1in
 linkcolor: black
 urlcolor: blue
 bibliography: example.bib
@@ -86,7 +86,7 @@ csl: nature.csl
 header-includes: |
     \usepackage{package_here}
 classoption:
-<span style="color:#66d9ef">-</span> twocolumn
+- twocolumn
 abstract: |
     This is the abstract
 ---
@@ -97,9 +97,9 @@ According to all known laws
 of aviation, there is now way
 that a bee should be able to fly. [@seinfeld2007]
 
-| &#34;This is a quote&#34;
+| &quot;This is a quote&quot;
 
-![<span style="color:#f92672">Caption here</span>](<span style="color:#a6e22e">bee.png</span>){width=50% }
+![Caption here](bee.png){width=50% }
 
 $\forall b , y = mx+b$
 
@@ -113,16 +113,16 @@ $$
 :::
 
 # Appendix
-</code></pre></div><p>Then, to compile your document to a PDF, simply run:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pandoc <span style="color:#e6db74">&#34;file.md&#34;</span> -o <span style="color:#e6db74">&#34;file.pdf&#34;</span> --citeproc
-</code></pre></div><p>to generate a document that looks like this:</p>
+</code></pre><p>Then, to compile your document to a PDF, simply run:</p>
+<pre><code>pandoc &quot;file.md&quot; -o &quot;file.pdf&quot; --citeproc
+</code></pre><p>to generate a document that looks like this:</p>
 <p><img src="../../final-document.png" alt=""></p>
 <p>The <code>--citeproc</code> option is needed for compiling a bibliography. For cross-references inside a document, take a look at <a href="https://github.com/lierdakil/pandoc-crossref">pandoc-crossref</a>, which will require the use of <code>--filter pandoc-crossref</code> if it works for you.</p>
 <p>I mapped a modified version of the build command above to a key in Neovim, so now pressing <code>Space+b</code> in my Markdown buffer compiles my document automatically, no matter what file name I&rsquo;m using:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">autocmd BufRead,BufNewFile *.md nnoremap &lt;Leader&gt;b
-    <span style="color:#ae81ff">\ </span>:silent !md-pdf <span style="color:#e6db74">&#34;%:p:h&#34;</span> <span style="color:#f92672">&amp;&amp;</span> pandoc % -o <span style="color:#e6db74">&#34;%:p:h/%:t:r.pdf&#34;</span>
-    <span style="color:#ae81ff">\ </span>--filter pandoc-crossref --citeproc &amp;&lt;CR&gt;&lt;CR&gt;
-</code></pre></div><p>And that&rsquo;s how I write LaTeX documents offline in Markdown.</p>
+<pre><code>autocmd BufRead,BufNewFile *.md nnoremap &lt;Leader&gt;b
+    \ :silent pandoc % -o &quot;%:p:h/%:t:r.pdf&quot;
+    \ --filter pandoc-crossref --citeproc &amp;&lt;CR&gt;&lt;CR&gt;
+</code></pre><p>And that&rsquo;s how I write LaTeX documents offline in Markdown.</p>
 
 </div>
 

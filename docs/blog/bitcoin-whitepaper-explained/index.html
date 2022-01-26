@@ -15,7 +15,7 @@
 
     </head>
 
-    <body><div class="container mt-5" >
+    <body><div class="container header" >
     <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
             <div style="float:right">
             <a class="navbar-brand mx-0 mr-sm-auto" href="https://jarbus.net">
@@ -142,28 +142,15 @@ longest chain of blocks is deemed to be the correct one.</p>
 original whitepaper, as there is not much summary for this section I
 deem myself capable of doing better than Nakamoto.</p>
 <ol>
-<li>
-<p>New transactions are broadcast to all nodes</p>
-</li>
-<li>
-<p>Each node collects new transactions into a block</p>
-</li>
-<li>
-<p>Each node works on finding a difficult proof-of-work for its block</p>
-</li>
-<li>
-<p>When a node finds a proof-of-work, it broadcasts the block to all
-nodes</p>
-</li>
-<li>
-<p>Nodes accept the block only if all transactions in it are valid and
-not already spent</p>
-</li>
-<li>
-<p>Nodes express their acceptance of the block by working on creating
+<li>New transactions are broadcast to all nodes</li>
+<li>Each node collects new transactions into a block</li>
+<li>Each node works on finding a difficult proof-of-work for its block</li>
+<li>When a node finds a proof-of-work, it broadcasts the block to all nodes</li>
+<li>Nodes accept the block only if all transactions in it are valid and
+not already spent</li>
+<li>Nodes express their acceptance of the block by working on creating
 the next block in the chain, using the hash of the accepted block as
-the previous hash.</p>
-</li>
+the previous hash.</li>
 </ol>
 <p>Nodes always consider the longest chain to be the correct one and will
 keep working on extending it.</p>
