@@ -25,7 +25,7 @@ This might be a deal breaker for some, but for others who are writing lots of do
 
 If you are reading this, you probably know how both Markdown and Latex work, and you probably know how to read the [Pandoc Markdown Documentation](https://pandoc.org/MANUAL.html#pandocs-Markdown), so instead, below is a template document that I wish I had when first starting out. It covers most things you'd need to write simple papers in Markdown. Configuration for document settings is done in the YAML block at the top of the document.
 
-```markdown
+```
 ---
 title: How to Succeed in LaTeX without even trying
 subtitle: For the lazy writer
@@ -73,7 +73,7 @@ $$
 
 Then, to compile your document to a PDF, simply run:
 
-```bash
+```
 pandoc "file.md" -o "file.pdf" --citeproc
 ```
 
@@ -85,9 +85,9 @@ The `--citeproc` option is needed for compiling a bibliography. For cross-refere
 
 I mapped a modified version of the build command above to a key in Neovim, so now pressing `Space+b` in my Markdown buffer compiles my document automatically, no matter what file name I'm using:
 
-```bash
+```
 autocmd BufRead,BufNewFile *.md nnoremap <Leader>b
-    \ :silent !md-pdf "%:p:h" && pandoc % -o "%:p:h/%:t:r.pdf"
+    \ :silent pandoc % -o "%:p:h/%:t:r.pdf"
     \ --filter pandoc-crossref --citeproc &<CR><CR>
 ```
 

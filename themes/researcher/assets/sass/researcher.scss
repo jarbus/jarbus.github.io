@@ -68,23 +68,19 @@ body {
     }
 }
 
-.mt-5 {
+.header {
     max-width:  60ch;
 	margin: auto;
 }
 // title
 .navbar-brand {
     @extend %link-dark;
+    font-size: 2*$font-size;
     // font-size: 2vw;
     /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-    @media screen and (min-width: 501px) {
-        font-size: 2*$font-size;
-    }
-
-    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-    @media screen and (max-width: 500px) {
-        font-size: $font-size;
-    }
+    // @media screen and (min-width: 501px) {
+    //     font-size: 2*$font-size;
+    // }
 }
 
 .nav-link {
@@ -92,8 +88,8 @@ body {
     font-size: $font-size;
 }
 #content {
-        margin: auto;
-        max-width:  60ch;
+    margin: auto;
+    max-width:  60ch;
 
     *{
         line-height: 2.5ch;
@@ -106,16 +102,16 @@ body {
     p {
         margin-bottom: $y-small;
     }
-    h1, h2, h3, h4, h5, h6 {
-        font-size: large;
-        font-weight: bold;
-        margin: $y-medium 0 $y-small 0;
-    }
-    @for $i from 1 through 4 {
-        h#{$i} {
-            font-size: 2.4rem + 0.2 * (4 - $i);
-        }
-    }
+    // h1, h2, h3, h4, h5, h6 {
+    //     font-size: large;
+    //     font-weight: bold;
+    //     margin: $y-medium 0 $y-small 0;
+    // }
+    // @for $i from 1 through 4 {
+    //     h#{$i} {
+    //         font-size: 2.4rem + 0.2 * (4 - $i);
+    //     }
+    // }
 
     img {
         display: block;
@@ -170,24 +166,17 @@ body {
     code {
         color: $white;
         background-color: $black;
-        border: 1px solid #cccccc;
-        border-radius: 0%;
+        // border: 1px solid #cccccc;
+        // border-radius: 0%;
         padding: 0px 4px;
-
     }
-    pre code {
+    pre code{
         all: unset;
-
-            width: 100%;
-            overflow: auto; //horizonal scroll bar for code blocks
     }
-    .highlight {
-        margin: $y-medium auto;
-        & > pre {
-            padding: 8px 8px;
-            width: 100%;
-            overflow: auto; //horizonal scroll bar for code blocks
-        }
+    pre {
+        overflow: auto; //horizonal scroll bar for code blocks
+        border: 1px solid #cccccc;
+        border-radius: 1%;
     }
 }
 #footer {
