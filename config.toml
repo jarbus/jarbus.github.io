@@ -17,7 +17,6 @@ math = true          # enable KaTeX (https://katex.org/) globally
     fontFamily = "Courier New"
     fontSize = "25.0px"
     pageWidth = "60ch"
-    avatarSize = "90px"
 
 [permalinks]
   "/" = "/:filename"
@@ -29,17 +28,9 @@ math = true          # enable KaTeX (https://katex.org/) globally
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "about"
-    url = "/about"
-    weight = 2
-  [[menu.main]]
     name = "blog"
     url = "/blog"
     weight = 3
-  [[menu.main]]
-    name = "contact"
-    url = "/contact"
-    weight = 4
   [[menu.main]]
     name = "rss"
     url = "/blog/index.xml"

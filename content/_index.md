@@ -1,6 +1,9 @@
 ---
 title: "jarbus.net"
 ---
+Hi, my name's Jack. I'm a graduate student in computer science interested in artificial societies, Julia, machine learning, and decentralization.
+<hr>
+
 Favorite Posts:
 
 - [How to write Latex without writing Latex](blog/write-latex-without-latex)
@@ -11,18 +14,8 @@ Favorite Posts:
 - [Critical Thinking](blog/critical-thinking)
 - [Tesla and False Advertising in AI](blog/tesla-and-false-advertising-in-ai)
 
-All posts, sorted by recency:
+<hr>
 
-- [How to write Latex without writing Latex](blog/write-latex-without-latex)
-- [Generating Slides In Vim](blog/generating-slides-in-vim)
-- [Would You Rather Be Uninformed Or Misinformed?](blog/would-you-rather-be-uninformed-or-misinformed)
-- [Soft Rules](blog/soft-rules)
-- [Tesla and False Advertising in AI](blog/tesla-and-false-advertising-in-ai)
-- [Critical Thinking](blog/critical-thinking)
-- [Short: Aftermath](blog/short-aftermath)
-- [Anonymity](blog/anonymity)
-- [Forgiveness](blog/forgiveness)
-- [Happiness](blog/happiness)
-- [AI-Index](blog/ai-index)
-- [Balance](blog/balance)
-- [Bitcoin Whitepaper, Explained](blog/bitcoin-whitepaper-explained)
+Contact me via:
+* Email: jarbus@tutanota.com
+* Mastodon [@jarbus@fosstodon.org](https://fosstodon.org/@jarbus)
