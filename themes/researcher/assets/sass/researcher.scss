@@ -179,14 +179,14 @@ body {
         all: unset;
 
             width: 100%;
-            overflow-x: scroll; //horizonal scroll bar for code blocks
+            overflow: auto; //horizonal scroll bar for code blocks
     }
     .highlight {
         margin: $y-medium auto;
         & > pre {
             padding: 8px 8px;
             width: 100%;
-            overflow-x: scroll; //horizonal scroll bar for code blocks
+            overflow: auto; //horizonal scroll bar for code blocks
         }
     }
 }
