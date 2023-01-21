@@ -1,5 +1,6 @@
 languageCode: "en-us"
-baseUrl: "jarbus.net"
+baseUrl: ""
+relativeUrls: "true"
 # title: "Jarbus.net"
 theme: "anubis"
 paginate: 10

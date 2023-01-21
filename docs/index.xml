@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jarbus.net on </title>
-    <link>jarbus.net/</link>
+    <link>/</link>
     <description> (jarbus.net)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 18 Jan 2023 21:46:47 -0500</lastBuildDate>
     
-    <atom:link href="jarbus.net/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>I Dont Know Anyone Who Blogs</title>
-      <link>jarbus.net/blog/i-dont-know-anyone-who-blogs/</link>
+      <link>/blog/i-dont-know-anyone-who-blogs/</link>
       <pubDate>Wed, 18 Jan 2023 21:46:47 -0500</pubDate>
       
-      <guid>jarbus.net/blog/i-dont-know-anyone-who-blogs/</guid>
+      <guid>/blog/i-dont-know-anyone-who-blogs/</guid>
       <description>&lt;p&gt;I don&amp;rsquo;t know anybody in real life who blogs regularly, and I think that
 kills my motivation to write blog posts myself.&lt;/p&gt;
 &lt;p&gt;I actually started writing this post before realizing that a friend of mine &lt;a href=&#34;https://jonnesaleva.com/blog&#34;&gt;has
@@ -47,10 +47,10 @@ about to reference later, helps connect you to other people, gets you into your 
     
     <item>
       <title>How to write LaTeX without writing LaTeX</title>
-      <link>jarbus.net/blog/write-latex-without-latex/</link>
+      <link>/blog/write-latex-without-latex/</link>
       <pubDate>Fri, 17 Dec 2021 14:28:41 -0500</pubDate>
       
-      <guid>jarbus.net/blog/write-latex-without-latex/</guid>
+      <guid>/blog/write-latex-without-latex/</guid>
       <description>&lt;p&gt;I love the look of LaTeX but hate the experience of writing in LaTeX, at least compared to Markdown. Luckily, &lt;a href=&#34;https://pandoc.org/MANUAL.html#pandocs-Markdown&#34;&gt;Pandoc can convert Markdown files to PDFs using a LaTeX engine as the renderer&lt;/a&gt;, and includes a custom Markdown specification that can fill almost all my LaTeX needs.&lt;/p&gt;
 &lt;p&gt;First, let&amp;rsquo;s talk about where Pandoc Markdown falls short:&lt;/p&gt;
 &lt;ul&gt;
@@ -117,7 +117,7 @@ $$
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, to compile your document to a PDF, simply run:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;pandoc &amp;quot;file.md&amp;quot; -o &amp;quot;file.pdf&amp;quot; --citeproc
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to generate a document that looks like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;jarbus.net/final-document.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./final-document.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;--citeproc&lt;/code&gt; option is needed for compiling a bibliography. For cross-references inside a document, take a look at &lt;a href=&#34;https://github.com/lierdakil/pandoc-crossref&#34;&gt;pandoc-crossref&lt;/a&gt;, which will require the use of &lt;code&gt;--filter pandoc-crossref&lt;/code&gt; if it works for you.&lt;/p&gt;
 &lt;p&gt;I mapped a modified version of the build command above to a key in Neovim, so now pressing &lt;code&gt;Space+b&lt;/code&gt; in my Markdown buffer compiles my document automatically, no matter what file name I&amp;rsquo;m using:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.md nnoremap &amp;lt;Leader&amp;gt;b
@@ -129,10 +129,10 @@ $$
     
     <item>
       <title>AI Index</title>
-      <link>jarbus.net/blog/ai-index/</link>
+      <link>/blog/ai-index/</link>
       <pubDate>Fri, 19 Mar 2021 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/ai-index/</guid>
+      <guid>/blog/ai-index/</guid>
       <description>&lt;p&gt;An ever-expanding list of concepts in the field of AI to give myself and others an easy reference.
 Each item in the list contains a short, rudimentary definition I&amp;rsquo;ve written, as well as a link to a resource that can explain it better.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/380040/what-is-an-ablation-study-and-is-there-a-systematic-way-to-perform-it&#34;&gt;Ablation Study&lt;/a&gt;:
@@ -208,10 +208,10 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
     
     <item>
       <title>Generating Slides in Vim</title>
-      <link>jarbus.net/blog/generating-slides-in-vim/</link>
+      <link>/blog/generating-slides-in-vim/</link>
       <pubDate>Sun, 31 Jan 2021 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/generating-slides-in-vim/</guid>
+      <guid>/blog/generating-slides-in-vim/</guid>
       <description>&lt;p&gt;There is a great tool known as &lt;a href=&#34;https://pandoc.org/&#34;&gt;pandoc&lt;/a&gt; that can convert documents from one filetype to another. For example, you can convert a Microsoft Word document to a PDF, without even needing to own a copy of Microsoft Word! However, we care about Pandoc&amp;rsquo;s ability to convert a Markdown document to a slideshow presentation using LaTeX Beamer as a rendering engine.&lt;/p&gt;
 &lt;p&gt;There is a great writeup about this basic feature &lt;a href=&#34;https://ashwinschronicles.github.io/beamer-slides-using-markdown-and-pandoc&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -245,10 +245,10 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
     
     <item>
       <title>Uninformed Or Misinformed?</title>
-      <link>jarbus.net/blog/would-you-rather-be-uninformed-or-misinformed/</link>
+      <link>/blog/would-you-rather-be-uninformed-or-misinformed/</link>
       <pubDate>Wed, 20 Jan 2021 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/would-you-rather-be-uninformed-or-misinformed/</guid>
+      <guid>/blog/would-you-rather-be-uninformed-or-misinformed/</guid>
       <description>&lt;p&gt;Is it better to have no facts about a topic and thus no opinion, or have access to a few &amp;ldquo;out of context&amp;rdquo; facts and thus a misinformed opinion?&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;TL;DR: Either start learning about issues you care about, or stop caring about them so much. It&amp;rsquo;s more honest, less mental effort, and is less likely to ruin Thanksgiving.&lt;/p&gt;
@@ -280,10 +280,10 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
     
     <item>
       <title>Soft Rules</title>
-      <link>jarbus.net/blog/soft-rules/</link>
+      <link>/blog/soft-rules/</link>
       <pubDate>Sat, 26 Sep 2020 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/soft-rules/</guid>
+      <guid>/blog/soft-rules/</guid>
       <description>&lt;p&gt;Not all rules are made equal. Some rules, like the speed limit, are broken by everyone and their mother, and are enforced (mostly) when people are breaking them to a dangerous point. Other rules, like &amp;ldquo;don&amp;rsquo;t murder people&amp;rdquo;, are enforced far more. Why is that?&lt;/p&gt;
 &lt;h2 id=&#34;different-rules-different-tools&#34; &gt;Different Rules, Different Tools
 &lt;span&gt;
@@ -317,10 +317,10 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
     
     <item>
       <title>Critical Thinking</title>
-      <link>jarbus.net/blog/critical-thinking/</link>
+      <link>/blog/critical-thinking/</link>
       <pubDate>Tue, 22 Sep 2020 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/critical-thinking/</guid>
+      <guid>/blog/critical-thinking/</guid>
       <description>&lt;p&gt;The more I learn about the world, the less certain I become about it. There are so many conflicting views and information taken out of context that it&amp;rsquo;s hard to discern fact from truth. Below are some notes I keep to help navigate the sea of information that is modern society.&lt;/p&gt;
 &lt;p&gt;TL;DR: Don&amp;rsquo;t get fooled by facts if they have no context, don&amp;rsquo;t discount an opinion because it&amp;rsquo;s biased, and hear out crazy ideas.&lt;/p&gt;
 &lt;h2 id=&#34;be-skeptical-fact--truth&#34; &gt;Be skeptical: Fact != Truth
@@ -380,10 +380,10 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
     
     <item>
       <title>Tesla and False Advertising in AI</title>
-      <link>jarbus.net/blog/tesla-and-false-advertising-in-ai/</link>
+      <link>/blog/tesla-and-false-advertising-in-ai/</link>
       <pubDate>Wed, 22 Jul 2020 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/tesla-and-false-advertising-in-ai/</guid>
+      <guid>/blog/tesla-and-false-advertising-in-ai/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s the problem with advertising AI-based technology that doesn&amp;rsquo;t exist:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;You cannot promise anything about your product.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ve all seen AI advertised to the masses that doesn&amp;rsquo;t work as advertised, just look at any voice-to-text system. When I got my Apple Watch, I hoped to use it to respond to messages without getting distracted by my phone. I quickly realized that wasn&amp;rsquo;t a viable solution: I had to repeat my message multiple times per text in order to get the correct dictation.&lt;/p&gt;
@@ -408,10 +408,10 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
     
     <item>
       <title>Short: Aftermath</title>
-      <link>jarbus.net/blog/short-aftermath/</link>
+      <link>/blog/short-aftermath/</link>
       <pubDate>Mon, 27 Apr 2020 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/short-aftermath/</guid>
+      <guid>/blog/short-aftermath/</guid>
       <description>&lt;p&gt;Jeff stepped over a beer can, then over a water bottle and onto a mat, whose faded lettering vaguely resembled the phrase &amp;ldquo;Welcome!&amp;rdquo; He opened his front door and walked inside.&lt;/p&gt;
 &lt;p&gt;Looking to his right, Jeff noticed his old hooded friend where he left him; on his living-room rocking chair. The cold metal scythe still in his lap, the skeleton hadn&amp;rsquo;t moved an inch from where he left him earlier that morning.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;What&amp;rsquo;s cooking, big guy?&amp;rdquo; Jeff said as he walked to the kitchen to grab his last can of Budweiser. His boney companioned turned his head.&lt;/p&gt;
@@ -458,10 +458,10 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
     
     <item>
       <title>Happiness</title>
-      <link>jarbus.net/blog/happiness/</link>
+      <link>/blog/happiness/</link>
       <pubDate>Sun, 26 Jan 2020 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/happiness/</guid>
+      <guid>/blog/happiness/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Some thoughts on Happiness:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Happiness doesn&amp;rsquo;t come from wealth. Otherwise, therapists and anti-depressants would have to be much cheaper.&lt;/p&gt;
 &lt;p&gt;If happiness came from consumption of goods and services, it would therefore follow that once those goods and services are reduced or cut off, one would no longer be as happy. If you can cut off happiness, it&amp;rsquo;s more akin to a drug than an emotion.&lt;/p&gt;
@@ -479,10 +479,10 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
     
     <item>
       <title>Bitcoin Whitepaper, Explained</title>
-      <link>jarbus.net/blog/bitcoin-whitepaper-explained/</link>
+      <link>/blog/bitcoin-whitepaper-explained/</link>
       <pubDate>Fri, 03 Jan 2020 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/bitcoin-whitepaper-explained/</guid>
+      <guid>/blog/bitcoin-whitepaper-explained/</guid>
       <description>&lt;h2 id=&#34;introduction&#34; &gt;Introduction
 &lt;span&gt;
     &lt;a href=&#34;#introduction&#34;&gt;
@@ -692,10 +692,10 @@ or just under two and a half days, to be sure their transaction is safe.&lt;/p&g
     
     <item>
       <title>Anonymity</title>
-      <link>jarbus.net/blog/anonymity/</link>
+      <link>/blog/anonymity/</link>
       <pubDate>Thu, 02 Jan 2020 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/anonymity/</guid>
+      <guid>/blog/anonymity/</guid>
       <description>&lt;p&gt;What happened to &amp;ldquo;Don&amp;rsquo;t give out your name on the internet?&amp;rdquo; Within the past 15 years, the desire for online anonymity has vanished &amp;ndash; as &amp;ldquo;normal people&amp;rdquo; joined the digital world, the number of &amp;ldquo;creepy people&amp;rdquo; worth hiding your identity from seems to have dropped in comparison. Despite the perceived safety of the online world, remaining anonymous still has its merits.&lt;/p&gt;
 &lt;h2 id=&#34;anonymity-addresses-ideas&#34; &gt;Anonymity addresses ideas
 &lt;span&gt;
@@ -737,10 +737,10 @@ or just under two and a half days, to be sure their transaction is safe.&lt;/p&g
     
     <item>
       <title>Forgiveness</title>
-      <link>jarbus.net/blog/forgiveness/</link>
+      <link>/blog/forgiveness/</link>
       <pubDate>Sat, 27 Jul 2019 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/forgiveness/</guid>
+      <guid>/blog/forgiveness/</guid>
       <description>&lt;p&gt;Forgiveness has a negative connotation these days. We see forgiving each other as weak — as not standing by one’s values, as giving up one’s pride. This view is incredibly counter-productive and, in my opinion, the cause of many problems in today’s society. Here is the actual definition of forgiveness:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;forgive (verb)&lt;/p&gt;
@@ -793,10 +793,10 @@ or just under two and a half days, to be sure their transaction is safe.&lt;/p&g
     
     <item>
       <title>Balance</title>
-      <link>jarbus.net/blog/balance/</link>
+      <link>/blog/balance/</link>
       <pubDate>Tue, 09 Jul 2019 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/balance/</guid>
+      <guid>/blog/balance/</guid>
       <description>&lt;p&gt;Choosing sides is fun. Be it politics or pop culture, nothing validates an opinion better than classifying opposing opinions as wrong. Sometimes, as seen by Holocaust deniers or the anti-vaccine movement, it&amp;rsquo;s possible people can be completely and utterly wrong. However, in the general case, both sides have merits and both sides have pitfalls. When trying to gain a perspective of the bigger picture, it&amp;rsquo;s best to position oneself somewhere in the middle.&lt;/p&gt;
 &lt;h2 id=&#34;this-versus-that&#34; &gt;This versus that
 &lt;span&gt;
@@ -838,10 +838,10 @@ or just under two and a half days, to be sure their transaction is safe.&lt;/p&g
     
     <item>
       <title>About</title>
-      <link>jarbus.net/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>jarbus.net/about/</guid>
+      <guid>/about/</guid>
       <description>&lt;p&gt;Hi! My name&amp;rsquo;s Jack. This is my blog, where I write about my interests, which include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Artificial Intelligence&lt;/li&gt;
@@ -852,16 +852,16 @@ or just under two and a half days, to be sure their transaction is safe.&lt;/p&g
 &lt;li&gt;Books&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://bash.cyberciti.biz/guide/Unix_philosophy&#34;&gt;The Unix Philosophy&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;To be notified of new posts, add this site&amp;rsquo;s &lt;a href=&#34;jarbus.net/blog/index.xml&#34;&gt;RSS feed&lt;/a&gt; to your feed reader of choice.&lt;/p&gt;
+&lt;p&gt;To be notified of new posts, add this site&amp;rsquo;s &lt;a href=&#34;./blog/index.xml&#34;&gt;RSS feed&lt;/a&gt; to your feed reader of choice.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>jarbus.net/contact/</link>
+      <link>/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>jarbus.net/contact/</guid>
+      <guid>/contact/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Github: &lt;a href=&#34;https://github.com/jarbus&#34;&gt;@jarbus&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Mastodon: &lt;a href=&#34;https://fosstodon.org/@jarbus&#34;&gt;@jarbus@fosstodon.org&lt;/a&gt;&lt;/li&gt;

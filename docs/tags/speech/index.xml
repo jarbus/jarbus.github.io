@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>speech on </title>
-    <link>jarbus.net/tags/speech/</link>
+    <link>/tags/speech/</link>
     <description> (speech)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Jan 2020 11:25:49 -0400</lastBuildDate>
     
-    <atom:link href="jarbus.net/tags/speech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/speech/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Anonymity</title>
-      <link>jarbus.net/blog/anonymity/</link>
+      <link>/blog/anonymity/</link>
       <pubDate>Thu, 02 Jan 2020 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/anonymity/</guid>
+      <guid>/blog/anonymity/</guid>
       <description>&lt;p&gt;What happened to &amp;ldquo;Don&amp;rsquo;t give out your name on the internet?&amp;rdquo; Within the past 15 years, the desire for online anonymity has vanished &amp;ndash; as &amp;ldquo;normal people&amp;rdquo; joined the digital world, the number of &amp;ldquo;creepy people&amp;rdquo; worth hiding your identity from seems to have dropped in comparison. Despite the perceived safety of the online world, remaining anonymous still has its merits.&lt;/p&gt;
 &lt;h2 id=&#34;anonymity-addresses-ideas&#34; &gt;Anonymity addresses ideas
 &lt;span&gt;

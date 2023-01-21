@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>technology on </title>
-    <link>jarbus.net/tags/technology/</link>
+    <link>/tags/technology/</link>
     <description> (technology)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Dec 2021 14:28:41 -0500</lastBuildDate>
     
-    <atom:link href="jarbus.net/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/technology/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to write LaTeX without writing LaTeX</title>
-      <link>jarbus.net/blog/write-latex-without-latex/</link>
+      <link>/blog/write-latex-without-latex/</link>
       <pubDate>Fri, 17 Dec 2021 14:28:41 -0500</pubDate>
       
-      <guid>jarbus.net/blog/write-latex-without-latex/</guid>
+      <guid>/blog/write-latex-without-latex/</guid>
       <description>&lt;p&gt;I love the look of LaTeX but hate the experience of writing in LaTeX, at least compared to Markdown. Luckily, &lt;a href=&#34;https://pandoc.org/MANUAL.html#pandocs-Markdown&#34;&gt;Pandoc can convert Markdown files to PDFs using a LaTeX engine as the renderer&lt;/a&gt;, and includes a custom Markdown specification that can fill almost all my LaTeX needs.&lt;/p&gt;
 &lt;p&gt;First, let&amp;rsquo;s talk about where Pandoc Markdown falls short:&lt;/p&gt;
 &lt;ul&gt;
@@ -83,7 +83,7 @@ $$
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, to compile your document to a PDF, simply run:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;pandoc &amp;quot;file.md&amp;quot; -o &amp;quot;file.pdf&amp;quot; --citeproc
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to generate a document that looks like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;jarbus.net/final-document.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../final-document.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;--citeproc&lt;/code&gt; option is needed for compiling a bibliography. For cross-references inside a document, take a look at &lt;a href=&#34;https://github.com/lierdakil/pandoc-crossref&#34;&gt;pandoc-crossref&lt;/a&gt;, which will require the use of &lt;code&gt;--filter pandoc-crossref&lt;/code&gt; if it works for you.&lt;/p&gt;
 &lt;p&gt;I mapped a modified version of the build command above to a key in Neovim, so now pressing &lt;code&gt;Space+b&lt;/code&gt; in my Markdown buffer compiles my document automatically, no matter what file name I&amp;rsquo;m using:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.md nnoremap &amp;lt;Leader&amp;gt;b
@@ -95,10 +95,10 @@ $$
     
     <item>
       <title>AI Index</title>
-      <link>jarbus.net/blog/ai-index/</link>
+      <link>/blog/ai-index/</link>
       <pubDate>Fri, 19 Mar 2021 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/ai-index/</guid>
+      <guid>/blog/ai-index/</guid>
       <description>&lt;p&gt;An ever-expanding list of concepts in the field of AI to give myself and others an easy reference.
 Each item in the list contains a short, rudimentary definition I&amp;rsquo;ve written, as well as a link to a resource that can explain it better.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/380040/what-is-an-ablation-study-and-is-there-a-systematic-way-to-perform-it&#34;&gt;Ablation Study&lt;/a&gt;:
@@ -174,10 +174,10 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
     
     <item>
       <title>Generating Slides in Vim</title>
-      <link>jarbus.net/blog/generating-slides-in-vim/</link>
+      <link>/blog/generating-slides-in-vim/</link>
       <pubDate>Sun, 31 Jan 2021 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/generating-slides-in-vim/</guid>
+      <guid>/blog/generating-slides-in-vim/</guid>
       <description>&lt;p&gt;There is a great tool known as &lt;a href=&#34;https://pandoc.org/&#34;&gt;pandoc&lt;/a&gt; that can convert documents from one filetype to another. For example, you can convert a Microsoft Word document to a PDF, without even needing to own a copy of Microsoft Word! However, we care about Pandoc&amp;rsquo;s ability to convert a Markdown document to a slideshow presentation using LaTeX Beamer as a rendering engine.&lt;/p&gt;
 &lt;p&gt;There is a great writeup about this basic feature &lt;a href=&#34;https://ashwinschronicles.github.io/beamer-slides-using-markdown-and-pandoc&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -211,10 +211,10 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
     
     <item>
       <title>Tesla and False Advertising in AI</title>
-      <link>jarbus.net/blog/tesla-and-false-advertising-in-ai/</link>
+      <link>/blog/tesla-and-false-advertising-in-ai/</link>
       <pubDate>Wed, 22 Jul 2020 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/tesla-and-false-advertising-in-ai/</guid>
+      <guid>/blog/tesla-and-false-advertising-in-ai/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s the problem with advertising AI-based technology that doesn&amp;rsquo;t exist:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;You cannot promise anything about your product.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ve all seen AI advertised to the masses that doesn&amp;rsquo;t work as advertised, just look at any voice-to-text system. When I got my Apple Watch, I hoped to use it to respond to messages without getting distracted by my phone. I quickly realized that wasn&amp;rsquo;t a viable solution: I had to repeat my message multiple times per text in order to get the correct dictation.&lt;/p&gt;
@@ -239,10 +239,10 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
     
     <item>
       <title>Bitcoin Whitepaper, Explained</title>
-      <link>jarbus.net/blog/bitcoin-whitepaper-explained/</link>
+      <link>/blog/bitcoin-whitepaper-explained/</link>
       <pubDate>Fri, 03 Jan 2020 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/bitcoin-whitepaper-explained/</guid>
+      <guid>/blog/bitcoin-whitepaper-explained/</guid>
       <description>&lt;h2 id=&#34;introduction&#34; &gt;Introduction
 &lt;span&gt;
     &lt;a href=&#34;#introduction&#34;&gt;

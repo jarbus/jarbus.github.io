@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ai on </title>
-    <link>jarbus.net/tags/ai/</link>
+    <link>/tags/ai/</link>
     <description> (ai)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Mar 2021 11:25:49 -0400</lastBuildDate>
     
-    <atom:link href="jarbus.net/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AI Index</title>
-      <link>jarbus.net/blog/ai-index/</link>
+      <link>/blog/ai-index/</link>
       <pubDate>Fri, 19 Mar 2021 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/ai-index/</guid>
+      <guid>/blog/ai-index/</guid>
       <description>&lt;p&gt;An ever-expanding list of concepts in the field of AI to give myself and others an easy reference.
 Each item in the list contains a short, rudimentary definition I&amp;rsquo;ve written, as well as a link to a resource that can explain it better.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/380040/what-is-an-ablation-study-and-is-there-a-systematic-way-to-perform-it&#34;&gt;Ablation Study&lt;/a&gt;:
@@ -92,10 +92,10 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
     
     <item>
       <title>Tesla and False Advertising in AI</title>
-      <link>jarbus.net/blog/tesla-and-false-advertising-in-ai/</link>
+      <link>/blog/tesla-and-false-advertising-in-ai/</link>
       <pubDate>Wed, 22 Jul 2020 11:25:49 -0400</pubDate>
       
-      <guid>jarbus.net/blog/tesla-and-false-advertising-in-ai/</guid>
+      <guid>/blog/tesla-and-false-advertising-in-ai/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s the problem with advertising AI-based technology that doesn&amp;rsquo;t exist:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;You cannot promise anything about your product.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ve all seen AI advertised to the masses that doesn&amp;rsquo;t work as advertised, just look at any voice-to-text system. When I got my Apple Watch, I hoped to use it to respond to messages without getting distracted by my phone. I quickly realized that wasn&amp;rsquo;t a viable solution: I had to repeat my message multiple times per text in order to get the correct dictation.&lt;/p&gt;

@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>jarbus.net/tags/</link>
+    <link>/tags/</link>
     <description> (Tags)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Dec 2021 14:28:41 -0500</lastBuildDate>
     
-    <atom:link href="jarbus.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

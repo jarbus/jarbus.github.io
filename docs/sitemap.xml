@@ -2,85 +2,85 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>jarbus.net/blog/</loc>
+    <loc>/blog/</loc>
     <lastmod>2023-01-18T21:46:47-05:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/i-dont-know-anyone-who-blogs/</loc>
+    <loc>/blog/i-dont-know-anyone-who-blogs/</loc>
     <lastmod>2023-01-18T21:46:47-05:00</lastmod>
   </url><url>
-    <loc>jarbus.net/</loc>
+    <loc>/</loc>
     <lastmod>2023-01-18T21:46:47-05:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/write-latex-without-latex/</loc>
+    <loc>/blog/write-latex-without-latex/</loc>
     <lastmod>2021-12-17T14:28:41-05:00</lastmod>
   </url><url>
-    <loc>jarbus.net/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2021-12-17T14:28:41-05:00</lastmod>
   </url><url>
-    <loc>jarbus.net/tags/technology/</loc>
+    <loc>/tags/technology/</loc>
     <lastmod>2021-12-17T14:28:41-05:00</lastmod>
   </url><url>
-    <loc>jarbus.net/tags/ai/</loc>
+    <loc>/tags/ai/</loc>
     <lastmod>2021-03-19T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/ai-index/</loc>
+    <loc>/blog/ai-index/</loc>
     <lastmod>2021-03-19T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/generating-slides-in-vim/</loc>
+    <loc>/blog/generating-slides-in-vim/</loc>
     <lastmod>2021-01-31T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/tags/philosophy/</loc>
+    <loc>/tags/philosophy/</loc>
     <lastmod>2021-01-20T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/tags/psychology/</loc>
+    <loc>/tags/psychology/</loc>
     <lastmod>2021-01-20T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/would-you-rather-be-uninformed-or-misinformed/</loc>
+    <loc>/blog/would-you-rather-be-uninformed-or-misinformed/</loc>
     <lastmod>2021-01-20T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/soft-rules/</loc>
+    <loc>/blog/soft-rules/</loc>
     <lastmod>2020-09-26T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/critical-thinking/</loc>
+    <loc>/blog/critical-thinking/</loc>
     <lastmod>2020-09-22T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/tesla-and-false-advertising-in-ai/</loc>
+    <loc>/blog/tesla-and-false-advertising-in-ai/</loc>
     <lastmod>2020-07-22T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/short-aftermath/</loc>
+    <loc>/blog/short-aftermath/</loc>
     <lastmod>2020-04-27T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/tags/shorts/</loc>
+    <loc>/tags/shorts/</loc>
     <lastmod>2020-04-27T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/happiness/</loc>
+    <loc>/blog/happiness/</loc>
     <lastmod>2020-01-26T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/bitcoin-whitepaper-explained/</loc>
+    <loc>/blog/bitcoin-whitepaper-explained/</loc>
     <lastmod>2020-01-03T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/anonymity/</loc>
+    <loc>/blog/anonymity/</loc>
     <lastmod>2020-01-02T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/tags/internet/</loc>
+    <loc>/tags/internet/</loc>
     <lastmod>2020-01-02T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/tags/privacy/</loc>
+    <loc>/tags/privacy/</loc>
     <lastmod>2020-01-02T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/tags/speech/</loc>
+    <loc>/tags/speech/</loc>
     <lastmod>2020-01-02T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/forgiveness/</loc>
+    <loc>/blog/forgiveness/</loc>
     <lastmod>2019-07-27T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/blog/balance/</loc>
+    <loc>/blog/balance/</loc>
     <lastmod>2019-07-09T11:25:49-04:00</lastmod>
   </url><url>
-    <loc>jarbus.net/about/</loc>
+    <loc>/about/</loc>
   </url><url>
-    <loc>jarbus.net/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>jarbus.net/contact/</loc>
+    <loc>/contact/</loc>
   </url>
 </urlset>
