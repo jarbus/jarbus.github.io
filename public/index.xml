@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jarbus.net on </title>
+    <link>jarbus.net/</link>
+    <description> (jarbus.net)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Jan 2023 21:46:47 -0500</lastBuildDate>
+    
+    <atom:link href="jarbus.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I Dont Know Anyone Who Blogs</title>
+      <link>jarbus.net/blog/i-dont-know-anyone-who-blogs/</link>
+      <pubDate>Wed, 18 Jan 2023 21:46:47 -0500</pubDate>
+      
+      <guid>jarbus.net/blog/i-dont-know-anyone-who-blogs/</guid>
+      <description>&lt;p&gt;I don&amp;rsquo;t know anybody in real life who blogs regularly, and I think that
+kills my motivation to write blog posts myself.&lt;/p&gt;
+&lt;p&gt;I actually started writing this post before realizing that a friend of mine &lt;a href=&#34;https://jonnesaleva.com/blog&#34;&gt;has
+a blog&lt;/a&gt;, but in my defense he&amp;rsquo;s only posted twice in the past 2
+years. I suppose that makes my title a lie, but I like the title, and the point
+still stands.&lt;/p&gt;
+&lt;p&gt;I want to build a writing habit, but it feels hard to get the motivation to do
+it from within myself. I&amp;rsquo;m a programmer, and while I&amp;rsquo;ve learned a lot from
+people online, the people who&amp;rsquo;ve made the biggest impact on me are
+people I&amp;rsquo;ve met in the physical world. Plus, I&amp;rsquo;m surrounded by other
+programmers; maybe that makes me feel less crazy spending all my time coding.&lt;/p&gt;
+&lt;p&gt;When I mention
+my blog to people, or send my friends my latest post, I always feel a sense of
+shame. Like I&amp;rsquo;m trying too hard. Maybe I am. I&amp;rsquo;m talking to nobody
+and have little-to-no audience, so in a sense, I&amp;rsquo;d have to be crazy
+to make a habit out of this.&lt;/p&gt;
+&lt;p&gt;Perhaps I&amp;rsquo;m just not surrounded by people who make me feel less crazy. I imagine
+that if I was making digital music but everyone around me was some mainstream profession
+like an accountant or baker, I&amp;rsquo;d probably feel embarrassed too, even though
+there&amp;rsquo;s nothing to be embarrassed about. But, if I was surrounded by people who also made music, I&amp;rsquo;d feel normal. Maybe it&amp;rsquo;s just the feeling of
+&amp;ldquo;trying hard to do something that nobody else cares enough to do&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve read a lot about the benefits of blogging; Writing helps
+flesh out ideas, improves communication, puts down what you are thinking
+about to reference later, helps connect you to other people, gets you into your dream job, cures you of cancer, prevents global warming, and &lt;a href=&#34;https://www.youtube.com/watch?v=Nl0wIJU22dw&#34;&gt;saves the bees&lt;/a&gt;. But somehow, the bees aren&amp;rsquo;t enough motivation to write.&lt;/p&gt;
+&lt;p&gt;In all the blog posts talking about why you should blog, nobody mentions this feeling of being &amp;ldquo;the guy with the blog&amp;rdquo;. I imagine other people feel this way, which is why I&amp;rsquo;m writing this, I suppose. Hopefully I make writing a habit in 2023.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to write LaTeX without writing LaTeX</title>
+      <link>jarbus.net/blog/write-latex-without-latex/</link>
+      <pubDate>Fri, 17 Dec 2021 14:28:41 -0500</pubDate>
+      
+      <guid>jarbus.net/blog/write-latex-without-latex/</guid>
+      <description>&lt;p&gt;I love the look of LaTeX but hate the experience of writing in LaTeX, at least compared to Markdown. Luckily, &lt;a href=&#34;https://pandoc.org/MANUAL.html#pandocs-Markdown&#34;&gt;Pandoc can convert Markdown files to PDFs using a LaTeX engine as the renderer&lt;/a&gt;, and includes a custom Markdown specification that can fill almost all my LaTeX needs.&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s talk about where Pandoc Markdown falls short:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No custom LaTeX style guides (although citation style files are supported)&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;No Section Numbering&lt;/del&gt; There is, thanks to naruhodo on Hacker News for the correction&lt;/li&gt;
+&lt;li&gt;Referencing labels doesn&amp;rsquo;t work well (Supposedly the pandoc-crossref filter fixes this but I couldn&amp;rsquo;t get it to work)&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t even bother with complex page layouts or precise figure placements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This might be a deal breaker for some, but for others who are writing lots of documents (such as students), this may not be. Now for the benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Produce a document with Markdown that looks like it was written in LaTeX&lt;/li&gt;
+&lt;li&gt;Use LaTeX math notation in Markdown&lt;/li&gt;
+&lt;li&gt;Easy BibTeX citations in Markdown&lt;/li&gt;
+&lt;li&gt;Figures and Captions are supported&lt;/li&gt;
+&lt;li&gt;Two Columns are supported&lt;/li&gt;
+&lt;li&gt;Use your favorite editor instead of some LaTeX IDE&lt;/li&gt;
+&lt;li&gt;Write and preview offline&lt;/li&gt;
+&lt;li&gt;Build a document in one command&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are reading this, you probably know how both Markdown and Latex work, and you probably know how to read the &lt;a href=&#34;https://pandoc.org/MANUAL.html#pandocs-Markdown&#34;&gt;Pandoc Markdown Documentation&lt;/a&gt;, so instead, below is a template document that I wish I had when first starting out. It covers most things you&amp;rsquo;d need to write simple papers in Markdown. Configuration for document settings is done in the YAML block at the top of the document.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: How to Succeed in LaTeX without even trying
+subtitle: For the lazy writer
+author:
+- jarbus.net
+numbersections: true
+toc: true
+geometry:
+- margin=1in
+linkcolor: black
+urlcolor: blue
+bibliography: example.bib
+csl: nature.csl
+header-includes: |
+    \usepackage{package_here}
+classoption:
+- twocolumn
+abstract: |
+    This is the abstract
+---
+
+# Introduction
+
+According to all known laws
+of aviation, there is now way
+that a bee should be able to fly. [@seinfeld2007]
+
+| &amp;quot;This is a quote&amp;quot;
+
+![Caption here](bee.png){width=50% }
+
+$\forall b , y = mx+b$
+
+$$
+a^2 + b^2 = c^2
+$$
+
+# References
+
+::: {#refs}
+:::
+
+# Appendix
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, to compile your document to a PDF, simply run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pandoc &amp;quot;file.md&amp;quot; -o &amp;quot;file.pdf&amp;quot; --citeproc
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to generate a document that looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;jarbus.net/final-document.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;--citeproc&lt;/code&gt; option is needed for compiling a bibliography. For cross-references inside a document, take a look at &lt;a href=&#34;https://github.com/lierdakil/pandoc-crossref&#34;&gt;pandoc-crossref&lt;/a&gt;, which will require the use of &lt;code&gt;--filter pandoc-crossref&lt;/code&gt; if it works for you.&lt;/p&gt;
+&lt;p&gt;I mapped a modified version of the build command above to a key in Neovim, so now pressing &lt;code&gt;Space+b&lt;/code&gt; in my Markdown buffer compiles my document automatically, no matter what file name I&amp;rsquo;m using:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.md nnoremap &amp;lt;Leader&amp;gt;b
+    \ :silent pandoc % -o &amp;quot;%:p:h/%:t:r.pdf&amp;quot;
+    \ --filter pandoc-crossref --citeproc &amp;amp;&amp;lt;CR&amp;gt;&amp;lt;CR&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And that&amp;rsquo;s how I write LaTeX documents offline in Markdown.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AI Index</title>
+      <link>jarbus.net/blog/ai-index/</link>
+      <pubDate>Fri, 19 Mar 2021 11:25:49 -0400</pubDate>
+      
+      <guid>jarbus.net/blog/ai-index/</guid>
+      <description>&lt;p&gt;An ever-expanding list of concepts in the field of AI to give myself and others an easy reference.
+Each item in the list contains a short, rudimentary definition I&amp;rsquo;ve written, as well as a link to a resource that can explain it better.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/380040/what-is-an-ablation-study-and-is-there-a-systematic-way-to-perform-it&#34;&gt;Ablation Study&lt;/a&gt;:
+Removing some parts of a machine learning model to measure impact on performance&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mc.ai/advantage-function-in-deep-reinforcement-learning/&#34;&gt;Advantage Function&lt;/a&gt;: The difference between a Q-value for a state-action pair and a value for the state. Useful to determine how good an action is relative to its state.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://towardsdatascience.com/intuitive-understanding-of-attention-mechanism-in-deep-learning-6c9482aecf4f&#34;&gt;Attention&lt;/a&gt;: Neural networks are able to &amp;ldquo;pay attention&amp;rdquo; to specific parts of input or output, useful in translating languages or predicting sequences. For example, when trying to predict the next word in &amp;ldquo;the clouds in the&amp;rdquo;, you pay attention to the word &lt;em&gt;cloud&lt;/em&gt; to predict the word &lt;em&gt;sky&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Autoencoder&#34;&gt;Autoencoder&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A type of neural network that attempts to take raw data, convert it into a simpler representation (usually by limiting the amount of nodes in a hidden layer for representation), and then decode the representation back into it&amp;rsquo;s data. They are primarly used to extract the useful properties from data automatically. They can do this in an unsupervised fashion, since their output targets are the given input, requiring no labeling.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Automated_machine_learning&#34;&gt;AutoML&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Systems where the entire machine learning process, from data preparation to network design, is automated.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://machinelearningmastery.com/autoregression-models-time-series-forecasting-python/&#34;&gt;Autoregression&lt;/a&gt;: A time series model that uses observations from previous time steps to predict the value at the next time step.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Backpropagation&#34;&gt;Backpropogation&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: The algorithm and calculus behind gradient descent traditionally used in feed-forward neural networks&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Bayesian_statistics&#34;&gt;Bayesian&lt;/a&gt;: An interpretation of probability where the phrase &amp;ldquo;probability&amp;rdquo; expresses a degree of belief between 0 or 1, 0 representing false and 1 representing true. Uses expected values and random variables.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Bootstrapping_(statistics)&#34;&gt;Bootstrapping&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Sampling from a distribution to approximate a function. In cases of reinforcement learning, bootstrapping usually samples potential future values to approximate a current value.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Convolutional_neural_network&#34;&gt;Convolutional Neural Network (CNN)&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A neural network primarly used for image processing. These networks design filters for specific parts of an image to extract higher level information, filters such as detecting a certain type of edge.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.quora.com/What-is-Covariate-shift?share=1&#34;&gt;Covariate Shift&lt;/a&gt;: The training distribution changes but the testing distribution does not change&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Data_mining&#34;&gt;Data Mining&lt;/a&gt;: Discovering knowledge and patterns from massive amounts of data, usually in an unsupervised fashion.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Deep_learning&#34;&gt;Deep Learning&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A subset of machine learning with a multi-step learning process, usually referring to neural networks with two or more layers.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/221402/understanding-the-role-of-the-discount-factor-in-reinforcement-learning&#34;&gt;Discount Factors&lt;/a&gt;: A variable (usually $\gamma$) that determines how much a model cares about rewards in the distant future compared to immediate rewards.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\gamma = 0$ cares only about immediate reward,&lt;/li&gt;
+&lt;li&gt;$\gamma = 1$ cares only about sum of all future rewards.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://towardsdatascience.com/eligibility-traces-in-reinforcement-learning-a6b458c019d6&#34;&gt;Eligibility Trace&lt;/a&gt;: For temporal learning, the eligibility trace is a vector of decaying values that represent when weights were last used. When we encounter an error, this vector allows us to update recent weights harder than weights used long ago.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Feedforward_neural_network&#34;&gt;Feed-forward Neural Network&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A simple neural network where information is passed strictly from one layer to the next.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Generative_adversarial_network&#34;&gt;Generative Adversarial Network (GAN)&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A set of two or more neural networks that can generate new data based on existing training data.
+A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;https://thispersondoesnotexist.com/&lt;/a&gt;, that can generate fake pictures of humans.
+- GANs consist of one generator network with the goal to make realistic new data, and a distinction network with the goal to tell real data from fake. As the networks train, they each improve at their individual task, forcing their adversaries to improve in turn.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Genetic_algorithm&#34;&gt;Genetic Algorithms&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Algorithms that try to mimic the evolutionary process by randomly modifying the best-performing sets of parameters while discarding those with the worst performance, then repeating.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://openai.com/blog/better-language-models/&#34;&gt;GPT-2/3&lt;/a&gt;: A language model from OpenAI that can generate text that mimics a writing style incredibly well.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Gradient_descent&#34;&gt;Gradient Descent&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: An interative process that attempts to find a minimum of a function that works by moving in the direction that will decrease the gradient until a local minima is reached.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)&#34;&gt;Hyperparameters&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Manually defined parameters of the model, such as the size of a neural network, or manually defined parameters of the machine learning algorithm, such as learning rate.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables&#34;&gt;(IID) Independent and Identically Distributed&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Random variables are independent and identically distributed when the value of one variable doesn&amp;rsquo;t affect the probability of another variable. For example, the outcome of one coin flip does not affect the outcome of another coin flip, so both flips are IID.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dibyaghosh.com/blog/probability/kldivergence.html&#34;&gt;KL Divergence&lt;/a&gt;: Divergence between two distributions of data. Useful for determining how different fake data is from real data (GANs) or for determining how differemt two policies are for trust-based reinforcement learning.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Self-driving_car&#34;&gt;Level 0-5&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: The different &amp;ldquo;levels&amp;rdquo; of autonomy related to self driving cars. 0 represents full human control while 5 represents full vehicle control.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Long_short-term_memory&#34;&gt;Long Short Term Memory (LSTM)&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A type of recurrent neural network that works exceptionally well with sequential input. A unique trait of these networks are their memory cells&#39; &amp;ldquo;forget gates&amp;rdquo;, which allow them to control how long they hold onto data for.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://deepai.org/publication/the-lottery-ticket-hypothesis-training-pruned-neural-networks&#34;&gt;The Lottery Ticket Hypothesis&lt;/a&gt;: A randomly-initialized, dense neural network contains a subnetwork that is initialised such that — when trained in isolation — it can match the test accuracy of the original network after training for at most the same number of iterations.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Markov_decision_process&#34;&gt;Markov Decision Process&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A system of states, actions, and probabilities of getting to other states given actions taken from previous states.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://aiden.nibali.org/blog/2017-01-18-mode-collapse-gans/&#34;&gt;Mode Collapse&lt;/a&gt;: When the distribution of samples produced by a generative adversarial network represent a subset of the latent distribution, instead of the entire latent distribution. For example, you train a network to produce pictures of animals but it only learns to produce pictures of cats.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Multi-armed_bandit&#34;&gt;Multi-armed Bandit&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A core component of reinforcement learning, the multi-armed bandit problem is the classic &amp;ldquo;exploration versus exploitation&amp;rdquo; tradeoff. In this problem, expected gain must be maximized in an environment with varying rewards, forcing an agent to decide between keeping an option they know to be safe versus exploring new options that might be better.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/897/online-vs-offline-learning&#34;&gt;Online/Offline Learning&lt;/a&gt;: Online learning happens as data comes in. Offline learning happens after data is collected and made into a batch.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://mlss.tuebingen.mpg.de/2015/slides/ghahramani/gp-neural-nets15.pdf&#34;&gt;Parametric &amp;amp; Non-Parametric Models&lt;/a&gt;: Parametric models use a finite number of parameters, like weights in linear regression, to represent a learned hypothesis. Non-Parametric models use variable/infinite/no parameters, like data points in nearest neighbors, to represent a learned hypothesis.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Precision_and_recall&#34;&gt;Precision&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: The fraction of relevant instances among the retrieved instances. Also known as positive predictive value.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Precision_and_recall&#34;&gt;Recall&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: The fraction of relevant instances that were retrieved. Also known as sensitivity.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Recurrent_neural_network&#34;&gt;Recurrent Neural Network (RNN)&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A type of network that can store state, giving it a type of memory that can process a series of inputs. This can be accomplished by having a cycle within the network.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Regression_analysis&#34;&gt;Regression&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A set of models that determine relationships between data and a dependent value. For example, linear regression tries to approximate a dependent value while logistic regression tries to determine the probability of a dependent value.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Residual_neural_network&#34;&gt;Residual Neural Network&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Networks with connections that skip some layers and connect to non-adjacent ones. This type of network helps counter the vanishing gradient problem&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Reinforcement_learning&#34;&gt;Reinforcement Learning&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Algorithms are given a world state they are able to interact with, and learn from the reward their interactions give them.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ai.stackexchange.com/questions/4456/whats-the-difference-between-model-free-and-model-based-reinforcement-learning&#34;&gt;Model-Based&lt;/a&gt;: You create a model of the world and can predict what the next state and reward will be for each action&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ai.stackexchange.com/questions/4456/whats-the-difference-between-model-free-and-model-based-reinforcement-learning&#34;&gt;Model-Free&lt;/a&gt;: You know what action to take without knowing what to expect, since you don&amp;rsquo;t have a model of the world&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/&#34;&gt;Value&lt;/a&gt;: Networks that determine the value of a state.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/&#34;&gt;Policy&lt;/a&gt;: Network to choose actions. Can directly optimize model instead of computing values, useful when you have a continuous action space. Only uses reward function. Requires a score function to evaluate performance of policy, usually total rewards accumulated given a period of time.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/&#34;&gt;Actor Critic&lt;/a&gt;: Backbone of state of the art reinforcement learning algorithms.
+&lt;ul&gt;
+&lt;li&gt;Uses a value-based Critic to measure how good the action taken is&lt;/li&gt;
+&lt;li&gt;Uses a policy-based Actor to to choose actions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Stochastic&#34;&gt;Stochastic&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Randomly determined process, usually refers to probabilistic outputs of machine learning systems&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Supervised_learning&#34;&gt;Supervised Learning&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A model learns to produce a desired output and knows what that output is. Example: Image Recognition&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Temporal_difference_learning&#34;&gt;Temporal Difference&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Model-free reinforcement learning design which learns by bootstrapping value samples in order to approximate a value function. Once more information is revealed about the true value during later timesteps, you can update the low information bootstrapped guess by using the newly acquired outcome as a &amp;ldquo;ground truth&amp;rdquo; to train a network.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Temporal Difference error is the difference between consecutive temporal predictions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ai.stackexchange.com/questions/7359/what-is-a-trajectory-in-reinforcement-learning&#34;&gt;Trajectories&lt;/a&gt;: The history of states (and potentially actions) taken during a walk of a Markov Decision Process.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Transfer_learning&#34;&gt;Transfer Learning&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Taking parts of a network trained on one data set, and using it in a different network with a different dataset.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://towardsdatascience.com/transformers-141e32e69591&#34;&gt;Transformer&lt;/a&gt;: A type of recurrent neural network primarily used with sequential data, like language translation. These networks use an attention model to improve performance.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Unsupervised_learning&#34;&gt;Unsupervised Learning&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A model learns to produce a desired output without being told what it&amp;rsquo;s looking for. Example: Playing Chess&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Vanishing_gradient_problem&#34;&gt;Vanishing Gradient Problem&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: In a network, a gradient can become vanishingly small which will stop the weight from changing it&amp;rsquo;s value, since weights are modified based on their contribution to the gradient.&lt;/p&gt;
+&lt;p&gt;Feel free to contact me with any suggested additions/changes at &lt;a href=&#34;mailto:jarbus@tutanota.com&#34;&gt;jarbus@tutanota.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Generating Slides in Vim</title>
+      <link>jarbus.net/blog/generating-slides-in-vim/</link>
+      <pubDate>Sun, 31 Jan 2021 11:25:49 -0400</pubDate>
+      
+      <guid>jarbus.net/blog/generating-slides-in-vim/</guid>
+      <description>&lt;p&gt;There is a great tool known as &lt;a href=&#34;https://pandoc.org/&#34;&gt;pandoc&lt;/a&gt; that can convert documents from one filetype to another. For example, you can convert a Microsoft Word document to a PDF, without even needing to own a copy of Microsoft Word! However, we care about Pandoc&amp;rsquo;s ability to convert a Markdown document to a slideshow presentation using LaTeX Beamer as a rendering engine.&lt;/p&gt;
+&lt;p&gt;There is a great writeup about this basic feature &lt;a href=&#34;https://ashwinschronicles.github.io/beamer-slides-using-markdown-and-pandoc&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TL;DR: With Pandoc installed and markdown file &lt;code&gt;Demo.md&lt;/code&gt;, executing &lt;code&gt;pandoc -t beamer Demo.md -o Demo.pdf&lt;/code&gt; will generate a slideshow as a pdf, with each section heading as the title of a new slide.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Different themes can be specified with the &lt;code&gt;-V&lt;/code&gt; option; I&amp;rsquo;m currently using the &lt;a href=&#34;https://github.com/matze/mtheme&#34;&gt;Metropolis&lt;/a&gt; beamer theme and &lt;a href=&#34;https://github.com/rchurchley/beamercolortheme-owl&#34;&gt;Owl&lt;/a&gt; colorscheme. After installing these themes, I can run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pandoc -t beamer
+       -V fontsize=14pt
+       -V theme=metropolis
+       -V colortheme=owl
+       -s
+       Demo.md -o Demo.pdf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to produce my presentation. &lt;strong&gt;Note: All code blocks are single-line commands/&lt;code&gt;.vimrc&lt;/code&gt; entries, and are displayed as multi-line for readability.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Unfortunately, it&amp;rsquo;s a pain to recompile a document every time I want to view my changes. Luckily, as a (Neo)Vim user, I can automatically run commands everytime I write a file. To avoid generating presentations with non-presentation markdown files, I instead write presentations in plaintext files that end with &lt;code&gt;.slides&lt;/code&gt;. In the example above, I&amp;rsquo;d be using &lt;code&gt;Demo.slides&lt;/code&gt; instead of &lt;code&gt;Demo.md&lt;/code&gt;. When I add:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;autocmd! BufWritePost *.slides silent !pandoc
+    -t beamer
+    -V fontsize=14pt
+    -V theme=metropolis
+    -V colortheme=owl
+    -s
+    % -o &amp;quot;%:p:h/.%:t:r.pdf&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to my &lt;code&gt;.vimrc&lt;/code&gt;, everytime I save changes in a &lt;code&gt;FILENAME.slides&lt;/code&gt; file, it will generate a presentation located in &lt;code&gt;.FILENAME.pdf&lt;/code&gt;. I choose to add a leading period in the output to hide the PDF from my file manager, feel free to remove it.&lt;/p&gt;
+&lt;p&gt;To enable markdown syntax highlighting in our &lt;code&gt;.slides&lt;/code&gt; file, add:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.slides :set filetype=markdown
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to your &lt;code&gt;.vimrc&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now Vim generates a PDF presentation for us everytime we save a &lt;code&gt;.slides&lt;/code&gt; file. For easy viewing, I added another keybind, &lt;code&gt;Z&lt;/code&gt;, to open the corresponding PDF in my PDF viewer of choice, &lt;a href=&#34;https://pwmt.org/projects/zathura/&#34;&gt;Zathura&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nnoremap Z :silent !zathura --fork %:p:h/.%:t:r.pdf&amp;lt;CR&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Zathura automatically refreshes the view whenever changes to an open document is detected. This means that I can open a &lt;code&gt;.slides&lt;/code&gt; file in Vim, save changes, and press &lt;code&gt;Z&lt;/code&gt; to view my changes in Zathura. I can then immediately view any additional changes I make in the open Zathura window, just by saving the &lt;code&gt;.slides&lt;/code&gt; file.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uninformed Or Misinformed?</title>
+      <link>jarbus.net/blog/would-you-rather-be-uninformed-or-misinformed/</link>
+      <pubDate>Wed, 20 Jan 2021 11:25:49 -0400</pubDate>
+      
+      <guid>jarbus.net/blog/would-you-rather-be-uninformed-or-misinformed/</guid>
+      <description>&lt;p&gt;Is it better to have no facts about a topic and thus no opinion, or have access to a few &amp;ldquo;out of context&amp;rdquo; facts and thus a misinformed opinion?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TL;DR: Either start learning about issues you care about, or stop caring about them so much. It&amp;rsquo;s more honest, less mental effort, and is less likely to ruin Thanksgiving.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You can&amp;rsquo;t be well-informed on every topic; It&amp;rsquo;s just not possible. That&amp;rsquo;s why world leaders have advisers. Yet somehow, if you look at anyone&amp;rsquo;s Facebook account, you don&amp;rsquo;t have to try too hard to figure out their view on any political issue.&lt;/p&gt;
+&lt;p&gt;Over the past year, I&amp;rsquo;ve started to realize how much nuance there is to the headlines we see. When I read an article that ruins the image of a company or individual, I always wonder: What information could the author be omitting? What view could the other side have? What outside information is the author conveniently using to make a point?&lt;/p&gt;
+&lt;p&gt;I try to avoid getting emotional until these questions are answered. I&amp;rsquo;m guilty of having basic gut feelings on unfamiliar topics, but these feelings aren&amp;rsquo;t strong enough to start an argument. I talk about issues I&amp;rsquo;m informed about, and listen (with a grain of salt) to others talk about issues I&amp;rsquo;m not.&lt;/p&gt;
+&lt;p&gt;Unfortunately, this isn&amp;rsquo;t the case for lots of us. Instead of admitting we are uninformed, many of us form an opinion after we read the headline, and most likely don&amp;rsquo;t update it after skimming the article with said headline. We are even less likely to look for an opposing take, as that requires we scroll outside of whatever feed we are browsing through. Some people don&amp;rsquo;t even use the news to form opinions: They just accept the opinions of their friends or family as &amp;ldquo;obvious&amp;rdquo;. As someone who accepted the outcome of the 2020 presidential election without looking into the claims of fraud, I&amp;rsquo;m guilty of this too.&lt;/p&gt;
+&lt;p&gt;We then take this opinion that a) isn&amp;rsquo;t ours and b) took less than 10 seconds to form, and carry it into the foreseeable future, not even considering the idea that there might be more we don&amp;rsquo;t know.&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s wrong with admitting that we don&amp;rsquo;t know enough to judge a topic or event? Do we really think we have enough context and facts to make sound judgements on all our beliefs? Do we really need to hold an opinion after every scandal? Why can&amp;rsquo;t we just say &amp;ldquo;This is a side of a story&amp;rdquo; and move on?&lt;/p&gt;
+&lt;p&gt;Take &lt;a href=&#34;https://www.washingtonpost.com/technology/2020/12/03/timnit-gebru-google-fired/&#34;&gt;Google&amp;rsquo;s firing of Timnit Gebru&lt;/a&gt; for example:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I read a headline about Google firing a researcher that criticized the company on a mailing list. I didn&amp;rsquo;t need about any more drama in my life, so I didn&amp;rsquo;t read further, tucking this away in my mind as &amp;ldquo;researcher fired from Google&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Google responded with something along the lines of &amp;ldquo;she was using an email list in such a way that was improper for her position&amp;rdquo;. I still didn&amp;rsquo;t need the drama, so I kept it in my mind as &amp;ldquo;researcher fired from Google&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;I still hold no strong positions on this specific topic and don&amp;rsquo;t plan on learning more about it. Like in most &amp;ldquo;scandals&amp;rdquo;, there&amp;rsquo;s a lot of &amp;ldquo;he said, she said&amp;rdquo; going on, and I don&amp;rsquo;t need to spend time figuring out who is right.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If I wanted to hold an opinion on this event, I&amp;rsquo;d need the following details to start:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The code of conduct for Gebru&amp;rsquo;s position&lt;/li&gt;
+&lt;li&gt;Other alternative methods Gebru could have used not in violation of the Code of Conduct if her actions violated it&lt;/li&gt;
+&lt;li&gt;The contents of the email&lt;/li&gt;
+&lt;li&gt;Verbose arguments from both sides refuting each other&amp;rsquo;s points if possible&lt;/li&gt;
+&lt;li&gt;Evidence of Gebru&amp;rsquo;s claims&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As someone who does not work at nor plans to work at Google, this just isn&amp;rsquo;t worth my time, so I don&amp;rsquo;t form an opinion. There are other things to worry about.&lt;/p&gt;
+&lt;p&gt;TL;DR (again): Either start learning about issues you care about, or stop caring about them so much. It&amp;rsquo;s more honest, less mental effort, and is less likely to ruin Thanksgiving.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Soft Rules</title>
+      <link>jarbus.net/blog/soft-rules/</link>
+      <pubDate>Sat, 26 Sep 2020 11:25:49 -0400</pubDate>
+      
+      <guid>jarbus.net/blog/soft-rules/</guid>
+      <description>&lt;p&gt;Not all rules are made equal. Some rules, like the speed limit, are broken by everyone and their mother, and are enforced (mostly) when people are breaking them to a dangerous point. Other rules, like &amp;ldquo;don&amp;rsquo;t murder people&amp;rdquo;, are enforced far more. Why is that?&lt;/p&gt;
+&lt;h2 id=&#34;different-rules-different-tools&#34; &gt;Different Rules, Different Tools
+&lt;span&gt;
+    &lt;a href=&#34;#different-rules-different-tools&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Some rules are in place to assign blame to someone with bad judgement. There&amp;rsquo;s nothing morally wrong with jaywalking when there are no cars coming, but you are at fault if you walk into oncoming traffic.&lt;/li&gt;
+&lt;li&gt;Some rules are in place to discourage bad habits from forming, like the drinking age. This law is so commonly broken that it&amp;rsquo;s expected behavior at this point, and yet I&amp;rsquo;ve never seen someone get arrested for under-age drinking. Despite this, the law conveys the dangers of drinking, makes it harder for minors to acquire alcohol, and prevents students from openly sharing alcohol in schools.&lt;/li&gt;
+&lt;li&gt;Some rules, like mandatory attendance, exist to get people to show up to an event or perform an activity. Even when attendance isn&amp;rsquo;t taken, many people will still show up to prevent unnecessary trouble. College orientation activities are a prime example.&lt;/li&gt;
+&lt;li&gt;Some rules exist simply because they haven&amp;rsquo;t been updated. Before 2020, some companies &amp;ndash; especially older ones &amp;ndash; didn&amp;rsquo;t allow employees to work from home. Working from home was seen as an unnecessary risk by upper management with no tangible benefit to any of the executives. Along comes the coronavirus, and suddenly the jobs people have been doing in an office for decades are suddenly doable from home.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;rules-for-rules&#34; &gt;Rules for Rules
+&lt;span&gt;
+    &lt;a href=&#34;#rules-for-rules&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Rules should be justified. If a sign on a fish tank says, &lt;em&gt;PLEASE DO NOT TOUCH GLASS&lt;/em&gt;, do you think most people, especially children, are likely to obey? Does your answer change if the sign were to say &lt;em&gt;PLEASE DO NOT TOUCH GLASS, IT SCARES THE FISH&lt;/em&gt;?&lt;/p&gt;
+&lt;p&gt;Additionally, there shouldn&amp;rsquo;t be too many rules, even if they are justified. The more rules in place, the less likely people will follow them. Just think about it: If Moses received 206 commandments, do you think his followers would view &lt;em&gt;Thou shalt not eat meat and dairy&lt;/em&gt; with the same level of respect as &lt;em&gt;Thou shalt not kill&lt;/em&gt;? More rules can imply that there are strict guidelines to be followed, but people will interpret them as: &lt;em&gt;Whoever came up with this must be fun at parties.&lt;/em&gt; Unnecessary rules draw attention away from the important ones.&lt;/p&gt;
+&lt;h2 id=&#34;wrapping-up-rules&#34; &gt;Wrapping Up Rules
+&lt;span&gt;
+    &lt;a href=&#34;#wrapping-up-rules&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;m no rule expert. Nevertheless, I recognize that creating and selectively enforcing rules is a valuable skill, for both policy-makers and policy-enforcers alike. If you want people to respect your rules, make sure they have a reason for being there.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Critical Thinking</title>
+      <link>jarbus.net/blog/critical-thinking/</link>
+      <pubDate>Tue, 22 Sep 2020 11:25:49 -0400</pubDate>
+      
+      <guid>jarbus.net/blog/critical-thinking/</guid>
+      <description>&lt;p&gt;The more I learn about the world, the less certain I become about it. There are so many conflicting views and information taken out of context that it&amp;rsquo;s hard to discern fact from truth. Below are some notes I keep to help navigate the sea of information that is modern society.&lt;/p&gt;
+&lt;p&gt;TL;DR: Don&amp;rsquo;t get fooled by facts if they have no context, don&amp;rsquo;t discount an opinion because it&amp;rsquo;s biased, and hear out crazy ideas.&lt;/p&gt;
+&lt;h2 id=&#34;be-skeptical-fact--truth&#34; &gt;Be skeptical: Fact != Truth
+&lt;span&gt;
+    &lt;a href=&#34;#be-skeptical-fact--truth&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;There are facts available for virtually anything you need. No matter what argument you try to make, you&amp;rsquo;ll be able to find a statistic that can back up your claims thanks to the glory of Google.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dailymail.co.uk/femail/article-3030983/The-ultra-competitive-exercise-fad-ruin-health-called-planking-suddenly-sweeping-gyms-Pilates-classes.html&#34;&gt;&amp;ldquo;Did you know that planking can ruin your health and result in months of pain?&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lifehack.org/292578/7-things-that-will-happen-when-you-do-planking-exercise-every-day&#34;&gt;&amp;ldquo;Not true, planking works out multiple muscles in your body and can greatly improve your health if done daily&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Not exactly scientific sources, but I think this demonstrates my point. Furthermore, the level of mixed information increases exponentially as the topic gets more political.&lt;/p&gt;
+&lt;p&gt;Facts should never be enough to prove a point, and I tend to suspect people who rely too heavily on them. Facts should instead be used to tell a narrative; facts are not the truth, but they can light the way towards it.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/ewarren/status/1090252713156403200&#34;&gt;&amp;ldquo;The top 0.1% &amp;hellip; own about the same wealth as the bottom 90% of America.&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;While deemed &amp;ldquo;Mostly True&amp;rdquo; by &lt;a href=&#34;https://www.politifact.com/factchecks/2019/jan/31/elizabeth-warren/warren-top-01-own-about-much-bottom-90/&#34;&gt;Politifact.com&lt;/a&gt;, this statement in isolation is less than useless: it&amp;rsquo;s misleading. On it&amp;rsquo;s own, this fact paints a picture of a grim society, where the bottom 90% are left to struggle for survival, with all resources being held for a greedy few. If you are in the bottom 90%, this prompts you to believe that life is unfair, and that this should be changed. That&amp;rsquo;s why this statistic is so popular, it seems outrageous and gives Americans a sense of justified anger at the rich, an anger which many ex-presidential candidates used to garner support.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s break this idea down a bit. The greedy elite factoid on its own implies nothing about quality of life, standard of living, financial responsibility, or determination to work. Society could be a paradise where everyone has access to more than they could ever need, and the top 0.1% just has an absurd amount of money. Or society could be a system of addiction, where the bottom 90% are constantly spending money on things they don&amp;rsquo;t need and the top 0.1% simply aren&amp;rsquo;t addicted and save/invest wisely. The truth is, these numbers don&amp;rsquo;t reveal anything about the truth, and aren&amp;rsquo;t being used to do so.&lt;/p&gt;
+&lt;p&gt;Consider a narrative discussing the implications of this statistic from &lt;a href=&#34;https://en.wikipedia.org/wiki/Wealth_inequality_in_the_United_States#Effect_on_democracy&#34;&gt;Wikipedia&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A 2014 study by researchers at Princeton and Northwestern concludes that government policies reflect the desires of the wealthy, and that the vast majority of American citizens have &amp;ldquo;minuscule, near-zero, statistically non-significant impact upon public policy … when a majority of citizens disagrees with economic elites and/or with organized interests, they generally lose.&amp;rdquo; When Fed chair Janet Yellen was questioned by Bernie Sanders about the study at a congressional hearing in May 2014, she responded &amp;ldquo;There’s no question that we’ve had a trend toward growing inequality&amp;rdquo; and that this trend &amp;ldquo;can shape [and] determine the ability of different groups to participate equally in a democracy and have grave effects on social stability over time.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Most people know about inequality, but not what it means for them. The wealth statistic means nothing in a vaccuum, only in context does it hold any value. If facts are used to invoke emotion instead of prove a point, be skeptical.&lt;/p&gt;
+&lt;h2 id=&#34;worth-listening-to-those-who-are-biased&#34; &gt;Worth Listening to those who are biased?
+&lt;span&gt;
+    &lt;a href=&#34;#worth-listening-to-those-who-are-biased&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;A girl in a class of mine had a laptop sticker that read &amp;ldquo;Why be racist, sexist, or transphobic when you can just be quiet?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I can&amp;rsquo;t stand this type of thinking. It&amp;rsquo;s elitist, tells people with controversial views to not let their voice be heard, and contributes to the echo chamber of modern society. Furthermore, it accomplishes nothing except a pat on the back for people with her mindset. No racist is actually going to read that and go &amp;ldquo;Oh, guess I just won&amp;rsquo;t speak my mind then.&amp;rdquo; In fact, they might be driven further into racism in spite. Nobody likes being talked down to.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s a lot of insight to be gained on both sides from listening to people with views you don&amp;rsquo;t like. It&amp;rsquo;s easy to think white supremacists are evil and don&amp;rsquo;t deserve to speak; its harder to realize they have a reason for their beliefs. If you want to make the world a better place, it doesn&amp;rsquo;t come from silence, but from understanding. When fighting racism, wouldn&amp;rsquo;t it make sense to understand where racists are coming from?&lt;/p&gt;
+&lt;p&gt;If you want to discuss tax law, you should hear out the rich guy that wants lower taxes just as much as the working class American who wants the same. If you want to discuss diversity, don&amp;rsquo;t limit the white participants to those with an &amp;ldquo;anti-white&amp;rdquo; mindset. These perspectives are essential to promoting an open dialogue, and leaving out those with biased opinions leads to toxic echo chambers and a mentality of &amp;ldquo;us versus them&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;hear-out-the-crazy&#34; &gt;Hear out the crazy
+&lt;span&gt;
+    &lt;a href=&#34;#hear-out-the-crazy&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;When I experimented with fasting, a few people I knew were opposed. The concept of not eating for days on end? Ridiculous! Your body needs food, your metabolism will slow to a halt if you don&amp;rsquo;t eat!&lt;/p&gt;
+&lt;p&gt;These arguments didn&amp;rsquo;t come from any sort of reading on the subject, but human intuition. The concept of not eating for a few days went against everything they knew; to them it was crazy.&lt;/p&gt;
+&lt;p&gt;Fasting isn&amp;rsquo;t actually bad for you if done right, and can have &lt;a href=&#34;https://en.wikipedia.org/wiki/Fasting#Health_effects&#34;&gt;numerous health benefits&lt;/a&gt;. A simple Google search into the subject could have cleared up these misconceptions. But that would imply that this ridiculous idea could have some merit worth looking for. It&amp;rsquo;s like looking up &amp;ldquo;Did the Holocaust happen?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;When it comes to most domains however, there is usually some fascinating logic behind crazy ideas. Bitcoin comes to mind; a currency without a government to back it seems completely absurd on the surface. The gut reaction is to call Bitcoin a fraud, &lt;a href=&#34;https://www.cnbc.com/2018/01/09/jamie-dimon-says-he-regrets-calling-bitcoin-a-fraud.html&#34;&gt;but when the best in the business take some time to think about it, they might have second thoughts&lt;/a&gt;. The Bitcoin community is full of brilliant people that built the foundation of blockchain technology. It&amp;rsquo;s worth hearing them out, even if their ideas seem a bit crazy at first glance. They must have their reasons.&lt;/p&gt;
+&lt;h2 id=&#34;final-thoughts&#34; &gt;Final Thoughts
+&lt;span&gt;
+    &lt;a href=&#34;#final-thoughts&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;As the news cycle continues to speed up, it&amp;rsquo;s hard to determine fact from fiction, who&amp;rsquo;s crazy and who&amp;rsquo;s biased, what&amp;rsquo;s conspiracy and what&amp;rsquo;s revolutionary. It&amp;rsquo;s impossible to listen to everyone, but you shouldn&amp;rsquo;t only listen to those with a similar mindset. It&amp;rsquo;s impossible to get the full story for every topic of discussion, but don&amp;rsquo;t fall for out-of-context information. Question everything, but keep an open mind.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tesla and False Advertising in AI</title>
+      <link>jarbus.net/blog/tesla-and-false-advertising-in-ai/</link>
+      <pubDate>Wed, 22 Jul 2020 11:25:49 -0400</pubDate>
+      
+      <guid>jarbus.net/blog/tesla-and-false-advertising-in-ai/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s the problem with advertising AI-based technology that doesn&amp;rsquo;t exist:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You cannot promise anything about your product.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve all seen AI advertised to the masses that doesn&amp;rsquo;t work as advertised, just look at any voice-to-text system. When I got my Apple Watch, I hoped to use it to respond to messages without getting distracted by my phone. I quickly realized that wasn&amp;rsquo;t a viable solution: I had to repeat my message multiple times per text in order to get the correct dictation.&lt;/p&gt;
+&lt;p&gt;If this was a software issue, I could file a bug report and Apple could send out a fix. Unfortunately with AI, there isn&amp;rsquo;t much Apple can do besides get more data and re-train the model, which still wouldn&amp;rsquo;t guarantee a better user experience for anyone. Mind you, this is with software that&amp;rsquo;s already shipped.&lt;/p&gt;
+&lt;p&gt;Now let&amp;rsquo;s look at Tesla, or more specifically its CEO, Elon Musk. &lt;a href=&#34;https://futurism.com/elon-musk-tesla-close-level-5-autonomy&#34;&gt;Musk claims that Level 5 driving (in which a human is not needed behind the wheel) will be coming to Tesla vehicles in the form of a software update by the end of 2020&lt;/a&gt;. A month before he made said claim, &lt;a href=&#34;https://futurism.com/the-byte/tesla-autopilot-slam-overturned-truck&#34;&gt;a Tesla on autopilot crashed into a flipped truck&lt;/a&gt;&amp;ndash;a mistake most humans wouldn&amp;rsquo;t make.&lt;/p&gt;
+&lt;p&gt;Just like Apple can&amp;rsquo;t promise its speech-to-text system will work better than a human (or even better than a toddler), Musk can&amp;rsquo;t guarantee anything about Tesla&amp;rsquo;s Level 5 capability. Tesla can&amp;rsquo;t even &amp;ldquo;reasonably claim&amp;rdquo; your car won&amp;rsquo;t crash into flipped trucks or &lt;a href=&#34;https://www.msn.com/en-us/autos/enthusiasts/another-tesla-crashes-into-a-cop-car-while-on-autopilot/ar-BB16Mvkk#!&#34;&gt;stopped cop cars&lt;/a&gt;. In fact, no one using deep learning can promise anything about their system. Deep learning, and by extension Tesla&amp;rsquo;s Autopilot system, is a black box. We don&amp;rsquo;t know why it works, we can&amp;rsquo;t promise that it&amp;rsquo;ll work, but it seems to work when we test it. Unless Tesla is testing on all roads in all conditions, they shouldn&amp;rsquo;t even be &amp;ldquo;confident&amp;rdquo; level 5 technology, in which &lt;strong&gt;a human does not need to be in the vehicle&lt;/strong&gt;, is &amp;ldquo;around the corner&amp;rdquo;. That&amp;rsquo;s why &lt;a href=&#34;https://www.reuters.com/article/us-tesla-autopilot-germany/german-court-bans-tesla-ad-statements-related-to-autonomous-driving-idUSKCN24F1T5&#34;&gt;a court in Germany banned Tesla from including “full potential for autonomous driving” and “Autopilot inclusive” in its German advertising materials&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A Full Self-Driving (FSD) update wouldn&amp;rsquo;t be the first time Tesla over-promises and under-delivers. Consumer Reports described the company&amp;rsquo;s &amp;ldquo;Smart Summon&amp;rdquo; feature as &lt;a href=&#34;https://www.consumerreports.org/automotive-technology/teslas-smart-summon-performance-doesnt-match-marketing-hype/&#34;&gt;&amp;ldquo;glitchy and at times worked intermittently&amp;rdquo;&lt;/a&gt;. The damage with Smart Summon has been low, but a full-autonomy update could result in a few consequences:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tesla sold cars with the promise of Level 5 driving in the future: Not only is Tesla now under immense pressure to rush out a Level 5 update as soon as possible, but must do so using the hardware it sold customers years ago. Hopefully Level 5 doesn&amp;rsquo;t require LIDAR sensors (or any additional hardware) like Elon claims; because Tesla is expected to ship some version of FSD to users.&lt;/li&gt;
+&lt;li&gt;Customers may end up in legal trouble if Tesla&amp;rsquo;s software fails them: Tesla avoids legal responsibility for buggy software by shifting responsibility of an accident to the driver. However, when Tesla sells millions of cars on the premise that users won&amp;rsquo;t have to manually drive them one day, should drivers be held responsible when that day comes and their car crashes?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other companies have realized the high standards a Level 5 system should meet. Two years ago, &lt;a href=&#34;https://www.bloomberg.com/news/articles/2018-11-13/waymo-ceo-says-self-driving-cars-won-t-be-ubiqitious-for-decades&#34;&gt;Waymo CEO John Krafcik claimed that true self-driving cars, that function everywhere under all circumstances, won&amp;rsquo;t be ubiquitous for decades&lt;/a&gt;. As a result, Waymo shifted gears and placed its focus on rolling out &lt;a href=&#34;https://www.theverge.com/2019/12/9/21000085/waymo-fully-driverless-car-self-driving-ride-hail-service-phoenix-arizona&#34;&gt;autonomous taxis&lt;/a&gt; on a city by city basis, starting in Pheonix, Arizona. This approach to Level 5 driving is much safer for the following reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Waymo is minimizing the number of people at risk&lt;/li&gt;
+&lt;li&gt;Waymo is operating its vehicles strictly where they have been tested.&lt;/li&gt;
+&lt;li&gt;Waymo is not selling consumers a technology that doesn&amp;rsquo;t exist&lt;/li&gt;
+&lt;li&gt;Waymo is not relying on the average consumer to be attentive&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Level 5 technology can save thousands of lives and millions of dollars&amp;ndash;but it needs to be done to the same (if not higher) standards of automotive testing, and not the &amp;ldquo;move fast and break things&amp;rdquo; approach of Silicon Valley. Hopefully Tesla can safely deliver on its promise of full self driving soon, but if not, consumers may soon have a case to demand a refund.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Short: Aftermath</title>
+      <link>jarbus.net/blog/short-aftermath/</link>
+      <pubDate>Mon, 27 Apr 2020 11:25:49 -0400</pubDate>
+      
+      <guid>jarbus.net/blog/short-aftermath/</guid>
+      <description>&lt;p&gt;Jeff stepped over a beer can, then over a water bottle and onto a mat, whose faded lettering vaguely resembled the phrase &amp;ldquo;Welcome!&amp;rdquo; He opened his front door and walked inside.&lt;/p&gt;
+&lt;p&gt;Looking to his right, Jeff noticed his old hooded friend where he left him; on his living-room rocking chair. The cold metal scythe still in his lap, the skeleton hadn&amp;rsquo;t moved an inch from where he left him earlier that morning.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;What&amp;rsquo;s cooking, big guy?&amp;rdquo; Jeff said as he walked to the kitchen to grab his last can of Budweiser. His boney companioned turned his head.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;Oh, you know&lt;/em&gt;&amp;rdquo;, Death emitted. &amp;ldquo;&lt;em&gt;still out of work.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Ah.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;I do not understand why you still haven&amp;rsquo;t given up yet.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;I could say the same about you.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;I exist for one purpose, Jeffrey. and as long as you are alive, I cannot rest.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;I don&amp;rsquo;t know, you seem pretty well rested to me, what with you never leaving my house and all.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;I used to have what you call a &amp;lsquo;job&amp;rsquo;. It was very fulfilling, Jeffery. Took up all of my time. Do you want to know what it was?&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Jeffery took a sip of his beer.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;I used to collect the souls of the dead, Jeffery. It was wonderful. I conversed with the rich, the poor, the young and the old, Jeffrey, as they contemplated life and where they were headed. I had, what you would call, a &amp;lsquo;nice thing going.&#39;&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;All good things gotta come to an end.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;Then you came along,&lt;/em&gt;&amp;rdquo; Death continued, ignoring him, &amp;ldquo;&lt;em&gt;and ruined everything.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;It be like that sometimes.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;It does not &amp;lsquo;be&amp;rsquo; like that sometimes, Jeffrey&lt;/em&gt;&amp;rdquo; Death glared, a purple glow forming in his eye sockets. &amp;ldquo;&lt;em&gt;A single human does not wipe out humanity &amp;lsquo;every now and then&amp;rsquo;&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Fair.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;What is even more despicable,&lt;/em&gt;&amp;rdquo; Death proceeded, &amp;ldquo;&lt;em&gt;is that you don&amp;rsquo;t even regret pushing the button.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;I don&amp;rsquo;t really think about it too much.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;YOU HAD A CHOICE,&lt;/em&gt;&amp;rdquo; Death boomed, &amp;ldquo;&lt;em&gt;BETWEEN SAVING HUMANKIND, AND SAVING YOURSELF&amp;ndash;&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Mhm.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;AND WITHOUT A SECOND THOUGHT, DOOMED YOUR ENTIRE SPECIES&amp;ndash;&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Yup.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;&amp;ndash;IN EXCHANGE FOR A LIFE OF THEFT AND SLUMBER.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Can&amp;rsquo;t steal from the dead,&amp;rdquo; Jeff rebutted, taking another sip.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;THAT IS NOT THE POINT, JEFFREY&lt;/em&gt;&amp;rdquo; Death bellowed. He paused, taking a few seconds to decompose himself. &amp;ldquo;&lt;em&gt;You fail to understand the magnitude of your actions.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Oh, I understand perfectly well, you&amp;rsquo;ve made sure of that. I&amp;rsquo;d have to be deaf to spend a day with you and not hear your whining.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;It&amp;rsquo;s hard to believe you even have a soul worth collecting.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Listen, it was self defense, alright? It&amp;rsquo;s not like I wanted to kill everyone.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;Adolf Hitler, Joseph Stalin, Osama Bin Laden; every single corrupt soul in your history books would not have stooped to your level; self-defense does not justify genocide.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;So humans can drive thousands of species to extinction for selfish gain, but only when it happens to them it&amp;rsquo;s unjustified.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Death moved as if to rebutt, but said nothing.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Do you know how close we came to nuclear war? There was never a guarantee of tomorrow for anyone. For all we know, the human race might last an extra few decades thanks to me.&amp;rdquo; Jeff said, smirking. &amp;ldquo;Why does humanity deserves the benefit of the doubt?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;Why do you?&lt;/em&gt;&amp;rdquo; Death said.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;I don&amp;rsquo;t necessarily,&amp;rdquo; Jeff said, taking a seat on the opposite couch. &amp;ldquo;It just happened to be my choice. My parents were already dead&amp;ndash;I didn&amp;rsquo;t owe anybody anything. What moral rule says I &lt;em&gt;have&lt;/em&gt; to lay down my life for those I don&amp;rsquo;t know?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;You are selfish, Jeffrey Johnson.&lt;/em&gt;&amp;rdquo; Death said, rising from his seat. &amp;ldquo;&lt;em&gt;You put yourself in front of millions of good, innocent people who would lay down their lives in your situation.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Is it selfish, or simply not being selfless? A starving man doesn&amp;rsquo;t owe another starving man his bread.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Death leaned forward, skull to face with Jeff, searching for any sign of remorse. He came back empty. Death turned around drifted towards the exit.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;He owes the guilt of denying a meal,&lt;/em&gt;&amp;rdquo; he remarked as he left the room. The front door creaked open, then closed. Silence filled the room.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Should I instead spend humanity&amp;rsquo;s last years crying?&amp;rdquo; Jeff yelled to the door.&lt;/p&gt;
+&lt;p&gt;The door didn&amp;rsquo;t respond.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Happiness</title>
+      <link>jarbus.net/blog/happiness/</link>
+      <pubDate>Sun, 26 Jan 2020 11:25:49 -0400</pubDate>
+      
+      <guid>jarbus.net/blog/happiness/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Some thoughts on Happiness:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Happiness doesn&amp;rsquo;t come from wealth. Otherwise, therapists and anti-depressants would have to be much cheaper.&lt;/p&gt;
+&lt;p&gt;If happiness came from consumption of goods and services, it would therefore follow that once those goods and services are reduced or cut off, one would no longer be as happy. If you can cut off happiness, it&amp;rsquo;s more akin to a drug than an emotion.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://news.harvard.edu/gazette/story/2017/04/over-nearly-80-years-harvard-study-has-been-showing-how-to-live-a-healthy-and-happy-life/&#34;&gt;&amp;ldquo;Close relationships, more than money or fame, are what keep people happy throughout their lives.&amp;quot;&lt;/a&gt; While financial security is ideal for easing pain and suffering, significant amounts of money can strain relationships and cast doubt on who your friends really are. If solid relationships are a path to happiness, the drama and expectations caused from wealth differences in the relationships might very well block that path.&lt;/p&gt;
+&lt;p&gt;In a sense, happiness isn&amp;rsquo;t something you can obtain, but something you become. True happiness has to come from within to be strong and sustainable. Performing work you find meaningful, engaging in relationships of substance, and living a life of virtue are all ways to approach happiness.&lt;/p&gt;
+&lt;p&gt;Happiness can&amp;rsquo;t come from believing you are the smartest, most attractive, or funniest person in your social circles. If it does, you either aren&amp;rsquo;t around people you can learn from or are living in a world of illusion.&lt;/p&gt;
+&lt;p&gt;If stressed about all those that are above you, happiness is possible if you enjoy the process of learning and take pride in trying your best.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;It&amp;rsquo;s possible to be a masterpiece and a work in progress at the same time.&amp;rdquo; - Unknown&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Pain and happiness are not mutually exclusive, but rather two sides of the same coin. The greatest pains can come from the greatest happiness, such as the loss of a loved one. Some of the greatest happiness comes from the greatest pain, such as starting new relationships after others have ended. The most painful moments can sometimes fuel transitions into the best ones. Don&amp;rsquo;t let pain go to waste.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.health.harvard.edu/healthbeat/giving-thanks-can-make-you-happier&#34;&gt;One of the best ways to increase happiness is to show gratitude.&lt;/a&gt; When expressing thanks for what you have instead of longing for what you don&amp;rsquo;t, you learn to draw happiness from yourself instead of the high of getting something new. If you were to lose that for which you are thankful, the situation doesn&amp;rsquo;t change &amp;ndash; draw gratitude from what&amp;rsquo;s left.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bitcoin Whitepaper, Explained</title>
+      <link>jarbus.net/blog/bitcoin-whitepaper-explained/</link>
+      <pubDate>Fri, 03 Jan 2020 11:25:49 -0400</pubDate>
+      
+      <guid>jarbus.net/blog/bitcoin-whitepaper-explained/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34; &gt;Introduction
+&lt;span&gt;
+    &lt;a href=&#34;#introduction&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;In this essay we will give a brief history of crytocurrency leading up to
+Bitcoin, give an overview of the Bitcoin protocol by summarizing
+key sections of the whitepaper, and briefly discuss Bitcoin&amp;rsquo;s use of cryptographical
+proof and computational security instead of trusted third parties within
+the protocol.&lt;/p&gt;
+&lt;h2 id=&#34;history&#34; &gt;History
+&lt;span&gt;
+    &lt;a href=&#34;#history&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Bitcoin is far from original. Digital currencies date back as far as
+1982, where David Chaum released a paper called &amp;quot;Blind Signatures&amp;quot;,
+which formed the basis of a digital currency known as eCash. In 1996,
+Douglass Jackson created a currency known as e-gold in 1996, the first
+currency to reach mass adoption at over 3.5 million accounts.
+Many other subsequent currencies rose and fell before Bitcoin gained
+stable footing, including projects such as BitGold and b-money.&lt;/p&gt;
+&lt;p&gt;Blockchain technology development began as early as 1991 when Stuart
+Haber and W. Scott Stornetta began work on a cryptographically secured
+chain of blocks. &lt;a href=&#34;https://link.springer.com/content/pdf/10.1007%2F3-540-38424-3_32.pdf&#34;&gt;Their inital goal was to implement a system where
+document timestamps could not be tampered with.&lt;/a&gt; Bitcoin builds upon
+Haber and Stornetta&amp;rsquo;s subsequent work of reliable timestamping and
+securing names for bit strings and cites three of their papers,
+making up a third of the nine citations in the Bitcoin whitepaper.&lt;/p&gt;
+&lt;p&gt;Bitcoin also builds upon technology such as Proof-of-Work, first
+developed in 1997 by Adam Back under the name &lt;a href=&#34;http://hashcash.org/&#34;&gt;Hashcash.&lt;/a&gt;
+Proof-of-Work is a counter-measure towards abuse of un-metered internet
+resources which could enable a Denial of Service attack on email by
+requiring an attacker to expend computational resources in order to
+interact with the network. A reusable version of Proof-Of-Work was
+further developed by Hal Finney in 2004, the receiver of the first
+bitcoin transaction. Proof-Of-Work will be further discussed later on in
+this paper.&lt;/p&gt;
+&lt;p&gt;Satoshi Nakamoto, the anonymous creator(s) of Bitcoin released the
+Bitcoin whitepaper to a cryptography mailing list on October 31st, 2008,
+four short years after Hal Finney&amp;rsquo;s paper. The first block was mined
+January the following year, with a comment that reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The Times 03/Jan/2009 Chancellor on brink of second bailout for banks&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Very fitting for the anti-authority ideals Bitcoin would spur in the coming years.&lt;/p&gt;
+&lt;h2 id=&#34;design&#34; &gt;Design
+&lt;span&gt;
+    &lt;a href=&#34;#design&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;h3 id=&#34;section-2-and-9-transactions-combining-and-splitting-value&#34; &gt;Section 2 and 9: Transactions, Combining and Splitting Value
+&lt;span&gt;
+    &lt;a href=&#34;#section-2-and-9-transactions-combining-and-splitting-value&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Bitcoin is represented as a publicly visible global log of
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Digital_signature&#34;&gt;signed&lt;/a&gt;$^W$
+transactions. Each transaction denotes the participants in a transaction
+as well as the amount of money transfered (analogous to the Venmo public
+feed), and the signature ensures the account publishing the transaction
+is the account who owns the Bitcoin. Since the amount of Bitcoin an
+account has is directly represented by outputs of previous transactions,
+sending money is represented by taking previous transactions addressed
+to your account, sigining them, and specifying which addresses will
+receive which portions of the funds. Since one or more transactions can
+be used as input for this process, there can be one or more addresses
+receiving the output, including the spender who recieves any left-over
+Bitcoin as change, since it&amp;rsquo;s impossible to use a fraction of a
+transaction as input.&lt;/p&gt;
+&lt;p&gt;Transactions must be verified, i.e. nodes must confirm that transaction
+signatures come from their corresponding private keys. Transactions are
+verified in large batches. Each transaction is added to a pool of
+unverified transactions, which are then all verified and published to
+the network in a block, approximately once every ten minutes. Each block
+is published with a timestamp and a hash of a previous block, forming a
+&amp;ldquo;chain&amp;rdquo; of all valid transactions.&lt;/p&gt;
+&lt;h3 id=&#34;sections-3-and-4-timestamp-server-proof-of-work&#34; &gt;Sections 3 and 4: Timestamp server, Proof of Work
+&lt;span&gt;
+    &lt;a href=&#34;#sections-3-and-4-timestamp-server-proof-of-work&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Bitcoin also implements a distributed timestamp server. Normal timestamp
+servers take hashes of previous timestamps and the current block in
+order to form a new timestamp hash, then widely publish this hash.
+However, this requires a trusted party, and does not work in a
+distributed setting with no trusted parties.&lt;/p&gt;
+&lt;p&gt;Nakamoto takes inspiration from Adam Back&amp;rsquo;s Hashcash algorithm, which
+implements a Proof-Of-Work scheme based off of finding a hash with a
+specific number of zeros at the beginning. This is a very
+computationally expensive task, as the only method of obtaining such a
+hash is brute force. Since a new block is published every ten minutes
+and each block requires the hash of a previous block, this requires
+anyone attmempting to modify the blockchain history to not only find the
+proper hash at the specific time, but also all hashes of subsequent
+blocks in order to maintain the validity of the ledger. This type of
+attack can be used to spend the same Bitcoin twice, as a user could make
+a transaction, erase it from the blockchain, and then use it again.
+However, thanks to the proof-of-work algorithm, this attack increases in
+difficultly exponentially as new blocks are added, and is one of the
+many forms of computational security the Bitcoin protocol implements.
+Since the amount of computational power on the blockchain will naturally
+vary overtime, the proof-of-work algorithm will also adjust to
+compensate for increased/decreased mining power in order to keep blocks
+published approximately every ten minutes.&lt;/p&gt;
+&lt;p&gt;The first block verified and published is added to the network, and the
+longest chain of blocks is deemed to be the correct one.&lt;/p&gt;
+&lt;h3 id=&#34;section-5-network&#34; &gt;Section 5: Network
+&lt;span&gt;
+    &lt;a href=&#34;#section-5-network&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;The Bitcoin network runs on the following steps taken verbatim from the
+original whitepaper, as there is not much summary for this section I
+deem myself capable of doing better than Nakamoto.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;New transactions are broadcast to all nodes&lt;/li&gt;
+&lt;li&gt;Each node collects new transactions into a block&lt;/li&gt;
+&lt;li&gt;Each node works on finding a difficult proof-of-work for its block&lt;/li&gt;
+&lt;li&gt;When a node finds a proof-of-work, it broadcasts the block to all nodes&lt;/li&gt;
+&lt;li&gt;Nodes accept the block only if all transactions in it are valid and
+not already spent&lt;/li&gt;
+&lt;li&gt;Nodes express their acceptance of the block by working on creating
+the next block in the chain, using the hash of the accepted block as
+the previous hash.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Nodes always consider the longest chain to be the correct one and will
+keep working on extending it.&lt;/p&gt;
+&lt;h3 id=&#34;sections-6-8-incentive-reclaiming-disk-space-simplified-payment-verification&#34; &gt;Sections 6-8: Incentive, Reclaiming Disk Space, Simplified Payment Verification
+&lt;span&gt;
+    &lt;a href=&#34;#sections-6-8-incentive-reclaiming-disk-space-simplified-payment-verification&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Section six explains the financial benefits of mining, namely how miners get newly minted coins and transaction fees.
+Nakamoto then explains how even when an adversary can claim control over a majority of the network&amp;rsquo;s mining power, it makes economic sense to act according to the protocol to gain profit instead of creating double-spend attacks, since people will stop using the system once it is compromised.&lt;/p&gt;
+&lt;p&gt;In section seven, Nakamoto also discusses storage optimizations for
+reducing the amount of disk space the entire blockchain uses. The
+primary method discussed involved removing transactions that are buried
+underneath many blocks but hashing the transactions in a Merkle tree as
+to break the hashes of any blocks.&lt;/p&gt;
+&lt;p&gt;In section eight, Nakamoto describes a method of payment verification
+without needing to run a full node, as well as potential attacks and
+countermeasures on nodes attempting to verify transactions without
+storing the entire blockchain.&lt;/p&gt;
+&lt;h3 id=&#34;section-10-privacy&#34; &gt;Section 10: Privacy
+&lt;span&gt;
+    &lt;a href=&#34;#section-10-privacy&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;It should be noted that Bitcoin has no privacy protections in place to
+protect users besides basic anonymity of not tying real-world identities
+to keys. The amount of Bitcoin sent in each transaction is public, as
+well as the public keys used. New public-private keypairs are
+recommended for each transaction, but the multi-input nature of
+transactions reveals two inputs are attached to the same owner. As a
+result, if the identity of a sender is compromised, it&amp;rsquo;s possible to
+trace transaction history and link previous transactions that user has
+made.&lt;/p&gt;
+&lt;h3 id=&#34;section-11-cryptography-and-security&#34; &gt;Section 11: Cryptography and Security
+&lt;span&gt;
+    &lt;a href=&#34;#section-11-cryptography-and-security&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Attackers are unable to steal the money of other users without their
+private key. There is also no method to generate new Bitcoin in anyway
+that an honest node could recognize as valid. Therefore, the only
+feasible attack on Bitcoin is to generate an alternative chain of
+blocks. Since the longest chain of blocks is considered valid, this
+attack requires the generation of an alternative chain faster than the
+honest chain. This can be thought of as a race between the attacker and
+the rest of the network, with the attacker starting from behind since
+they have to re-compute proof of work for existing blocks.&lt;/p&gt;
+&lt;p&gt;Nakamoto demonstrates how an attacker with $51%$ of the networks hashing power
+will be guaranteed to eventually catch up and sustain an alternative
+chain, however given a sufficiently large network Nakamoto assumes this
+infeasilbe, as the computation power required would be enormous.
+Additionally, every time an adversary fails to beat an honest node in
+creating the next block, the amount of blocks they need to catch up to
+increases and thus unless an attacker gets incredibly lucky when they
+first start generating an alternate chain, their chances of catching up
+to the main chain decreases exponentially. Since the chance for an
+attacker to catch up to the honest chain decreases exponentially as new
+blocks are added, Nakamoto demonstrates how long an honest recipient
+must wait before they can be 99.9% certain a double-spend attack will
+not happen given attackers of various computational power. For example, if attackers
+control 10% of the mining power, one would need to merely wait five
+blocks, but if attackers have 45%, one would need to wait 340 blocks,
+or just under two and a half days, to be sure their transaction is safe.&lt;/p&gt;
+&lt;h3 id=&#34;resources-used&#34; &gt;Resources Used
+&lt;span&gt;
+    &lt;a href=&#34;#resources-used&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Of course the &lt;a href=&#34;https://bitcoin.org/bitcoin.pdf&#34;&gt;Bitcoin whitepaper&lt;/a&gt; and it&amp;rsquo;s references have been used in the writing of this essay, but I also wanted to credit &lt;a href=&#34;https://www.quora.com/What-came-before-bitcoin&#34;&gt;this Quora post&lt;/a&gt; for pointing author in the right direction for the second section.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Anonymity</title>
+      <link>jarbus.net/blog/anonymity/</link>
+      <pubDate>Thu, 02 Jan 2020 11:25:49 -0400</pubDate>
+      
+      <guid>jarbus.net/blog/anonymity/</guid>
+      <description>&lt;p&gt;What happened to &amp;ldquo;Don&amp;rsquo;t give out your name on the internet?&amp;rdquo; Within the past 15 years, the desire for online anonymity has vanished &amp;ndash; as &amp;ldquo;normal people&amp;rdquo; joined the digital world, the number of &amp;ldquo;creepy people&amp;rdquo; worth hiding your identity from seems to have dropped in comparison. Despite the perceived safety of the online world, remaining anonymous still has its merits.&lt;/p&gt;
+&lt;h2 id=&#34;anonymity-addresses-ideas&#34; &gt;Anonymity addresses ideas
+&lt;span&gt;
+    &lt;a href=&#34;#anonymity-addresses-ideas&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;In an ideal world, political debate occurs detached from the people debating the topic. When discussing the gender wage gap for example, fact-based discussions should be possible between any two individuals, regardless of gender, salary, or race. Productive discourse where different interpretations of the same statistics should occur, where arguents, not participants, are rebutted and questioned. This ideal world does not exist.&lt;/p&gt;
+&lt;p&gt;Instead, when arguments are backed by identities, it&amp;rsquo;s much easier to attack an argument by attacking the arguer. It&amp;rsquo;s too easy to claim someone doesn&amp;rsquo;t know what they are talking about, since they are too old or too young, too priveleged or too uneducated. Political elections are perhaps the best examples of this, especially when candidates attack past actions of their opponents to avoid attacking their values.&lt;/p&gt;
+&lt;p&gt;An idea with no group or person attributed to it is the truest form of an idea, for it exists on its own and must be taken down for what it is, not who is behind it.&lt;/p&gt;
+&lt;h2 id=&#34;anonymity-ensures-security&#34; &gt;Anonymity ensures security
+&lt;span&gt;
+    &lt;a href=&#34;#anonymity-ensures-security&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Freedom of speech ensures individuals can not be legally punished for publicly expressing their opinion. However, when opinions are tied to identities, the government is not needed to punish those with different views. Citizens can take matters into their own hands if given the target&amp;rsquo;s place of work and the ability to write a dishonest complaint. A quote taken out of context and a social network to spread it can end a career. Given the rapid spread of data in society, the best way to ensure your security is to spread as little of your information as possible, and to separate whatever you share from each other.&lt;/p&gt;
+&lt;h2 id=&#34;anonymity-ensures-authenticity&#34; &gt;Anonymity ensures authenticity
+&lt;span&gt;
+    &lt;a href=&#34;#anonymity-ensures-authenticity&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;&amp;ldquo;Give a man a mask and he&amp;rsquo;ll show his true face&amp;rdquo; is a favorite quote of mine. It can act as an attack against anonymity, claiming people will act badly if able to avoid social and legal backlash. This can be interpreted in a different way; &lt;strong&gt;people have the freedom to be who they are when they don&amp;rsquo;t have to worry about backlash&lt;/strong&gt;. Is it just to not feel safe showing one&amp;rsquo;s true face in modern society?&lt;/p&gt;
+&lt;p&gt;Surveillance acts partially as a way to collect information on a populus, and partially as a way to enforce good behavior; if you see a camera at a stoplight, you are more likely to act in good behavior whether or not the camera is actually on. In an ideal world, everyone acts in good behavior and gets along, but on their own terms and not because they are being watched. Remaining anonymous ensures good behavior is not done in hopes of receiving praise or gaining social acceptance, but rather for the sake of being good. An example could be comparing a person who drives safely in case there might be a cop versus a person who drives safely because they don&amp;rsquo;t wish to risk anyone&amp;rsquo;s life.&lt;/p&gt;
+&lt;h2 id=&#34;tldr&#34; &gt;TL;DR
+&lt;span&gt;
+    &lt;a href=&#34;#tldr&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;An anonymous idea is stronger than a non-anonymous idea, as it lacks the weaknesses associated with having a human (and thus flawed) orator.&lt;/li&gt;
+&lt;li&gt;A person is always safer when they aren&amp;rsquo;t publicly tied to any comments or statements.&lt;/li&gt;
+&lt;li&gt;A person has the freedom to be who they are when their identity isn&amp;rsquo;t behind their actions.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Forgiveness</title>
+      <link>jarbus.net/blog/forgiveness/</link>
+      <pubDate>Sat, 27 Jul 2019 11:25:49 -0400</pubDate>
+      
+      <guid>jarbus.net/blog/forgiveness/</guid>
+      <description>&lt;p&gt;Forgiveness has a negative connotation these days. We see forgiving each other as weak — as not standing by one’s values, as giving up one’s pride. This view is incredibly counter-productive and, in my opinion, the cause of many problems in today’s society. Here is the actual definition of forgiveness:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;forgive (verb)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;to cease to feel resentment against (an offender)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Source: Merriam Webster&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This definition is all that forgiveness has to be — not pardoning or excusing someone for their actions, but instead letting go of anger towards them. Grudges may appear to make someone “tough” and “strong,” but all they do is keep someone’s mind tormented by the people they despise. It is very easy to hold a grudge—grudges make one feel powerful without requiring them to do anything. However, true power in one’s life stems from overcoming this negativity and taking control of one’s emotions.&lt;/p&gt;
+&lt;h2 id=&#34;forgiving-others&#34; &gt;Forgiving Others
+&lt;span&gt;
+    &lt;a href=&#34;#forgiving-others&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Forgiving others is much easier than it sounds and is one of the quickest and simplest ways to &lt;em&gt;improve your mental state&lt;/em&gt;. This will be more challenging for deep, long-term grudges, but you can displace surface-level anger as easily as saying, “[Person], I forgive you” aloud—even when alone. Forgiveness helps get negative people out of your head who don’t deserve to be there. It also helps you understand others instead of hating them.&lt;/p&gt;
+&lt;p&gt;Letting go of blame/resentment helps focus on finding solutions, instead of blaming others for problems—this results in &lt;em&gt;better decision making&lt;/em&gt;. Your thought process goes from, “If only this person didn’t do that, everything would be so much better” to “This happened, what can I do about it?” It’s not possible to control the actions of others, but we can control our own responses. This attitude &lt;em&gt;sharpens social skills&lt;/em&gt;, as you learn to respond maturely instead of reacting passionately when upset.&lt;/p&gt;
+&lt;h2 id=&#34;forgiving-yourself&#34; &gt;Forgiving Yourself
+&lt;span&gt;
+    &lt;a href=&#34;#forgiving-yourself&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;What does forgiving yourself mean? In line with our definition from above, it means to cease self-resentment. Many toxic behaviors stem from insecurities and regrets people have. If people were content with themselves and their accomplishments, the world would be a kinder place. Self forgiveness can be a much more difficult task than forgiving others (since you can’t exactly put yourself behind you), but can reap the greatest benefits. &lt;em&gt;Self forgiveness helps guide one’s life towards inner peace and self-love and away from a dependency on external stimuli (such as degrading others) for happiness.&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;One of the best ways to help forgive yourself for shortcomings is to work on improving them. Hate how you look? Exercise! Hate being socially incompetent? Practice talking to people! The amount of effort you put into change doesn’t have to be significant, as long as it’s consistent. You should be able to say, “I don’t like this aspect of myself but that’s ok, because I’m taking steps to improve.” This will &lt;em&gt;increase self-esteem&lt;/em&gt; and thus &lt;em&gt;increase happiness&lt;/em&gt; in your life.&lt;/p&gt;
+&lt;p&gt;An alternative to changing who you are is accepting your flaws. No one is perfect! This skill is difficult to master, but promotes loving who you are instead of trying to change into who you want to be. Self-acceptance doesn’t require you to change everything you despise about yourself, but also can lead to a life of mediocrity where you always settle for “good enough”. I find a bit of each mindset to be ideal—I try to improve the qualities I can control and accept the ones I can’t.&lt;/p&gt;
+&lt;p&gt;If you hold self-resentment for past actions, try talking to a professional counselor/therapist! They are skilled at helping patients work through complex and specific issues. They suggest solutions you might not have thought of and call you out when you need it, making your problems much easier to tackle.&lt;/p&gt;
+&lt;h2 id=&#34;recap--final-thoughts&#34; &gt;Recap &amp;amp; Final Thoughts
+&lt;span&gt;
+    &lt;a href=&#34;#recap--final-thoughts&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Forgiveness means letting go of resentment, not justifying an action or person.&lt;/li&gt;
+&lt;li&gt;It is easier to stay angry than to forgive.&lt;/li&gt;
+&lt;li&gt;It is not stronger to stay angry than to forgive.&lt;/li&gt;
+&lt;li&gt;Forgiveness increases confidence.&lt;/li&gt;
+&lt;li&gt;Forgiveness improves communication.&lt;/li&gt;
+&lt;li&gt;Forgiveness clears the mind.&lt;/li&gt;
+&lt;li&gt;Forgiveness allows you to learn from others.&lt;/li&gt;
+&lt;li&gt;Forgiveness in some aspects of life help you forgive in others.&lt;/li&gt;
+&lt;li&gt;Forgiveness makes the world kinder.&lt;/li&gt;
+&lt;li&gt;“I don’t like myself because I am inferior,” can turn into “I love myself because I’m trying to grow.”&lt;/li&gt;
+&lt;li&gt;“If only this didn’t happen,” can turn into “This happened, how do we respond?”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that this writing isn’t citing scientific studies or telling anecdotes—it is presenting a set of ideas for the reader to consider. These beliefs do not cover the entire subject nor do they universally hold.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Balance</title>
+      <link>jarbus.net/blog/balance/</link>
+      <pubDate>Tue, 09 Jul 2019 11:25:49 -0400</pubDate>
+      
+      <guid>jarbus.net/blog/balance/</guid>
+      <description>&lt;p&gt;Choosing sides is fun. Be it politics or pop culture, nothing validates an opinion better than classifying opposing opinions as wrong. Sometimes, as seen by Holocaust deniers or the anti-vaccine movement, it&amp;rsquo;s possible people can be completely and utterly wrong. However, in the general case, both sides have merits and both sides have pitfalls. When trying to gain a perspective of the bigger picture, it&amp;rsquo;s best to position oneself somewhere in the middle.&lt;/p&gt;
+&lt;h2 id=&#34;this-versus-that&#34; &gt;This versus that
+&lt;span&gt;
+    &lt;a href=&#34;#this-versus-that&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;We live in a world with seven billion perspectives. Seven billion lifetimes of thought and contemplation. Of course, one cannot listen to every lifestory nor hear every person&amp;rsquo;s opinion. So we form into groups, with each important group representing something between the loudest minority or general majority of people with a particular set of opinions. This is a system able to properly distinguish emerging schools of thought while categorizing people into said schools, enabling people to efficiently organize, communicate, and compare ideas.&lt;/p&gt;
+&lt;p&gt;This does not imply that everyone in a group has well formed opinions. Quite the opposite in fact &amp;ndash; these groups require people to give considerably less thought into their beliefs. Immersing oneself in a group for a few ideas can easily lead to naturally picking up other beliefs of the group, as many people will adapt for acceptance. This lower barrier to entry for taking sides is a core part of the conflict between groups, as society seems to reinforce beliefs by ridiculing opponents who don&amp;rsquo;t fully understand theirs &amp;ndash; consider the plethora of &amp;ldquo;Person X DESTROYS believer of Y&amp;rdquo; videos online.&lt;/p&gt;
+&lt;p&gt;Given a large enough group however, there tend to be many people who have given careful time and consideration into why they believe what they believe. Thus, one cannot simply sweep a prominent idea under the rug because of a few bad apples. To do so is to throw away ideas which stood the test of time and the people behind them. If proposed a ridiculous sounding idea, merely dismissing it without consideration denies you of a potentially meaningful realization. Instead of &amp;ldquo;No, that&amp;rsquo;s wrong&amp;rdquo;, all parties benefit more from &amp;ldquo;Why?&amp;rdquo; The pursuit of knowledge would have ended a long time ago if we dismissed everything we didn&amp;rsquo;t believe.&lt;/p&gt;
+&lt;h2 id=&#34;entertaining-thoughts&#34; &gt;Entertaining Thoughts
+&lt;span&gt;
+    &lt;a href=&#34;#entertaining-thoughts&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;An invaluable skill that many successful people have is the ability to play with an idea without accepting it. This is essential for multiple reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;By entertaining an idea, you can learn key takeaways from views that may appear ridiculous at first&lt;/li&gt;
+&lt;li&gt;You can reinforce your beliefs by attempting (and failing) to convince yourself of an opposing view&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Additionally, many people are absolutely rubbish at laying out a convincing argument. Requiring the persuasion of other people to change your mind will result in your mind rarely being changed. Sometimes, the best person to convince you of something is in fact, you.&lt;/p&gt;
+&lt;h2 id=&#34;final-thoughts&#34; &gt;Final Thoughts
+&lt;span&gt;
+    &lt;a href=&#34;#final-thoughts&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;In summary:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Don&amp;rsquo;t discredit an idea based on the people proposing it&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t discredit a person based on the group they belong to&lt;/li&gt;
+&lt;li&gt;Doing so inhibits learning for both parties&lt;/li&gt;
+&lt;li&gt;If someone can&amp;rsquo;t convince you of something, try convincing yourself&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is not a fully fleshed out idea of mine, nor is this idea exclusively mine. There are both counter arguments and room for expansion, however I think this is best left up to the reader.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>jarbus.net/perspective/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>jarbus.net/perspective/</guid>
+      <description>&lt;p&gt;Posts sharing my perspective on life.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;Would-You-Rather-Be-Uninformed-Or-Misinformed%3F&#34;&gt;Would You Rather Be Uninformed Or Misinformed?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Critical-Thinking&#34;&gt;Critical-Thinking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Anonymity&#34;&gt;Anonymity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Forgiveness&#34;&gt;Forgiveness&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Happiness&#34;&gt;Happiness&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Soft-Rules&#34;&gt;Soft Rules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Balance&#34;&gt;Balance&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>jarbus.net/shorts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>jarbus.net/shorts/</guid>
+      <description>&lt;p&gt;All short stories I&amp;rsquo;ve written:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;Short-Aftermath&#34;&gt;Aftermath&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>jarbus.net/technology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>jarbus.net/technology/</guid>
+      <description>&lt;p&gt;Posts relating to all things technology:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;Generating-Slides-In-Vim&#34;&gt;Generating Slides In Vim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Blogging-with-Shell-Scripts-and-Markdown&#34;&gt;Blogging with Shell Scripts and Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Tesla-and-False-Advertising-In-AI&#34;&gt;Tesla and False Advertising in AI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Anonymity&#34;&gt;Anonymity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;AI-Index&#34;&gt;AI Index&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Bitcoin-Whitepaper,-Explained&#34;&gt;Bitcoin Whitepaper, Explained&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Visualization-of-a-Basic-Neural-Network-in-Python&#34;&gt;Visualization of a Basic Neural Network in Python&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>jarbus.net/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>jarbus.net/about/</guid>
+      <description>&lt;p&gt;Hi! My name&amp;rsquo;s Jack. This is my blog, where I write about my interests, which include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Artificial Intelligence&lt;/li&gt;
+&lt;li&gt;Decentralization&lt;/li&gt;
+&lt;li&gt;Music&lt;/li&gt;
+&lt;li&gt;Psychology&lt;/li&gt;
+&lt;li&gt;Cooking&lt;/li&gt;
+&lt;li&gt;Books&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bash.cyberciti.biz/guide/Unix_philosophy&#34;&gt;The Unix Philosophy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To be notified of new posts, add this site&amp;rsquo;s &lt;a href=&#34;jarbus.net/blog/index.xml&#34;&gt;RSS feed&lt;/a&gt; to your feed reader of choice.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>jarbus.net/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>jarbus.net/contact/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/jarbus&#34;&gt;@jarbus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mastodon: &lt;a href=&#34;https://fosstodon.org/@jarbus&#34;&gt;@jarbus@fosstodon.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Twitter: &lt;a href=&#34;https://twitter.com/jarbus_&#34;&gt;@jarbus_&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Email: &lt;a href=&#34;mailto:jarbus@tutanota.com&#34;&gt;jarbus@tutanota.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

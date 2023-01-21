@@ -32,6 +32,6 @@ there's nothing to be embarrassed about. But, if I was surrounded by people who 
 
 I've read a lot about the benefits of blogging; Writing helps
 flesh out ideas, improves communication, puts down what you are thinking
-about to reference later, helps connect you to other people, gets you into your dream job, cures you of cancer, prevents global warming, and saves the bees. But somehow, the bees aren't enough motivation to write.
+about to reference later, helps connect you to other people, gets you into your dream job, cures you of cancer, prevents global warming, and [saves the bees](https://www.youtube.com/watch?v=Nl0wIJU22dw). But somehow, the bees aren't enough motivation to write.
 
 In all the blog posts talking about why you should blog, nobody mentions this feeling of being "the guy with the blog". I imagine other people feel this way, which is why I'm writing this, I suppose. Hopefully I make writing a habit in 2023.
