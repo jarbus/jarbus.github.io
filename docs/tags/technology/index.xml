@@ -1,63 +1,453 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>technology on jarbus.net</title>
-    <link>https://jarbus.net/tags/technology/</link>
-    <description>Recent content in technology on jarbus.net</description>
+    <title>technology on </title>
+    <link>jarbus.net/tags/technology/</link>
+    <description> (technology)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Dec 2021 14:28:41 -0500</lastBuildDate><atom:link href="https://jarbus.net/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Dec 2021 14:28:41 -0500</lastBuildDate>
+    
+    <atom:link href="jarbus.net/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>How to write LaTeX without writing LaTeX</title>
-      <link>https://jarbus.net/blog/write-latex-without-latex/</link>
+      <link>jarbus.net/blog/write-latex-without-latex/</link>
       <pubDate>Fri, 17 Dec 2021 14:28:41 -0500</pubDate>
       
-      <guid>https://jarbus.net/blog/write-latex-without-latex/</guid>
-      <description>I love the look of LaTeX but hate the experience of writing in LaTeX, at least compared to Markdown. Luckily, Pandoc can convert Markdown files to PDFs using a LaTeX engine as the renderer, and includes a custom Markdown specification that can fill almost all my LaTeX needs.
-First, let&amp;rsquo;s talk about where Pandoc Markdown falls short:
- No custom LaTeX style guides (although citation style files are supported) No Section Numbering There is, thanks to naruhodo on Hacker News for the correction Referencing labels doesn&amp;rsquo;t work well (Supposedly the pandoc-crossref filter fixes this but I couldn&amp;rsquo;t get it to work) Don&amp;rsquo;t even bother with complex page layouts or precise figure placements  This might be a deal breaker for some, but for others who are writing lots of documents (such as students), this may not be.</description>
+      <guid>jarbus.net/blog/write-latex-without-latex/</guid>
+      <description>&lt;p&gt;I love the look of LaTeX but hate the experience of writing in LaTeX, at least compared to Markdown. Luckily, &lt;a href=&#34;https://pandoc.org/MANUAL.html#pandocs-Markdown&#34;&gt;Pandoc can convert Markdown files to PDFs using a LaTeX engine as the renderer&lt;/a&gt;, and includes a custom Markdown specification that can fill almost all my LaTeX needs.&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s talk about where Pandoc Markdown falls short:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No custom LaTeX style guides (although citation style files are supported)&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;No Section Numbering&lt;/del&gt; There is, thanks to naruhodo on Hacker News for the correction&lt;/li&gt;
+&lt;li&gt;Referencing labels doesn&amp;rsquo;t work well (Supposedly the pandoc-crossref filter fixes this but I couldn&amp;rsquo;t get it to work)&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t even bother with complex page layouts or precise figure placements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This might be a deal breaker for some, but for others who are writing lots of documents (such as students), this may not be. Now for the benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Produce a document with Markdown that looks like it was written in LaTeX&lt;/li&gt;
+&lt;li&gt;Use LaTeX math notation in Markdown&lt;/li&gt;
+&lt;li&gt;Easy BibTeX citations in Markdown&lt;/li&gt;
+&lt;li&gt;Figures and Captions are supported&lt;/li&gt;
+&lt;li&gt;Two Columns are supported&lt;/li&gt;
+&lt;li&gt;Use your favorite editor instead of some LaTeX IDE&lt;/li&gt;
+&lt;li&gt;Write and preview offline&lt;/li&gt;
+&lt;li&gt;Build a document in one command&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are reading this, you probably know how both Markdown and Latex work, and you probably know how to read the &lt;a href=&#34;https://pandoc.org/MANUAL.html#pandocs-Markdown&#34;&gt;Pandoc Markdown Documentation&lt;/a&gt;, so instead, below is a template document that I wish I had when first starting out. It covers most things you&amp;rsquo;d need to write simple papers in Markdown. Configuration for document settings is done in the YAML block at the top of the document.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: How to Succeed in LaTeX without even trying
+subtitle: For the lazy writer
+author:
+- jarbus.net
+numbersections: true
+toc: true
+geometry:
+- margin=1in
+linkcolor: black
+urlcolor: blue
+bibliography: example.bib
+csl: nature.csl
+header-includes: |
+    \usepackage{package_here}
+classoption:
+- twocolumn
+abstract: |
+    This is the abstract
+---
+
+# Introduction
+
+According to all known laws
+of aviation, there is now way
+that a bee should be able to fly. [@seinfeld2007]
+
+| &amp;quot;This is a quote&amp;quot;
+
+![Caption here](bee.png){width=50% }
+
+$\forall b , y = mx+b$
+
+$$
+a^2 + b^2 = c^2
+$$
+
+# References
+
+::: {#refs}
+:::
+
+# Appendix
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, to compile your document to a PDF, simply run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pandoc &amp;quot;file.md&amp;quot; -o &amp;quot;file.pdf&amp;quot; --citeproc
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to generate a document that looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;jarbus.net/final-document.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;--citeproc&lt;/code&gt; option is needed for compiling a bibliography. For cross-references inside a document, take a look at &lt;a href=&#34;https://github.com/lierdakil/pandoc-crossref&#34;&gt;pandoc-crossref&lt;/a&gt;, which will require the use of &lt;code&gt;--filter pandoc-crossref&lt;/code&gt; if it works for you.&lt;/p&gt;
+&lt;p&gt;I mapped a modified version of the build command above to a key in Neovim, so now pressing &lt;code&gt;Space+b&lt;/code&gt; in my Markdown buffer compiles my document automatically, no matter what file name I&amp;rsquo;m using:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.md nnoremap &amp;lt;Leader&amp;gt;b
+    \ :silent pandoc % -o &amp;quot;%:p:h/%:t:r.pdf&amp;quot;
+    \ --filter pandoc-crossref --citeproc &amp;amp;&amp;lt;CR&amp;gt;&amp;lt;CR&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And that&amp;rsquo;s how I write LaTeX documents offline in Markdown.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>AI Index</title>
-      <link>https://jarbus.net/blog/ai-index/</link>
+      <link>jarbus.net/blog/ai-index/</link>
       <pubDate>Fri, 19 Mar 2021 11:25:49 -0400</pubDate>
       
-      <guid>https://jarbus.net/blog/ai-index/</guid>
-      <description>An ever-expanding list of concepts in the field of AI to give myself and others an easy reference. Each item in the list contains a short, rudimentary definition I&amp;rsquo;ve written, as well as a link to a resource that can explain it better.
-Ablation Study: Removing some parts of a machine learning model to measure impact on performance
-Advantage Function: The difference between a Q-value for a state-action pair and a value for the state.</description>
+      <guid>jarbus.net/blog/ai-index/</guid>
+      <description>&lt;p&gt;An ever-expanding list of concepts in the field of AI to give myself and others an easy reference.
+Each item in the list contains a short, rudimentary definition I&amp;rsquo;ve written, as well as a link to a resource that can explain it better.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/380040/what-is-an-ablation-study-and-is-there-a-systematic-way-to-perform-it&#34;&gt;Ablation Study&lt;/a&gt;:
+Removing some parts of a machine learning model to measure impact on performance&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mc.ai/advantage-function-in-deep-reinforcement-learning/&#34;&gt;Advantage Function&lt;/a&gt;: The difference between a Q-value for a state-action pair and a value for the state. Useful to determine how good an action is relative to its state.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://towardsdatascience.com/intuitive-understanding-of-attention-mechanism-in-deep-learning-6c9482aecf4f&#34;&gt;Attention&lt;/a&gt;: Neural networks are able to &amp;ldquo;pay attention&amp;rdquo; to specific parts of input or output, useful in translating languages or predicting sequences. For example, when trying to predict the next word in &amp;ldquo;the clouds in the&amp;rdquo;, you pay attention to the word &lt;em&gt;cloud&lt;/em&gt; to predict the word &lt;em&gt;sky&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Autoencoder&#34;&gt;Autoencoder&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A type of neural network that attempts to take raw data, convert it into a simpler representation (usually by limiting the amount of nodes in a hidden layer for representation), and then decode the representation back into it&amp;rsquo;s data. They are primarly used to extract the useful properties from data automatically. They can do this in an unsupervised fashion, since their output targets are the given input, requiring no labeling.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Automated_machine_learning&#34;&gt;AutoML&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Systems where the entire machine learning process, from data preparation to network design, is automated.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://machinelearningmastery.com/autoregression-models-time-series-forecasting-python/&#34;&gt;Autoregression&lt;/a&gt;: A time series model that uses observations from previous time steps to predict the value at the next time step.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Backpropagation&#34;&gt;Backpropogation&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: The algorithm and calculus behind gradient descent traditionally used in feed-forward neural networks&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Bayesian_statistics&#34;&gt;Bayesian&lt;/a&gt;: An interpretation of probability where the phrase &amp;ldquo;probability&amp;rdquo; expresses a degree of belief between 0 or 1, 0 representing false and 1 representing true. Uses expected values and random variables.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Bootstrapping_(statistics)&#34;&gt;Bootstrapping&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Sampling from a distribution to approximate a function. In cases of reinforcement learning, bootstrapping usually samples potential future values to approximate a current value.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Convolutional_neural_network&#34;&gt;Convolutional Neural Network (CNN)&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A neural network primarly used for image processing. These networks design filters for specific parts of an image to extract higher level information, filters such as detecting a certain type of edge.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.quora.com/What-is-Covariate-shift?share=1&#34;&gt;Covariate Shift&lt;/a&gt;: The training distribution changes but the testing distribution does not change&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Data_mining&#34;&gt;Data Mining&lt;/a&gt;: Discovering knowledge and patterns from massive amounts of data, usually in an unsupervised fashion.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Deep_learning&#34;&gt;Deep Learning&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A subset of machine learning with a multi-step learning process, usually referring to neural networks with two or more layers.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/221402/understanding-the-role-of-the-discount-factor-in-reinforcement-learning&#34;&gt;Discount Factors&lt;/a&gt;: A variable (usually $\gamma$) that determines how much a model cares about rewards in the distant future compared to immediate rewards.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\gamma = 0$ cares only about immediate reward,&lt;/li&gt;
+&lt;li&gt;$\gamma = 1$ cares only about sum of all future rewards.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://towardsdatascience.com/eligibility-traces-in-reinforcement-learning-a6b458c019d6&#34;&gt;Eligibility Trace&lt;/a&gt;: For temporal learning, the eligibility trace is a vector of decaying values that represent when weights were last used. When we encounter an error, this vector allows us to update recent weights harder than weights used long ago.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Feedforward_neural_network&#34;&gt;Feed-forward Neural Network&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A simple neural network where information is passed strictly from one layer to the next.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Generative_adversarial_network&#34;&gt;Generative Adversarial Network (GAN)&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A set of two or more neural networks that can generate new data based on existing training data.
+A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;https://thispersondoesnotexist.com/&lt;/a&gt;, that can generate fake pictures of humans.
+- GANs consist of one generator network with the goal to make realistic new data, and a distinction network with the goal to tell real data from fake. As the networks train, they each improve at their individual task, forcing their adversaries to improve in turn.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Genetic_algorithm&#34;&gt;Genetic Algorithms&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Algorithms that try to mimic the evolutionary process by randomly modifying the best-performing sets of parameters while discarding those with the worst performance, then repeating.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://openai.com/blog/better-language-models/&#34;&gt;GPT-2/3&lt;/a&gt;: A language model from OpenAI that can generate text that mimics a writing style incredibly well.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Gradient_descent&#34;&gt;Gradient Descent&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: An interative process that attempts to find a minimum of a function that works by moving in the direction that will decrease the gradient until a local minima is reached.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)&#34;&gt;Hyperparameters&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Manually defined parameters of the model, such as the size of a neural network, or manually defined parameters of the machine learning algorithm, such as learning rate.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables&#34;&gt;(IID) Independent and Identically Distributed&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Random variables are independent and identically distributed when the value of one variable doesn&amp;rsquo;t affect the probability of another variable. For example, the outcome of one coin flip does not affect the outcome of another coin flip, so both flips are IID.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dibyaghosh.com/blog/probability/kldivergence.html&#34;&gt;KL Divergence&lt;/a&gt;: Divergence between two distributions of data. Useful for determining how different fake data is from real data (GANs) or for determining how differemt two policies are for trust-based reinforcement learning.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Self-driving_car&#34;&gt;Level 0-5&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: The different &amp;ldquo;levels&amp;rdquo; of autonomy related to self driving cars. 0 represents full human control while 5 represents full vehicle control.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Long_short-term_memory&#34;&gt;Long Short Term Memory (LSTM)&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A type of recurrent neural network that works exceptionally well with sequential input. A unique trait of these networks are their memory cells&#39; &amp;ldquo;forget gates&amp;rdquo;, which allow them to control how long they hold onto data for.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://deepai.org/publication/the-lottery-ticket-hypothesis-training-pruned-neural-networks&#34;&gt;The Lottery Ticket Hypothesis&lt;/a&gt;: A randomly-initialized, dense neural network contains a subnetwork that is initialised such that — when trained in isolation — it can match the test accuracy of the original network after training for at most the same number of iterations.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Markov_decision_process&#34;&gt;Markov Decision Process&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A system of states, actions, and probabilities of getting to other states given actions taken from previous states.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://aiden.nibali.org/blog/2017-01-18-mode-collapse-gans/&#34;&gt;Mode Collapse&lt;/a&gt;: When the distribution of samples produced by a generative adversarial network represent a subset of the latent distribution, instead of the entire latent distribution. For example, you train a network to produce pictures of animals but it only learns to produce pictures of cats.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Multi-armed_bandit&#34;&gt;Multi-armed Bandit&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A core component of reinforcement learning, the multi-armed bandit problem is the classic &amp;ldquo;exploration versus exploitation&amp;rdquo; tradeoff. In this problem, expected gain must be maximized in an environment with varying rewards, forcing an agent to decide between keeping an option they know to be safe versus exploring new options that might be better.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/897/online-vs-offline-learning&#34;&gt;Online/Offline Learning&lt;/a&gt;: Online learning happens as data comes in. Offline learning happens after data is collected and made into a batch.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://mlss.tuebingen.mpg.de/2015/slides/ghahramani/gp-neural-nets15.pdf&#34;&gt;Parametric &amp;amp; Non-Parametric Models&lt;/a&gt;: Parametric models use a finite number of parameters, like weights in linear regression, to represent a learned hypothesis. Non-Parametric models use variable/infinite/no parameters, like data points in nearest neighbors, to represent a learned hypothesis.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Precision_and_recall&#34;&gt;Precision&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: The fraction of relevant instances among the retrieved instances. Also known as positive predictive value.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Precision_and_recall&#34;&gt;Recall&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: The fraction of relevant instances that were retrieved. Also known as sensitivity.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Recurrent_neural_network&#34;&gt;Recurrent Neural Network (RNN)&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A type of network that can store state, giving it a type of memory that can process a series of inputs. This can be accomplished by having a cycle within the network.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Regression_analysis&#34;&gt;Regression&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A set of models that determine relationships between data and a dependent value. For example, linear regression tries to approximate a dependent value while logistic regression tries to determine the probability of a dependent value.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Residual_neural_network&#34;&gt;Residual Neural Network&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Networks with connections that skip some layers and connect to non-adjacent ones. This type of network helps counter the vanishing gradient problem&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Reinforcement_learning&#34;&gt;Reinforcement Learning&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Algorithms are given a world state they are able to interact with, and learn from the reward their interactions give them.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ai.stackexchange.com/questions/4456/whats-the-difference-between-model-free-and-model-based-reinforcement-learning&#34;&gt;Model-Based&lt;/a&gt;: You create a model of the world and can predict what the next state and reward will be for each action&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ai.stackexchange.com/questions/4456/whats-the-difference-between-model-free-and-model-based-reinforcement-learning&#34;&gt;Model-Free&lt;/a&gt;: You know what action to take without knowing what to expect, since you don&amp;rsquo;t have a model of the world&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/&#34;&gt;Value&lt;/a&gt;: Networks that determine the value of a state.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/&#34;&gt;Policy&lt;/a&gt;: Network to choose actions. Can directly optimize model instead of computing values, useful when you have a continuous action space. Only uses reward function. Requires a score function to evaluate performance of policy, usually total rewards accumulated given a period of time.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/news/an-intro-to-advantage-actor-critic-methods-lets-play-sonic-the-hedgehog-86d6240171d/&#34;&gt;Actor Critic&lt;/a&gt;: Backbone of state of the art reinforcement learning algorithms.
+&lt;ul&gt;
+&lt;li&gt;Uses a value-based Critic to measure how good the action taken is&lt;/li&gt;
+&lt;li&gt;Uses a policy-based Actor to to choose actions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Stochastic&#34;&gt;Stochastic&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Randomly determined process, usually refers to probabilistic outputs of machine learning systems&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Supervised_learning&#34;&gt;Supervised Learning&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A model learns to produce a desired output and knows what that output is. Example: Image Recognition&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Temporal_difference_learning&#34;&gt;Temporal Difference&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Model-free reinforcement learning design which learns by bootstrapping value samples in order to approximate a value function. Once more information is revealed about the true value during later timesteps, you can update the low information bootstrapped guess by using the newly acquired outcome as a &amp;ldquo;ground truth&amp;rdquo; to train a network.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Temporal Difference error is the difference between consecutive temporal predictions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ai.stackexchange.com/questions/7359/what-is-a-trajectory-in-reinforcement-learning&#34;&gt;Trajectories&lt;/a&gt;: The history of states (and potentially actions) taken during a walk of a Markov Decision Process.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Transfer_learning&#34;&gt;Transfer Learning&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Taking parts of a network trained on one data set, and using it in a different network with a different dataset.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://towardsdatascience.com/transformers-141e32e69591&#34;&gt;Transformer&lt;/a&gt;: A type of recurrent neural network primarily used with sequential data, like language translation. These networks use an attention model to improve performance.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Unsupervised_learning&#34;&gt;Unsupervised Learning&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A model learns to produce a desired output without being told what it&amp;rsquo;s looking for. Example: Playing Chess&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Vanishing_gradient_problem&#34;&gt;Vanishing Gradient Problem&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: In a network, a gradient can become vanishingly small which will stop the weight from changing it&amp;rsquo;s value, since weights are modified based on their contribution to the gradient.&lt;/p&gt;
+&lt;p&gt;Feel free to contact me with any suggested additions/changes at &lt;a href=&#34;mailto:jarbus@tutanota.com&#34;&gt;jarbus@tutanota.com&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Generating Slides in Vim</title>
-      <link>https://jarbus.net/blog/generating-slides-in-vim/</link>
+      <link>jarbus.net/blog/generating-slides-in-vim/</link>
       <pubDate>Sun, 31 Jan 2021 11:25:49 -0400</pubDate>
       
-      <guid>https://jarbus.net/blog/generating-slides-in-vim/</guid>
-      <description>There is a great tool known as pandoc that can convert documents from one filetype to another. For example, you can convert a Microsoft Word document to a PDF, without even needing to own a copy of Microsoft Word! However, we care about Pandoc&amp;rsquo;s ability to convert a Markdown document to a slideshow presentation using LaTeX Beamer as a rendering engine.
-There is a great writeup about this basic feature here.</description>
+      <guid>jarbus.net/blog/generating-slides-in-vim/</guid>
+      <description>&lt;p&gt;There is a great tool known as &lt;a href=&#34;https://pandoc.org/&#34;&gt;pandoc&lt;/a&gt; that can convert documents from one filetype to another. For example, you can convert a Microsoft Word document to a PDF, without even needing to own a copy of Microsoft Word! However, we care about Pandoc&amp;rsquo;s ability to convert a Markdown document to a slideshow presentation using LaTeX Beamer as a rendering engine.&lt;/p&gt;
+&lt;p&gt;There is a great writeup about this basic feature &lt;a href=&#34;https://ashwinschronicles.github.io/beamer-slides-using-markdown-and-pandoc&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TL;DR: With Pandoc installed and markdown file &lt;code&gt;Demo.md&lt;/code&gt;, executing &lt;code&gt;pandoc -t beamer Demo.md -o Demo.pdf&lt;/code&gt; will generate a slideshow as a pdf, with each section heading as the title of a new slide.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Different themes can be specified with the &lt;code&gt;-V&lt;/code&gt; option; I&amp;rsquo;m currently using the &lt;a href=&#34;https://github.com/matze/mtheme&#34;&gt;Metropolis&lt;/a&gt; beamer theme and &lt;a href=&#34;https://github.com/rchurchley/beamercolortheme-owl&#34;&gt;Owl&lt;/a&gt; colorscheme. After installing these themes, I can run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pandoc -t beamer
+       -V fontsize=14pt
+       -V theme=metropolis
+       -V colortheme=owl
+       -s
+       Demo.md -o Demo.pdf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to produce my presentation. &lt;strong&gt;Note: All code blocks are single-line commands/&lt;code&gt;.vimrc&lt;/code&gt; entries, and are displayed as multi-line for readability.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Unfortunately, it&amp;rsquo;s a pain to recompile a document every time I want to view my changes. Luckily, as a (Neo)Vim user, I can automatically run commands everytime I write a file. To avoid generating presentations with non-presentation markdown files, I instead write presentations in plaintext files that end with &lt;code&gt;.slides&lt;/code&gt;. In the example above, I&amp;rsquo;d be using &lt;code&gt;Demo.slides&lt;/code&gt; instead of &lt;code&gt;Demo.md&lt;/code&gt;. When I add:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;autocmd! BufWritePost *.slides silent !pandoc
+    -t beamer
+    -V fontsize=14pt
+    -V theme=metropolis
+    -V colortheme=owl
+    -s
+    % -o &amp;quot;%:p:h/.%:t:r.pdf&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to my &lt;code&gt;.vimrc&lt;/code&gt;, everytime I save changes in a &lt;code&gt;FILENAME.slides&lt;/code&gt; file, it will generate a presentation located in &lt;code&gt;.FILENAME.pdf&lt;/code&gt;. I choose to add a leading period in the output to hide the PDF from my file manager, feel free to remove it.&lt;/p&gt;
+&lt;p&gt;To enable markdown syntax highlighting in our &lt;code&gt;.slides&lt;/code&gt; file, add:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.slides :set filetype=markdown
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to your &lt;code&gt;.vimrc&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now Vim generates a PDF presentation for us everytime we save a &lt;code&gt;.slides&lt;/code&gt; file. For easy viewing, I added another keybind, &lt;code&gt;Z&lt;/code&gt;, to open the corresponding PDF in my PDF viewer of choice, &lt;a href=&#34;https://pwmt.org/projects/zathura/&#34;&gt;Zathura&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nnoremap Z :silent !zathura --fork %:p:h/.%:t:r.pdf&amp;lt;CR&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Zathura automatically refreshes the view whenever changes to an open document is detected. This means that I can open a &lt;code&gt;.slides&lt;/code&gt; file in Vim, save changes, and press &lt;code&gt;Z&lt;/code&gt; to view my changes in Zathura. I can then immediately view any additional changes I make in the open Zathura window, just by saving the &lt;code&gt;.slides&lt;/code&gt; file.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Tesla and False Advertising in AI</title>
-      <link>https://jarbus.net/blog/tesla-and-false-advertising-in-ai/</link>
+      <link>jarbus.net/blog/tesla-and-false-advertising-in-ai/</link>
       <pubDate>Wed, 22 Jul 2020 11:25:49 -0400</pubDate>
       
-      <guid>https://jarbus.net/blog/tesla-and-false-advertising-in-ai/</guid>
-      <description>Here&amp;rsquo;s the problem with advertising AI-based technology that doesn&amp;rsquo;t exist:
-You cannot promise anything about your product.
-We&amp;rsquo;ve all seen AI advertised to the masses that doesn&amp;rsquo;t work as advertised, just look at any voice-to-text system. When I got my Apple Watch, I hoped to use it to respond to messages without getting distracted by my phone. I quickly realized that wasn&amp;rsquo;t a viable solution: I had to repeat my message multiple times per text in order to get the correct dictation.</description>
+      <guid>jarbus.net/blog/tesla-and-false-advertising-in-ai/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s the problem with advertising AI-based technology that doesn&amp;rsquo;t exist:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You cannot promise anything about your product.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve all seen AI advertised to the masses that doesn&amp;rsquo;t work as advertised, just look at any voice-to-text system. When I got my Apple Watch, I hoped to use it to respond to messages without getting distracted by my phone. I quickly realized that wasn&amp;rsquo;t a viable solution: I had to repeat my message multiple times per text in order to get the correct dictation.&lt;/p&gt;
+&lt;p&gt;If this was a software issue, I could file a bug report and Apple could send out a fix. Unfortunately with AI, there isn&amp;rsquo;t much Apple can do besides get more data and re-train the model, which still wouldn&amp;rsquo;t guarantee a better user experience for anyone. Mind you, this is with software that&amp;rsquo;s already shipped.&lt;/p&gt;
+&lt;p&gt;Now let&amp;rsquo;s look at Tesla, or more specifically its CEO, Elon Musk. &lt;a href=&#34;https://futurism.com/elon-musk-tesla-close-level-5-autonomy&#34;&gt;Musk claims that Level 5 driving (in which a human is not needed behind the wheel) will be coming to Tesla vehicles in the form of a software update by the end of 2020&lt;/a&gt;. A month before he made said claim, &lt;a href=&#34;https://futurism.com/the-byte/tesla-autopilot-slam-overturned-truck&#34;&gt;a Tesla on autopilot crashed into a flipped truck&lt;/a&gt;&amp;ndash;a mistake most humans wouldn&amp;rsquo;t make.&lt;/p&gt;
+&lt;p&gt;Just like Apple can&amp;rsquo;t promise its speech-to-text system will work better than a human (or even better than a toddler), Musk can&amp;rsquo;t guarantee anything about Tesla&amp;rsquo;s Level 5 capability. Tesla can&amp;rsquo;t even &amp;ldquo;reasonably claim&amp;rdquo; your car won&amp;rsquo;t crash into flipped trucks or &lt;a href=&#34;https://www.msn.com/en-us/autos/enthusiasts/another-tesla-crashes-into-a-cop-car-while-on-autopilot/ar-BB16Mvkk#!&#34;&gt;stopped cop cars&lt;/a&gt;. In fact, no one using deep learning can promise anything about their system. Deep learning, and by extension Tesla&amp;rsquo;s Autopilot system, is a black box. We don&amp;rsquo;t know why it works, we can&amp;rsquo;t promise that it&amp;rsquo;ll work, but it seems to work when we test it. Unless Tesla is testing on all roads in all conditions, they shouldn&amp;rsquo;t even be &amp;ldquo;confident&amp;rdquo; level 5 technology, in which &lt;strong&gt;a human does not need to be in the vehicle&lt;/strong&gt;, is &amp;ldquo;around the corner&amp;rdquo;. That&amp;rsquo;s why &lt;a href=&#34;https://www.reuters.com/article/us-tesla-autopilot-germany/german-court-bans-tesla-ad-statements-related-to-autonomous-driving-idUSKCN24F1T5&#34;&gt;a court in Germany banned Tesla from including “full potential for autonomous driving” and “Autopilot inclusive” in its German advertising materials&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A Full Self-Driving (FSD) update wouldn&amp;rsquo;t be the first time Tesla over-promises and under-delivers. Consumer Reports described the company&amp;rsquo;s &amp;ldquo;Smart Summon&amp;rdquo; feature as &lt;a href=&#34;https://www.consumerreports.org/automotive-technology/teslas-smart-summon-performance-doesnt-match-marketing-hype/&#34;&gt;&amp;ldquo;glitchy and at times worked intermittently&amp;rdquo;&lt;/a&gt;. The damage with Smart Summon has been low, but a full-autonomy update could result in a few consequences:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tesla sold cars with the promise of Level 5 driving in the future: Not only is Tesla now under immense pressure to rush out a Level 5 update as soon as possible, but must do so using the hardware it sold customers years ago. Hopefully Level 5 doesn&amp;rsquo;t require LIDAR sensors (or any additional hardware) like Elon claims; because Tesla is expected to ship some version of FSD to users.&lt;/li&gt;
+&lt;li&gt;Customers may end up in legal trouble if Tesla&amp;rsquo;s software fails them: Tesla avoids legal responsibility for buggy software by shifting responsibility of an accident to the driver. However, when Tesla sells millions of cars on the premise that users won&amp;rsquo;t have to manually drive them one day, should drivers be held responsible when that day comes and their car crashes?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other companies have realized the high standards a Level 5 system should meet. Two years ago, &lt;a href=&#34;https://www.bloomberg.com/news/articles/2018-11-13/waymo-ceo-says-self-driving-cars-won-t-be-ubiqitious-for-decades&#34;&gt;Waymo CEO John Krafcik claimed that true self-driving cars, that function everywhere under all circumstances, won&amp;rsquo;t be ubiquitous for decades&lt;/a&gt;. As a result, Waymo shifted gears and placed its focus on rolling out &lt;a href=&#34;https://www.theverge.com/2019/12/9/21000085/waymo-fully-driverless-car-self-driving-ride-hail-service-phoenix-arizona&#34;&gt;autonomous taxis&lt;/a&gt; on a city by city basis, starting in Pheonix, Arizona. This approach to Level 5 driving is much safer for the following reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Waymo is minimizing the number of people at risk&lt;/li&gt;
+&lt;li&gt;Waymo is operating its vehicles strictly where they have been tested.&lt;/li&gt;
+&lt;li&gt;Waymo is not selling consumers a technology that doesn&amp;rsquo;t exist&lt;/li&gt;
+&lt;li&gt;Waymo is not relying on the average consumer to be attentive&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Level 5 technology can save thousands of lives and millions of dollars&amp;ndash;but it needs to be done to the same (if not higher) standards of automotive testing, and not the &amp;ldquo;move fast and break things&amp;rdquo; approach of Silicon Valley. Hopefully Tesla can safely deliver on its promise of full self driving soon, but if not, consumers may soon have a case to demand a refund.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Bitcoin Whitepaper, Explained</title>
-      <link>https://jarbus.net/blog/bitcoin-whitepaper-explained/</link>
+      <link>jarbus.net/blog/bitcoin-whitepaper-explained/</link>
       <pubDate>Fri, 03 Jan 2020 11:25:49 -0400</pubDate>
       
-      <guid>https://jarbus.net/blog/bitcoin-whitepaper-explained/</guid>
-      <description>Introduction In this essay we will give a brief history of crytocurrency leading up to Bitcoin, give an overview of the Bitcoin protocol by summarizing key sections of the whitepaper, and briefly discuss Bitcoin&amp;rsquo;s use of cryptographical proof and computational security instead of trusted third parties within the protocol.
-History Bitcoin is far from original. Digital currencies date back as far as 1982, where David Chaum released a paper called &amp;quot;Blind Signatures&amp;quot;, which formed the basis of a digital currency known as eCash.</description>
+      <guid>jarbus.net/blog/bitcoin-whitepaper-explained/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34; &gt;Introduction
+&lt;span&gt;
+    &lt;a href=&#34;#introduction&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;In this essay we will give a brief history of crytocurrency leading up to
+Bitcoin, give an overview of the Bitcoin protocol by summarizing
+key sections of the whitepaper, and briefly discuss Bitcoin&amp;rsquo;s use of cryptographical
+proof and computational security instead of trusted third parties within
+the protocol.&lt;/p&gt;
+&lt;h2 id=&#34;history&#34; &gt;History
+&lt;span&gt;
+    &lt;a href=&#34;#history&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Bitcoin is far from original. Digital currencies date back as far as
+1982, where David Chaum released a paper called &amp;quot;Blind Signatures&amp;quot;,
+which formed the basis of a digital currency known as eCash. In 1996,
+Douglass Jackson created a currency known as e-gold in 1996, the first
+currency to reach mass adoption at over 3.5 million accounts.
+Many other subsequent currencies rose and fell before Bitcoin gained
+stable footing, including projects such as BitGold and b-money.&lt;/p&gt;
+&lt;p&gt;Blockchain technology development began as early as 1991 when Stuart
+Haber and W. Scott Stornetta began work on a cryptographically secured
+chain of blocks. &lt;a href=&#34;https://link.springer.com/content/pdf/10.1007%2F3-540-38424-3_32.pdf&#34;&gt;Their inital goal was to implement a system where
+document timestamps could not be tampered with.&lt;/a&gt; Bitcoin builds upon
+Haber and Stornetta&amp;rsquo;s subsequent work of reliable timestamping and
+securing names for bit strings and cites three of their papers,
+making up a third of the nine citations in the Bitcoin whitepaper.&lt;/p&gt;
+&lt;p&gt;Bitcoin also builds upon technology such as Proof-of-Work, first
+developed in 1997 by Adam Back under the name &lt;a href=&#34;http://hashcash.org/&#34;&gt;Hashcash.&lt;/a&gt;
+Proof-of-Work is a counter-measure towards abuse of un-metered internet
+resources which could enable a Denial of Service attack on email by
+requiring an attacker to expend computational resources in order to
+interact with the network. A reusable version of Proof-Of-Work was
+further developed by Hal Finney in 2004, the receiver of the first
+bitcoin transaction. Proof-Of-Work will be further discussed later on in
+this paper.&lt;/p&gt;
+&lt;p&gt;Satoshi Nakamoto, the anonymous creator(s) of Bitcoin released the
+Bitcoin whitepaper to a cryptography mailing list on October 31st, 2008,
+four short years after Hal Finney&amp;rsquo;s paper. The first block was mined
+January the following year, with a comment that reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The Times 03/Jan/2009 Chancellor on brink of second bailout for banks&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Very fitting for the anti-authority ideals Bitcoin would spur in the coming years.&lt;/p&gt;
+&lt;h2 id=&#34;design&#34; &gt;Design
+&lt;span&gt;
+    &lt;a href=&#34;#design&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;h3 id=&#34;section-2-and-9-transactions-combining-and-splitting-value&#34; &gt;Section 2 and 9: Transactions, Combining and Splitting Value
+&lt;span&gt;
+    &lt;a href=&#34;#section-2-and-9-transactions-combining-and-splitting-value&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Bitcoin is represented as a publicly visible global log of
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Digital_signature&#34;&gt;signed&lt;/a&gt;$^W$
+transactions. Each transaction denotes the participants in a transaction
+as well as the amount of money transfered (analogous to the Venmo public
+feed), and the signature ensures the account publishing the transaction
+is the account who owns the Bitcoin. Since the amount of Bitcoin an
+account has is directly represented by outputs of previous transactions,
+sending money is represented by taking previous transactions addressed
+to your account, sigining them, and specifying which addresses will
+receive which portions of the funds. Since one or more transactions can
+be used as input for this process, there can be one or more addresses
+receiving the output, including the spender who recieves any left-over
+Bitcoin as change, since it&amp;rsquo;s impossible to use a fraction of a
+transaction as input.&lt;/p&gt;
+&lt;p&gt;Transactions must be verified, i.e. nodes must confirm that transaction
+signatures come from their corresponding private keys. Transactions are
+verified in large batches. Each transaction is added to a pool of
+unverified transactions, which are then all verified and published to
+the network in a block, approximately once every ten minutes. Each block
+is published with a timestamp and a hash of a previous block, forming a
+&amp;ldquo;chain&amp;rdquo; of all valid transactions.&lt;/p&gt;
+&lt;h3 id=&#34;sections-3-and-4-timestamp-server-proof-of-work&#34; &gt;Sections 3 and 4: Timestamp server, Proof of Work
+&lt;span&gt;
+    &lt;a href=&#34;#sections-3-and-4-timestamp-server-proof-of-work&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Bitcoin also implements a distributed timestamp server. Normal timestamp
+servers take hashes of previous timestamps and the current block in
+order to form a new timestamp hash, then widely publish this hash.
+However, this requires a trusted party, and does not work in a
+distributed setting with no trusted parties.&lt;/p&gt;
+&lt;p&gt;Nakamoto takes inspiration from Adam Back&amp;rsquo;s Hashcash algorithm, which
+implements a Proof-Of-Work scheme based off of finding a hash with a
+specific number of zeros at the beginning. This is a very
+computationally expensive task, as the only method of obtaining such a
+hash is brute force. Since a new block is published every ten minutes
+and each block requires the hash of a previous block, this requires
+anyone attmempting to modify the blockchain history to not only find the
+proper hash at the specific time, but also all hashes of subsequent
+blocks in order to maintain the validity of the ledger. This type of
+attack can be used to spend the same Bitcoin twice, as a user could make
+a transaction, erase it from the blockchain, and then use it again.
+However, thanks to the proof-of-work algorithm, this attack increases in
+difficultly exponentially as new blocks are added, and is one of the
+many forms of computational security the Bitcoin protocol implements.
+Since the amount of computational power on the blockchain will naturally
+vary overtime, the proof-of-work algorithm will also adjust to
+compensate for increased/decreased mining power in order to keep blocks
+published approximately every ten minutes.&lt;/p&gt;
+&lt;p&gt;The first block verified and published is added to the network, and the
+longest chain of blocks is deemed to be the correct one.&lt;/p&gt;
+&lt;h3 id=&#34;section-5-network&#34; &gt;Section 5: Network
+&lt;span&gt;
+    &lt;a href=&#34;#section-5-network&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;The Bitcoin network runs on the following steps taken verbatim from the
+original whitepaper, as there is not much summary for this section I
+deem myself capable of doing better than Nakamoto.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;New transactions are broadcast to all nodes&lt;/li&gt;
+&lt;li&gt;Each node collects new transactions into a block&lt;/li&gt;
+&lt;li&gt;Each node works on finding a difficult proof-of-work for its block&lt;/li&gt;
+&lt;li&gt;When a node finds a proof-of-work, it broadcasts the block to all nodes&lt;/li&gt;
+&lt;li&gt;Nodes accept the block only if all transactions in it are valid and
+not already spent&lt;/li&gt;
+&lt;li&gt;Nodes express their acceptance of the block by working on creating
+the next block in the chain, using the hash of the accepted block as
+the previous hash.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Nodes always consider the longest chain to be the correct one and will
+keep working on extending it.&lt;/p&gt;
+&lt;h3 id=&#34;sections-6-8-incentive-reclaiming-disk-space-simplified-payment-verification&#34; &gt;Sections 6-8: Incentive, Reclaiming Disk Space, Simplified Payment Verification
+&lt;span&gt;
+    &lt;a href=&#34;#sections-6-8-incentive-reclaiming-disk-space-simplified-payment-verification&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Section six explains the financial benefits of mining, namely how miners get newly minted coins and transaction fees.
+Nakamoto then explains how even when an adversary can claim control over a majority of the network&amp;rsquo;s mining power, it makes economic sense to act according to the protocol to gain profit instead of creating double-spend attacks, since people will stop using the system once it is compromised.&lt;/p&gt;
+&lt;p&gt;In section seven, Nakamoto also discusses storage optimizations for
+reducing the amount of disk space the entire blockchain uses. The
+primary method discussed involved removing transactions that are buried
+underneath many blocks but hashing the transactions in a Merkle tree as
+to break the hashes of any blocks.&lt;/p&gt;
+&lt;p&gt;In section eight, Nakamoto describes a method of payment verification
+without needing to run a full node, as well as potential attacks and
+countermeasures on nodes attempting to verify transactions without
+storing the entire blockchain.&lt;/p&gt;
+&lt;h3 id=&#34;section-10-privacy&#34; &gt;Section 10: Privacy
+&lt;span&gt;
+    &lt;a href=&#34;#section-10-privacy&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;It should be noted that Bitcoin has no privacy protections in place to
+protect users besides basic anonymity of not tying real-world identities
+to keys. The amount of Bitcoin sent in each transaction is public, as
+well as the public keys used. New public-private keypairs are
+recommended for each transaction, but the multi-input nature of
+transactions reveals two inputs are attached to the same owner. As a
+result, if the identity of a sender is compromised, it&amp;rsquo;s possible to
+trace transaction history and link previous transactions that user has
+made.&lt;/p&gt;
+&lt;h3 id=&#34;section-11-cryptography-and-security&#34; &gt;Section 11: Cryptography and Security
+&lt;span&gt;
+    &lt;a href=&#34;#section-11-cryptography-and-security&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Attackers are unable to steal the money of other users without their
+private key. There is also no method to generate new Bitcoin in anyway
+that an honest node could recognize as valid. Therefore, the only
+feasible attack on Bitcoin is to generate an alternative chain of
+blocks. Since the longest chain of blocks is considered valid, this
+attack requires the generation of an alternative chain faster than the
+honest chain. This can be thought of as a race between the attacker and
+the rest of the network, with the attacker starting from behind since
+they have to re-compute proof of work for existing blocks.&lt;/p&gt;
+&lt;p&gt;Nakamoto demonstrates how an attacker with $51%$ of the networks hashing power
+will be guaranteed to eventually catch up and sustain an alternative
+chain, however given a sufficiently large network Nakamoto assumes this
+infeasilbe, as the computation power required would be enormous.
+Additionally, every time an adversary fails to beat an honest node in
+creating the next block, the amount of blocks they need to catch up to
+increases and thus unless an attacker gets incredibly lucky when they
+first start generating an alternate chain, their chances of catching up
+to the main chain decreases exponentially. Since the chance for an
+attacker to catch up to the honest chain decreases exponentially as new
+blocks are added, Nakamoto demonstrates how long an honest recipient
+must wait before they can be 99.9% certain a double-spend attack will
+not happen given attackers of various computational power. For example, if attackers
+control 10% of the mining power, one would need to merely wait five
+blocks, but if attackers have 45%, one would need to wait 340 blocks,
+or just under two and a half days, to be sure their transaction is safe.&lt;/p&gt;
+&lt;h3 id=&#34;resources-used&#34; &gt;Resources Used
+&lt;span&gt;
+    &lt;a href=&#34;#resources-used&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Of course the &lt;a href=&#34;https://bitcoin.org/bitcoin.pdf&#34;&gt;Bitcoin whitepaper&lt;/a&gt; and it&amp;rsquo;s references have been used in the writing of this essay, but I also wanted to credit &lt;a href=&#34;https://www.quora.com/What-came-before-bitcoin&#34;&gt;this Quora post&lt;/a&gt; for pointing author in the right direction for the second section.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

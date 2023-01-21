@@ -4,6 +4,10 @@ title: "jarbus.net"
 Hi, my name's Jack. I'm a graduate student in computer science interested in artificial societies, Julia, machine learning, and decentralization.
 <hr>
 
+Newest Post:
+
+- [I Don't Know Anyone Who Blogs](blog/i-dont-know-anyone-who-blogs)
+
 Favorite Posts:
 
 - [How to write Latex without writing Latex](blog/write-latex-without-latex)

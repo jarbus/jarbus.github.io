@@ -3,6 +3,7 @@ baseUrl: "jarbus.net"
 # title: "Jarbus.net"
 theme: "anubis"
 paginate: 10
+publishDir: "docs"
 
 menu:
   main:
