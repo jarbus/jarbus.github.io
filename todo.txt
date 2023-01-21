@@ -1,5 +1,2 @@
-fix code-highlighting css
-make blog list underline consistent
-    - add headings for years?
-    - or darker color for dates
-include images/logo of some kind
+fix border outline for code blocks
+figure out color schemes
