@@ -1,7 +1,3 @@
-@font-face {
-    font-family: piggy;
-    src: url(./gnu-unifont.ttf);
-}
 :root {
     --font-color: #333;
     --bg-color: #fff;
