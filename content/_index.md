@@ -6,7 +6,7 @@ Hi, my name's Jack. I'm a graduate student in computer science interested in art
 
 Newest Post:
 
-- [I Don't Know Anyone Who Blogs](blog/i-dont-know-anyone-who-blogs)
+- [Unexpected Benefits of Testing Code](blog/unexpected-benefits-of-testing)
 
 Favorite Posts:
 
