@@ -1,6 +1,7 @@
 ---
 title: "Unexpected Benefits of Testing Code"
 date: 2023-01-21T18:38:43-05:00
+tags: ["programming"]
 ---
 
 Matthew Carlson's blog post ["Fighting Distraction With Unit Tests"](https://matthewc.dev/musings/unit-tests/) inspired me to share some extra benefits of writing test code I've discovered during my PhD program.
