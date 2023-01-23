@@ -6,10 +6,23 @@
     <description> (Blogs)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Jan 2023 18:38:43 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jan 2023 11:47:35 -0500</lastBuildDate>
     
     <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Owen, Make Your Website Already</title>
+      <link>/blog/please-make-your-website-owen/</link>
+      <pubDate>Mon, 23 Jan 2023 11:47:35 -0500</pubDate>
+      
+      <guid>/blog/please-make-your-website-owen/</guid>
+      <description>&lt;p&gt;Make a fucking website already, Owen. You&amp;rsquo;ve been playing around with the idea of making a blog for like two years, but you&amp;rsquo;ve been dragging your feet. Maybe you can&amp;rsquo;t decide what framework to use, or where to host it, or blah blah blah. If you want excuses not to make a site, I&amp;rsquo;m sure you&amp;rsquo;ll find them.&lt;/p&gt;
+&lt;p&gt;But it literally just takes a few hours, less if you don&amp;rsquo;t set up a domain name or theme to start. You can do all that later. The important thing is getting it online, the rest is easy (and satisfying!) once you have the core site made.&lt;/p&gt;
+&lt;p&gt;You can use &lt;a href=&#34;https://gohugo.io/&#34;&gt;HUGO&lt;/a&gt; to start and change frameworks later, since all your content will be in markdown. You can host on &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub pages&lt;/a&gt; to start, and always change later, since again, it takes no time to set up and there&amp;rsquo;s no lock-in from what I can tell.&lt;/p&gt;
+&lt;p&gt;I can understand not wanting to deal with all the technical stuff like domain names or self-hosting or choosing a VPS or making it look pretty. But come on man, at least get started. The rest is so much easier to do once you are up and running.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Unexpected Benefits of Testing Code</title>

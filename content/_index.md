@@ -6,16 +6,16 @@ Hi, my name's Jack. I'm a graduate student in computer science interested in art
 
 Newest Post:
 
-- [Unexpected Benefits of Testing Code](blog/unexpected-benefits-of-testing)
+- [Owen, Make Your Website Already](blog/please-make-your-website-owen)
+
 
 Favorite Posts:
 
+- [Unexpected Benefits of Testing Code](blog/unexpected-benefits-of-testing)
 - [How to write Latex without writing Latex](blog/write-latex-without-latex)
-- [Would You Rather Be Uninformed Or Misinformed?](blog/would-you-rather-be-uninformed-or-misinformed)
 - [Short: Aftermath](blog/short-aftermath)
 - [Forgiveness](blog/forgiveness)
 - [Anonymity](blog/anonymity)
-- [Critical Thinking](blog/critical-thinking)
 - [Tesla and False Advertising in AI](blog/tesla-and-false-advertising-in-ai)
 
 <hr>
