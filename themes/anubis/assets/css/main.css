@@ -49,7 +49,7 @@
     --svg-state-color: #ff5858;
 }
 html {
-    font-family: Unifont, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    font-family: unifont, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%}
 body {
