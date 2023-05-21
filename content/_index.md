@@ -6,7 +6,7 @@ Hi, my name's Jack. I'm a graduate student in computer science interested in art
 
 Newest Post:
 
-- [Owen, Make Your Website Already](blog/please-make-your-website-owen)
+- [Introducing Kittyplot](blog/introducing-kittyplot)
 
 
 Favorite Posts:
