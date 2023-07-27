@@ -1,6 +1,7 @@
 ---
 title: "Numerical Stability in Flash Attention"
 date: 2023-07-27T14:21:08-04:00
+tags: ["programming"]
 ---
 
 [Flash attention](https://hazyresearch.stanford.edu/blog/2023-01-12-flashattention-long-sequences), a recent implementation of attention which makes less calls 
