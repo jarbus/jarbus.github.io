@@ -6,10 +6,59 @@
     <description> (jarbus.net)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 May 2023 21:09:16 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jul 2023 14:21:08 -0400</lastBuildDate>
     
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Numerical Stability in Flash Attention</title>
+      <link>/blog/numerical-stability-in-flash-attention/</link>
+      <pubDate>Thu, 27 Jul 2023 14:21:08 -0400</pubDate>
+      
+      <guid>/blog/numerical-stability-in-flash-attention/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://hazyresearch.stanford.edu/blog/2023-01-12-flashattention-long-sequences&#34;&gt;Flash attention&lt;/a&gt;, a recent implementation of attention which makes less calls
+to high-bandwidth memory, uses a version of the softmax function which is numerically stable. In this post, I&amp;rsquo;ll briefly showcase how this is done and an example of an unstable softmax.&lt;/p&gt;
+&lt;p&gt;The softmax function is used in machine learning to convert a vector of
+real numbers to a vector of probabilities which sum to 1, and is defined as:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;softmax(x) = [exp(x[i]) / sum([exp(xj) for xj in x]) for xi in x]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where x is a vector of real numbers.&lt;/p&gt;
+&lt;p&gt;The python implementation below is numerically unstable because it involves
+exponentiation of large numbers, which can lead to overflow. Crucially,
+underflow is not an issue, because exp(x) approaches zero when x is a large
+negative number.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; numpy &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; np
+&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;unstable_softmax&lt;/span&gt;(x):
+    fx_unstable &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exp(x)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; fx_unstable &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(fx_unstable)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The following implementation is stable however, because there is no
+exponentiation of large numbers:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;stable_softmax&lt;/span&gt;(x):
+    fx_stable &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;max(x)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exp(fx_stable) &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exp(fx_stable))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Instead, the max of the vector is subtracted from each element. This does not
+change the result of the softmax after the division as this subtraction is also
+performed in the denominator, thus cancelling out.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s compare the two implementations:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;array([&lt;span style=&#34;color:#ae81ff&#34;&gt;6.0&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;], dtype&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;float32)
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; stable_softmax(a)
+[&lt;span style=&#34;color:#ae81ff&#34;&gt;1.2339458e-04&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.5228101e-08&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9.9987662e-01&lt;/span&gt;]
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; unstable_softmax(a)
+[&lt;span style=&#34;color:#ae81ff&#34;&gt;1.2339458e-04&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.5228101e-08&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9.9987656e-01&lt;/span&gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As you can see, the results are mostly equal, save for a few digits.
+Now let&amp;rsquo;s look at what happens with 16 bits of precision:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;array([&lt;span style=&#34;color:#ae81ff&#34;&gt;6.0&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;], dtype&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;float16)
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; stable_softmax(a)
+[ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.&lt;/span&gt; nan]
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; unstable_softmax(a)
+[ &lt;span style=&#34;color:#ae81ff&#34;&gt;1.234e-04&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.000e+00&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.000e+00&lt;/span&gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When working with 16 bits of precision, we observe that exp(15) produces a numerical overflow
+which turns the third element into a NaN. This is because exp(15) produces a value that can
+not be represented by a float16.&lt;/p&gt;
+&lt;p&gt;To recap, we showed that softmax is numerically unstable, especially when working with small precision bits. Because softmax uses exponentials in the numerator and denominator, we can subtract all exponents by the maximum exponent, constraining all the values between 0 and 1 and preventing numerical overflow.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Introducing Kittyplot</title>
@@ -249,6 +298,27 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Unsupervised_learning&#34;&gt;Unsupervised Learning&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A model learns to produce a desired output without being told what it&amp;rsquo;s looking for. Example: Playing Chess&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Vanishing_gradient_problem&#34;&gt;Vanishing Gradient Problem&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: In a network, a gradient can become vanishingly small which will stop the weight from changing it&amp;rsquo;s value, since weights are modified based on their contribution to the gradient.&lt;/p&gt;
 &lt;p&gt;Feel free to contact me with any suggested additions/changes at &lt;a href=&#34;mailto:jarbus@tutanota.com&#34;&gt;jarbus@tutanota.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Next Step Change in AI</title>
+      <link>/blog/the-next-step-change/</link>
+      <pubDate>Fri, 19 Mar 2021 11:25:49 -0400</pubDate>
+      
+      <guid>/blog/the-next-step-change/</guid>
+      <description>&lt;p&gt;Many people are wondering what the next step change in AI looks like.&lt;/p&gt;
+&lt;p&gt;Some people think we need more data, more compute.&lt;/p&gt;
+&lt;p&gt;Some people think we need some neuro-symbolic approach.&lt;/p&gt;
+&lt;p&gt;We got this far because we&amp;rsquo;ve been optimizing a single objective that boils down to a ton of micro-objectives.&lt;/p&gt;
+&lt;p&gt;The task of predicting the next word includes as subtasks learning syntax, parts of speech, logical reasoning, memorization, and more.&lt;/p&gt;
+&lt;p&gt;To me, the obvious next step change has the following properties:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;is not bounded by data&lt;/li&gt;
+&lt;li&gt;scales with compute&lt;/li&gt;
+&lt;li&gt;can achieve super-human performance on a wide variety of tasks&lt;/li&gt;
+&lt;li&gt;consists of a function to optimize which is composed of millions of sub-functions&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

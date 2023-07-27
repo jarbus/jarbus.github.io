@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+
+    
+
+<html lang="en-us" data-theme="dark">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Blogging with Shell Scripts and Markdown - </title>
+
+<meta name="description" content="I (used to) manage this website with markdown and a shell scripts. Here&rsquo;s how.
+What I wanted when designing my site:      Fast load time Minimal interface A site directory Readable URLs  What I didn&rsquo;t want when designing my site:      JavaScript A fancy framework Site analytics/admin interface Large files Ads  How it works:     I spent some time in HTML/CSS designing a header for the site.">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="favicon.png">
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="../../css/style.min.6bbcdedf32df7f1cf986070ecc0d7d3330ee8a3b6b25da58b938bf99221fcd3d.css" integrity="sha256-a7ze3zLffxz5hgcOzA19MzDuijtrJdpYuTi/mSIfzT0=">
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <script src="../../js/script.min.510c781c39dbb21b4c76d85c82e2bdf4689220adbb7cd61e49e9d293e442fb42.js" type="text/javascript" charset="utf-8" integrity="sha256-UQx4HDnbshtMdthcguK99GiSIK27fNYeSenSk&#43;RC&#43;0I="></script>
+    
+
+
+
+
+
+
+
+<meta property="og:title" content="Blogging with Shell Scripts and Markdown" />
+<meta property="og:description" content="I (used to) manage this website with markdown and a shell scripts. Here&rsquo;s how.
+What I wanted when designing my site:      Fast load time Minimal interface A site directory Readable URLs  What I didn&rsquo;t want when designing my site:      JavaScript A fancy framework Site analytics/admin interface Large files Ads  How it works:     I spent some time in HTML/CSS designing a header for the site." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/blogging-with-shell-scripts-and-markdown/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-07-23T11:25:49-04:00" />
+<meta property="article:modified_time" content="2020-07-23T11:25:49-04:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Blogging with Shell Scripts and Markdown"/>
+<meta name="twitter:description" content="I (used to) manage this website with markdown and a shell scripts. Here&rsquo;s how.
+What I wanted when designing my site:      Fast load time Minimal interface A site directory Readable URLs  What I didn&rsquo;t want when designing my site:      JavaScript A fancy framework Site analytics/admin interface Large files Ads  How it works:     I spent some time in HTML/CSS designing a header for the site."/>
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <div class="header-top">
+    <h1 class="site-title">
+    <a href="../../"></a>
+</h1>
+    <ul class="social-icons">
+
+
+
+
+
+</ul>
+</div>
+
+    <nav>
+        
+        
+        <a class="" href="../../" title="home"> ~jarbus</a>
+        
+        <a class="" href="../../blog/" title="posts">posts</a>
+        
+        <a class="" href="../../index.xml" title="Rss">rss</a>
+        
+    </nav>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title draft">Blogging with Shell Scripts and Markdown</h1>
+
+                
+            </header>
+        </div>
+        <div class="content e-content">
+            <p>I (used to) manage this website with markdown and a shell scripts. Here&rsquo;s how.</p>
+<h2 id="what-i-wanted-when-designing-my-site" >What I wanted when designing my site:
+<span>
+    <a href="#what-i-wanted-when-designing-my-site">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><ul>
+<li>Fast load time</li>
+<li>Minimal interface</li>
+<li>A site directory</li>
+<li>Readable URLs</li>
+</ul>
+<h2 id="what-i-didnt-want-when-designing-my-site" >What I didn&rsquo;t want when designing my site:
+<span>
+    <a href="#what-i-didnt-want-when-designing-my-site">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><ul>
+<li>JavaScript</li>
+<li>A fancy framework</li>
+<li>Site analytics/admin interface</li>
+<li>Large files</li>
+<li>Ads</li>
+</ul>
+<h2 id="how-it-works" >How it works:
+<span>
+    <a href="#how-it-works">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>I spent some time in HTML/CSS designing a header for the site. This includes a generic title for each page, an &ldquo;About&rdquo; tab, &ldquo;Posts&rdquo; tab, &ldquo;Contact&rdquo; tab, and horizontal bar to separate the header from the body. I linked each tab to the URL I planned for each page, which is my domain (jarbus.net) followed by the filename with the <code>.html</code> extension removed. (e.g. jarbus.net/About)</p>
+<p>I write all my posts in markdown, then convert it to HTML using <a href="https://pandoc.org/">pandoc</a>.</p>
+<p>I wrote a conversion script to turn an HTML file for a post into an HTML file for the site. I accomplish this by creating a new file consisting of the header HTML mentioned, concatenating with the post HTML afterwards. I also run a <code>sed</code> command to replace the generic title in the header for the filename of the post, with dashes replaced with spaces.</p>
+<p>I keep my markdown files in a directory called &ldquo;drafts&rdquo;, which is sibling to the GitHub Pages repository that&rsquo;s hosting my website. When I&rsquo;m done with a post, I convert it to a site page, move it to the git repository, then push. It&rsquo;s that easy!</p>
+<p>The <a href="../../Posts">Posts</a>, <a href="../../About">About</a>, <a href="jarbus.net">Index</a>, and <a href="../../Contact">Contact</a> pages all maintained as above. I used to have a script to automatically recreate my <a href="../../Posts">Posts</a> page to add new entries, but found that I much prefer the curated &amp; categorical page I have now.</p>
+<h2 id="rss" >RSS
+<span>
+    <a href="#rss">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>I also have an <a href="feed">rss feed</a>, which I update manually. However, given that adding a new entry simply requires putting</p>
+<pre><code>&lt;item&gt;
+  &lt;title&gt;
+    PostName
+  &lt;/title&gt;
+  &lt;link&gt;
+    https://www.jarbus.net/PostName
+  &lt;/link&gt;
+&lt;/item&gt;
+</code></pre><p>at the top of my feed file, I think I&rsquo;ll manage. Plus, I enjoy the ability add custom tags on a post by post basis if I decide to.</p>
+<h2 id="final-thoughts" >Final Thoughts
+<span>
+    <a href="#final-thoughts">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Overall, I&rsquo;m really happy with how the site turned out&ndash;I have absolute control over all aspects of my blog while doing negligible content management. I have lighting-fast load times, a minimal interface, and can fix any aspect of my site were something to break.</p>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date dt-published">2020-07-23</div>
+    
+
+    <a class="post-hidden-url u-url" href="../../blog/blogging-with-shell-scripts-and-markdown/">/blog/blogging-with-shell-scripts-and-markdown/</a>
+    <a href="" class="p-name p-author post-hidden-author h-card" rel="me">jarbus</a>
+
+
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+    </article>
+
+    
+        
+        
+    
+
+    
+        
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="../../blog/critical-thinking/">Critical Thinking</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="../../blog/tesla-and-false-advertising-in-ai/">Tesla and False Advertising in AI</a>
+            
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+        
+
+
+
+
+
+
+
+    
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        
+        
+        
+        
+        
+        
+
+        
+
+    
+
+
+
+
+<script>
+const STORAGE_KEY = 'user-color-scheme'
+const defaultTheme = "dark-without-switcher"
+
+let currentTheme
+let switchButton
+let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+const autoChangeScheme = e => {
+    currentTheme = e.matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    changeButtonText()
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchButton = document.querySelector('.theme-switcher')
+    currentTheme = detectCurrentScheme()
+    if (currentTheme == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+    if (currentTheme == 'auto') {
+        autoChangeScheme(autoDefinedScheme);
+        autoDefinedScheme.addListener(autoChangeScheme);
+    }
+
+    if (switchButton) {
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    }
+  
+    showContent()
+})
+
+function detectCurrentScheme() {
+    if (localStorage.getItem(STORAGE_KEY)) {
+        return localStorage.getItem(STORAGE_KEY)
+    } 
+    if (defaultTheme) {
+        return defaultTheme
+    } 
+    if (!window.matchMedia) {
+        return 'light'
+    } 
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark'
+    }
+    return 'light'
+}
+
+function changeButtonText()
+{   
+    if (switchButton) {
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+}
+
+function switchTheme(e) {
+    if (currentTheme == 'dark') {
+        localStorage.setItem(STORAGE_KEY, 'light')
+        document.documentElement.setAttribute('data-theme', 'light')
+        currentTheme = 'light'
+    } else {
+        localStorage.setItem(STORAGE_KEY, 'dark')
+        document.documentElement.setAttribute('data-theme', 'dark')
+        currentTheme = 'dark'
+    }
+    changeButtonText()
+}
+
+function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+}
+</script>   
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href= class="p-name u-url url fn" rel="me">jarbus</a> 
+
+     
+        /
+        <a class="p-email u-email email" rel="me" href="mailto:jarbus@tutanota.com">jarbus@tutanota.com</a>
+    
+
+     
+        <img class="u-photo" src="../../images/me.png" />
+    
+</p> 
+</footer>
+
+        
+    </div>
+</body>
+</html>
