@@ -6,16 +6,16 @@ Hi, my name's Jack. I'm a graduate student in computer science interested in art
 
 Newest Post:
 
-- [Introducing Kittyplot](blog/introducing-kittyplot)
+- [Numerical Stability in Flash Attention](blog/numerical-stability-in-flash-attention)
 
 
 Favorite Posts:
 
+- [Introducing Kittyplot](blog/introducing-kittyplot)
 - [Unexpected Benefits of Testing Code](blog/unexpected-benefits-of-testing)
 - [How to write Latex without writing Latex](blog/write-latex-without-latex)
 - [Short: Aftermath](blog/short-aftermath)
 - [Forgiveness](blog/forgiveness)
-- [Anonymity](blog/anonymity)
 - [Tesla and False Advertising in AI](blog/tesla-and-false-advertising-in-ai)
 
 <hr>
