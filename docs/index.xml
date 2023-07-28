@@ -302,27 +302,6 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
     </item>
     
     <item>
-      <title>The Next Step Change in AI</title>
-      <link>/blog/the-next-step-change/</link>
-      <pubDate>Fri, 19 Mar 2021 11:25:49 -0400</pubDate>
-      
-      <guid>/blog/the-next-step-change/</guid>
-      <description>&lt;p&gt;Many people are wondering what the next step change in AI looks like.&lt;/p&gt;
-&lt;p&gt;Some people think we need more data, more compute.&lt;/p&gt;
-&lt;p&gt;Some people think we need some neuro-symbolic approach.&lt;/p&gt;
-&lt;p&gt;We got this far because we&amp;rsquo;ve been optimizing a single objective that boils down to a ton of micro-objectives.&lt;/p&gt;
-&lt;p&gt;The task of predicting the next word includes as subtasks learning syntax, parts of speech, logical reasoning, memorization, and more.&lt;/p&gt;
-&lt;p&gt;To me, the obvious next step change has the following properties:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;is not bounded by data&lt;/li&gt;
-&lt;li&gt;scales with compute&lt;/li&gt;
-&lt;li&gt;can achieve super-human performance on a wide variety of tasks&lt;/li&gt;
-&lt;li&gt;consists of a function to optimize which is composed of millions of sub-functions&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Generating Slides in Vim</title>
       <link>/blog/generating-slides-in-vim/</link>
       <pubDate>Sun, 31 Jan 2021 11:25:49 -0400</pubDate>
