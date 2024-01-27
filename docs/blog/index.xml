@@ -28,32 +28,32 @@ real numbers to a vector of probabilities which sum to 1, and is defined as:&lt;
 exponentiation of large numbers, which can lead to overflow. Crucially,
 underflow is not an issue, because exp(x) approaches zero when x is a large
 negative number.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; numpy &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; np
-&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;unstable_softmax&lt;/span&gt;(x):
-    fx_unstable &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exp(x)
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; fx_unstable &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(fx_unstable)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The following implementation is stable however, because there is no
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#b6a0ff&#34;&gt;import&lt;/span&gt; numpy &lt;span style=&#34;color:#b6a0ff&#34;&gt;as&lt;/span&gt; np
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#b6a0ff&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#feacd0&#34;&gt;unstable_softmax&lt;/span&gt;(x):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    fx_unstable &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;exp(x)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#b6a0ff&#34;&gt;return&lt;/span&gt; fx_unstable &lt;span style=&#34;color:#00d3d0&#34;&gt;/&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;sum(fx_unstable)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The following implementation is stable however, because there is no
 exponentiation of large numbers:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;stable_softmax&lt;/span&gt;(x):
-    fx_stable &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;max(x)
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exp(fx_stable) &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exp(fx_stable))
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Instead, the max of the vector is subtracted from each element. This does not
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#b6a0ff&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#feacd0&#34;&gt;stable_softmax&lt;/span&gt;(x):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    fx_stable &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; x &lt;span style=&#34;color:#00d3d0&#34;&gt;-&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;max(x)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#b6a0ff&#34;&gt;return&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;exp(fx_stable) &lt;span style=&#34;color:#00d3d0&#34;&gt;/&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;sum(np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;exp(fx_stable))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Instead, the max of the vector is subtracted from each element. This does not
 change the result of the softmax after the division as this subtraction is also
 performed in the denominator, thus cancelling out.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s compare the two implementations:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;array([&lt;span style=&#34;color:#ae81ff&#34;&gt;6.0&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;], dtype&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;float32)
-&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; stable_softmax(a)
-[&lt;span style=&#34;color:#ae81ff&#34;&gt;1.2339458e-04&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.5228101e-08&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9.9987662e-01&lt;/span&gt;]
-&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; unstable_softmax(a)
-[&lt;span style=&#34;color:#ae81ff&#34;&gt;1.2339458e-04&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.5228101e-08&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9.9987656e-01&lt;/span&gt;]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As you can see, the results are mostly equal, save for a few digits.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;array([&lt;span style=&#34;color:#00bcff&#34;&gt;6.0&lt;/span&gt;, &lt;span style=&#34;color:#00d3d0&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#00bcff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#00bcff&#34;&gt;15&lt;/span&gt;], dtype&lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt;np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;float32)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; stable_softmax(a)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#00bcff&#34;&gt;1.2339458e-04&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;1.5228101e-08&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;9.9987662e-01&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; unstable_softmax(a)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#00bcff&#34;&gt;1.2339458e-04&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;1.5228101e-08&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;9.9987656e-01&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As you can see, the results are mostly equal, save for a few digits.
 Now let&amp;rsquo;s look at what happens with 16 bits of precision:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;array([&lt;span style=&#34;color:#ae81ff&#34;&gt;6.0&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;], dtype&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;float16)
-&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; stable_softmax(a)
-[ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.&lt;/span&gt; nan]
-&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; unstable_softmax(a)
-[ &lt;span style=&#34;color:#ae81ff&#34;&gt;1.234e-04&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.000e+00&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.000e+00&lt;/span&gt;]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When working with 16 bits of precision, we observe that exp(15) produces a numerical overflow
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;array([&lt;span style=&#34;color:#00bcff&#34;&gt;6.0&lt;/span&gt;, &lt;span style=&#34;color:#00d3d0&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#00bcff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#00bcff&#34;&gt;15&lt;/span&gt;], dtype&lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt;np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;float16)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; stable_softmax(a)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[ &lt;span style=&#34;color:#00bcff&#34;&gt;0.&lt;/span&gt;  &lt;span style=&#34;color:#00bcff&#34;&gt;0.&lt;/span&gt; nan]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; unstable_softmax(a)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[ &lt;span style=&#34;color:#00bcff&#34;&gt;1.234e-04&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;0.000e+00&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;1.000e+00&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When working with 16 bits of precision, we observe that exp(15) produces a numerical overflow
 which turns the third element into a NaN. This is because exp(15) produces a value that can
 not be represented by a float16.&lt;/p&gt;
 &lt;p&gt;To recap, we showed that softmax is numerically unstable, especially when working with small precision bits. Because softmax uses exponentials in the numerator and denominator, we can subtract all exponents by the maximum exponent, constraining all the values between 0 and 1 and preventing numerical overflow.&lt;/p&gt;
@@ -166,7 +166,7 @@ about to reference later, helps connect you to other people, gets you into your 
 &lt;li&gt;Build a document in one command&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If you are reading this, you probably know how both Markdown and Latex work, and you probably know how to read the &lt;a href=&#34;https://pandoc.org/MANUAL.html#pandocs-Markdown&#34;&gt;Pandoc Markdown Documentation&lt;/a&gt;, so instead, below is a template document that I wish I had when first starting out. It covers most things you&amp;rsquo;d need to write simple papers in Markdown. Configuration for document settings is done in the YAML block at the top of the document.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
 title: How to Succeed in LaTeX without even trying
 subtitle: For the lazy writer
 author:
@@ -193,7 +193,7 @@ According to all known laws
 of aviation, there is now way
 that a bee should be able to fly. [@seinfeld2007]
 
-| &amp;quot;This is a quote&amp;quot;
+| &amp;#34;This is a quote&amp;#34;
 
 ![Caption here](bee.png){width=50% }
 
@@ -210,13 +210,13 @@ $$
 
 # Appendix
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, to compile your document to a PDF, simply run:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pandoc &amp;quot;file.md&amp;quot; -o &amp;quot;file.pdf&amp;quot; --citeproc
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pandoc &amp;#34;file.md&amp;#34; -o &amp;#34;file.pdf&amp;#34; --citeproc
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to generate a document that looks like this:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;../final-document.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;--citeproc&lt;/code&gt; option is needed for compiling a bibliography. For cross-references inside a document, take a look at &lt;a href=&#34;https://github.com/lierdakil/pandoc-crossref&#34;&gt;pandoc-crossref&lt;/a&gt;, which will require the use of &lt;code&gt;--filter pandoc-crossref&lt;/code&gt; if it works for you.&lt;/p&gt;
 &lt;p&gt;I mapped a modified version of the build command above to a key in Neovim, so now pressing &lt;code&gt;Space+b&lt;/code&gt; in my Markdown buffer compiles my document automatically, no matter what file name I&amp;rsquo;m using:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.md nnoremap &amp;lt;Leader&amp;gt;b
-    \ :silent pandoc % -o &amp;quot;%:p:h/%:t:r.pdf&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.md nnoremap &amp;lt;Leader&amp;gt;b
+    \ :silent pandoc % -o &amp;#34;%:p:h/%:t:r.pdf&amp;#34;
     \ --filter pandoc-crossref --citeproc &amp;amp;&amp;lt;CR&amp;gt;&amp;lt;CR&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And that&amp;rsquo;s how I write LaTeX documents offline in Markdown.&lt;/p&gt;
 </description>
@@ -261,7 +261,7 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables&#34;&gt;(IID) Independent and Identically Distributed&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Random variables are independent and identically distributed when the value of one variable doesn&amp;rsquo;t affect the probability of another variable. For example, the outcome of one coin flip does not affect the outcome of another coin flip, so both flips are IID.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://dibyaghosh.com/blog/probability/kldivergence.html&#34;&gt;KL Divergence&lt;/a&gt;: Divergence between two distributions of data. Useful for determining how different fake data is from real data (GANs) or for determining how differemt two policies are for trust-based reinforcement learning.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Self-driving_car&#34;&gt;Level 0-5&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: The different &amp;ldquo;levels&amp;rdquo; of autonomy related to self driving cars. 0 represents full human control while 5 represents full vehicle control.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Long_short-term_memory&#34;&gt;Long Short Term Memory (LSTM)&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A type of recurrent neural network that works exceptionally well with sequential input. A unique trait of these networks are their memory cells&#39; &amp;ldquo;forget gates&amp;rdquo;, which allow them to control how long they hold onto data for.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Long_short-term_memory&#34;&gt;Long Short Term Memory (LSTM)&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A type of recurrent neural network that works exceptionally well with sequential input. A unique trait of these networks are their memory cells&amp;rsquo; &amp;ldquo;forget gates&amp;rdquo;, which allow them to control how long they hold onto data for.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://deepai.org/publication/the-lottery-ticket-hypothesis-training-pruned-neural-networks&#34;&gt;The Lottery Ticket Hypothesis&lt;/a&gt;: A randomly-initialized, dense neural network contains a subnetwork that is initialised such that — when trained in isolation — it can match the test accuracy of the original network after training for at most the same number of iterations.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Markov_decision_process&#34;&gt;Markov Decision Process&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A system of states, actions, and probabilities of getting to other states given actions taken from previous states.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://aiden.nibali.org/blog/2017-01-18-mode-collapse-gans/&#34;&gt;Mode Collapse&lt;/a&gt;: When the distribution of samples produced by a generative adversarial network represent a subset of the latent distribution, instead of the entire latent distribution. For example, you train a network to produce pictures of animals but it only learns to produce pictures of cats.&lt;/p&gt;
@@ -313,7 +313,7 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
 &lt;p&gt;TL;DR: With Pandoc installed and markdown file &lt;code&gt;Demo.md&lt;/code&gt;, executing &lt;code&gt;pandoc -t beamer Demo.md -o Demo.pdf&lt;/code&gt; will generate a slideshow as a pdf, with each section heading as the title of a new slide.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Different themes can be specified with the &lt;code&gt;-V&lt;/code&gt; option; I&amp;rsquo;m currently using the &lt;a href=&#34;https://github.com/matze/mtheme&#34;&gt;Metropolis&lt;/a&gt; beamer theme and &lt;a href=&#34;https://github.com/rchurchley/beamercolortheme-owl&#34;&gt;Owl&lt;/a&gt; colorscheme. After installing these themes, I can run:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pandoc -t beamer
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pandoc -t beamer
        -V fontsize=14pt
        -V theme=metropolis
        -V colortheme=owl
@@ -321,19 +321,19 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
        Demo.md -o Demo.pdf
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to produce my presentation. &lt;strong&gt;Note: All code blocks are single-line commands/&lt;code&gt;.vimrc&lt;/code&gt; entries, and are displayed as multi-line for readability.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Unfortunately, it&amp;rsquo;s a pain to recompile a document every time I want to view my changes. Luckily, as a (Neo)Vim user, I can automatically run commands everytime I write a file. To avoid generating presentations with non-presentation markdown files, I instead write presentations in plaintext files that end with &lt;code&gt;.slides&lt;/code&gt;. In the example above, I&amp;rsquo;d be using &lt;code&gt;Demo.slides&lt;/code&gt; instead of &lt;code&gt;Demo.md&lt;/code&gt;. When I add:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;autocmd! BufWritePost *.slides silent !pandoc
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;autocmd! BufWritePost *.slides silent !pandoc
     -t beamer
     -V fontsize=14pt
     -V theme=metropolis
     -V colortheme=owl
     -s
-    % -o &amp;quot;%:p:h/.%:t:r.pdf&amp;quot;
+    % -o &amp;#34;%:p:h/.%:t:r.pdf&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to my &lt;code&gt;.vimrc&lt;/code&gt;, everytime I save changes in a &lt;code&gt;FILENAME.slides&lt;/code&gt; file, it will generate a presentation located in &lt;code&gt;.FILENAME.pdf&lt;/code&gt;. I choose to add a leading period in the output to hide the PDF from my file manager, feel free to remove it.&lt;/p&gt;
 &lt;p&gt;To enable markdown syntax highlighting in our &lt;code&gt;.slides&lt;/code&gt; file, add:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.slides :set filetype=markdown
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.slides :set filetype=markdown
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to your &lt;code&gt;.vimrc&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Now Vim generates a PDF presentation for us everytime we save a &lt;code&gt;.slides&lt;/code&gt; file. For easy viewing, I added another keybind, &lt;code&gt;Z&lt;/code&gt;, to open the corresponding PDF in my PDF viewer of choice, &lt;a href=&#34;https://pwmt.org/projects/zathura/&#34;&gt;Zathura&lt;/a&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;nnoremap Z :silent !zathura --fork %:p:h/.%:t:r.pdf&amp;lt;CR&amp;gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nnoremap Z :silent !zathura --fork %:p:h/.%:t:r.pdf&amp;lt;CR&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Zathura automatically refreshes the view whenever changes to an open document is detected. This means that I can open a &lt;code&gt;.slides&lt;/code&gt; file in Vim, save changes, and press &lt;code&gt;Z&lt;/code&gt; to view my changes in Zathura. I can then immediately view any additional changes I make in the open Zathura window, just by saving the &lt;code&gt;.slides&lt;/code&gt; file.&lt;/p&gt;
 </description>
     </item>
@@ -426,7 +426,7 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
 &lt;/span&gt;
 &lt;/h2&gt;&lt;p&gt;There are facts available for virtually anything you need. No matter what argument you try to make, you&amp;rsquo;ll be able to find a statistic that can back up your claims thanks to the glory of Google.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.dailymail.co.uk/femail/article-3030983/The-ultra-competitive-exercise-fad-ruin-health-called-planking-suddenly-sweeping-gyms-Pilates-classes.html&#34;&gt;&amp;ldquo;Did you know that planking can ruin your health and result in months of pain?&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dailymail.co.uk/femail/article-3030983/The-ultra-competitive-exercise-fad-ruin-health-called-planking-suddenly-sweeping-gyms-Pilates-classes.html&#34;&gt;&amp;ldquo;Did you know that planking can ruin your health and result in months of pain?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.lifehack.org/292578/7-things-that-will-happen-when-you-do-planking-exercise-every-day&#34;&gt;&amp;ldquo;Not true, planking works out multiple muscles in your body and can greatly improve your health if done daily&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
@@ -434,7 +434,7 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
 &lt;p&gt;Not exactly scientific sources, but I think this demonstrates my point. Furthermore, the level of mixed information increases exponentially as the topic gets more political.&lt;/p&gt;
 &lt;p&gt;Facts should never be enough to prove a point, and I tend to suspect people who rely too heavily on them. Facts should instead be used to tell a narrative; facts are not the truth, but they can light the way towards it.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/ewarren/status/1090252713156403200&#34;&gt;&amp;ldquo;The top 0.1% &amp;hellip; own about the same wealth as the bottom 90% of America.&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/ewarren/status/1090252713156403200&#34;&gt;&amp;ldquo;The top 0.1% &amp;hellip; own about the same wealth as the bottom 90% of America.&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;While deemed &amp;ldquo;Mostly True&amp;rdquo; by &lt;a href=&#34;https://www.politifact.com/factchecks/2019/jan/31/elizabeth-warren/warren-top-01-own-about-much-bottom-90/&#34;&gt;Politifact.com&lt;/a&gt;, this statement in isolation is less than useless: it&amp;rsquo;s misleading. On it&amp;rsquo;s own, this fact paints a picture of a grim society, where the bottom 90% are left to struggle for survival, with all resources being held for a greedy few. If you are in the bottom 90%, this prompts you to believe that life is unfair, and that this should be changed. That&amp;rsquo;s why this statistic is so popular, it seems outrageous and gives Americans a sense of justified anger at the rich, an anger which many ex-presidential candidates used to garner support.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s break this idea down a bit. The greedy elite factoid on its own implies nothing about quality of life, standard of living, financial responsibility, or determination to work. Society could be a paradise where everyone has access to more than they could ever need, and the top 0.1% just has an absurd amount of money. Or society could be a system of addiction, where the bottom 90% are constantly spending money on things they don&amp;rsquo;t need and the top 0.1% simply aren&amp;rsquo;t addicted and save/invest wisely. The truth is, these numbers don&amp;rsquo;t reveal anything about the truth, and aren&amp;rsquo;t being used to do so.&lt;/p&gt;
@@ -518,11 +518,11 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
 &lt;p&gt;&amp;ldquo;I don&amp;rsquo;t know, you seem pretty well rested to me, what with you never leaving my house and all.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;&lt;em&gt;I used to have what you call a &amp;lsquo;job&amp;rsquo;. It was very fulfilling, Jeffery. Took up all of my time. Do you want to know what it was?&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;Jeffery took a sip of his beer.&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;&lt;em&gt;I used to collect the souls of the dead, Jeffery. It was wonderful. I conversed with the rich, the poor, the young and the old, Jeffrey, as they contemplated life and where they were headed. I had, what you would call, a &amp;lsquo;nice thing going.&#39;&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;I used to collect the souls of the dead, Jeffery. It was wonderful. I conversed with the rich, the poor, the young and the old, Jeffrey, as they contemplated life and where they were headed. I had, what you would call, a &amp;rsquo;nice thing going.&amp;rsquo;&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;All good things gotta come to an end.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;&lt;em&gt;Then you came along,&lt;/em&gt;&amp;rdquo; Death continued, ignoring him, &amp;ldquo;&lt;em&gt;and ruined everything.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;It be like that sometimes.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;&lt;em&gt;It does not &amp;lsquo;be&amp;rsquo; like that sometimes, Jeffrey&lt;/em&gt;&amp;rdquo; Death glared, a purple glow forming in his eye sockets. &amp;ldquo;&lt;em&gt;A single human does not wipe out humanity &amp;lsquo;every now and then&amp;rsquo;&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;It does not &amp;lsquo;be&amp;rsquo; like that sometimes, Jeffrey&lt;/em&gt;&amp;rdquo; Death glared, a purple glow forming in his eye sockets. &amp;ldquo;&lt;em&gt;A single human does not wipe out humanity &amp;rsquo;every now and then&amp;rsquo;&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Fair.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;&lt;em&gt;What is even more despicable,&lt;/em&gt;&amp;rdquo; Death proceeded, &amp;ldquo;&lt;em&gt;is that you don&amp;rsquo;t even regret pushing the button.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;I don&amp;rsquo;t really think about it too much.&amp;rdquo;&lt;/p&gt;
@@ -560,7 +560,7 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
       <description>&lt;p&gt;&lt;strong&gt;Some thoughts on Happiness:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Happiness doesn&amp;rsquo;t come from wealth. Otherwise, therapists and anti-depressants would have to be much cheaper.&lt;/p&gt;
 &lt;p&gt;If happiness came from consumption of goods and services, it would therefore follow that once those goods and services are reduced or cut off, one would no longer be as happy. If you can cut off happiness, it&amp;rsquo;s more akin to a drug than an emotion.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://news.harvard.edu/gazette/story/2017/04/over-nearly-80-years-harvard-study-has-been-showing-how-to-live-a-healthy-and-happy-life/&#34;&gt;&amp;ldquo;Close relationships, more than money or fame, are what keep people happy throughout their lives.&amp;quot;&lt;/a&gt; While financial security is ideal for easing pain and suffering, significant amounts of money can strain relationships and cast doubt on who your friends really are. If solid relationships are a path to happiness, the drama and expectations caused from wealth differences in the relationships might very well block that path.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://news.harvard.edu/gazette/story/2017/04/over-nearly-80-years-harvard-study-has-been-showing-how-to-live-a-healthy-and-happy-life/&#34;&gt;&amp;ldquo;Close relationships, more than money or fame, are what keep people happy throughout their lives.&amp;rdquo;&lt;/a&gt; While financial security is ideal for easing pain and suffering, significant amounts of money can strain relationships and cast doubt on who your friends really are. If solid relationships are a path to happiness, the drama and expectations caused from wealth differences in the relationships might very well block that path.&lt;/p&gt;
 &lt;p&gt;In a sense, happiness isn&amp;rsquo;t something you can obtain, but something you become. True happiness has to come from within to be strong and sustainable. Performing work you find meaningful, engaging in relationships of substance, and living a life of virtue are all ways to approach happiness.&lt;/p&gt;
 &lt;p&gt;Happiness can&amp;rsquo;t come from believing you are the smartest, most attractive, or funniest person in your social circles. If it does, you either aren&amp;rsquo;t around people you can learn from or are living in a world of illusion.&lt;/p&gt;
 &lt;p&gt;If stressed about all those that are above you, happiness is possible if you enjoy the process of learning and take pride in trying your best.&lt;/p&gt;

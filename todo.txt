@@ -1,2 +1,0 @@
-fix border outline for code blocks
-figure out color schemes

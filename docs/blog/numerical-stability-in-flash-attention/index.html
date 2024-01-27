@@ -56,7 +56,7 @@ The softmax function is used in machine learning to convert a vector of real num
     
 
     
-        <link rel="stylesheet" href="../../css/style.min.6bbcdedf32df7f1cf986070ecc0d7d3330ee8a3b6b25da58b938bf99221fcd3d.css" integrity="sha256-a7ze3zLffxz5hgcOzA19MzDuijtrJdpYuTi/mSIfzT0=">
+        <link rel="stylesheet" href="../../css/style.min.ba6908e5362fa34b46234bdd9f3104d2bb79b25e6e0845585780d1dc45cdc05f.css" integrity="sha256-umkI5TYvo0tGI0vdnzEE0rt5sl5uCEVYV4DR3EXNwF8=">
     
 
 
@@ -78,7 +78,7 @@ The softmax function is used in machine learning to convert a vector of real num
     
 
     
-        <script src="../../js/script.min.510c781c39dbb21b4c76d85c82e2bdf4689220adbb7cd61e49e9d293e442fb42.js" type="text/javascript" charset="utf-8" integrity="sha256-UQx4HDnbshtMdthcguK99GiSIK27fNYeSenSk&#43;RC&#43;0I="></script>
+        <script src="../../js/script.min.74bf1a3fcf1af396efa4acf3e660e876b61a2153ab9cbe1893ac24ea6d4f94ee.js" type="text/javascript" charset="utf-8" integrity="sha256-dL8aP88a85bvpKzz5mDodrYaIVOrnL4Yk6wk6m1PlO4="></script>
     
 
 
@@ -96,8 +96,7 @@ The softmax function is used in machine learning to convert a vector of real num
 <meta property="article:modified_time" content="2023-07-27T14:21:08-04:00" />
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Numerical Stability in Flash Attention"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Numerical Stability in Flash Attention"/>
 <meta name="twitter:description" content="Flash attention, a recent implementation of attention which makes less calls to high-bandwidth memory, uses a version of the softmax function which is numerically stable. In this post, I&rsquo;ll briefly showcase how this is done and an example of an unstable softmax.
 The softmax function is used in machine learning to convert a vector of real numbers to a vector of probabilities which sum to 1, and is defined as:"/>
 
@@ -173,32 +172,32 @@ real numbers to a vector of probabilities which sum to 1, and is defined as:</p>
 exponentiation of large numbers, which can lead to overflow. Crucially,
 underflow is not an issue, because exp(x) approaches zero when x is a large
 negative number.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">unstable_softmax</span>(x):
-    fx_unstable <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>exp(x)
-    <span style="color:#66d9ef">return</span> fx_unstable <span style="color:#f92672">/</span> np<span style="color:#f92672">.</span>sum(fx_unstable)
-</code></pre></div><p>The following implementation is stable however, because there is no
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#b6a0ff">import</span> numpy <span style="color:#b6a0ff">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#b6a0ff">def</span> <span style="color:#feacd0">unstable_softmax</span>(x):
+</span></span><span style="display:flex;"><span>    fx_unstable <span style="color:#00d3d0">=</span> np<span style="color:#00d3d0">.</span>exp(x)
+</span></span><span style="display:flex;"><span>    <span style="color:#b6a0ff">return</span> fx_unstable <span style="color:#00d3d0">/</span> np<span style="color:#00d3d0">.</span>sum(fx_unstable)
+</span></span></code></pre></div><p>The following implementation is stable however, because there is no
 exponentiation of large numbers:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">stable_softmax</span>(x):
-    fx_stable <span style="color:#f92672">=</span> x <span style="color:#f92672">-</span> np<span style="color:#f92672">.</span>max(x)
-    <span style="color:#66d9ef">return</span> np<span style="color:#f92672">.</span>exp(fx_stable) <span style="color:#f92672">/</span> np<span style="color:#f92672">.</span>sum(np<span style="color:#f92672">.</span>exp(fx_stable))
-</code></pre></div><p>Instead, the max of the vector is subtracted from each element. This does not
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#b6a0ff">def</span> <span style="color:#feacd0">stable_softmax</span>(x):
+</span></span><span style="display:flex;"><span>    fx_stable <span style="color:#00d3d0">=</span> x <span style="color:#00d3d0">-</span> np<span style="color:#00d3d0">.</span>max(x)
+</span></span><span style="display:flex;"><span>    <span style="color:#b6a0ff">return</span> np<span style="color:#00d3d0">.</span>exp(fx_stable) <span style="color:#00d3d0">/</span> np<span style="color:#00d3d0">.</span>sum(np<span style="color:#00d3d0">.</span>exp(fx_stable))
+</span></span></code></pre></div><p>Instead, the max of the vector is subtracted from each element. This does not
 change the result of the softmax after the division as this subtraction is also
 performed in the denominator, thus cancelling out.</p>
 <p>Let&rsquo;s compare the two implementations:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">6.0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">15</span>], dtype<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>float32)
-<span style="color:#f92672">&gt;&gt;&gt;</span> stable_softmax(a)
-[<span style="color:#ae81ff">1.2339458e-04</span> <span style="color:#ae81ff">1.5228101e-08</span> <span style="color:#ae81ff">9.9987662e-01</span>]
-<span style="color:#f92672">&gt;&gt;&gt;</span> unstable_softmax(a)
-[<span style="color:#ae81ff">1.2339458e-04</span> <span style="color:#ae81ff">1.5228101e-08</span> <span style="color:#ae81ff">9.9987656e-01</span>]
-</code></pre></div><p>As you can see, the results are mostly equal, save for a few digits.
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00d3d0">&gt;&gt;&gt;</span> a <span style="color:#00d3d0">=</span> np<span style="color:#00d3d0">.</span>array([<span style="color:#00bcff">6.0</span>, <span style="color:#00d3d0">-</span><span style="color:#00bcff">3</span>, <span style="color:#00bcff">15</span>], dtype<span style="color:#00d3d0">=</span>np<span style="color:#00d3d0">.</span>float32)
+</span></span><span style="display:flex;"><span><span style="color:#00d3d0">&gt;&gt;&gt;</span> stable_softmax(a)
+</span></span><span style="display:flex;"><span>[<span style="color:#00bcff">1.2339458e-04</span> <span style="color:#00bcff">1.5228101e-08</span> <span style="color:#00bcff">9.9987662e-01</span>]
+</span></span><span style="display:flex;"><span><span style="color:#00d3d0">&gt;&gt;&gt;</span> unstable_softmax(a)
+</span></span><span style="display:flex;"><span>[<span style="color:#00bcff">1.2339458e-04</span> <span style="color:#00bcff">1.5228101e-08</span> <span style="color:#00bcff">9.9987656e-01</span>]
+</span></span></code></pre></div><p>As you can see, the results are mostly equal, save for a few digits.
 Now let&rsquo;s look at what happens with 16 bits of precision:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">6.0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">15</span>], dtype<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>float16)
-<span style="color:#f92672">&gt;&gt;&gt;</span> stable_softmax(a)
-[ <span style="color:#ae81ff">0.</span>  <span style="color:#ae81ff">0.</span> nan]
-<span style="color:#f92672">&gt;&gt;&gt;</span> unstable_softmax(a)
-[ <span style="color:#ae81ff">1.234e-04</span> <span style="color:#ae81ff">0.000e+00</span> <span style="color:#ae81ff">1.000e+00</span>]
-</code></pre></div><p>When working with 16 bits of precision, we observe that exp(15) produces a numerical overflow
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00d3d0">&gt;&gt;&gt;</span> a <span style="color:#00d3d0">=</span> np<span style="color:#00d3d0">.</span>array([<span style="color:#00bcff">6.0</span>, <span style="color:#00d3d0">-</span><span style="color:#00bcff">3</span>, <span style="color:#00bcff">15</span>], dtype<span style="color:#00d3d0">=</span>np<span style="color:#00d3d0">.</span>float16)
+</span></span><span style="display:flex;"><span><span style="color:#00d3d0">&gt;&gt;&gt;</span> stable_softmax(a)
+</span></span><span style="display:flex;"><span>[ <span style="color:#00bcff">0.</span>  <span style="color:#00bcff">0.</span> nan]
+</span></span><span style="display:flex;"><span><span style="color:#00d3d0">&gt;&gt;&gt;</span> unstable_softmax(a)
+</span></span><span style="display:flex;"><span>[ <span style="color:#00bcff">1.234e-04</span> <span style="color:#00bcff">0.000e+00</span> <span style="color:#00bcff">1.000e+00</span>]
+</span></span></code></pre></div><p>When working with 16 bits of precision, we observe that exp(15) produces a numerical overflow
 which turns the third element into a NaN. This is because exp(15) produces a value that can
 not be represented by a float16.</p>
 <p>To recap, we showed that softmax is numerically unstable, especially when working with small precision bits. Because softmax uses exponentials in the numerator and denominator, we can subtract all exponents by the maximum exponent, constraining all the values between 0 and 1 and preventing numerical overflow.</p>
@@ -376,7 +375,7 @@ function showContent() {
 
     <p class="h-card vcard">
 
-    <a href= class="p-name u-url url fn" rel="me">jarbus</a> 
+    <a href=ZgotmplZ class="p-name u-url url fn" rel="me">jarbus</a> 
 
      
         /

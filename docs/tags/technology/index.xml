@@ -37,7 +37,7 @@
 &lt;li&gt;Build a document in one command&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If you are reading this, you probably know how both Markdown and Latex work, and you probably know how to read the &lt;a href=&#34;https://pandoc.org/MANUAL.html#pandocs-Markdown&#34;&gt;Pandoc Markdown Documentation&lt;/a&gt;, so instead, below is a template document that I wish I had when first starting out. It covers most things you&amp;rsquo;d need to write simple papers in Markdown. Configuration for document settings is done in the YAML block at the top of the document.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
 title: How to Succeed in LaTeX without even trying
 subtitle: For the lazy writer
 author:
@@ -64,7 +64,7 @@ According to all known laws
 of aviation, there is now way
 that a bee should be able to fly. [@seinfeld2007]
 
-| &amp;quot;This is a quote&amp;quot;
+| &amp;#34;This is a quote&amp;#34;
 
 ![Caption here](bee.png){width=50% }
 
@@ -81,13 +81,13 @@ $$
 
 # Appendix
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, to compile your document to a PDF, simply run:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pandoc &amp;quot;file.md&amp;quot; -o &amp;quot;file.pdf&amp;quot; --citeproc
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pandoc &amp;#34;file.md&amp;#34; -o &amp;#34;file.pdf&amp;#34; --citeproc
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to generate a document that looks like this:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;../../final-document.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;--citeproc&lt;/code&gt; option is needed for compiling a bibliography. For cross-references inside a document, take a look at &lt;a href=&#34;https://github.com/lierdakil/pandoc-crossref&#34;&gt;pandoc-crossref&lt;/a&gt;, which will require the use of &lt;code&gt;--filter pandoc-crossref&lt;/code&gt; if it works for you.&lt;/p&gt;
 &lt;p&gt;I mapped a modified version of the build command above to a key in Neovim, so now pressing &lt;code&gt;Space+b&lt;/code&gt; in my Markdown buffer compiles my document automatically, no matter what file name I&amp;rsquo;m using:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.md nnoremap &amp;lt;Leader&amp;gt;b
-    \ :silent pandoc % -o &amp;quot;%:p:h/%:t:r.pdf&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.md nnoremap &amp;lt;Leader&amp;gt;b
+    \ :silent pandoc % -o &amp;#34;%:p:h/%:t:r.pdf&amp;#34;
     \ --filter pandoc-crossref --citeproc &amp;amp;&amp;lt;CR&amp;gt;&amp;lt;CR&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And that&amp;rsquo;s how I write LaTeX documents offline in Markdown.&lt;/p&gt;
 </description>
@@ -132,7 +132,7 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables&#34;&gt;(IID) Independent and Identically Distributed&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: Random variables are independent and identically distributed when the value of one variable doesn&amp;rsquo;t affect the probability of another variable. For example, the outcome of one coin flip does not affect the outcome of another coin flip, so both flips are IID.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://dibyaghosh.com/blog/probability/kldivergence.html&#34;&gt;KL Divergence&lt;/a&gt;: Divergence between two distributions of data. Useful for determining how different fake data is from real data (GANs) or for determining how differemt two policies are for trust-based reinforcement learning.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Self-driving_car&#34;&gt;Level 0-5&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: The different &amp;ldquo;levels&amp;rdquo; of autonomy related to self driving cars. 0 represents full human control while 5 represents full vehicle control.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Long_short-term_memory&#34;&gt;Long Short Term Memory (LSTM)&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A type of recurrent neural network that works exceptionally well with sequential input. A unique trait of these networks are their memory cells&#39; &amp;ldquo;forget gates&amp;rdquo;, which allow them to control how long they hold onto data for.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Long_short-term_memory&#34;&gt;Long Short Term Memory (LSTM)&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A type of recurrent neural network that works exceptionally well with sequential input. A unique trait of these networks are their memory cells&amp;rsquo; &amp;ldquo;forget gates&amp;rdquo;, which allow them to control how long they hold onto data for.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://deepai.org/publication/the-lottery-ticket-hypothesis-training-pruned-neural-networks&#34;&gt;The Lottery Ticket Hypothesis&lt;/a&gt;: A randomly-initialized, dense neural network contains a subnetwork that is initialised such that — when trained in isolation — it can match the test accuracy of the original network after training for at most the same number of iterations.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Markov_decision_process&#34;&gt;Markov Decision Process&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;W&lt;!-- raw HTML omitted --&gt;: A system of states, actions, and probabilities of getting to other states given actions taken from previous states.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://aiden.nibali.org/blog/2017-01-18-mode-collapse-gans/&#34;&gt;Mode Collapse&lt;/a&gt;: When the distribution of samples produced by a generative adversarial network represent a subset of the latent distribution, instead of the entire latent distribution. For example, you train a network to produce pictures of animals but it only learns to produce pictures of cats.&lt;/p&gt;
@@ -184,7 +184,7 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
 &lt;p&gt;TL;DR: With Pandoc installed and markdown file &lt;code&gt;Demo.md&lt;/code&gt;, executing &lt;code&gt;pandoc -t beamer Demo.md -o Demo.pdf&lt;/code&gt; will generate a slideshow as a pdf, with each section heading as the title of a new slide.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Different themes can be specified with the &lt;code&gt;-V&lt;/code&gt; option; I&amp;rsquo;m currently using the &lt;a href=&#34;https://github.com/matze/mtheme&#34;&gt;Metropolis&lt;/a&gt; beamer theme and &lt;a href=&#34;https://github.com/rchurchley/beamercolortheme-owl&#34;&gt;Owl&lt;/a&gt; colorscheme. After installing these themes, I can run:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pandoc -t beamer
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pandoc -t beamer
        -V fontsize=14pt
        -V theme=metropolis
        -V colortheme=owl
@@ -192,19 +192,19 @@ A simple example is &lt;a href=&#34;https://thispersondoesnotexist.com/&#34;&gt;
        Demo.md -o Demo.pdf
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to produce my presentation. &lt;strong&gt;Note: All code blocks are single-line commands/&lt;code&gt;.vimrc&lt;/code&gt; entries, and are displayed as multi-line for readability.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Unfortunately, it&amp;rsquo;s a pain to recompile a document every time I want to view my changes. Luckily, as a (Neo)Vim user, I can automatically run commands everytime I write a file. To avoid generating presentations with non-presentation markdown files, I instead write presentations in plaintext files that end with &lt;code&gt;.slides&lt;/code&gt;. In the example above, I&amp;rsquo;d be using &lt;code&gt;Demo.slides&lt;/code&gt; instead of &lt;code&gt;Demo.md&lt;/code&gt;. When I add:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;autocmd! BufWritePost *.slides silent !pandoc
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;autocmd! BufWritePost *.slides silent !pandoc
     -t beamer
     -V fontsize=14pt
     -V theme=metropolis
     -V colortheme=owl
     -s
-    % -o &amp;quot;%:p:h/.%:t:r.pdf&amp;quot;
+    % -o &amp;#34;%:p:h/.%:t:r.pdf&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to my &lt;code&gt;.vimrc&lt;/code&gt;, everytime I save changes in a &lt;code&gt;FILENAME.slides&lt;/code&gt; file, it will generate a presentation located in &lt;code&gt;.FILENAME.pdf&lt;/code&gt;. I choose to add a leading period in the output to hide the PDF from my file manager, feel free to remove it.&lt;/p&gt;
 &lt;p&gt;To enable markdown syntax highlighting in our &lt;code&gt;.slides&lt;/code&gt; file, add:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.slides :set filetype=markdown
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.slides :set filetype=markdown
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to your &lt;code&gt;.vimrc&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Now Vim generates a PDF presentation for us everytime we save a &lt;code&gt;.slides&lt;/code&gt; file. For easy viewing, I added another keybind, &lt;code&gt;Z&lt;/code&gt;, to open the corresponding PDF in my PDF viewer of choice, &lt;a href=&#34;https://pwmt.org/projects/zathura/&#34;&gt;Zathura&lt;/a&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;nnoremap Z :silent !zathura --fork %:p:h/.%:t:r.pdf&amp;lt;CR&amp;gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nnoremap Z :silent !zathura --fork %:p:h/.%:t:r.pdf&amp;lt;CR&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Zathura automatically refreshes the view whenever changes to an open document is detected. This means that I can open a &lt;code&gt;.slides&lt;/code&gt; file in Vim, save changes, and press &lt;code&gt;Z&lt;/code&gt; to view my changes in Zathura. I can then immediately view any additional changes I make in the open Zathura window, just by saving the &lt;code&gt;.slides&lt;/code&gt; file.&lt;/p&gt;
 </description>
     </item>
