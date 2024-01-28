@@ -21,6 +21,8 @@ date: 2024-01-28T13:17:32-05:00
 
 [Justine Tunney](http://justine.lol/) - One hell of a programmer
 
+[Watsky](https://gwatsky.bandcamp.com/) - Poet and hip hop artist
+
 [Clockwork](https://www.clockworkpi.com/) - Beautiful handheld computing
 
 [LOW←TECH MAGAZINE](https://solar.lowtechmagazine.com/) - Forgotten tech creating a sustainable future
@@ -33,8 +35,6 @@ date: 2024-01-28T13:17:32-05:00
 
 [UNSONG](https://unsongbook.com/) - United Nations Subcommittee On Names Of God
 
-[Watsky](https://gwatsky.bandcamp.com/) - Poet and hip hop artist
-
-[The Way of Zen](https://en.wikipedia.org/wiki/The_Way_of_Zen) - Liberation in paper form 
+[The Way of Zen](https://en.wikipedia.org/wiki/The_Way_of_Zen) - Liberation on paper
 
 [Secrets of Our Success](https://secretofoursuccess.fas.harvard.edu/) - The beauty of cultural evolution
