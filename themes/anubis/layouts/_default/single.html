@@ -15,6 +15,11 @@
                 {{ partial "post-language-switcher.html" . }}
             </header>
         </div>
+        {{ if .Params.toc }}
+        <aside>
+            {{ .TableOfContents }}
+        </aside>
+        {{ end }}
         <div class="content e-content">
             {{ .Content }}
         </div>
