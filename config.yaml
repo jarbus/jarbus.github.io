@@ -17,12 +17,17 @@ menu:
     name: posts
     title: posts
     url: /blog/
-    weight: 0
+    weight: 1
+  - identifier: links
+    name: links
+    title: links
+    url: /links
+    weight: 2
   - identifier: rss
     name: rss
     title: Rss
     url: /index.xml
-    weight: 0
+    weight: 3
 
 params:
   author: "jarbus"

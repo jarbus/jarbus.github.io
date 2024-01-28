@@ -5,7 +5,7 @@
 {{ if .Site.Menus.main }}
     <nav>
         {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
+        {{ range sort .Site.Menus.main "Weight" }}
         <a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a>
         {{ end }}
     </nav>

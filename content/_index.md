@@ -6,12 +6,12 @@ Hi, my name's Jack Garbus. I'm a graduate student in computer science interested
 
 Featured Projects:
 
+- [emergent trade](https://direct.mit.edu/artl/article-abstract/doi/10.1162/artl_a_00423/119154/Emergent-Resource-Exchange-and-Tolerated-Theft)
+    - emergent trading protocols between embodied agents using reinforcement learning
 - [kittyplot](https://github.com/jarbus/kittyplot)
     - a repl-based terminal plotting program
 - [dtree](https://github.com/jarbus/dtree)
     - a vim-inspired mind-mapping program written in C
-- [emergent trade](https://arxiv.org/abs/2307.01862)
-    - emergent trading protocols between embodied agents using reinforcement learning
 - [fe-alts](https://github.com/jarbus/fe-alts)
     - A single docker-compose of alternative front-ends to big tech services
 
