@@ -18,10 +18,10 @@ menu:
     title: posts
     url: /blog/
     weight: 1
-  - identifier: links
-    name: links
-    title: links
-    url: /links
+  - identifier: list
+    name: list
+    title: list
+    url: /list
     weight: 2
   - identifier: rss
     name: rss

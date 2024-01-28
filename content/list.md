@@ -1,7 +1,6 @@
 ---
-title: "Links"
+title: "List"
 date: 2024-01-28T13:17:32-05:00
-draft: true
 ---
 
 [punk.ist](http://punk.ist) - A list of increasing importance 
