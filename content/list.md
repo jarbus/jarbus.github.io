@@ -5,6 +5,8 @@ date: 2024-01-28T13:17:32-05:00
 
 [punk.ist](http://punk.ist) - A list of increasing importance 
 
+[vi key bindings](https://hea-www.harvard.edu/~fine/Tech/vi.html) - Comfortable computing
+
 [Artificial Life](https://alife.org/encyclopedia/introduction/artificial-life/) - Life *in silico* 
 
 [100 Rabbits](https://100r.co/site/home.html) - Low-tech maritime artist collective
