@@ -4,10 +4,6 @@ title: "jarbus.net"
 Hi, my name's Jack Garbus. I'm a graduate student in computer science interested in artificial societies, cultural evolution, machine learning, and decentralization.
 <hr>
 
-Newest Post:
-
-- [Numerical Stability in Flash Attention](blog/numerical-stability-in-flash-attention)
-
 Featured Projects:
 
 - [kittyplot](https://github.com/jarbus/kittyplot)
@@ -22,10 +18,10 @@ Featured Projects:
 
 Favorite Posts:
 
+- [Excerpts from The Way of Zen](/content/blog/the-way-of-zen)
 - [Introducing Kittyplot](blog/introducing-kittyplot)
 - [Unexpected Benefits of Testing Code](blog/unexpected-benefits-of-testing)
 - [How to write Latex without writing Latex](blog/write-latex-without-latex)
-- [Short: Aftermath](blog/short-aftermath)
 - [Forgiveness](blog/forgiveness)
 - [Tesla and False Advertising in AI](blog/tesla-and-false-advertising-in-ai)
 

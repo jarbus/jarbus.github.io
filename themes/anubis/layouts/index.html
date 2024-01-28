@@ -1,4 +1,5 @@
 {{ define "main" }}
+    <div style="text-align: center;">Newest Post: {{ range ( where .Site.RegularPages "Type" "blog" | first 1 ) }} <a href="{{ .Permalink }}">{{ .Title }}</a> {{end}}</div>
     <div class="homepage-content">
         {{ .Content }}
     </div>
