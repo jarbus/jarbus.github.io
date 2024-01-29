@@ -6,10 +6,33 @@
     <description> (programming)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Jul 2023 14:21:08 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jan 2024 02:52:33 -0400</lastBuildDate>
     
     <atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Take the Road Most Documented</title>
+      <link>/blog/take-the-road-most-documented/</link>
+      <pubDate>Sun, 28 Jan 2024 02:52:33 -0400</pubDate>
+      
+      <guid>/blog/take-the-road-most-documented/</guid>
+      <description>&lt;p&gt;How great would it be if the solution to most errors you face were in the first place you looked? That&amp;rsquo;s what the &lt;a href=&#34;https://wiki.archlinux.org/&#34;&gt;Arch Wiki&lt;/a&gt; has been for me: a massive wealth of information and troubleshooting resources to help me navigate the various configuration and installation issues I&amp;rsquo;ve encountered. Some people claim Arch Linux is too difficult for new users, but for me it&amp;rsquo;s been the only distribution I&amp;rsquo;ve been able to get consistently working, and it&amp;rsquo;s all thanks to the detailed documentation and known workarounds.&lt;/p&gt;
+&lt;p&gt;I used to run a Dell XPS 9560, and have tried and failed to install Ubuntu and Manjaro on multiple occassions. Sometimes, the automatic installers would fail, other times they would succeed but install a broken configuration, leaving me with networking configurations that would crash as much as it would connect&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. However, when installing Arch, I resolved each installation error with the help of the wiki, so that by the time I was in a graphical desktop environment, everything was running smoothly.&lt;/p&gt;
+&lt;p&gt;When I got my next laptop, I looked on the arch wiki to make sure there would be as few issues as possible setting up Linux&amp;mdash;and I faced none when installing.&lt;/p&gt;
+&lt;p&gt;I love exciting, and popular, and &lt;em&gt;new&lt;/em&gt; software, but installing Arch showed me that &lt;em&gt;popular&lt;/em&gt; isn&amp;rsquo;t as important as &lt;em&gt;understandable&lt;/em&gt;. Software will always break; I don&amp;rsquo;t think there isn&amp;rsquo;t a single program I use daily whose configuration I haven&amp;rsquo;t broken at some point. But when I encounter an installation error, or a feature isn&amp;rsquo;t working, or I need to use a program for an unintended purpose, choosing programs with extensive documentation and active community resources has always saved me a headache.&lt;/p&gt;
+&lt;p&gt;I use Hugo to generate this website. It&amp;rsquo;s so well documented (and there are bountiful answers on StackOverflow) that not only can I usually find the answer to the thing I want to do in the first few search results, but GPT-4 can often make a specific change I want too.&lt;/p&gt;
+&lt;p&gt;With all else equal, take the road most documented.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;This was before 2020, I&amp;rsquo;m sure these issues are largely fixed by now&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Numerical Stability in Flash Attention</title>

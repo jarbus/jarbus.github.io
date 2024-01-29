@@ -1,6 +1,7 @@
 ---
 title: "Take the Road Most Documented"
 date: 2024-01-28T02:52:33-04:00
+tags: ["programming"]
 ---
 How great would it be if the solution to most errors you face were in the first place you looked? That's what the [Arch Wiki](https://wiki.archlinux.org/) has been for me: a massive wealth of information and troubleshooting resources to help me navigate the various configuration and installation issues I've encountered. Some people claim Arch Linux is too difficult for new users, but for me it's been the only distribution I've been able to get consistently working, and it's all thanks to the detailed documentation and known workarounds.
 

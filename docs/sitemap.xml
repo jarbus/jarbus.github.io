@@ -11,6 +11,12 @@
     <loc>/</loc>
     <lastmod>2024-01-28T02:52:33-04:00</lastmod>
   </url><url>
+    <loc>/tags/programming/</loc>
+    <lastmod>2024-01-28T02:52:33-04:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2024-01-28T02:52:33-04:00</lastmod>
+  </url><url>
     <loc>/blog/take-the-road-most-documented/</loc>
     <lastmod>2024-01-28T02:52:33-04:00</lastmod>
   </url><url>
@@ -20,9 +26,6 @@
     <loc>/tags/philosophy/</loc>
     <lastmod>2024-01-27T15:49:16-05:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2024-01-27T15:49:16-05:00</lastmod>
-  </url><url>
     <loc>/blog/the-way-of-zen/</loc>
     <lastmod>2024-01-27T15:49:16-05:00</lastmod>
   </url><url>
@@ -30,9 +33,6 @@
     <lastmod>2024-01-27T15:49:16-05:00</lastmod>
   </url><url>
     <loc>/blog/numerical-stability-in-flash-attention/</loc>
-    <lastmod>2023-07-27T14:21:08-04:00</lastmod>
-  </url><url>
-    <loc>/tags/programming/</loc>
     <lastmod>2023-07-27T14:21:08-04:00</lastmod>
   </url><url>
     <loc>/blog/introducing-kittyplot/</loc>

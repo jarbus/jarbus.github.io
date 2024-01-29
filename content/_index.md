@@ -18,7 +18,7 @@ Featured Projects:
 
 Favorite Posts:
 
-- [Excerpts from The Way of Zen](/content/blog/the-way-of-zen)
+- [Excerpts from The Way of Zen](/blog/the-way-of-zen)
 - [Introducing Kittyplot](blog/introducing-kittyplot)
 - [Unexpected Benefits of Testing Code](blog/unexpected-benefits-of-testing)
 - [How to write Latex without writing Latex](blog/write-latex-without-latex)
