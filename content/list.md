@@ -5,17 +5,19 @@ date: 2024-01-28T13:17:32-05:00
 
 [punk.ist](http://punk.ist) - A list of increasing importance 
 
+[Unix](https://en.wikipedia.org/wiki/Unix_philosophy) - The philosophy of modular programs
+
 [vi key bindings](https://hea-www.harvard.edu/~fine/Tech/vi.html) - Comfortable computing
 
 [Artificial Life](https://alife.org/encyclopedia/introduction/artificial-life/) - Life *in silico* 
 
 [100 Rabbits](https://100r.co/site/home.html) - Low-tech maritime artist collective
 
-[Unix](https://en.wikipedia.org/wiki/Unix_philosophy) - The philosophy of modular programs
-
-[suckless](https://suckless.org/) - Simple, frugal, clear software
-
 [Antifragility](https://en.wikipedia.org/wiki/Antifragility) - Strength from setbacks
+
+[Lauryn Hill's MTV Unplugged](https://www.youtube.com/playlist?list=PL6vwnon3sINoBBQf4xTSZbP938hdIpD5T) - The unknown Queen of Hip-Hop
+
+[George Watsky's Live! From the Metro](https://www.youtube.com/watch?v=yQs3HP9arts) - The concert which made me love live music
 
 [Bret Victor](http://worrydream.com/) - Redefining computing
 
@@ -23,11 +25,11 @@ date: 2024-01-28T13:17:32-05:00
 
 [Justine Tunney](http://justine.lol/) - One hell of a programmer
 
-[Watsky](https://gwatsky.bandcamp.com/) - Poet and hip hop artist
-
-[Clockwork](https://www.clockworkpi.com/) - Beautiful handheld computing
+[suckless](https://suckless.org/) - Simple, frugal, clear software
 
 [LOW←TECH MAGAZINE](https://solar.lowtechmagazine.com/) - Forgotten tech creating a sustainable future
+
+[Clockwork](https://www.clockworkpi.com/) - Beautiful handheld computing
 
 [Teenage Engineering](https://teenage.engineering/products) - Stunning hardware design
 
