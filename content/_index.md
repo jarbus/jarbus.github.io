@@ -6,7 +6,7 @@ Hi, my name's Jack Garbus. I'm a graduate student in computer science interested
 
 Featured Projects:
 
-- [emergent trade](https://direct.mit.edu/artl/article-abstract/doi/10.1162/artl_a_00423/119154/Emergent-Resource-Exchange-and-Tolerated-Theft)
+- [emergent trade](/blog/emergent-trade)
     - emergent trading protocols between embodied agents using reinforcement learning
 - [kittyplot](https://github.com/jarbus/kittyplot)
     - a repl-based terminal plotting program
