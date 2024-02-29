@@ -1,5 +1,5 @@
 ---
-title: "Zen and the Art of Beatsaber"
+title: "Zen in the Art of Beatsaber"
 date: 2024-02-22T14:21:27-05:00
 tags: ["philosophy", "zen"]
 ---
