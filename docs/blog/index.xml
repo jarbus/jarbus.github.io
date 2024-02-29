@@ -6,10 +6,82 @@
     <description> (Blogs)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Feb 2024 12:14:25 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 22 Feb 2024 14:21:27 -0500</lastBuildDate>
     
     <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Zen and the Art of Beatsaber</title>
+      <link>/blog/zen-and-the-art-of-beatsaber/</link>
+      <pubDate>Thu, 22 Feb 2024 14:21:27 -0500</pubDate>
+      
+      <guid>/blog/zen-and-the-art-of-beatsaber/</guid>
+      <description>&lt;p&gt;Contents: &lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;, &lt;a href=&#34;#step-away-come-back-later&#34;&gt;Step away, come back later&lt;/a&gt;, &lt;a href=&#34;#focus-but-not-too-much&#34;&gt;Focus, but not too much&lt;/a&gt;, &lt;a href=&#34;#generalization-comes-after-specialization&#34;&gt;Generalization comes after specialization&lt;/a&gt;, &lt;a href=&#34;#dont-bother-if-you-dont-need-to&#34;&gt;Don&amp;rsquo;t bother if you don&amp;rsquo;t need to&lt;/a&gt;, &lt;a href=&#34;#let-go&#34;&gt;Let Go&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;introduction&#34; &gt;Introduction
+&lt;span&gt;
+    &lt;a href=&#34;#introduction&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;I recently read &lt;a href=&#34;https://en.wikipedia.org/wiki/Zen_in_the_Art_of_Archery&#34;&gt;Zen in the Art of Archery&lt;/a&gt;, which isn&amp;rsquo;t a book about archery as much as it is a book about zen. The book describes author&amp;rsquo;s journey learning archery from a zen master. I highly recommend it, the book is a short read&amp;ndash;I finished it in a day.&lt;/p&gt;
+&lt;p&gt;My core takeaway, which fails to properly describe book, is the following:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To master archery, the archer must first let go of their body and mind so they can be one with the art. This can only be achieved with an open mind through extensive practice.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I was mesmerized by the dedication, personal growth and the zen-like state the author achieved throughout his journey. I wanted to try something similar but have neither materials for archery or a zen master. I do, however, have a VR headset and a copy of &lt;a href=&#34;https://www.beatsaber.com/&#34;&gt;Beat Saber&lt;/a&gt;, &lt;a href=&#34;https://www.reddit.com/r/beatsaber/s/TSEdiDeJzk&#34;&gt;which can apparently induce a feeling of zen&lt;/a&gt;. I gave it a shot, silly as it seems.&lt;/p&gt;
+&lt;p&gt;Beat Saber a game where you need to slice blocks in a specific direction to the beat of a song. The harder the level, the more notes you have to hit per second. If you miss too many notes within a short time span, you fail the song. For reference, here is a &lt;a href=&#34;https://www.youtube.com/watch?v=7vXfw-fhmPc&#34;&gt;video of gameplay on an easier difficulty&lt;/a&gt;, a &lt;a href=&#34;https://www.youtube.com/watch?v=N6Y7ZgxeTUs&amp;amp;&#34;&gt;video of gameplay on harder difficulty&lt;/a&gt;, and a &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_songs_in_Beat_Saber&#34;&gt;list&lt;/a&gt; of the songs.&lt;/p&gt;
+&lt;p&gt;My initial goal was to beat all ten songs in the first volume of the free soundtrack on the hardest difficulty, &lt;em&gt;Expert+&lt;/em&gt; (I also started this to get myself to exercise, but that&amp;rsquo;s less exciting). As someone who couldn&amp;rsquo;t beat a single medium difficulty song on &lt;em&gt;Guitar Hero 3&lt;/em&gt; as a child, I didn&amp;rsquo;t expect to beat anything on the hardest setting, let alone one that required physical activity.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll spare you the hero&amp;rsquo;s journey: I beat all ten songs on &lt;em&gt;Expert+&lt;/em&gt; in a few weeks. I couldn&amp;rsquo;t believe my progress; I figured beating a single level would take me at least a month or two.&lt;/p&gt;
+&lt;p&gt;I decided to push myself and beat all the songs in all six original soundtracks on &lt;em&gt;Expert+&lt;/em&gt;. Again, I figured the levels would get harder, and I&amp;rsquo;d spend weeks mastering some of the harder songs. They did get significantly harder, but I chiped away at all but the six fastest songs over the course of another few weeks, one song at a time.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m still no zen-master, but I wanted to share some lessons I&amp;rsquo;ve learned, which I think can apply to lots of aspects of life. Take these with a grain of salt, of course.&lt;/p&gt;
+&lt;h2 id=&#34;step-away-come-back-later&#34; &gt;Step away, come back later
+&lt;span&gt;
+    &lt;a href=&#34;#step-away-come-back-later&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;The body naturally improves once you let it rest and process. I&amp;rsquo;d struggle with a song one night only to beat it on the first try the following morning.&lt;/p&gt;
+&lt;h2 id=&#34;focus-but-not-too-much&#34; &gt;Focus, but not too much
+&lt;span&gt;
+    &lt;a href=&#34;#focus-but-not-too-much&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Instead of restarting a failed song from the beginning, I relied on practice mode, which lets you start the song from any time. I drilled the sections I struggled with at lower speeds, ramping up the speed as I improved, eventually going back and beating the full song. Said in reverse, I wasted little time on the easy parts and made good use of my time.&lt;/p&gt;
+&lt;p&gt;When I got tired of a song, I switched to one that I previously beat, but found that I rusted. Switching it up and reviewing things I previously mastered improved my general ability and allowed me to perform better when encountering a new song.&lt;/p&gt;
+&lt;h2 id=&#34;generalization-comes-after-specialization&#34; &gt;Generalization comes after specialization
+&lt;span&gt;
+    &lt;a href=&#34;#generalization-comes-after-specialization&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;I spent most of my time drilling specific sequences of notes in certain songs, which I didn&amp;rsquo;t think would generalize well to other songs. While true to some extent, this practice helped me master patterns which would took similar forms elsewhere.&lt;/p&gt;
+&lt;p&gt;I think the same principle applies to learning in general, at least for me. I learn better when I start from examples and experience. Only after a while do I obtain the subconscious instincts required to shift my attention from the specifics to the higher level abstractions. My growth as a programmer followed a similar path, and the same is true for chess grandmasters from what I hear.&lt;/p&gt;
+&lt;h2 id=&#34;dont-bother-if-you-dont-need-to&#34; &gt;Don&amp;rsquo;t bother if you don&amp;rsquo;t need to
+&lt;span&gt;
+    &lt;a href=&#34;#dont-bother-if-you-dont-need-to&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;During faster, less-intuitive sequences, I&amp;rsquo;d often fail because I attempted to hit every single note. I noticed that I&amp;rsquo;d usually go down-hill after making a few consecutive mistakes which threw me off. Instead of drilling these sequences to mastery, I realized I could flat-out ignore the few pain points that disrupted my flow without failing the track.&lt;/p&gt;
+&lt;h2 id=&#34;let-go&#34; &gt;Let Go
+&lt;span&gt;
+    &lt;a href=&#34;#let-go&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Eventually, the songs got so fast that my conscious mind couldn&amp;rsquo;t process rapid sequences in time. These parts weren&amp;rsquo;t counter-intuitive or confusing like prior sequences I drilled, they were simply &lt;em&gt;too fast&lt;/em&gt;. I felt drilling these sequences wouldn&amp;rsquo;t help, no matter the speed.&lt;/p&gt;
+&lt;p&gt;The strategy that eventually worked was &amp;ldquo;not thinking&amp;rdquo;, true to zen philosophy. For most of the song, I&amp;rsquo;d consciously process the notes and patterns as they came, but for the fastest sequences, I would clear my mind, and operate purely on instinct for a few seconds. This was perhaps the most surpising part of this journey&amp;ndash;I&amp;rsquo;d often be able to land a perfect or near-perfect combo once my mind no longer got in the way.&lt;/p&gt;
+&lt;h1 id=&#34;final-thoughts&#34; &gt;Final Thoughts
+&lt;span&gt;
+    &lt;a href=&#34;#final-thoughts&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;I plan on beating the remaining songs, and will update this post if/when I do. I did not expect this experiment to go anywhere, but I learned a surprising amount about myself, my learning process, and breaking my limits. With the exception of brief moments, I don&amp;rsquo;t experience a zen-like state when playing, but I do notice that I need to &amp;ldquo;think&amp;rdquo; about what I&amp;rsquo;m doing significantly less.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Emergent Trade and Tolerated Theft Using Multi-Agent Reinforcement Learning</title>

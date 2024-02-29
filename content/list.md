@@ -42,3 +42,5 @@ date: 2024-01-28T13:17:32-05:00
 [The Way of Zen](https://en.wikipedia.org/wiki/The_Way_of_Zen) - Liberation on paper
 
 [Secrets of Our Success](https://secretofoursuccess.fas.harvard.edu/) - The beauty of cultural evolution
+
+[Reverse Graffiti](https://en.wikipedia.org/wiki/Reverse_graffiti) - Art from removing scum

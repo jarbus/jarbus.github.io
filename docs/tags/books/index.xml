@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>books on </title>
+    <title>Books on </title>
     <link>/tags/books/</link>
-    <description> (books)</description>
+    <description> (Books)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 27 Jan 2024 15:49:16 -0500</lastBuildDate>

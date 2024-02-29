@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>web on </title>
+    <title>Web on </title>
     <link>/tags/web/</link>
-    <description> (web)</description>
+    <description> (Web)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Jan 2023 11:47:35 -0500</lastBuildDate>
