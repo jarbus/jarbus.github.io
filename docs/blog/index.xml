@@ -6,10 +6,88 @@
     <description> (Blogs)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Feb 2024 14:21:27 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 16 Mar 2024 14:42:47 -0400</lastBuildDate>
     
     <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Reasonable Effectiveness of Using Old Phones as Servers</title>
+      <link>/blog/phone-server/</link>
+      <pubDate>Sat, 16 Mar 2024 14:42:47 -0400</pubDate>
+      
+      <guid>/blog/phone-server/</guid>
+      <description>&lt;p&gt;I installed &lt;a href=&#34;https://postmarketos.org&#34;&gt;linux&lt;/a&gt; on a OnePlus6T. Setup took less than an hour, technical issues included.&lt;/p&gt;
+&lt;h1 id=&#34;why&#34; &gt;Why
+&lt;span&gt;
+    &lt;a href=&#34;#why&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;$90 for 8GB RAM, 128GB storage, 2.8GHz 8-core CPU&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.postmarketos.org/wiki/OnePlus_6_(oneplus-enchilada)&#34;&gt;Linux on the OnePlus 6T&lt;/a&gt; is &lt;a href=&#34;blog/take-the-road-most-documented/&#34;&gt;well documented&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Low power consumption&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Tiny&lt;/em&gt; footprint&lt;/li&gt;
+&lt;li&gt;No additional cables&lt;/li&gt;
+&lt;li&gt;Built-in battery backup&lt;/li&gt;
+&lt;li&gt;WiFi, bluetooth, speaker, screen, etc&lt;/li&gt;
+&lt;li&gt;Negligible environmental impact sans shipping&lt;/li&gt;
+&lt;li&gt;I wanted to play with Linux on ARM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I don&amp;rsquo;t need a dedicated cable to power or connect it. Running on wifi, it only needs to be plugged into my phone&amp;rsquo;s charger. Whenever I need to charge my phone, I unplug the server and plug in my phone. It takes up so little space that I &lt;em&gt;literally leave it on my night stand&lt;/em&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;unexpected-issues&#34; &gt;Unexpected Issues
+&lt;span&gt;
+    &lt;a href=&#34;#unexpected-issues&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;I couldn&amp;rsquo;t get the Phosh image to boot, so I used the Plasma Mobile image instead.&lt;/li&gt;
+&lt;li&gt;The phone would suspend after a few minutes of inactivity. This caused a lot of issues over SSH and took a while to figure out, since servers usually don&amp;rsquo;t suspend.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;docker&#34; &gt;Docker
+&lt;span&gt;
+    &lt;a href=&#34;#docker&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;After resolving the suspend issues, docker appears to work fine. Surprisingly, many images support ARM!&lt;/p&gt;
+&lt;h1 id=&#34;tailscale&#34; &gt;Tailscale
+&lt;span&gt;
+    &lt;a href=&#34;#tailscale&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;I installed &lt;a href=&#34;https://tailscale.com&#34;&gt;tailscale&lt;/a&gt; to access the server remotely without exposing it to the internet. Tailscale is phenomenal, my grandma could set it up in less than five minutes if she needed to.&lt;/p&gt;
+&lt;h1 id=&#34;viability-as-a-regular-phone&#34; &gt;Viability as a regular phone
+&lt;span&gt;
+    &lt;a href=&#34;#viability-as-a-regular-phone&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;The OnePlus 6T is so much faster than a &lt;a href=&#34;https://pine64.org/devices/pinephone/&#34;&gt;PinePhone&lt;/a&gt;, the Linux phone I used previously. But Linux still isn&amp;rsquo;t ready for daily-driving:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I need to manually connect to wifi for each reboot&lt;/li&gt;
+&lt;li&gt;The app ecosystem is still a work in progress, missing polished apps for navigation, cameras, streaming, etc.&lt;/li&gt;
+&lt;li&gt;Traditional Linux apps like Firefox don&amp;rsquo;t scale properly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hopefully these issues are resolved in the future, but for now, the 6T is an excellent server.&lt;/p&gt;
+&lt;h1 id=&#34;other-remarks&#34; &gt;Other Remarks
+&lt;span&gt;
+    &lt;a href=&#34;#other-remarks&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;I&amp;rsquo;ve been toying with a few containers, but still haven&amp;rsquo;t decided on specific services to run yet. I&amp;rsquo;m considering:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://keila.io&#34;&gt;Keila&lt;/a&gt; for adding a newsletter to my blog&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://joinmastodon.org&#34;&gt;Mastodon&lt;/a&gt; to test running an activitypub server&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://matrix.org&#34;&gt;Matrix Synapse/Dendrite&lt;/a&gt; and assorted &lt;a href=&#34;https://matrix.org/ecosystem/bridges/&#34;&gt;bridges&lt;/a&gt; for chat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&amp;rsquo;ll post updates as things progress.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Zen in the Art of Beat Saber</title>
