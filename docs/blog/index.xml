@@ -86,6 +86,17 @@
 &lt;li&gt;&lt;a href=&#34;https://matrix.org&#34;&gt;Matrix Synapse/Dendrite&lt;/a&gt; and assorted &lt;a href=&#34;https://matrix.org/ecosystem/bridges/&#34;&gt;bridges&lt;/a&gt; for chat&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I&amp;rsquo;ll post updates as things progress.&lt;/p&gt;
+&lt;h1 id=&#34;related-projects&#34; &gt;Related Projects
+&lt;span&gt;
+    &lt;a href=&#34;#related-projects&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2110.12172&#34;&gt;Scalable Smartphone Cluster for Deep Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.hpcwire.com/2015/01/27/new-purpose-old-smartphones-cluster-computing/&#34;&gt;A new purpose for Old Smartphones: Cluster Computing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hackaday.com/2023/04/27/using-an-old-smartphone-in-place-of-a-raspberry-pi/&#34;&gt;Using an Old Smartphone in Place of a Raspberry Pi&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

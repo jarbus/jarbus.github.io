@@ -51,3 +51,10 @@ I've been toying with a few containers, but still haven't decided on specific se
 * [Matrix Synapse/Dendrite](https://matrix.org) and assorted [bridges](https://matrix.org/ecosystem/bridges/) for chat
 
 I'll post updates as things progress.
+
+
+# Related Projects
+
+* [Scalable Smartphone Cluster for Deep Learning](https://arxiv.org/abs/2110.12172)
+* [A new purpose for Old Smartphones: Cluster Computing](https://www.hpcwire.com/2015/01/27/new-purpose-old-smartphones-cluster-computing/)
+* [Using an Old Smartphone in Place of a Raspberry Pi](https://hackaday.com/2023/04/27/using-an-old-smartphone-in-place-of-a-raspberry-pi/)
