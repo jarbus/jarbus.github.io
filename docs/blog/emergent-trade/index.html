@@ -14,7 +14,8 @@
 
 <title>Emergent Trade and Tolerated Theft Using Multi-Agent Reinforcement Learning - </title>
 
-<meta name="description" content="I&rsquo;ve been an author on a few papers before, but I recently published the first research project where I was responsible for most of the work and direction. It&rsquo;s in the first 2024 issue of the journal Artificial Life, which you can find here (I&rsquo;ll post camera-ready paper here later this year, but for now, you can view the pre-print on arxiv. Below, I tell the chronology of the project and summarize our findings.">
+<meta name="description" content="I&rsquo;ve been an author on a few papers before, but I recently published the first research project where I was responsible for most of the work and direction. It&rsquo;s in the first 2024 issue of the journal Artificial Life, which you can find here. You can find a non-paywalled version here Below, I tell the chronology of the project and summarize our findings.
+We explore the conditions under which trade can emerge between four deep reinforcement learning agents that pick up and put down resources in a 2D foraging environment.">
 
 
 
@@ -89,8 +90,9 @@
 
 <meta property="og:url" content="/blog/emergent-trade/">
   <meta property="og:title" content="Emergent Trade and Tolerated Theft Using Multi-Agent Reinforcement Learning">
-  <meta property="og:description" content="I’ve been an author on a few papers before, but I recently published the first research project where I was responsible for most of the work and direction. It’s in the first 2024 issue of the journal Artificial Life, which you can find here (I’ll post camera-ready paper here later this year, but for now, you can view the pre-print on arxiv. Below, I tell the chronology of the project and summarize our findings.">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:description" content="I’ve been an author on a few papers before, but I recently published the first research project where I was responsible for most of the work and direction. It’s in the first 2024 issue of the journal Artificial Life, which you can find here. You can find a non-paywalled version here Below, I tell the chronology of the project and summarize our findings.
+We explore the conditions under which trade can emerge between four deep reinforcement learning agents that pick up and put down resources in a 2D foraging environment.">
+  <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
     <meta property="article:published_time" content="2024-02-04T12:14:25-05:00">
@@ -157,7 +159,7 @@
         </div>
         
         <div class="content e-content">
-            <p>I&rsquo;ve been an author on a few papers before, but I recently published the first research project where I was responsible for most of the work and direction. It&rsquo;s in the first 2024 issue of the journal <em>Artificial Life</em>, which you can find <a href="https://direct.mit.edu/artl/article-abstract/doi/10.1162/artl_a_00423/119154/Emergent-Resource-Exchange-and-Tolerated-Theft">here</a> (I&rsquo;ll post camera-ready paper here later this year, but for now, you can view the <a href="https://arxiv.org/abs/2307.01862">pre-print on arxiv</a>. Below, I tell the chronology of the project and summarize our findings.</p>
+            <p>I&rsquo;ve been an author on a few papers before, but I recently published the first research project where I was responsible for most of the work and direction. It&rsquo;s in the first 2024 issue of the journal <em>Artificial Life</em>, which you can find <a href="https://direct.mit.edu/artl/article-abstract/doi/10.1162/artl_a_00423/119154/Emergent-Resource-Exchange-and-Tolerated-Theft">here</a>. You can find a non-paywalled version <a href="../../trade-paper.pdf">here</a> Below, I tell the chronology of the project and summarize our findings.</p>
 <p><img src="../../trade.gif" alt=""></p>
 <p>We explore the conditions under which trade can emerge between four deep reinforcement learning agents that pick up and put down resources in a 2D foraging environment. Agents are rewarded for having both resources once, but the resources are distributed far apart from each other. To maximize reward, agents need to split up the work - agent 1 goes to resource A, agent 2 goes to resource B, etc, and then they meet to exchange resources, since meeting halfway can get them the most of each resource in the shortest amount of time.</p>
 <p>I was working on this for a while in isolation, getting nowhere, and slowly going crazy. A few months later, Deepmind published a <a href="https://arxiv.org/abs/2205.06760">paper</a> that explored this exact behavior&mdash;and found that agents could not discover how to exchange goods without programming a trading system into the game mechanics directly. I was getting similar results, but found that this trading behavior could emerge if I rewarded agents for being physically close to one another, which we&rsquo;ll call a &ldquo;community bonus&rdquo;.</p>

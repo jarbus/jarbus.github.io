@@ -4,7 +4,7 @@ date: 2024-02-04T12:14:25-05:00
 tags: ["programming", "ai"]
 ---
 
-I've been an author on a few papers before, but I recently published the first research project where I was responsible for most of the work and direction. It's in the first 2024 issue of the journal *Artificial Life*, which you can find [here](https://direct.mit.edu/artl/article-abstract/doi/10.1162/artl_a_00423/119154/Emergent-Resource-Exchange-and-Tolerated-Theft) (I'll post camera-ready paper here later this year, but for now, you can view the [pre-print on arxiv](https://arxiv.org/abs/2307.01862). Below, I tell the chronology of the project and summarize our findings.
+I've been an author on a few papers before, but I recently published the first research project where I was responsible for most of the work and direction. It's in the first 2024 issue of the journal *Artificial Life*, which you can find [here](https://direct.mit.edu/artl/article-abstract/doi/10.1162/artl_a_00423/119154/Emergent-Resource-Exchange-and-Tolerated-Theft). You can find a non-paywalled version [here](/trade-paper.pdf) Below, I tell the chronology of the project and summarize our findings.
 
 ![](/trade.gif)
 
