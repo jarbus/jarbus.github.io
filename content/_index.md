@@ -6,6 +6,8 @@ Hi, my name's Jack Garbus. I'm a graduate student in computer science interested
 
 Featured Projects:
 
+- [Jevo.jl](/Jevo.jl/dev)
+    - A high-performance, highly flexible framework for distributed deep neuroevolution
 - [emergent trade](/blog/emergent-trade)
     - emergent trading protocols between embodied agents using reinforcement learning
 - [kittyplot](https://github.com/jarbus/kittyplot)
