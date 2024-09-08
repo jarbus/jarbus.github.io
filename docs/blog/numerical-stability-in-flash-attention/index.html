@@ -192,9 +192,9 @@ performed in the denominator, thus cancelling out.</p>
 </span></span></code></pre></div><p>As you can see, the results are mostly equal, save for a few digits.
 Now let&rsquo;s look at what happens with 16 bits of precision:</p>
 <div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00d3d0">&gt;&gt;&gt;</span> a <span style="color:#00d3d0">=</span> np<span style="color:#00d3d0">.</span>array([<span style="color:#00bcff">6.0</span>, <span style="color:#00d3d0">-</span><span style="color:#00bcff">3</span>, <span style="color:#00bcff">15</span>], dtype<span style="color:#00d3d0">=</span>np<span style="color:#00d3d0">.</span>float16)
-</span></span><span style="display:flex;"><span><span style="color:#00d3d0">&gt;&gt;&gt;</span> stable_softmax(a)
-</span></span><span style="display:flex;"><span>[ <span style="color:#00bcff">0.</span>  <span style="color:#00bcff">0.</span> nan]
 </span></span><span style="display:flex;"><span><span style="color:#00d3d0">&gt;&gt;&gt;</span> unstable_softmax(a)
+</span></span><span style="display:flex;"><span>[ <span style="color:#00bcff">0.</span>  <span style="color:#00bcff">0.</span> nan]
+</span></span><span style="display:flex;"><span><span style="color:#00d3d0">&gt;&gt;&gt;</span> stable_softmax(a)
 </span></span><span style="display:flex;"><span>[ <span style="color:#00bcff">1.234e-04</span> <span style="color:#00bcff">0.000e+00</span> <span style="color:#00bcff">1.000e+00</span>]
 </span></span></code></pre></div><p>When working with 16 bits of precision, we observe that exp(15) produces a numerical overflow
 which turns the third element into a NaN. This is because exp(15) produces a value that can

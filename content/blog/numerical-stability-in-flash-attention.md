@@ -51,9 +51,9 @@ Now let's look at what happens with 16 bits of precision:
 
 ```python
 >>> a = np.array([6.0, -3, 15], dtype=np.float16)
->>> stable_softmax(a)
-[ 0.  0. nan]
 >>> unstable_softmax(a)
+[ 0.  0. nan]
+>>> stable_softmax(a)
 [ 1.234e-04 0.000e+00 1.000e+00]
 ```
 
