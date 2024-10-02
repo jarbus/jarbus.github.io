@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'unifont';
-  src: url('/unifont.woff2') format('woff2');
+  font-family: 'Arial';
+  /* src: url('/unifont.woff2') format('woff2'); */
 }
 
 
 :root {
     --font-color: #fafffb;
-    --font-size: 150%;
+    --font-size: 2vmax;
     --bg-color: #000006;
     --link-color: #ccffdd;
     --link-state-color: #dd9999;

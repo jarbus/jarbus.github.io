@@ -6,7 +6,7 @@
 
 :root {
     --font-color: #fafffb;
-    --font-size: 150%;
+    --font-size: 2vmax;
     --bg-color: #000006;
     --link-color: #ccffdd;
     --link-state-color: #dd9999;
@@ -28,7 +28,7 @@
     --svg-state-color: #dd9999;
 }
 html {
-    font-family: unifont, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    font-family: Calibri, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%}
 body {
