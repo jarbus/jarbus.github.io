@@ -6,6 +6,9 @@ theme: "anubis"
 paginate: 10
 publishDir: "docs"
 
+minify:
+  minifyOutput: true
+
 menu:
   main:
   - identifier: home
@@ -43,7 +46,7 @@ params:
   #   - js/main.js # relative path to "assets" directory
   dateFormat: "2006-01-02"
   paginationSinglePost: true
-  style: dark-without-switcher
+  style: dark
   readMore: false # show read more button
   readNextPosts: 5  # show 5 related posts, 0 by default
   disableSummary: false

@@ -1,142 +1,78 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Programming on </title>
-    <link>/tags/programming/</link>
-    <description> (Programming)</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 04 Feb 2024 12:14:25 -0500</lastBuildDate>
-    
-    <atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Emergent Trade and Tolerated Theft Using Multi-Agent Reinforcement Learning</title>
-      <link>/blog/emergent-trade/</link>
-      <pubDate>Sun, 04 Feb 2024 12:14:25 -0500</pubDate>
-      
-      <guid>/blog/emergent-trade/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been an author on a few papers before, but I recently published the first research project where I was responsible for most of the work and direction. It&amp;rsquo;s in the first 2024 issue of the journal &lt;em&gt;Artificial Life&lt;/em&gt;, which you can find &lt;a href=&#34;https://direct.mit.edu/artl/article-abstract/doi/10.1162/artl_a_00423/119154/Emergent-Resource-Exchange-and-Tolerated-Theft&#34;&gt;here&lt;/a&gt;. You can find a non-paywalled version &lt;a href=&#34;../../trade-paper.pdf&#34;&gt;here&lt;/a&gt; Below, I tell the chronology of the project and summarize our findings.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../trade.gif&#34; alt=&#34;Emergent Trade&#34; loading=&#34;lazy&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;We explore the conditions under which trade can emerge between four deep reinforcement learning agents that pick up and put down resources in a 2D foraging environment. Agents are rewarded for having both resources once, but the resources are distributed far apart from each other. To maximize reward, agents need to split up the work - agent 1 goes to resource A, agent 2 goes to resource B, etc, and then they meet to exchange resources, since meeting halfway can get them the most of each resource in the shortest amount of time.&lt;/p&gt;
-&lt;p&gt;I was working on this for a while in isolation, getting nowhere, and slowly going crazy. A few months later, Deepmind published a &lt;a href=&#34;https://arxiv.org/abs/2205.06760&#34;&gt;paper&lt;/a&gt; that explored this exact behavior&amp;mdash;and found that agents could not discover how to exchange goods without programming a trading system into the game mechanics directly. I was getting similar results, but found that this trading behavior could emerge if I rewarded agents for being physically close to one another, which we&amp;rsquo;ll call a &amp;ldquo;community bonus&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;I reached out to the authors (great people btw), and they hypothesized that the trading behavior was a result of agents trying to keep each other alive to get the community bonus. In my setup, agents could die if they ran out of resources, so they were also keeping each other alive for company. The authors suggested I add some sort of &amp;ldquo;market&amp;rdquo;, a place for agents to meet up and trade without getting directly rewarded for giving away resources for free.&lt;/p&gt;
-&lt;p&gt;They explored similar ideas in their work, and if they couldn&amp;rsquo;t get this behavior to emerge, what chance did I have? I needed to try something similar but sufficiently different.&lt;/p&gt;
-&lt;p&gt;Instead of adding a market where agents could come and go as they please, I added a campfire and a day-night cycle. I gave negative reward to agents for being out in the dark, which incentivizes them to gather around the campfire near others. Agents would only have enough time during the day to forage a single resource.&lt;/p&gt;
-&lt;p&gt;As it turns out, agents really, &lt;em&gt;really&lt;/em&gt; don&amp;rsquo;t want to learn this behavior. It&amp;rsquo;s easy for agents to get cheated out of the resources they offer by others who offer nothing in return, so they gather as much as possible on their own. They even forage at night if the darkness penalty isn&amp;rsquo;t severe enough.&lt;/p&gt;
-&lt;p&gt;Eventually, after 4+ days of training time, agents start to realize that working together isn&amp;rsquo;t so bad and land on a trading protocol where agents stand back, drop an offer, then walk over to collect the resources dropped by others. Experiments show that agents keep their distance initially so they can reclaim their offer if their trading partner attempts to cheat them.&lt;/p&gt;
-&lt;p&gt;In one trial, agents converge on a local minimum, where agents 1&amp;amp;2 go to the same area to collect resource A, agent 3 goes to collect resource B, and agent 4 collects a bit of the other remaining resources. In this setting, we notice a behavior which we dub &amp;ldquo;Tolerated Theft&amp;rdquo;. When agent 1 collects significantly more of resource A than agent 2, agent 2 tries to steal the resources exchanged between agents 1 and 3. To defend against this, agent 1 will drop some resources away from agent 3, to get agent 2 off their backs while they trade. This is particularly interesting, because an agent manages to &amp;ldquo;steal&amp;rdquo; resources without us adding a combat or larceny system. Nature truly does find a way.&lt;/p&gt;
-&lt;p&gt;I recommend checking out the &lt;a href=&#34;https://arxiv.org/abs/2307.01862&#34;&gt;arxiv pre-print&lt;/a&gt; if you are interested in the details and figures.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Take the Road Most Documented</title>
-      <link>/blog/take-the-road-most-documented/</link>
-      <pubDate>Sun, 28 Jan 2024 02:52:33 -0400</pubDate>
-      
-      <guid>/blog/take-the-road-most-documented/</guid>
-      <description>&lt;p&gt;How great would it be if the solution to most errors you face were in the first place you looked? That&amp;rsquo;s what the &lt;a href=&#34;https://wiki.archlinux.org/&#34;&gt;Arch Wiki&lt;/a&gt; has been for me: a massive wealth of information and troubleshooting resources to help me navigate the various configuration and installation issues I&amp;rsquo;ve encountered. Some people claim Arch Linux is too difficult for new users, but for me it&amp;rsquo;s been the only distribution I&amp;rsquo;ve been able to get consistently working, and it&amp;rsquo;s all thanks to the detailed documentation and known workarounds.&lt;/p&gt;
-&lt;p&gt;I used to run a Dell XPS 9560, and have tried and failed to install Ubuntu and Manjaro on multiple occassions. Sometimes, the automatic installers would fail, other times they would succeed but install a broken configuration, leaving me with networking configurations that would crash as much as it would connect&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. However, when installing Arch, I resolved each installation error with the help of the wiki, so that by the time I was in a graphical desktop environment, everything was running smoothly.&lt;/p&gt;
-&lt;p&gt;When I got my next laptop, I looked on the arch wiki to make sure there would be as few issues as possible setting up Linux&amp;mdash;and I faced none when installing.&lt;/p&gt;
-&lt;p&gt;I love exciting, and popular, and &lt;em&gt;new&lt;/em&gt; software, but installing Arch showed me that &lt;em&gt;popular&lt;/em&gt; isn&amp;rsquo;t as important as &lt;em&gt;understandable&lt;/em&gt;. Software will always break; I don&amp;rsquo;t think there isn&amp;rsquo;t a single program I use daily whose configuration I haven&amp;rsquo;t broken at some point. But when I encounter an installation error, or a feature isn&amp;rsquo;t working, or I need to use a program for an unintended purpose, choosing programs with extensive documentation and active community resources has always saved me a headache.&lt;/p&gt;
-&lt;p&gt;I use Hugo to generate this website. It&amp;rsquo;s so well documented (and there are bountiful answers on StackOverflow) that not only can I usually find the answer to the thing I want to do in the first few search results, but GPT-4 can often make a specific change I want too.&lt;/p&gt;
-&lt;p&gt;With all else equal, take the road most documented.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;This was before 2020, I&amp;rsquo;m sure these issues are largely fixed by now&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Numerical Stability in Flash Attention</title>
-      <link>/blog/numerical-stability-in-flash-attention/</link>
-      <pubDate>Thu, 27 Jul 2023 14:21:08 -0400</pubDate>
-      
-      <guid>/blog/numerical-stability-in-flash-attention/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://hazyresearch.stanford.edu/blog/2023-01-12-flashattention-long-sequences&#34;&gt;Flash attention&lt;/a&gt;, a recent implementation of attention which makes less calls
-to high-bandwidth memory, uses a version of the softmax function which is numerically stable. In this post, I&amp;rsquo;ll briefly showcase how this is done and an example of an unstable softmax.&lt;/p&gt;
-&lt;p&gt;The softmax function is used in machine learning to convert a vector of
-real numbers to a vector of probabilities which sum to 1, and is defined as:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;softmax(x) = [exp(x[i]) / sum([exp(xj) for xj in x]) for xi in x]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;where x is a vector of real numbers.&lt;/p&gt;
-&lt;p&gt;The python implementation below is numerically unstable because it involves
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programming on</title><link>/tags/programming/</link><description> (Programming)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 04 Feb 2024 12:14:25 -0500</lastBuildDate><atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Emergent Trade and Tolerated Theft Using Multi-Agent Reinforcement Learning</title><link>/blog/emergent-trade/</link><pubDate>Sun, 04 Feb 2024 12:14:25 -0500</pubDate><guid>/blog/emergent-trade/</guid><description>&lt;p>I&amp;rsquo;ve been an author on a few papers before, but I recently published the first research project where I was responsible for most of the work and direction. It&amp;rsquo;s in the first 2024 issue of the journal &lt;em>Artificial Life&lt;/em>, which you can find &lt;a href="https://direct.mit.edu/artl/article-abstract/doi/10.1162/artl_a_00423/119154/Emergent-Resource-Exchange-and-Tolerated-Theft">here&lt;/a>. You can find a non-paywalled version &lt;a href="../../trade-paper.pdf">here&lt;/a> Below, I tell the chronology of the project and summarize our findings.&lt;/p>
+&lt;p>&lt;img src="../../trade.gif" alt="Emergent Trade" loading="lazy">
+&lt;/p>
+&lt;p>We explore the conditions under which trade can emerge between four deep reinforcement learning agents that pick up and put down resources in a 2D foraging environment. Agents are rewarded for having both resources once, but the resources are distributed far apart from each other. To maximize reward, agents need to split up the work - agent 1 goes to resource A, agent 2 goes to resource B, etc, and then they meet to exchange resources, since meeting halfway can get them the most of each resource in the shortest amount of time.&lt;/p>
+&lt;p>I was working on this for a while in isolation, getting nowhere, and slowly going crazy. A few months later, Deepmind published a &lt;a href="https://arxiv.org/abs/2205.06760">paper&lt;/a> that explored this exact behavior&amp;mdash;and found that agents could not discover how to exchange goods without programming a trading system into the game mechanics directly. I was getting similar results, but found that this trading behavior could emerge if I rewarded agents for being physically close to one another, which we&amp;rsquo;ll call a &amp;ldquo;community bonus&amp;rdquo;.&lt;/p>
+&lt;p>I reached out to the authors (great people btw), and they hypothesized that the trading behavior was a result of agents trying to keep each other alive to get the community bonus. In my setup, agents could die if they ran out of resources, so they were also keeping each other alive for company. The authors suggested I add some sort of &amp;ldquo;market&amp;rdquo;, a place for agents to meet up and trade without getting directly rewarded for giving away resources for free.&lt;/p>
+&lt;p>They explored similar ideas in their work, and if they couldn&amp;rsquo;t get this behavior to emerge, what chance did I have? I needed to try something similar but sufficiently different.&lt;/p>
+&lt;p>Instead of adding a market where agents could come and go as they please, I added a campfire and a day-night cycle. I gave negative reward to agents for being out in the dark, which incentivizes them to gather around the campfire near others. Agents would only have enough time during the day to forage a single resource.&lt;/p>
+&lt;p>As it turns out, agents really, &lt;em>really&lt;/em> don&amp;rsquo;t want to learn this behavior. It&amp;rsquo;s easy for agents to get cheated out of the resources they offer by others who offer nothing in return, so they gather as much as possible on their own. They even forage at night if the darkness penalty isn&amp;rsquo;t severe enough.&lt;/p>
+&lt;p>Eventually, after 4+ days of training time, agents start to realize that working together isn&amp;rsquo;t so bad and land on a trading protocol where agents stand back, drop an offer, then walk over to collect the resources dropped by others. Experiments show that agents keep their distance initially so they can reclaim their offer if their trading partner attempts to cheat them.&lt;/p>
+&lt;p>In one trial, agents converge on a local minimum, where agents 1&amp;amp;2 go to the same area to collect resource A, agent 3 goes to collect resource B, and agent 4 collects a bit of the other remaining resources. In this setting, we notice a behavior which we dub &amp;ldquo;Tolerated Theft&amp;rdquo;. When agent 1 collects significantly more of resource A than agent 2, agent 2 tries to steal the resources exchanged between agents 1 and 3. To defend against this, agent 1 will drop some resources away from agent 3, to get agent 2 off their backs while they trade. This is particularly interesting, because an agent manages to &amp;ldquo;steal&amp;rdquo; resources without us adding a combat or larceny system. Nature truly does find a way.&lt;/p>
+&lt;p>I recommend checking out the &lt;a href="https://arxiv.org/abs/2307.01862">arxiv pre-print&lt;/a> if you are interested in the details and figures.&lt;/p></description></item><item><title>Take the Road Most Documented</title><link>/blog/take-the-road-most-documented/</link><pubDate>Sun, 28 Jan 2024 02:52:33 -0400</pubDate><guid>/blog/take-the-road-most-documented/</guid><description>&lt;p>How great would it be if the solution to most errors you face were in the first place you looked? That&amp;rsquo;s what the &lt;a href="https://wiki.archlinux.org/">Arch Wiki&lt;/a> has been for me: a massive wealth of information and troubleshooting resources to help me navigate the various configuration and installation issues I&amp;rsquo;ve encountered. Some people claim Arch Linux is too difficult for new users, but for me it&amp;rsquo;s been the only distribution I&amp;rsquo;ve been able to get consistently working, and it&amp;rsquo;s all thanks to the detailed documentation and known workarounds.&lt;/p>
+&lt;p>I used to run a Dell XPS 9560, and have tried and failed to install Ubuntu and Manjaro on multiple occassions. Sometimes, the automatic installers would fail, other times they would succeed but install a broken configuration, leaving me with networking configurations that would crash as much as it would connect&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>. However, when installing Arch, I resolved each installation error with the help of the wiki, so that by the time I was in a graphical desktop environment, everything was running smoothly.&lt;/p>
+&lt;p>When I got my next laptop, I looked on the arch wiki to make sure there would be as few issues as possible setting up Linux&amp;mdash;and I faced none when installing.&lt;/p>
+&lt;p>I love exciting, and popular, and &lt;em>new&lt;/em> software, but installing Arch showed me that &lt;em>popular&lt;/em> isn&amp;rsquo;t as important as &lt;em>understandable&lt;/em>. Software will always break; I don&amp;rsquo;t think there isn&amp;rsquo;t a single program I use daily whose configuration I haven&amp;rsquo;t broken at some point. But when I encounter an installation error, or a feature isn&amp;rsquo;t working, or I need to use a program for an unintended purpose, choosing programs with extensive documentation and active community resources has always saved me a headache.&lt;/p>
+&lt;p>I use Hugo to generate this website. It&amp;rsquo;s so well documented (and there are bountiful answers on StackOverflow) that not only can I usually find the answer to the thing I want to do in the first few search results, but GPT-4 can often make a specific change I want too.&lt;/p>
+&lt;p>With all else equal, take the road most documented.&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>This was before 2020, I&amp;rsquo;m sure these issues are largely fixed by now&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Numerical Stability in Flash Attention</title><link>/blog/numerical-stability-in-flash-attention/</link><pubDate>Thu, 27 Jul 2023 14:21:08 -0400</pubDate><guid>/blog/numerical-stability-in-flash-attention/</guid><description>&lt;p>&lt;a href="https://hazyresearch.stanford.edu/blog/2023-01-12-flashattention-long-sequences">Flash attention&lt;/a>, a recent implementation of attention which makes less calls
+to high-bandwidth memory, uses a version of the softmax function which is numerically stable. In this post, I&amp;rsquo;ll briefly showcase how this is done and an example of an unstable softmax.&lt;/p>
+&lt;p>The softmax function is used in machine learning to convert a vector of
+real numbers to a vector of probabilities which sum to 1, and is defined as:&lt;/p>
+&lt;pre>&lt;code>softmax(x) = [exp(x[i]) / sum([exp(xj) for xj in x]) for xi in x]
+&lt;/code>&lt;/pre>
+&lt;p>where x is a vector of real numbers.&lt;/p>
+&lt;p>The python implementation below is numerically unstable because it involves
 exponentiation of large numbers, which can lead to overflow. Crucially,
 underflow is not an issue, because exp(x) approaches zero when x is a large
-negative number.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#b6a0ff&#34;&gt;import&lt;/span&gt; numpy &lt;span style=&#34;color:#b6a0ff&#34;&gt;as&lt;/span&gt; np
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#b6a0ff&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#feacd0&#34;&gt;unstable_softmax&lt;/span&gt;(x):
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    fx_unstable &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;exp(x)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#b6a0ff&#34;&gt;return&lt;/span&gt; fx_unstable &lt;span style=&#34;color:#00d3d0&#34;&gt;/&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;sum(fx_unstable)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The following implementation is stable however, because there is no
-exponentiation of large numbers:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#b6a0ff&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#feacd0&#34;&gt;stable_softmax&lt;/span&gt;(x):
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    fx_stable &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; x &lt;span style=&#34;color:#00d3d0&#34;&gt;-&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;max(x)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#b6a0ff&#34;&gt;return&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;exp(fx_stable) &lt;span style=&#34;color:#00d3d0&#34;&gt;/&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;sum(np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;exp(fx_stable))
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Instead, the max of the vector is subtracted from each element. This does not
+negative number.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#b6a0ff">import&lt;/span> numpy &lt;span style="color:#b6a0ff">as&lt;/span> np
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#b6a0ff">def&lt;/span> &lt;span style="color:#feacd0">unstable_softmax&lt;/span>(x):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> fx_unstable &lt;span style="color:#00d3d0">=&lt;/span> np&lt;span style="color:#00d3d0">.&lt;/span>exp(x)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#b6a0ff">return&lt;/span> fx_unstable &lt;span style="color:#00d3d0">/&lt;/span> np&lt;span style="color:#00d3d0">.&lt;/span>sum(fx_unstable)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The following implementation is stable however, because there is no
+exponentiation of large numbers:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#b6a0ff">def&lt;/span> &lt;span style="color:#feacd0">stable_softmax&lt;/span>(x):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> fx_stable &lt;span style="color:#00d3d0">=&lt;/span> x &lt;span style="color:#00d3d0">-&lt;/span> np&lt;span style="color:#00d3d0">.&lt;/span>max(x)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#b6a0ff">return&lt;/span> np&lt;span style="color:#00d3d0">.&lt;/span>exp(fx_stable) &lt;span style="color:#00d3d0">/&lt;/span> np&lt;span style="color:#00d3d0">.&lt;/span>sum(np&lt;span style="color:#00d3d0">.&lt;/span>exp(fx_stable))
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Instead, the max of the vector is subtracted from each element. This does not
 change the result of the softmax after the division as this subtraction is also
-performed in the denominator, thus cancelling out.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s compare the two implementations:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;array([&lt;span style=&#34;color:#00bcff&#34;&gt;6.0&lt;/span&gt;, &lt;span style=&#34;color:#00d3d0&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#00bcff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#00bcff&#34;&gt;15&lt;/span&gt;], dtype&lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt;np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;float32)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; stable_softmax(a)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#00bcff&#34;&gt;1.2339458e-04&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;1.5228101e-08&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;9.9987662e-01&lt;/span&gt;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; unstable_softmax(a)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#00bcff&#34;&gt;1.2339458e-04&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;1.5228101e-08&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;9.9987656e-01&lt;/span&gt;]
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As you can see, the results are mostly equal, save for a few digits.
-Now let&amp;rsquo;s look at what happens with 16 bits of precision:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;array([&lt;span style=&#34;color:#00bcff&#34;&gt;6.0&lt;/span&gt;, &lt;span style=&#34;color:#00d3d0&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#00bcff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#00bcff&#34;&gt;15&lt;/span&gt;], dtype&lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt;np&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;float16)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; unstable_softmax(a)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[ &lt;span style=&#34;color:#00bcff&#34;&gt;0.&lt;/span&gt;  &lt;span style=&#34;color:#00bcff&#34;&gt;0.&lt;/span&gt; nan]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; stable_softmax(a)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[ &lt;span style=&#34;color:#00bcff&#34;&gt;1.234e-04&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;0.000e+00&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;1.000e+00&lt;/span&gt;]
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When working with 16 bits of precision, we observe that exp(15) produces a numerical overflow
+performed in the denominator, thus cancelling out.&lt;/p>
+&lt;p>Let&amp;rsquo;s compare the two implementations:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00d3d0">&amp;gt;&amp;gt;&amp;gt;&lt;/span> a &lt;span style="color:#00d3d0">=&lt;/span> np&lt;span style="color:#00d3d0">.&lt;/span>array([&lt;span style="color:#00bcff">6.0&lt;/span>, &lt;span style="color:#00d3d0">-&lt;/span>&lt;span style="color:#00bcff">3&lt;/span>, &lt;span style="color:#00bcff">15&lt;/span>], dtype&lt;span style="color:#00d3d0">=&lt;/span>np&lt;span style="color:#00d3d0">.&lt;/span>float32)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00d3d0">&amp;gt;&amp;gt;&amp;gt;&lt;/span> stable_softmax(a)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[&lt;span style="color:#00bcff">1.2339458e-04&lt;/span> &lt;span style="color:#00bcff">1.5228101e-08&lt;/span> &lt;span style="color:#00bcff">9.9987662e-01&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00d3d0">&amp;gt;&amp;gt;&amp;gt;&lt;/span> unstable_softmax(a)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[&lt;span style="color:#00bcff">1.2339458e-04&lt;/span> &lt;span style="color:#00bcff">1.5228101e-08&lt;/span> &lt;span style="color:#00bcff">9.9987656e-01&lt;/span>]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>As you can see, the results are mostly equal, save for a few digits.
+Now let&amp;rsquo;s look at what happens with 16 bits of precision:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00d3d0">&amp;gt;&amp;gt;&amp;gt;&lt;/span> a &lt;span style="color:#00d3d0">=&lt;/span> np&lt;span style="color:#00d3d0">.&lt;/span>array([&lt;span style="color:#00bcff">6.0&lt;/span>, &lt;span style="color:#00d3d0">-&lt;/span>&lt;span style="color:#00bcff">3&lt;/span>, &lt;span style="color:#00bcff">15&lt;/span>], dtype&lt;span style="color:#00d3d0">=&lt;/span>np&lt;span style="color:#00d3d0">.&lt;/span>float16)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00d3d0">&amp;gt;&amp;gt;&amp;gt;&lt;/span> unstable_softmax(a)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[ &lt;span style="color:#00bcff">0.&lt;/span> &lt;span style="color:#00bcff">0.&lt;/span> nan]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00d3d0">&amp;gt;&amp;gt;&amp;gt;&lt;/span> stable_softmax(a)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[ &lt;span style="color:#00bcff">1.234e-04&lt;/span> &lt;span style="color:#00bcff">0.000e+00&lt;/span> &lt;span style="color:#00bcff">1.000e+00&lt;/span>]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>When working with 16 bits of precision, we observe that exp(15) produces a numerical overflow
 which turns the third element into a NaN. This is because exp(15) produces a value that can
-not be represented by a float16.&lt;/p&gt;
-&lt;p&gt;To recap, we showed that softmax is numerically unstable, especially when working with small precision bits. Because softmax uses exponentials in the numerator and denominator, we can subtract all exponents by the maximum exponent, constraining all the values between 0 and 1 and preventing numerical overflow.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Introducing Kittyplot</title>
-      <link>/blog/introducing-kittyplot/</link>
-      <pubDate>Sat, 20 May 2023 21:09:16 -0400</pubDate>
-      
-      <guid>/blog/introducing-kittyplot/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jarbus/kittyplot&#34;&gt;Kittyplot&lt;/a&gt; is a program designed to plot experiment data in the kitty terminal using the &lt;a href=&#34;https://sw.kovidgoyal.net/kitty/graphics-protocol/&#34;&gt;kitty graphics protocol&lt;/a&gt;, primarily for use on HPC clusters.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../kittyplot-ex.gif&#34; alt=&#34;Kittyplot example GIF&#34; loading=&#34;lazy&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;Plots are rendered using matplotlib, and users can zoom into different regions of the plots by setting x and y limits using their editor. I use &lt;a href=&#34;https://python-prompt-toolkit.readthedocs.io/en/master/index.html&#34;&gt;prompt_toolkit&lt;/a&gt; to accept regexp input and I override the tab-completion to instead display a list of all metrics that are matched by the current regexp.&lt;/p&gt;
-&lt;p&gt;This will not be a well-maintained repo for the forseeable future and not a simple library one can &lt;code&gt;pip install&lt;/code&gt;. It&amp;rsquo;s merely a public copy of the script I use for visualizing experiment data over SSH without port-forwarding or running a web browser on my local machine. Kittyplot is only a few hunderd lines and is designed to be directly modified for user needs.&lt;/p&gt;
-&lt;p&gt;I was initially inspired to make kittyplot when I got fed up with tensorboard taking 20+ minutes to load all the experiment data I was working with. I loved tensorboard solely for the purpose of monitoring metrics specified by a regexp, so I modified my experiments to stream all the metrics to a csv and wrote kittyplot to monitor them. Now, I can create, view, and save plots directly from my ssh connection.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Unexpected Benefits of Testing Code</title>
-      <link>/blog/unexpected-benefits-of-testing/</link>
-      <pubDate>Sat, 21 Jan 2023 18:38:43 -0500</pubDate>
-      
-      <guid>/blog/unexpected-benefits-of-testing/</guid>
-      <description>&lt;p&gt;Matthew Carlson&amp;rsquo;s blog post &lt;a href=&#34;https://matthewc.dev/musings/unit-tests/&#34;&gt;&amp;ldquo;Fighting Distraction With Unit Tests&amp;rdquo;&lt;/a&gt; inspired me to share some extra benefits of writing test code I&amp;rsquo;ve discovered during my PhD program.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m working on a &lt;a href=&#34;https://github.com/jarbus/evotrade&#34;&gt;weird project&lt;/a&gt; that&amp;rsquo;s constantly changing as I try new things, and naturally, debugging and ensuring correctness was a nightmare. So I started writing tests, cursing myself for needing to write so much code I&amp;rsquo;ll likely throw away soon. But as it turns out, testing can be pretty helpful in a few other ways:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;When I encounter a bug I didn&amp;rsquo;t anticipate, I already have most of the code needed to reproduce it in a deterministic manner.&lt;/li&gt;
-&lt;li&gt;When I want to add/change functionality, I already have most of the code needed ensure that my changes work.&lt;/li&gt;
-&lt;li&gt;When writing new functionality, if I don&amp;rsquo;t already have the code needed to make ensure it&amp;rsquo;s working, I can write a small test that &lt;a href=&#34;https://timholy.github.io/Revise.jl/stable/user_reference/#Revise.entr&#34;&gt;runs whenever my code changes&lt;/a&gt;. Making this test case auto-run on a second screen dramatically reduces the amount of time spent switching windows and lets me stay in my editor until the test passes. I highly recommend setting up a run-on-change system, it makes writing tests or designing plots pretty fun.&lt;/li&gt;
-&lt;li&gt;You can write tests for newer code by using tests for older code. This makes tests valuable as you develop, even if you plan to throw them out later.&lt;/li&gt;
-&lt;li&gt;I feel more confident about what my code is actually doing. As someone who is working in AI, the value of this is immense, as AI code can run without crashing but still be subtly incorrect.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I&amp;rsquo;m not writing an exhaustive test suite, or tests for edge-cases that shouldn&amp;rsquo;t happen (asserts can deal with those). I&amp;rsquo;m writing code before I get bugs to spare myself the extra effort when I need to debug or make changes.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+not be represented by a float16.&lt;/p>
+&lt;p>To recap, we showed that softmax is numerically unstable, especially when working with small precision bits. Because softmax uses exponentials in the numerator and denominator, we can subtract all exponents by the maximum exponent, constraining all the values between 0 and 1 and preventing numerical overflow.&lt;/p></description></item><item><title>Introducing Kittyplot</title><link>/blog/introducing-kittyplot/</link><pubDate>Sat, 20 May 2023 21:09:16 -0400</pubDate><guid>/blog/introducing-kittyplot/</guid><description>&lt;p>&lt;a href="https://github.com/jarbus/kittyplot">Kittyplot&lt;/a> is a program designed to plot experiment data in the kitty terminal using the &lt;a href="https://sw.kovidgoyal.net/kitty/graphics-protocol/">kitty graphics protocol&lt;/a>, primarily for use on HPC clusters.&lt;/p>
+&lt;p>&lt;img src="../../kittyplot-ex.gif" alt="Kittyplot example GIF" loading="lazy">
+&lt;/p>
+&lt;p>Plots are rendered using matplotlib, and users can zoom into different regions of the plots by setting x and y limits using their editor. I use &lt;a href="https://python-prompt-toolkit.readthedocs.io/en/master/index.html">prompt_toolkit&lt;/a> to accept regexp input and I override the tab-completion to instead display a list of all metrics that are matched by the current regexp.&lt;/p>
+&lt;p>This will not be a well-maintained repo for the forseeable future and not a simple library one can &lt;code>pip install&lt;/code>. It&amp;rsquo;s merely a public copy of the script I use for visualizing experiment data over SSH without port-forwarding or running a web browser on my local machine. Kittyplot is only a few hunderd lines and is designed to be directly modified for user needs.&lt;/p>
+&lt;p>I was initially inspired to make kittyplot when I got fed up with tensorboard taking 20+ minutes to load all the experiment data I was working with. I loved tensorboard solely for the purpose of monitoring metrics specified by a regexp, so I modified my experiments to stream all the metrics to a csv and wrote kittyplot to monitor them. Now, I can create, view, and save plots directly from my ssh connection.&lt;/p></description></item><item><title>Unexpected Benefits of Testing Code</title><link>/blog/unexpected-benefits-of-testing/</link><pubDate>Sat, 21 Jan 2023 18:38:43 -0500</pubDate><guid>/blog/unexpected-benefits-of-testing/</guid><description>&lt;p>Matthew Carlson&amp;rsquo;s blog post &lt;a href="https://matthewc.dev/musings/unit-tests/">&amp;ldquo;Fighting Distraction With Unit Tests&amp;rdquo;&lt;/a> inspired me to share some extra benefits of writing test code I&amp;rsquo;ve discovered during my PhD program.&lt;/p>
+&lt;p>I&amp;rsquo;m working on a &lt;a href="https://github.com/jarbus/evotrade">weird project&lt;/a> that&amp;rsquo;s constantly changing as I try new things, and naturally, debugging and ensuring correctness was a nightmare. So I started writing tests, cursing myself for needing to write so much code I&amp;rsquo;ll likely throw away soon. But as it turns out, testing can be pretty helpful in a few other ways:&lt;/p>
+&lt;ol>
+&lt;li>When I encounter a bug I didn&amp;rsquo;t anticipate, I already have most of the code needed to reproduce it in a deterministic manner.&lt;/li>
+&lt;li>When I want to add/change functionality, I already have most of the code needed ensure that my changes work.&lt;/li>
+&lt;li>When writing new functionality, if I don&amp;rsquo;t already have the code needed to make ensure it&amp;rsquo;s working, I can write a small test that &lt;a href="https://timholy.github.io/Revise.jl/stable/user_reference/#Revise.entr">runs whenever my code changes&lt;/a>. Making this test case auto-run on a second screen dramatically reduces the amount of time spent switching windows and lets me stay in my editor until the test passes. I highly recommend setting up a run-on-change system, it makes writing tests or designing plots pretty fun.&lt;/li>
+&lt;li>You can write tests for newer code by using tests for older code. This makes tests valuable as you develop, even if you plan to throw them out later.&lt;/li>
+&lt;li>I feel more confident about what my code is actually doing. As someone who is working in AI, the value of this is immense, as AI code can run without crashing but still be subtly incorrect.&lt;/li>
+&lt;/ol>
+&lt;p>I&amp;rsquo;m not writing an exhaustive test suite, or tests for edge-cases that shouldn&amp;rsquo;t happen (asserts can deal with those). I&amp;rsquo;m writing code before I get bugs to spare myself the extra effort when I need to debug or make changes.&lt;/p></description></item></channel></rss>
