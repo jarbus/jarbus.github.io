@@ -32,7 +32,7 @@ menu:
 params:
   author: "jarbus"
   email: jarbus@tutanota.com # used for microformats
-  avatar: "/images/me.png" # used for microformats
+  #avatar: "/images/me.png" # used for microformats
   description: ""
   # Uncomment if you need this
   # images:
