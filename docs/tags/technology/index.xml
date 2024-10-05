@@ -83,7 +83,8 @@ $$
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, to compile your document to a PDF, simply run:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pandoc &amp;#34;file.md&amp;#34; -o &amp;#34;file.pdf&amp;#34; --citeproc
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to generate a document that looks like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../final-document.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../final-document.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;
+&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;--citeproc&lt;/code&gt; option is needed for compiling a bibliography. For cross-references inside a document, take a look at &lt;a href=&#34;https://github.com/lierdakil/pandoc-crossref&#34;&gt;pandoc-crossref&lt;/a&gt;, which will require the use of &lt;code&gt;--filter pandoc-crossref&lt;/code&gt; if it works for you.&lt;/p&gt;
 &lt;p&gt;I mapped a modified version of the build command above to a key in Neovim, so now pressing &lt;code&gt;Space+b&lt;/code&gt; in my Markdown buffer compiles my document automatically, no matter what file name I&amp;rsquo;m using:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;autocmd BufRead,BufNewFile *.md nnoremap &amp;lt;Leader&amp;gt;b

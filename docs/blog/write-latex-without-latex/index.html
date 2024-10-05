@@ -233,7 +233,8 @@ $$
 </code></pre><p>Then, to compile your document to a PDF, simply run:</p>
 <pre tabindex="0"><code>pandoc &#34;file.md&#34; -o &#34;file.pdf&#34; --citeproc
 </code></pre><p>to generate a document that looks like this:</p>
-<p><img src="../../final-document.png" alt=""></p>
+<p><img src="../../final-document.png" alt="" loading="lazy">
+</p>
 <p>The <code>--citeproc</code> option is needed for compiling a bibliography. For cross-references inside a document, take a look at <a href="https://github.com/lierdakil/pandoc-crossref">pandoc-crossref</a>, which will require the use of <code>--filter pandoc-crossref</code> if it works for you.</p>
 <p>I mapped a modified version of the build command above to a key in Neovim, so now pressing <code>Space+b</code> in my Markdown buffer compiles my document automatically, no matter what file name I&rsquo;m using:</p>
 <pre tabindex="0"><code>autocmd BufRead,BufNewFile *.md nnoremap &lt;Leader&gt;b

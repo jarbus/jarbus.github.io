@@ -6,7 +6,7 @@ tags: ["programming"]
 
 [Kittyplot](https://github.com/jarbus/kittyplot) is a program designed to plot experiment data in the kitty terminal using the [kitty graphics protocol](https://sw.kovidgoyal.net/kitty/graphics-protocol/), primarily for use on HPC clusters.
 
-<img src="/kittyplot-ex.gif" loading="lazy" alt="Kittyplot example GIF">
+![Kittyplot example GIF](/kittyplot-ex.gif)
 
 Plots are rendered using matplotlib, and users can zoom into different regions of the plots by setting x and y limits using their editor. I use [prompt_toolkit](https://python-prompt-toolkit.readthedocs.io/en/master/index.html) to accept regexp input and I override the tab-completion to instead display a list of all metrics that are matched by the current regexp.
 

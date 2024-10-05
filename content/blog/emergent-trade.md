@@ -6,7 +6,7 @@ tags: ["programming", "ai"]
 
 I've been an author on a few papers before, but I recently published the first research project where I was responsible for most of the work and direction. It's in the first 2024 issue of the journal *Artificial Life*, which you can find [here](https://direct.mit.edu/artl/article-abstract/doi/10.1162/artl_a_00423/119154/Emergent-Resource-Exchange-and-Tolerated-Theft). You can find a non-paywalled version [here](/trade-paper.pdf) Below, I tell the chronology of the project and summarize our findings.
 
-<img src="/trade.gif" loading="lazy" alt="Emergent Trade">
+![Emergent Trade](/trade.gif)
 
 We explore the conditions under which trade can emerge between four deep reinforcement learning agents that pick up and put down resources in a 2D foraging environment. Agents are rewarded for having both resources once, but the resources are distributed far apart from each other. To maximize reward, agents need to split up the work - agent 1 goes to resource A, agent 2 goes to resource B, etc, and then they meet to exchange resources, since meeting halfway can get them the most of each resource in the shortest amount of time.
 
