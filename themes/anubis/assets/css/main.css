@@ -6,7 +6,7 @@
 
 :root {
     --font-color: #fafffb;
-    --font-size: 150%;
+    --font-size: 130%;
     --bg-color: #000006;
     --link-color: #ccffdd;
     --link-state-color: #dd9999;
@@ -506,6 +506,7 @@ ul.language-select>li, ul.footer-menu>li {
     overflow-x: hidden;
     padding-left: 25px;
     padding-right: 25px;
+    font-size: 100%;
 }
 .container {
     max-width: 90%;
