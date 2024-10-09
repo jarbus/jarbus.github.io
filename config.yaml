@@ -51,43 +51,10 @@ params:
   readNextPosts: 5  # show 5 related posts, 0 by default
   disableSummary: false
   copyCodeButton: true # true by default
-  # rssAsSocialIcon: true
-  # utteranc.es support
-  utterancesRepo: ""  # mandatory
-  utterancesTheme: "" # optional
-  utterancesIssue: "" # optional
-  utterancesLabel: "" # optional
-  # isso support
-  #isso:
-  #  enabled: true # mandatory
-  #  data: "https://comments.example.com/" # mandatory
-  #  jsLocation: "https://comments.example.com/js/embed.min.js" # mandatory
-  #  css: true # optional
-  #  lang: "de" # optional
-  #  replyToSelf: true # mandatory
-  #  requireAuthor: true # mandatory
-  #  requireEmail: true # mandatory
-  #  id: "thread-id" # optional
-  #  avatar: true # optional
-  #  avatar-bg: "#f0f0f0" # optional
-  #  feed: false # optional
-  #graphcommentId: ""
-  #webmentions:
-  #  url: https://yourdomain.com/webemntions/receive
-  #  login: hugo-theme-anubis
-  #  pingback: true
-  # social:
-  # - id: github
-  #   name: gohugoio
-#  - id: hugo
-#    url: "https://gohugo.io/"
-#    icon: "hugo"
-
-# markup:
-#   goldmark:
-#     renderer:
-#       unsafe: true # enable raw HTML in Markdown
 markup:
+  goldmark:
+    renderer:
+      unsafe: true # enable raw HTML in Markdown
   highlight:
     anchorLineNos: false
     codeFences: true

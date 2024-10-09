@@ -1,8 +1,8 @@
 ---
 title: "jarbus.net"
 ---
+
 Hi, my name's Jack Garbus. I'm a graduate student in computer science interested in artificial societies, cultural evolution, machine learning, and decentralization.
-<hr>
 
 Featured Projects:
 
@@ -27,9 +27,9 @@ Favorite Posts:
 - [Forgiveness](blog/forgiveness)
 - [Tesla and False Advertising in AI](blog/tesla-and-false-advertising-in-ai)
 
-<hr>
-
 Contact me via:
 * Email: garbus at brandeis dot edu
 * Mastodon [@jarbus@fosstodon.org](https://fosstodon.org/@jarbus)
 * Github: [@jarbus](https://github.com/jarbus)
+
+
