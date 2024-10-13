@@ -324,7 +324,6 @@ vim.o.ignorecase = true      -- Case insensitive searching UNLESS /C or capital 
 vim.o.smartcase = true
 vim.o.updatetime = 250       -- Decrease update time
 vim.wo.signcolumn = 'yes'
-vim.cmd [[colorscheme  roseprime]]--base16-black-metal]]
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
 -- Keymaps for better default experience
