@@ -10,17 +10,24 @@ if not vim.uv.fs_stat(lazypath) then
   end
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
-
 require('lazy').setup({
   'nvim-lua/plenary.nvim',
   'airblade/vim-gitgutter',
   'JuliaEditorSupport/julia-vim',
   'github/copilot.vim',
+  'mg979/vim-visual-multi',
+
+  { 'echasnovski/mini.extra', version = '*'},
+  { 'echasnovski/mini.pick', version = '*'},
+  { 'echasnovski/mini.visits', version = '*'},
   { 'echasnovski/mini.nvim', config = function()
 		  require('mini.clue').setup()
 		  require('mini.icons').setup()
 		  require('mini.ai').setup()
 		  require('mini.diff').setup()
+		  require('mini.extra').setup()
+		  require('mini.pick').setup()
+		  require('mini.visits').setup()
 		  require('mini.files').setup()
 		  require('mini.indentscope').setup()
 		  require('mini.comment').setup()
@@ -258,7 +265,6 @@ require('lspconfig').lua_ls.setup {
     },
   },
 }
-
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
 
@@ -311,8 +317,6 @@ cmp.setup {
     { name = 'pandoc_references'},
   },
 }
-
-
 vim.o.expandtab = true       -- Use spaces instead of tabs
 vim.o.tabstop = 4            -- Number of spaces tabs count for
 vim.o.shiftwidth = 4         -- Size of an indent
@@ -348,8 +352,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.g.copilot_no_tab_map = true
 vim.g.copilot_assume_mapped = true
 vim.g.copilot_tab_fallback = ""
-
-
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
   ensure_installed = { 'julia', 'c', 'cpp', 'lua', 'python', 'markdown', 'markdown_inline'},
@@ -411,8 +413,6 @@ require('nvim-treesitter.configs').setup {
   },
   refactor = { highlight_definitions = { enable = true, }, },
 }
-
-
 -- Shell ops
 vim.cmd [[ nnoremap <Leader><Leader>t :!kitty & disown<CR> ]]
 vim.cmd [[ nnoremap Z :!zathura --fork "%:p:h/%:t:r.pdf"<CR> ]]
@@ -423,6 +423,8 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 vim.keymap.set('n', '<leader>g', require('neogit').open, { desc = 'Open [G]it' })
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>e', function () MiniFiles.open() end, { desc = 'Open File [E]xplorer' })
+vim.keymap.set('n', '<leader>v', function() MiniExtra.pickers.visit_paths() end, { desc = 'Visit [V]isited paths' })
+
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
 vim.keymap.set('n', '<leader>t', require('telescope-tabs').list_tabs, {desc = 'Search [T]abs'})
@@ -467,4 +469,3 @@ vim.keymap.set("v", "<C-g>e", ":<C-u>'<,'>GpEnew<cr>", keymapOptions("Visual Ene
 vim.keymap.set("v", "<C-g>p", ":<C-u>'<,'>GpPopup<cr>", keymapOptions("Visual Popup"))
 -- imp-clip binding
 vim.cmd([[ nnoremap <Leader>p <cmd>PasteImage<CR> ]])
-vim.cmd([[ nnoremap <Leader>e <cmd>lua MiniFiles.open()<CR> ]])
