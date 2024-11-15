@@ -1,5 +1,5 @@
 ---
-title: "Eudiamonia in the Information Age"
+title: "Eudaimonia in the Information Age"
 date: 2024-11-14T16:48:51-08:00
 tags: ["philosophy", "psychology"]
 ---
@@ -20,7 +20,7 @@ Life is full of many cognitive plagues, things that will always bother you somew
 
 All I had to do is, well, everything. For the many sources of negative thoughts, I had to actually *try* to deal with it to some extent, and make progress. I’m not the most attractive guy in the world, but at least I feel comfortable with my hair quality now. I'm not the best speaker, but I've learned to slow down and speak with clarity and confidence.
 
-Nietzsche describes the concept of the [Overman](https://en.wikipedia.org/wiki/%C3%9Cbermensch), which I interpret as “the ideal version of ourselves”. We can’t permanently reach this ideal, but we can strive for it, and, for brief periods, embody it. The overman serves as a guide; I'd literally ask myself, 'What would my overman do?' and then do that, because the answer was always obvious.
+Nietzsche describes the concept of the [Übermensch](https://en.wikipedia.org/wiki/%C3%9Cbermensch), which I interpret as “the ideal version of ourselves”. We can’t permanently reach this ideal, but we can strive for it, and, for brief periods, embody it. The Übermensch serves as a guide; I'd literally ask myself, 'What would my Übermensch do?' and then do that, because the answer was always obvious.
 
 We often focus our efforts on improving one aspect of our lives, like our career or  health, which is important, but always leaves another aspect with which we are dissatisfied. I now feel like I'm satisfied with every aspect of myself. I'm not perfect, not by a long shot, but there's no longer parts of myself that I truly despise.
 
