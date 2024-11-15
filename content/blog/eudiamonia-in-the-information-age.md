@@ -8,7 +8,7 @@ tags: ["philosophy", "psychology"]
 
 The modern world feels meaningless at times. Instead of hunting or farming to put food on the table, many of us sit at a computer or stand behind a counter, far removed from the fruits of our labor—if our labor even bears fruit. Our screens bombard us with videos of people more beautiful and successful than we could ever hope to be while we stay inside, alone. 
 
-Life isn’t a struggle for survival anymore; it’s a struggle for meaning. We evolved to invoke happiness and fulfillment in completely different conditions than those in which we now reside. Like a camera trying to take pictures in the dark. 
+Life is no longer a struggle for survival for many of us; it’s a struggle for meaning. We evolved to invoke happiness and fulfillment in completely different conditions than those in which we now reside. Like a camera trying to take pictures in the dark. 
 
 I’ve struggled immensely to find meaning and pride in the past, but I’ve found my light recently, and I wanted to write it down.
 
