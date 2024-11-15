@@ -1,7 +1,6 @@
 ---
 title: "Eudiamonia in the Information Age"
 date: 2024-11-14T16:48:51-08:00
-draft: true
 tags: ["philosophy", "psychology"]
 ---
 
