@@ -1,0 +1,23 @@
+---
+title: "Reducing Code Complexity using UI"
+date: 2024-11-15T07:01:30-08:00
+tags: ["programming"]
+---
+
+I'm doing an internship right now, and thankfully, I read a few books on software design before starting.
+
+I had to design a database schema, data submission page, submission approval page, and dynamic dashboard for the project I was assigned to. This is one of those projects that AI can obviously do 90% of to work for if designed appropriately--if the right abstractions are used, performance trade-offs are made, and the right tools are chosen. I wanted to make sure that, throughout the project, AI could always easily with any part of the codebase.
+
+For AI, code simplicity is a non-negotiable. Your code needs to be small, modular and clear, full stop. AI doesn't work well with complex code bases with many unfamiliar datastructures across multiple files yet, so one goal was limit the codebase for each webpage to a single file, and for that file to be as small as possible, which worked really well. Being able to copy+paste your entire codebase into ChatGPT is very powerful. 
+
+We wanted to implement features such that the user would never end up in a slightly unintuitive state, specifically, we didn't want users to normalize data by a series and view the data in log scale simultaneously. The issue is, given our tooling, it would take a decent chunk of code (relative to our codebase) to make it impossible to end up in such a state, and would require some logic to manage which action they took first. Did they normalize first, then try to view in log scale? Or did they try to view in log scale, and then normalize? What should take priority? What does the user expect?
+
+Instead of increasing the complexity and control flow to handle this, I instead tried to first make it clear to the user exactly what state they were in. We added a large, visible red X to the normalization dropdown to draw the user's attention to the "Clear Normalization Series" option, which resets the chart to the absolute values, instead of relative. From the user perspective, this makes it clear when you are working with normalized data, so when you view in log scale, you know what you're looking at, and can decide for yourself what view you want to see. If you want to see something unintuitive, no biggie, it's obvious what you are looking at. The "Make the X big and Red" commit was a couple lines of CSS.
+
+For a "Graph Builder" feature, we initially planned to add a large number of buttons, dropdowns, and toggles to the UI elements so users can specify which types of data they want to view, and how they want to filter it. Adding the UI elements for each field would be a complexity nightmare, since we have a growing number of fields, many of which have missing data. However, we know our users are not our customers but rather internal employees, who have no other choice but to use our tool, and can afford a bit of a learning curve, since they will likely be using it for a while.
+
+Instead of adding potentially hundreds of lines of UI code/ callbacks, default options, and graceful handling of incompatible conditions, our solution is simply to allow users to specify a custom MongoDB query to fetch the data they want to visualize. This is the most powerful option, as it easily gives our users any view they desire, but it also requires that they know the database schema, which is annoying, even for me, the guy who made designed it.
+
+To make this feature user-friendly, we added a small "Show Query" button to all existing charts, so users can easily copy and maste queries used for existing graphs, gaining exposure to some of the fields and valies in the schema. This is a good start, but it's still annoying to remember what additional fields are available, and what the current options are. This dashboard will have a tiny number of users and a modest amount of data, so what we can actually do, is run the working textarea query on each keystroke (if it's valid) and, if no data is found, find out which values/fields don't exist in the schema, and dynamically update a message below the text area with a list of existing entries which the user can type, all of which are easy to read. This too is a few extra lines of code, but allows the user to easily discover any field or value they want to use as they are typing the query. As a bonus, it allows users to save custom views in plain text as a MongoDB query, if they want to save or share them.
+
+By rethinking how we conveyed information to the user, we avoided increasing the complexity of our codebase in the first place. This approach doesn't apply to all scenarios, especially if your users are paying customers, but it's great when it does.
