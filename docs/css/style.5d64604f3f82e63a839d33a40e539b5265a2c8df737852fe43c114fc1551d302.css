@@ -179,23 +179,23 @@ header nav:not(:empty) {
 header nav a {
     display: inline-block;
     margin: 0 2.5%}
-/* .social-icons { */
-/*     margin-top: 1em; */
-/*     margin-bottom: 0; */
-/*     padding: 0; */
-/*     list-style-type: none; */
-/* } */
-/* .social-icons li { */
-/*     display: inline; */
-/* } */
-/* .social-icons li:not(:first-of-type) { */
-/*     margin-left: .5em; */
-/* } */
-/* .social-icons a:hover, .social-icons a:focus, .social-icons a:active { */
-/*     color: inherit; */
-/*     border-bottom: none; */
-/*     text-decoration: none; */
-/* } */
+.social-icons {
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.social-icons li {
+    display: inline;
+}
+.social-icons li:not(:first-of-type) {
+    margin-left: .5em;
+}
+.social-icons a:hover, .social-icons a:focus, .social-icons a:active {
+    color: inherit;
+    border-bottom: none;
+    text-decoration: none;
+}
 .inline-svg {
     display: inline-block;
     height: 1.15rem;
@@ -257,14 +257,9 @@ main h1 {
 /*     display: inline-block; */
 /*     margin-left: .2em; */
 /* } */
-
-article { /* blog roll is now evenly spaced */
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
 article:not(:last-of-type) {  /* show line below "post summary" entry" */
     border-bottom: thin solid var(--hr-color);
+    padding-bottom: 2em;
 }
 
 article header h1 {

@@ -4,6 +4,8 @@
         {{ .Content }}
     </div>
 
+    <hr>
+
     <div class="articles h-feed">
         {{ $pages := where (where site.RegularPages "Type" "in" site.Params.mainSections) "Params.hidden" "!=" true }}
         {{ range (.Paginate $pages).Pages }}

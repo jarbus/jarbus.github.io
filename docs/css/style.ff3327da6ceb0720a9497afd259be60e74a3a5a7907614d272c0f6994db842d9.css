@@ -257,8 +257,7 @@ main h1 {
 /*     display: inline-block; */
 /*     margin-left: .2em; */
 /* } */
-
-article { /* blog roll is now evenly spaced */
+article {
     padding-top: 1em;
     padding-bottom: 1em;
 }
