@@ -30,7 +30,7 @@
 
 @media(max-width:840px) {
     :root {
-        --font-size: 100%;
+        --font-size: 150%;
     }
 }
 html {
