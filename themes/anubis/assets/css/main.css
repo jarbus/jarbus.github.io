@@ -6,7 +6,7 @@
 
 :root {
     --font-color: #fafffb;
-    --font-size: 130%;
+    --font-size: 150%;
     --bg-color: #000006;
     --link-color: #ccffdd;
     --link-state-color: #dd9999;
@@ -30,7 +30,7 @@
 
 @media(max-width:840px) {
     :root {
-        --font-size: 90%;
+        --font-size: 100%;
     }
 }
 html {
