@@ -134,8 +134,7 @@ A simple example is &lt;a href="https://thispersondoesnotexist.com/">https://thi
 &lt;p>Feel free to contact me with any suggested additions/changes at &lt;a href="mailto:jarbus@tutanota.com">jarbus@tutanota.com&lt;/a>.&lt;/p></description></item><item><title>Generating Slides in Vim</title><link>/blog/generating-slides-in-vim/</link><pubDate>Sun, 31 Jan 2021 11:25:49 -0400</pubDate><guid>/blog/generating-slides-in-vim/</guid><description>&lt;p>There is a great tool known as &lt;a href="https://pandoc.org/">pandoc&lt;/a> that can convert documents from one filetype to another. For example, you can convert a Microsoft Word document to a PDF, without even needing to own a copy of Microsoft Word! However, we care about Pandoc&amp;rsquo;s ability to convert a Markdown document to a slideshow presentation using LaTeX Beamer as a rendering engine.&lt;/p>
 &lt;p>There is a great writeup about this basic feature &lt;a href="https://ashwinschronicles.github.io/beamer-slides-using-markdown-and-pandoc">here&lt;/a>.&lt;/p>
 &lt;blockquote>
-&lt;p>TL;DR: With Pandoc installed and markdown file &lt;code>Demo.md&lt;/code>, executing &lt;code>pandoc -t beamer Demo.md -o Demo.pdf&lt;/code> will generate a slideshow as a pdf, with each section heading as the title of a new slide.&lt;/p>
-&lt;/blockquote>
+&lt;p>TL;DR: With Pandoc installed and markdown file &lt;code>Demo.md&lt;/code>, executing &lt;code>pandoc -t beamer Demo.md -o Demo.pdf&lt;/code> will generate a slideshow as a pdf, with each section heading as the title of a new slide.&lt;/p>&lt;/blockquote>
 &lt;p>Different themes can be specified with the &lt;code>-V&lt;/code> option; I&amp;rsquo;m currently using the &lt;a href="https://github.com/matze/mtheme">Metropolis&lt;/a> beamer theme and &lt;a href="https://github.com/rchurchley/beamercolortheme-owl">Owl&lt;/a> colorscheme. After installing these themes, I can run:&lt;/p>
 &lt;pre tabindex="0">&lt;code>pandoc -t beamer
 -V fontsize=14pt
@@ -221,8 +220,7 @@ Bitcoin whitepaper to a cryptography mailing list on October 31st, 2008,
 four short years after Hal Finney&amp;rsquo;s paper. The first block was mined
 January the following year, with a comment that reads:&lt;/p>
 &lt;blockquote>
-&lt;p>&amp;ldquo;The Times 03/Jan/2009 Chancellor on brink of second bailout for banks&amp;rdquo;&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;The Times 03/Jan/2009 Chancellor on brink of second bailout for banks&amp;rdquo;&lt;/p>&lt;/blockquote>
 &lt;p>Very fitting for the anti-authority ideals Bitcoin would spur in the coming years.&lt;/p>
 &lt;h2 id="design" >Design
 &lt;span>

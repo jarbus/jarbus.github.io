@@ -3,11 +3,13 @@ baseUrl: ""
 relativeUrls: "true"
 # title: "Jarbus.net"
 theme: "anubis"
-paginate: 10
 publishDir: "docs"
 
 minify:
   minifyOutput: true
+
+pagination:
+  pagerSize: 10
 
 menu:
   main:

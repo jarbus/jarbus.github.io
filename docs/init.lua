@@ -12,12 +12,10 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   'nvim-lua/plenary.nvim',
-    --'airblade/vim-gitgutter',
   'lewis6991/gitsigns.nvim',
   'JuliaEditorSupport/julia-vim',
   'github/copilot.vim',
   'mg979/vim-visual-multi',
-
   { 'echasnovski/mini.extra', version = '*'},
   { 'echasnovski/mini.pick', version = '*'},
   { 'echasnovski/mini.visits', version = '*'},
@@ -25,62 +23,22 @@ require('lazy').setup({
 		  require('mini.clue').setup()
 		  require('mini.icons').setup()
 		  require('mini.ai').setup()
-		  require('mini.diff').setup()
 		  require('mini.extra').setup()
 		  require('mini.pick').setup()
 		  require('mini.visits').setup()
-		  require('mini.files').setup()
+		  require('mini.files').setup({windows = {preview = true}})
 		  require('mini.indentscope').setup()
 		  require('mini.comment').setup()
 		  require('mini.statusline').setup()
-		  require('mini.jump2d').setup()
 		  require('mini.sessions').setup()
   end },
   {
-    "yetone/avante.nvim",
-    event = "VeryLazy",
-    lazy = false,
-    version = false, -- set this if you want to always pull the latest change
-    opts = {
-      -- add any opts here
-    },
-    -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
-    build = "make",
-    -- build = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false" -- for windows
+    "olimorris/codecompanion.nvim",
     dependencies = {
-      "nvim-treesitter/nvim-treesitter",
-      "stevearc/dressing.nvim",
       "nvim-lua/plenary.nvim",
-      "MunifTanjim/nui.nvim",
-      --- The below dependencies are optional,
-      "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
-      "zbirenbaum/copilot.lua", -- for providers='copilot'
-      {
-        -- support for image pasting
-        "HakonHarnes/img-clip.nvim",
-        event = "VeryLazy",
-        opts = {
-          -- recommended settings
-          default = {
-            embed_image_as_base64 = false,
-            prompt_for_file_name = false,
-            drag_and_drop = {
-              insert_mode = true,
-            },
-            -- required for Windows users
-            use_absolute_path = true,
-          },
-        },
-      },
-      {
-        -- Make sure to set this up properly if you have lazy=true
-        'MeanderingProgrammer/render-markdown.nvim',
-        opts = {
-          file_types = { "markdown", "Avante" },
-        },
-        ft = { "markdown", "Avante" },
-      },
+      "nvim-treesitter/nvim-treesitter",
     },
+    opts = { display = { diff = { enabled = false } }, },
   },
   { -- theme
     "cdmill/neomodern.nvim",
@@ -112,7 +70,6 @@ require('lazy').setup({
   {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
   "nvim-treesitter/nvim-treesitter-textobjects",
   "nvim-treesitter/nvim-treesitter-refactor",
-  {"robitx/gp.nvim", config = function() require('gp').setup() end},
   {'LukasPietzschmann/telescope-tabs', config = function() require('telescope-tabs').setup() end },
   {
     "NeogitOrg/neogit",
@@ -131,14 +88,14 @@ require('lazy').setup({
 
 -- See `:help telescope` and `:help telescope.setup()`
 require('telescope').setup {
-  defaults = {
-    mappings = {
-      i = {
-        ['<C-u>'] = false,
-        ['<C-d>'] = false,
-      },
-    },
-  },
+  -- defaults = {
+  --   mappings = {
+  --     i = {
+  --       ['<C-u>'] = false,
+  --       ['<C-d>'] = false,
+  --     },
+  --   },
+  -- },
 }
 
 -- Enable telescope fzf native, if installed
@@ -365,6 +322,9 @@ cmp.setup {
     { name = 'path' },
     { name = 'luasnip' },
     { name = 'pandoc_references'},
+    per_filetype = {
+    codecompanion = { "codecompanion" },
+    }
   },
 }
 vim.o.expandtab = true       -- Use spaces instead of tabs
@@ -402,6 +362,14 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.g.copilot_no_tab_map = true
 vim.g.copilot_assume_mapped = true
 vim.g.copilot_tab_fallback = ""
+
+-- disable autowrap for email
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "mail",
+    callback = function()
+        vim.opt_local.textwidth = 0
+    end,
+})
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
   ensure_installed = { 'julia','c', 'cpp', 'lua', 'python', 'markdown', 'markdown_inline'},
@@ -470,8 +438,11 @@ vim.cmd [[ nnoremap Z :!zathura --fork "%:p:h/%:t:r.pdf"<CR> ]]
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
+-- open neogit with leader g
+vim.keymap.set('n', '<leader>g', '<cmd>Neogit<CR>', { desc = 'Open [G]it' })
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>e', function () MiniFiles.open() end, { desc = 'Open File [E]xplorer' })
+vim.keymap.set('n', '<leader>E', function() vim.cmd('tabnew'); MiniFiles.open() end, { desc = 'Open File Explorer in New Tab' })
 vim.keymap.set('n', '<leader>v', function() MiniExtra.pickers.visit_paths() end, { desc = 'Visit [V]isited paths' })
 
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
@@ -497,27 +468,10 @@ end, { desc = '[/] Fuzzily search in current buffer]' })
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-vim.keymap.set('n', '<leader>E', vim.diagnostic.open_float)
+vim.keymap.set('n', '<leader><leader>e', vim.diagnostic.open_float)
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
 -- open file under cursor in new tab
 vim.keymap.set('n', 'gF', '<Cmd>tabnew <cfile><CR>', { desc = 'Open file under cursor in new tab' })
-
--- GP
-local function keymapOptions(desc)
-    return {
-        noremap = true,
-        silent = true,
-        nowait = true,
-        desc = "GPT prompt " .. desc,
-    }
-end
-vim.keymap.set("v", "<C-g>r", ":<C-u>'<,'>GpRewrite<cr>", keymapOptions("Visual Rewrite"))
-vim.keymap.set("v", "<C-g>a", ":<C-u>'<,'>GpAppend<cr>", keymapOptions("Visual Append"))
-vim.keymap.set("v", "<C-g>b", ":<C-u>'<,'>GpPrepend<cr>", keymapOptions("Visual Prepend"))
-vim.keymap.set("v", "<C-g>e", ":<C-u>'<,'>GpEnew<cr>", keymapOptions("Visual Enew"))
-vim.keymap.set("v", "<C-g>p", ":<C-u>'<,'>GpPopup<cr>", keymapOptions("Visual Popup"))
--- imp-clip binding
-vim.cmd([[ nnoremap <Leader>p <cmd>PasteImage<CR> ]])
 
 require('gitsigns').setup{
   on_attach = function(bufnr)
