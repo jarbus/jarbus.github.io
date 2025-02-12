@@ -1,5 +1,5 @@
 ---
-title: "Upwards Pressure on Originality"
+title: "Originality in the Age of AI"
 date: 2024-10-05T09:23:29-07:00
 tags: ["ai", "programming"]
 ---
