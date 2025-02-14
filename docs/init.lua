@@ -16,6 +16,7 @@ require('lazy').setup({
   'JuliaEditorSupport/julia-vim',
   'github/copilot.vim',
   'mg979/vim-visual-multi',
+  'ggandor/leap.nvim',
   { 'echasnovski/mini.extra', version = '*'},
   { 'echasnovski/mini.pick', version = '*'},
   { 'echasnovski/mini.visits', version = '*'},
@@ -30,8 +31,13 @@ require('lazy').setup({
 		  require('mini.indentscope').setup()
 		  require('mini.comment').setup()
 		  require('mini.statusline').setup()
-		  require('mini.sessions').setup()
   end },
+  {
+      "kylechui/nvim-surround",
+      version = "*", -- Use for stability; omit to use `main` branch for the latest features
+      event = "VeryLazy",
+      config = function() require("nvim-surround").setup({}) end
+  },
   {
     "olimorris/codecompanion.nvim",
     dependencies = {
@@ -86,17 +92,7 @@ require('lazy').setup({
   },
 })
 
--- See `:help telescope` and `:help telescope.setup()`
-require('telescope').setup {
-  -- defaults = {
-  --   mappings = {
-  --     i = {
-  --       ['<C-u>'] = false,
-  --       ['<C-d>'] = false,
-  --     },
-  --   },
-  -- },
-}
+require('telescope').setup({ })
 
 -- Enable telescope fzf native, if installed
 pcall(require('telescope').load_extension, 'fzf')
@@ -437,6 +433,9 @@ vim.cmd [[ nnoremap Z :!zathura --fork "%:p:h/%:t:r.pdf"<CR> ]]
 -- Remap for dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+vim.keymap.set({'n', 'x', 'o'}, 's',  '<Plug>(leap-forward)')
+vim.keymap.set({'n', 'x', 'o'}, 'S',  '<Plug>(leap-backward)')
+vim.keymap.set({'n', 'x', 'o'}, 'gs', '<Plug>(leap-from-window)')
 
 -- open neogit with leader g
 vim.keymap.set('n', '<leader>g', '<cmd>Neogit<CR>', { desc = 'Open [G]it' })

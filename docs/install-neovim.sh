@@ -29,16 +29,32 @@ chmod u+x nvim.appimage.tmp
 # Rename temporary file to nvim.appimage
 mv -f nvim.appimage.tmp "$HOME/bin/nvim" || { echo "Failed to move Neovim to ~/bin"; exit 1; }
 
-# Download init.lua from jarbus.net
-echo "Downloading init.lua..."
-curl -o ~/init.lua https://jarbus.net/init.lua || { echo "Failed to download init.lua"; exit 1; }
+# Make config directory if it doesn't exist
+if [ ! -d "$HOME/.config/nvim" ]; then
+  echo "Creating ~/.config/nvim directory..."
+  mkdir -p "$HOME/.config/nvim" || { echo "Failed to create ~/.config/nvim directory"; exit 1; }
+fi
 
-# Add alias to .bashrc if not already present
-if ! grep -q "alias nvim='nvim -u ~/init.lua'" ~/.bashrc; then
-  echo "Adding alias to ~/.bashrc..."
-  echo "alias nvim='nvim -u ~/init.lua'" >> ~/.bashrc || { echo "Failed to add alias"; exit 1; }
+echo "Downloading init.lua..."
+curl -L -o "$HOME/.config/nvim/init.lua" https://jarbus.net/init.lua || { echo "Failed to download init.lua"; exit 1; }
+
+echo "Downloading tmux.conf..."
+curl -L -o "$HOME/.tmux.conf" https://jarbus.net/tmux.conf || { echo "Failed to download tmux.conf"; exit 1; }
+
+echo "Downloading latest lf binary..."
+curl -L -o "$HOME/bin/lf" https://jarbus.net/lf || { echo "Failed to download lf"; exit 1; }
+
+echo "Downloading lfrc..."
+curl -L -o "$HOME/.config/lf/lfrc" https://jarbus.net/lfrc || { echo "Failed to download lfrc"; exit 1; }
+echo "Downloading lfcd... to .config"
+curl -L -o "$HOME/.config/lf/lfcd" https://jarbus.net/lfcd || { echo "Failed to download lfcd"; exit 1; }
+
+# Source lfcd to bashrc
+if ! grep -q "source ~/.config/lf/lfcd" ~/.bashrc; then
+  echo "Adding lfcd to ~/.bashrc..."
+  echo "source ~/.config/lf/lfcd" >> ~/.bashrc || { echo "Failed to add lfcd to .bashrc"; exit 1; }
 else
-  echo "Alias already exists in ~/.bashrc"
+  echo "lfcd is already sourced in .bashrc."
 fi
 
 # Inform user to reload .bashrc manually
