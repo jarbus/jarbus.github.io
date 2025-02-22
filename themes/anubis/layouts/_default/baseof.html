@@ -7,6 +7,9 @@
 <head>
     {{ block "head" . }}
         {{ partial "head.html" . }}
+        {{ if .Param "math" }}
+          {{ partialCached "mathjax_support.html" . }}
+        {{ end }}
     {{ end }}
 </head>
 <body>

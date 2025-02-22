@@ -37,6 +37,7 @@ menu:
 params:
   author: "jarbus"
   email: jarbus@tutanota.com # used for microformats
+  math: true
   #avatar: "/images/me.png" # used for microformats
   description: ""
   # Uncomment if you need this
@@ -57,6 +58,18 @@ markup:
   goldmark:
     renderer:
       unsafe: true # enable raw HTML in Markdown
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
   highlight:
     anchorLineNos: false
     codeFences: true

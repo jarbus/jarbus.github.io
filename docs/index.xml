@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>jarbus.net on</title><link>/</link><description> (jarbus.net)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 12 Feb 2025 13:42:52 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Eloquence and Wit from Will Durant</title><link>/blog/story-of-civilization-1-quotes/</link><pubDate>Wed, 12 Feb 2025 13:42:52 -0500</pubDate><guid>/blog/story-of-civilization-1-quotes/</guid><description>&lt;p>I just finished &lt;em>The Story of Civilization, Vol. 1&lt;/em> (1976) by Will Durant. It&amp;rsquo;s a fantastic read; Durant is eloquent, witty, and surprisingly relevant today. Below are some of my personal highlights of his writing, mixed with some quotes-of-quotes I found interesting.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>jarbus.net on</title><link>/</link><description> (jarbus.net)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 21 Feb 2025 19:58:43 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>From REINFORCE to R1: an Abridged Genealogy of Reinforcement Learning</title><link>/blog/from-reinforce-to-r1-an-abridged-genealogy/</link><pubDate>Fri, 21 Feb 2025 19:58:43 -0500</pubDate><guid>/blog/from-reinforce-to-r1-an-abridged-genealogy/</guid><description>&lt;p>Starting from REINFORCE, the original deep reinforcement learning algorithm, we will trace the evolution of policy gradient methods to the Group Relative Policy Optimization algorithm used to train &lt;a href="https://github.com/deepseek-ai/DeepSeek-R1">Deepseek r1&lt;/a>.&lt;/p>
+&lt;p>This post ignores the LLM side of things, less-related developments in RL, and most of the equations used for these algorithms, but captures the essence and intuition of the RL-timeline without wasting your time. This is all self-study, so feel free to send me any corrections/suggestions.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+&lt;h1 id="reinforcement-learning-101" >Reinforcement Learning 101
+&lt;span>
+&lt;a href="#reinforcement-learning-101">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Reinforcement learning is a subfield of machine learning that can learn without human data. Instead, an agent can learn through interacting with its environment by taking actions and receiving rewards based on its actions. The agent wants to maximize its reward.&lt;/p>
+&lt;p>Specifically, an agent receives an observation, $o_t$, from the environment at time $t$, and produces probabilities to select an action, $a_t$, based on the observation. The environment transitions to a new state, $s_{t+1}$, and the agent receives a reward, $r_{t+1}$, based on the action it took. The agent&amp;rsquo;s goal is to learn a policy, $\pi(a_t|o_t)$ that maximizes the expected sum of rewards, $R = \sum_{t=0}^T \gamma^t r_t$, where $T$ is the number of steps in the trajectory (sequence of states, actions, and rewards from the start to the end of an episode), and $\gamma$ is a discount factor, which reduces the value of rewards the farther into the future they are. There are ways to perform reinforcement learning without neural networks, but we will focus on deep reinforcement learning, where all policy actions are determined by a neural network with parameters $\theta$.&lt;/p>
+&lt;h1 id="reinforce" >REINFORCE
+&lt;span>
+&lt;a href="#reinforce">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>The original policy gradient, and the basis for all policy gradient methods, is the &lt;a href="https://dilithjay.com/blog/reinforce-a-quick-introduction-with-code">REINFORCE&lt;/a> algorithm. REINFORCE samples trajectories from the environment, which it uses to directly compute the gradient of the policy:&lt;/p>
+$$
+\theta_{t+1} = \theta_t + \alpha R_t \sum_{t=0}^T \nabla_\theta \log \pi(a_t|o_t)
+$$&lt;p>where $\alpha$ is the learning rate, and $R_t$ is the remaining discounted reward&amp;ndash;also called a return&amp;ndash;from the current state given by $R_t = \sum_{t&amp;rsquo;=t}^T \gamma^{t&amp;rsquo;-t} r_{t&amp;rsquo;}$.&lt;/p>
+&lt;p>REINFORCE simply &amp;ldquo;reinforces&amp;rdquo; the actions proportional to the reward they receive. This is the most intuitive reinforcement learning algorithm, but it has high variance, which leads us to actor critics.&lt;/p>
+&lt;p>I struggled with the concept of variance in RL for a while, but it&amp;rsquo;s essentially the amount of randomness in the reward signal. When you are trying to learn purely from experience, rewards from a given state can vary wildly between trajectories depending on how the environment plays out, so we need a lot of samples to get a rough idea of what the &amp;ldquo;true&amp;rdquo; reward is for a given state. Actor-critic methods reduce this variance by using another neural network called a &amp;ldquo;critic&amp;rdquo; to estimate the value of a state. It turns out that using a consistent estimator, like a neural network, stabilizes learning, as the learning signal doesn&amp;rsquo;t fluctuate as much between samples.&lt;/p>
+&lt;h1 id="from-reinforce-to-actor-critic" >From REINFORCE to Actor-Critic
+&lt;span>
+&lt;a href="#from-reinforce-to-actor-critic">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>As mentioned, actor-critic methods use neural networks to estimate reward. This results in more stable learning compared to using trajectories directly. The actor is just the policy from REINFORCE, and the critic is a new, separate network that estimates the return given the current policy. We won&amp;rsquo;t cover the training of the critic here, but just assume it&amp;rsquo;s just a neural network that takes observations $o_i$ as input and estimates the return $R$ for the actor.&lt;/p>
+&lt;p>At it&amp;rsquo;s core, actor-critic is just REINFORCE, but $R_t$ is computed by another neural network, which is trained using the actual returns from the environment.&lt;/p>
+&lt;p>As a bonus, we can now update actors without requiring the full trajectory, since we are using an estimate instead of the true return.&lt;/p>
+&lt;h1 id="from-actor-critic-to-advantage-actor-critic-a2c" >From Actor-Critic to Advantage Actor-Critic (A2C)
+&lt;span>
+&lt;a href="#from-actor-critic-to-advantage-actor-critic-a2c">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>The next step in the evolution of policy gradient methods is the Advantage Actor-Critic (A2C) algorithm. Now we introduce the &lt;em>advantage function&lt;/em>, which is the difference between the return and the value estimate of the state:&lt;/p>
+$$
+A_t = r + \gamma V(o_{t+1}) - V(o_t)
+$$&lt;p>where $V(o_i)$ is the value estimate of the state computed by our critic at time $i$. The advantage function tells us how much better the action was than the average action taken in that state, which allows us to reinforce actions based on how much they improve our expected reward. Conversely, this also discourages actions based on how much they decrease our expected reward. This is unlike prior methods, which might only positively (or negatively) reinforce actions based on the absolute reward they receive, not the relative reward. Without the advantage function, given an environment which only produces positive rewards, we might only reinforce good actions, without ever penalizing bad ones.&lt;/p>
+&lt;p>Now, the policy gradient is (roughly) computed as:&lt;/p>
+$$
+\theta_{t+1} = \theta_t + \alpha A_t \sum_{t=0}^T \nabla_\theta \log \pi(a_t|o_t)
+$$&lt;h1 id="from-advantage-actor-critic-to-proximal-policy-optimization-ppo" >From Advantage Actor-Critic to Proximal Policy Optimization (PPO)
+&lt;span>
+&lt;a href="#from-advantage-actor-critic-to-proximal-policy-optimization-ppo">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Skipping over many other developments, we jump directly from A2C to Proximal Policy Optimization (PPO). PPO uses the advantage function to update the policy, but just by a little bit, by introducing a &lt;em>clipping&lt;/em> term that limits the size of the update. This prevents the policy from changing its behavior too much in a given update, which would otherwise destabilize training and cause the policy to forget some learned behaviors.&lt;/p>
+&lt;p>PPO prevents behaviors from changing too much by ensuring that the probability of taking an action in a given state doesn&amp;rsquo;t change too much, using a ratio of the new policy to the old policy, $\frac{\pi_\theta(a_t|o_t)}{\pi_{\theta_{\text{old}}}(a_t|o_t)}$. When the probabilities don&amp;rsquo;t change, $ \frac{\pi_\theta(a_t|o_t)}{\pi_{\theta_{\text{old}}}(a_t|o_t)}= \mathbf{1}$, but if the probabilities change, $\frac{\pi_\theta(a_t|o_t)}{\pi_{\theta_{\text{old}}}(a_t|o_t)}$ will range between 0 and $\infty$. PPO clips the ratio to a range of $[1-\epsilon, 1+\epsilon]$, where $\epsilon$ is a hyperparameter between 0 and 1 that determines the max percentage by which a probability can change.&lt;/p>
+&lt;p>The PPO update is then:&lt;/p>
+$$
+\theta_{t+1} = \theta_t + \alpha \nabla_\theta \mathbb{E}_t \left[ \min( \frac{\pi_\theta(a_t|o_t)}{\pi_{\theta_{\text{old}}}(a_t|o_t)}
+A_t, \text{clip}(\frac{\pi_\theta(a_t|o_t)}{\pi_{\theta_{\text{old}}}(a_t|o_t)} , 1-\epsilon, 1+\epsilon) A_t) \right]
+$$&lt;p>This adds a lot of terms to our update, but hopefully the jump from A2C to PPO is still visible.&lt;/p>
+&lt;h1 id="from-proximal-policy-optimization-to-group-relative-policy-optimization" >From Proximal Policy Optimization to Group Relative Policy Optimization
+&lt;span>
+&lt;a href="#from-proximal-policy-optimization-to-group-relative-policy-optimization">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Finally, we arrive at Group Relative Policy Optimization (GRPO), the algorithm used to train Deepseek r1. This algorithm is used strictly in language modeling, so the ability to update before the end of a sequence doesn&amp;rsquo;t really matter; all that matters is the stability and efficiency.&lt;/p>
+&lt;p>Turns out, for language modeling, we don&amp;rsquo;t actually need the critic network, which saves us 50% of the memory and computation required to run reinforcement learning. We can just take all the other non-critic enhancements since REINFORCE and apply them in large batches , which is what GRPO does.&lt;/p>
+$$
+\frac{1}{G}\sum_{i=1}^G \frac{1}{|o_i|} \sum_{t=1}^{|o_i|} \min \left[ \frac{\pi_\theta(o_{i,t}|q, o_{i,\lt t})}{\pi_{\theta_{\text{old}}}(o_{i,t}|q, o_{i,\lt t})} \hat{A}_{i,t}, \text{clip}\left(\frac{\pi_\theta(o_{i,t}|q, o_{i,\lt t})}{\pi_{\theta_{\text{old}}}(o_{i,t}|q, o_{i,\lt t})}, 1-\epsilon, 1+\epsilon\right) \hat{A}_{i,t} \right] - \beta D_{\text{KL}}\left[\pi_\theta \, \| \, \pi_{\text{ref}}
+\right]
+$$&lt;p>You can see the lineage from PPO here. $q$ refers to a question, and $o$ here refers to an output sequence. $G$ is just the number of outputs in a a group. The main difference from PPO is that, instead of computing the advantage $A_t$ using a critic network, we now compute it within a group of sequences:&lt;/p>
+$$
+\hat{A}_{i,t} = \frac{r_{i,t} - \text{mean}(\mathbf{r})}{\text{std}(\mathbf{r})}
+$$&lt;p>where $\mathbf{r}$ is the set of returns from the group of sequences. This replaces our neural estimate with an empirical estimate, while maintaining the benefits of the critic&amp;rsquo;s stability.&lt;/p>
+&lt;p>There&amp;rsquo;s a KL-divergence term at the end $\beta D_{\text{KL}}\left[\pi_\theta , | , \pi_{\text{ref}}\right]$, which is ensures that the policy doesn&amp;rsquo;t change too much from the fine-tuned policy, $\pi_{\text{ref}}$.&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>I know I&amp;rsquo;m pretty loose with the notations&amp;ndash;I prefer this to adding a ton of extra symbols that don&amp;rsquo;t contribute much.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Eloquence and Wit from Will Durant</title><link>/blog/story-of-civilization-1-quotes/</link><pubDate>Wed, 12 Feb 2025 13:42:52 -0500</pubDate><guid>/blog/story-of-civilization-1-quotes/</guid><description>&lt;p>I just finished &lt;em>The Story of Civilization, Vol. 1&lt;/em> (1976) by Will Durant. It&amp;rsquo;s a fantastic read; Durant is eloquent, witty, and surprisingly relevant today. Below are some of my personal highlights of his writing, mixed with some quotes-of-quotes I found interesting.&lt;/p>
 &lt;p>Sections: &lt;a href="#introduction">Introduction&lt;/a> | &lt;a href="#communism">Communism&lt;/a> | &lt;a href="#government">Government&lt;/a> | &lt;a href="#women">Women&lt;/a> | &lt;a href="#morals">Morals&lt;/a> | &lt;a href="#language">Language&lt;/a> | &lt;a href="#appearance">Appearance&lt;/a> | &lt;a href="#sumeria">Sumeria&lt;/a> &lt;a href="#egypt">Egypt&lt;/a> | &lt;a href="#babylon">Babylon&lt;/a> | &lt;a href="#assyria">Assyria&lt;/a> | &lt;a href="#judea">Judea&lt;/a> | &lt;a href="#persia">Persia&lt;/a> | &lt;a href="#india">India&lt;/a> | &lt;a href="#China">China&lt;/a> | &lt;a href="#Japan">Japan&lt;/a> | &lt;a href="#conclusion">Conclusions&lt;/a>&lt;/p>
 &lt;h2 id="introduction" >Introduction
 &lt;span>
