@@ -8,6 +8,16 @@ Starting from REINFORCE, the original deep reinforcement learning algorithm, we 
 
 This post ignores the LLM side of things, less-related developments in RL, and most of the equations used for these algorithms,  but captures the essence and intuition of the RL-timeline without wasting your time. This is all self-study, so feel free to send me any corrections/suggestions.[^1]
 
+# Table of Contents
+
+1. [Reinforcement Learning 101](#reinforcement-learning-101)
+2. [REINFORCE](#reinforce)
+3. [From REINFORCE to Actor-Critic](#from-reinforce-to-actor-critic)
+4. [From Actor-Critic to Advantage Actor-Critic (A2C)](#from-actor-critic-to-advantage-actor-critic-a2c)
+5. [From Advantage Actor-Critic to Proximal Policy Optimization (PPO)](#from-advantage-actor-critic-to-proximal-policy-optimization-ppo)
+6. [From Proximal Policy Optimization to Group Relative Policy Optimization](#from-proximal-policy-optimization-to-group-relative-policy-optimization)
+
+
 [^1]: I know I'm pretty loose with the notations--I prefer this to adding a ton of extra symbols that don't contribute much.
 
 # Reinforcement Learning 101
