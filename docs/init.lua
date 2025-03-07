@@ -10,6 +10,7 @@ if not vim.uv.fs_stat(lazypath) then
   end
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
+--require("config.avante")
 require('lazy').setup({
   'nvim-lua/plenary.nvim',
   'lewis6991/gitsigns.nvim',
@@ -37,14 +38,6 @@ require('lazy').setup({
       version = "*", -- Use for stability; omit to use `main` branch for the latest features
       event = "VeryLazy",
       config = function() require("nvim-surround").setup({}) end
-  },
-  {
-    "olimorris/codecompanion.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-treesitter/nvim-treesitter",
-    },
-    opts = { display = { diff = { enabled = false } }, },
   },
   { -- theme
     "cdmill/neomodern.nvim",
@@ -90,6 +83,53 @@ require('lazy').setup({
     },
     config = true
   },
+  {
+    "yetone/avante.nvim",
+    event = "VeryLazy",
+    lazy = false,
+    version = false, -- Set this to "*" to always pull the latest release version, or set it to false to update to the latest code changes.
+    opts = { },
+    -- build = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false" -- for windows
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "stevearc/dressing.nvim",
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+      --- The below dependencies are optional,
+      "echasnovski/mini.pick", -- for file_selector provider mini.pick
+      "nvim-telescope/telescope.nvim", -- for file_selector provider telescope
+      "hrsh7th/nvim-cmp", -- autocompletion for avante commands and mentions
+      "ibhagwan/fzf-lua", -- for file_selector provider fzf
+      "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
+      "zbirenbaum/copilot.lua", -- for providers='copilot'
+      {
+        -- support for image pasting
+        "HakonHarnes/img-clip.nvim",
+        event = "VeryLazy",
+        opts = {
+          -- recommended settings
+          default = {
+            embed_image_as_base64 = false,
+            prompt_for_file_name = false,
+            drag_and_drop = {
+              insert_mode = true,
+            },
+            -- required for Windows users
+            use_absolute_path = true,
+          },
+        },
+      },
+      {
+        -- Make sure to set this up properly if you have lazy=true
+        'MeanderingProgrammer/render-markdown.nvim',
+        opts = {
+          file_types = { "markdown", "Avante" },
+        },
+        ft = { "markdown", "Avante" },
+      },
+    },
+  }
+
 })
 
 require('telescope').setup({ })
@@ -318,9 +358,6 @@ cmp.setup {
     { name = 'path' },
     { name = 'luasnip' },
     { name = 'pandoc_references'},
-    per_filetype = {
-    codecompanion = { "codecompanion" },
-    }
   },
 }
 vim.o.expandtab = true       -- Use spaces instead of tabs
@@ -368,7 +405,7 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
-  ensure_installed = { 'julia','c', 'cpp', 'lua', 'python', 'markdown', 'markdown_inline'},
+  ensure_installed = { 'julia','c', 'cpp', 'lua', 'python', 'markdown', 'markdown_inline', 'yaml'},
 
   highlight = { enable = true },
   indent = { enable = true },
@@ -438,7 +475,7 @@ vim.keymap.set({'n', 'x', 'o'}, 'S',  '<Plug>(leap-backward)')
 vim.keymap.set({'n', 'x', 'o'}, 'gs', '<Plug>(leap-from-window)')
 
 -- open neogit with leader g
-vim.keymap.set('n', '<leader>g', '<cmd>Neogit<CR>', { desc = 'Open [G]it' })
+vim.keymap.set('n', '<leader>g', function() require('neogit').open({kind="floating"}) end, { desc = 'Open [G]it' })
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>e', function () MiniFiles.open() end, { desc = 'Open File [E]xplorer' })
 vim.keymap.set('n', '<leader>E', function() vim.cmd('tabnew'); MiniFiles.open() end, { desc = 'Open File Explorer in New Tab' })
