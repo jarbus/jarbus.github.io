@@ -6,7 +6,7 @@ tags: ["history", "philosophy", "psychology"]
 
 I just finished *The Story of Civilization, Vol. 1* (1976) by Will Durant. It's a fantastic read; Durant is eloquent, witty, and surprisingly relevant today. Below are some of my personal highlights of his writing, mixed with some quotes-of-quotes I found interesting.
 
-Sections: [Introduction](#introduction) | [Communism](#communism) | [Government](#government) | [Women](#women) | [Morals](#morals) | [Language](#language) | [Appearance](#appearance) | [Sumeria](#sumeria) [Egypt](#egypt) | [Babylon](#babylon) | [Assyria](#assyria) | [Judea](#judea) | [Persia](#persia) | [India](#india) | [China](#China) | [Japan](#Japan) | [Conclusions](#conclusion)
+Sections: [Introduction](#introduction) | [Communism](#communism) | [Government](#government) | [Women](#women) | [Morals](#morals) | [Language](#language) | [Appearance](#appearance) | [Sumeria](#sumeria) | [Egypt](#egypt) | [Babylon](#babylon) | [Assyria](#assyria) | [Judea](#judea) | [Persia](#persia) | [India](#india) | [China](#China) | [Japan](#Japan) | [Conclusions](#conclusion)
 
 ## Introduction
 
