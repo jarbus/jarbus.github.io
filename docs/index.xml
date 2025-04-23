@@ -1,4 +1,134 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>jarbus.net on</title><link>/</link><description> (jarbus.net)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 31 Mar 2025 10:54:19 -0400</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Read Weird Things</title><link>/blog/read-weird-things/</link><pubDate>Mon, 31 Mar 2025 10:54:19 -0400</pubDate><guid>/blog/read-weird-things/</guid><description>&lt;p>I used to have a mental block against casually reading things that weren&amp;rsquo;t designed to be casually read, like old papers, textbooks, documentation, etc. If I was going to read for enjoyment, I&amp;rsquo;d read blogs or popular science/fiction books. Not sure why.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>jarbus.net on</title><link>/</link><description> (jarbus.net)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 21 Apr 2025 19:57:41 -0400</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>To the Students</title><link>/blog/to-the-students/</link><pubDate>Mon, 21 Apr 2025 19:57:41 -0400</pubDate><guid>/blog/to-the-students/</guid><description>&lt;p>If all goes well, I&amp;rsquo;ll leave Brandeis University with a PhD degree in computer science this summer. Here are my parting thoughts for our remaining students, divided into &lt;a href="#technical">technical&lt;/a> and &lt;a href="#non-technical">non-technical&lt;/a> sections.&lt;/p>
+&lt;p>I write this out of self-interest; students after me will represent our university in years to come, and it&amp;rsquo;s in my best interest for them to be as effective as possible.&lt;/p>
+&lt;h1 id="non-technical" >NON-TECHNICAL
+&lt;span>
+&lt;a href="#non-technical">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;ul>
+&lt;li>
+&lt;p>Students often lack crucial skills. Technical students may lack communication skills, or social butterflies may lack depth. Some lack both. This doesn&amp;rsquo;t really matter, in my opinion, if they are &lt;strong>willing to learn&lt;/strong>. Just like neural networks, they may be all over the place initially, but students who reflect on your feedback will (eventually) be worth more than those who never update their parameters. Don&amp;rsquo;t give up on those who listen and try; they often just need the right kind of mentorship.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Some students might be eager to learn, but have a &lt;strong>poor approach to learning&lt;/strong>. It&amp;rsquo;s often easy to correct; if you ask how they approach a problem and why they&amp;rsquo;re approaching it that way, you&amp;rsquo;ll unearth the faults in their process. Most of the time, you don&amp;rsquo;t need to correct them&amp;mdash;you can often describe how you&amp;rsquo;d approach their problem, and, perhaps after a few more failed attempts, they&amp;rsquo;ll try it your way, all on their own. This worked on me, anyway.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The packaging of a message matters more than its content. &lt;strong>I can pretty much tell anyone anything if I phrase it with thought, respect, and tact&lt;/strong>. This takes time, effort, and lots of practice. If someone gets defensive and reacts negatively to your feedback, you likely could have phrased it better.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Effective communication is as important for your career as a top-tier publication&amp;mdash;perhaps moreso. If you can&amp;rsquo;t describe why your work is significant, it probably doesn&amp;rsquo;t matter what your results are. Conversely, if your results are less stellar than you hoped, you can still sell them to a reader with the right discussion and analysis.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To communicate well, you need to read and write&amp;mdash;a lot. More than you think. Some resources that have helped me:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://en.wikipedia.org/wiki/Eats,_Shoots_%26_Leaves">Eats, Shoots &amp;amp; Leaves: The Zero Tolerance Approach to Punctuation&lt;/a> &amp;mdash; Punctuation is like shell syntax for language. I didn&amp;rsquo;t realize how fundamental punctuation is for writing until my cousin recommended me this.&lt;/li>
+&lt;li>&lt;a href="https://web.stanford.edu/class/cs114/reading-keshav.pdf">How to Read a Paper&lt;/a> &amp;mdash; 2 page pdf that might save you days of your life.&lt;/li>
+&lt;li>&lt;a href="https://en.wikipedia.org/wiki/How_to_Read_a_Book">How to Read a Book&lt;/a> &amp;mdash; Don&amp;rsquo;t read books from front-to-end, and spend a decent amount of time understanding the table of contents. Read a lot, read widely.&lt;/li>
+&lt;li>&lt;a href="https://paulgraham.com/simply.html">Write simply&lt;/a> &amp;mdash; Clear writing takes a lot of effort, but it&amp;rsquo;s worth it.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Insight comes from many sources. Read widely, and &lt;a href="https://jarbus.net/blog/read-weird-things/">read weird things&lt;/a>. I find computing history to be particularly illuminating, as it shows how technology changed over time.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Know your peers&amp;mdash;this may be your last chance to become friends with a group of PhDs, most of whom will join different companies; this is an prime time to expand your network. Plus, the journey&amp;rsquo;s more bearable with company.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Care about your work&lt;/strong>. If you don&amp;rsquo;t care about your project, nobody will. Learn about the area you work in; learn about the technology you&amp;rsquo;re using; learn about why things are the way they are. Only two types of people have a chance at success anymore&amp;mdash;those with passion, and those who crave status. I prefer those with passion.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you don&amp;rsquo;t care about your work, make yourself care&amp;mdash;life is better this way.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.themarginalian.org/2021/12/12/nietzsche-walking/">Take walks.&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Learning yields an exponential return on investment. The bigger your knowledge graph, the easier it is to add edges and nodes. Reading papers in a field you know well can be effortless.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you are still in the game, you haven&amp;rsquo;t lost. Don&amp;rsquo;t give into despair.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Be reliable&lt;/strong>. Respond to messages and fulfill your commitments, without needing a reminder. It&amp;rsquo;s nuts how many people can&amp;rsquo;t manage this.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Don&amp;rsquo;t burn bridges; people can change.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Be kind, but not soft.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Hold yourself and those around you to a realistic but high standard. A community aspiring to excellence can flourish; but those who see themselves part of a sinking ship are destined to drown.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="technical" >TECHNICAL
+&lt;span>
+&lt;a href="#technical">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;h2 id="ai" >AI
+&lt;span>
+&lt;a href="#ai">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;ul>
+&lt;li>
+&lt;p>Keep (relatively) up to date with the latest developments, even if they aren&amp;rsquo;t relevant to your current project; they may prove critical for your next one.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Understand the purpose of every layer in a foundation model, every stage of training, and how inputs and outputs are represented and sampled. Don&amp;rsquo;t skip these.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Learn about the memory hierarchy of a GPU. &lt;a href="https://arxiv.org/abs/2205.14135">The original FlashAttention paper&lt;/a> should make it clear why.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Learn why reinforcement learning is a pain; LLMs provide a good starting point.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Understand the intuition behind the &lt;a href="https://arxiv.org/abs/1707.06347">PPO algorithm&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Read seminal papers, like the original &lt;a href="https://arxiv.org/abs/1706.03762">attention is all you need paper&lt;/a> and &lt;a href="https://arxiv.org/abs/1512.03385">ResNet paper&lt;/a>. They have insight and perspective which blogs and youtube videos lack.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="not-ai" >NOT AI
+&lt;span>
+&lt;a href="#not-ai">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h2>&lt;ul>
+&lt;li>
+&lt;p>Learn your tools, whether it&amp;rsquo;s Vim, Bash, PyTorch, VsCode, or even ChatGPT. They have many useful features that you likely aren&amp;rsquo;t aware of&amp;mdash;Vim and Bash especially.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Test your code using specific input/output examples, especially the mathematical sections which may produce incorrect data instead of a crash. Seriously, &lt;a href="https://jarbus.net/blog/unexpected-benefits-of-testing/">test your code&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You probably should learn the basics of Tmux, especially if you use the cluster.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Equations are machines, and we can understand them from an intuitive, functional point of view&amp;mdash;each component &lt;em>does&lt;/em> something. They don&amp;rsquo;t need to be scary.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you are confused by something, ask clarifying questions until you aren&amp;rsquo;t.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>An hour well-spent with pen and paper can save days of debugging.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Keep a lab notebook, and date your entries&amp;mdash;you won&amp;rsquo;t remember what you did two months from now. I just use a single text file.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Computing is an end, not a means.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Don&amp;rsquo;t use Windows.&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Read Weird Things</title><link>/blog/read-weird-things/</link><pubDate>Mon, 31 Mar 2025 10:54:19 -0400</pubDate><guid>/blog/read-weird-things/</guid><description>&lt;p>I used to have a mental block against casually reading things that weren&amp;rsquo;t designed to be casually read, like old papers, textbooks, documentation, etc. If I was going to read for enjoyment, I&amp;rsquo;d read blogs or popular science/fiction books. Not sure why.&lt;/p>
 &lt;p>Over time, I&amp;rsquo;ve met people who read things I&amp;rsquo;d never think to read. I&amp;rsquo;ve gotten a lot of value from copying them, so I&amp;rsquo;m sharing my thoughts here.&lt;/p>
 &lt;p>Contents: &lt;a href="#documentation">Documentation&lt;/a> | &lt;a href="#primary-sources">Primary Sources&lt;/a> | &lt;a href="#books-and-textbooks">Books and Textbooks&lt;/a>&lt;/p>
 &lt;h2 id="documentation" >Documentation
