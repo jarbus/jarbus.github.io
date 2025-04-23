@@ -45,6 +45,7 @@ I write this out of self-interest; students after me will represent our universi
 
 * Hold yourself and those around you to a realistic but high standard. A community aspiring to excellence can flourish; but those who see themselves part of a sinking ship are destined to drown.
 
+* **Each lab should have at least one student who is friendly with the rest of the department.** Students often suffer in silence, and a well-connected social graph is critical for detecting and addressing serious problems. 
 
 
 # TECHNICAL
