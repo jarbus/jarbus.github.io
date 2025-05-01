@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ai on</title><link>/tags/ai/</link><description> (Ai)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 21 Feb 2025 19:58:43 -0500</lastBuildDate><atom:link href="/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>From REINFORCE to R1: an Abridged Genealogy of Reinforcement Learning</title><link>/blog/from-reinforce-to-r1-an-abridged-genealogy/</link><pubDate>Fri, 21 Feb 2025 19:58:43 -0500</pubDate><guid>/blog/from-reinforce-to-r1-an-abridged-genealogy/</guid><description>&lt;p>Starting from REINFORCE, the original deep reinforcement learning algorithm, we will trace the evolution of policy gradient methods to the Group Relative Policy Optimization algorithm used to train &lt;a href="https://github.com/deepseek-ai/DeepSeek-R1">Deepseek r1&lt;/a>.&lt;/p>
 &lt;p>This post ignores the LLM side of things, less-related developments in RL, and most of the equations used for these algorithms, but captures the essence and intuition of the RL-timeline without wasting your time. This is all self-study, so feel free to send me any corrections/suggestions.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+&lt;h1 id="table-of-contents" >Table of Contents
+&lt;span>
+&lt;a href="#table-of-contents">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;ol>
+&lt;li>&lt;a href="#reinforcement-learning-101">Reinforcement Learning 101&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#reinforce">REINFORCE&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#from-reinforce-to-actor-critic">From REINFORCE to Actor-Critic&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#from-actor-critic-to-advantage-actor-critic-a2c">From Actor-Critic to Advantage Actor-Critic (A2C)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#from-advantage-actor-critic-to-proximal-policy-optimization-ppo">From Advantage Actor-Critic to Proximal Policy Optimization (PPO)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#from-proximal-policy-optimization-to-group-relative-policy-optimization">From Proximal Policy Optimization to Group Relative Policy Optimization&lt;/a>&lt;/li>
+&lt;/ol>
 &lt;h1 id="reinforcement-learning-101" >Reinforcement Learning 101
 &lt;span>
 &lt;a href="#reinforcement-learning-101">
