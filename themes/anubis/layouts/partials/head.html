@@ -46,11 +46,14 @@
     {{ partial "resource.html" (dict "context" . "type" "js" "filename" "js/copy-code.js") }}
 {{ end }}
 
+
 {{ range .Site.Params.customJS -}}
   {{ partial "resource.html" (dict "context" $ "type" "js" "filename" . ) }}
 {{- end }}
 
 {{ template "_internal/opengraph.html" . }}
+
+{{ partial "resource.html" (dict "context" . "type" "js" "filename" "js/scramble.js") }}
 
 {{ if isset .Site.Params "webmentions" }}
     {{ if isset .Site.Params.webmentions "login"  }}
