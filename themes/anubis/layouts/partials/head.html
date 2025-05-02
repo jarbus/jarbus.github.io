@@ -51,8 +51,6 @@
   {{ partial "resource.html" (dict "context" $ "type" "js" "filename" . ) }}
 {{- end }}
 
-{{ template "_internal/opengraph.html" . }}
-
 {{ partial "resource.html" (dict "context" . "type" "js" "filename" "js/scramble.js") }}
 
 {{ if isset .Site.Params "webmentions" }}

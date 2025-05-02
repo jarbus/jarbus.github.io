@@ -7,9 +7,9 @@ Hi, I'm Jack, a graduate student in computer science interested in artificial so
 Featured Projects:
 
 - [Jevo.jl](/Jevo.jl/dev)
-    - A high-performance, highly flexible framework for distributed deep neuroevolution
+    - A modular, high-performance framework for distributed deep neuroevolution
 - [emergent trade](/blog/emergent-trade)
-    - emergent trading protocols between embodied agents using reinforcement learning
+    - emergent trading between embodied agents using reinforcement learning
 - [kittyplot](https://github.com/jarbus/kittyplot)
     - a repl-based terminal plotting program
 - [dtree](https://github.com/jarbus/dtree)
