@@ -19,19 +19,11 @@ date: 2024-01-28T13:17:32-05:00
 
 [George Watsky's Live! From the Metro](https://www.youtube.com/watch?v=yQs3HP9arts) - The concert which made me love live music
 
-[Bret Victor](http://worrydream.com/) - Redefining computing
-
-[Julia Evans](https://jvns.ca/) - If you haven't heard of her, you should
-
 [Justine Tunney](http://justine.lol/) - One hell of a programmer
 
 [suckless](https://suckless.org/) - Simple, frugal, clear software
 
 [LOW←TECH MAGAZINE](https://solar.lowtechmagazine.com/) - Forgotten tech creating a sustainable future
-
-[Clockwork](https://www.clockworkpi.com/) - Beautiful handheld computing
-
-[Teenage Engineering](https://teenage.engineering/products) - Stunning hardware design
 
 [tilde.town](http://tilde.town/) - Community on a linux server
 
@@ -42,5 +34,3 @@ date: 2024-01-28T13:17:32-05:00
 [The Way of Zen](https://en.wikipedia.org/wiki/The_Way_of_Zen) - Liberation on paper
 
 [Secrets of Our Success](https://secretofoursuccess.fas.harvard.edu/) - The beauty of cultural evolution
-
-[Reverse Graffiti](https://en.wikipedia.org/wiki/Reverse_graffiti) - Art from removing scum
