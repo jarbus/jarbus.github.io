@@ -1,3 +1,4 @@
+vim.cmd [[ colo habamax ]]
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.cmd [[set termguicolors]]
@@ -10,12 +11,10 @@ if not vim.uv.fs_stat(lazypath) then
   end
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
---require("config.avante")
 require('lazy').setup({
   'nvim-lua/plenary.nvim',
   'lewis6991/gitsigns.nvim',
-  'JuliaEditorSupport/julia-vim',
-  'github/copilot.vim',
+  'JuliaEditorSupport/julia-vim', 
   'mg979/vim-visual-multi',
   'ggandor/leap.nvim',
   { 'echasnovski/mini.extra', version = '*'},
@@ -39,18 +38,10 @@ require('lazy').setup({
       event = "VeryLazy",
       config = function() require("nvim-surround").setup({}) end
   },
-  { -- theme
-    "cdmill/neomodern.nvim",
-      lazy = false,
-      priority = 1000,
-      config = function()
-        require("neomodern").setup({style = "roseprime"})
-        require("neomodern").load()
-      end },
   { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     dependencies = {
-	  { 'williamboman/mason.nvim', config=true},
+	  { 'williamboman/mason.nvim', opts={}},
       'williamboman/mason-lspconfig.nvim',
       { 'j-hui/fidget.nvim', opts = {}}, -- Useful status updates for LSP
 	  'hrsh7th/cmp-nvim-lsp',
@@ -68,14 +59,14 @@ require('lazy').setup({
  {'nvim-telescope/telescope.nvim', dependencies = { 'nvim-lua/plenary.nvim' } },
   {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
   "nvim-treesitter/nvim-treesitter-textobjects",
-  "nvim-treesitter/nvim-treesitter-refactor",
+  --"nvim-treesitter/nvim-treesitter-refactor",
   {'LukasPietzschmann/telescope-tabs', config = function() require('telescope-tabs').setup() end },
   {
     "NeogitOrg/neogit",
     dependencies = {
       "nvim-lua/plenary.nvim",         -- required
       "sindrets/diffview.nvim",        -- optional - Diff integration
-  
+
       -- Only one of these is needed.
       "nvim-telescope/telescope.nvim", -- optional
       "ibhagwan/fzf-lua",              -- optional
@@ -88,7 +79,21 @@ require('lazy').setup({
     event = "VeryLazy",
     lazy = false,
     version = false, -- Set this to "*" to always pull the latest release version, or set it to false to update to the latest code changes.
-    opts = { },
+    build = "make",
+    opts = {
+      provider = "claude",
+      auto_suggestions_provider = "claude-haiku",
+      behaviour = {
+        --auto_suggestions = true,
+        auto_suggestions = false,
+        auto_set_highlight_group = true,
+        auto_set_keymaps = true,
+        auto_apply_diff_after_generation = false,
+        support_paste_from_clipboard = false,
+        auto_suggestions_respect_ignore = true,
+        enable_claude_text_editor_tool_mode = true, --only works with claude provider
+      },
+    },
     -- build = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false" -- for windows
     dependencies = {
       "nvim-treesitter/nvim-treesitter",
@@ -247,17 +252,13 @@ local on_attach = function(_, bufnr)
 end
 
 -- Setup mason so it can manage external tooling
-require('mason').setup()
+--require('mason').setup()
 
 -- Enable the following language servers
 -- Feel free to add/remove any LSPs that you want here. They will automatically be installed
-local servers = { 'julials', 'clangd', 'rust_analyzer', 'pyright', 'marksman'}
+local servers = {}
 
--- Ensure the servers above are installed
-require('mason-lspconfig').setup {
-  ensure_installed = servers,
-}
-
+local servers = { 'julials', 'clangd', 'rust_analyzer', 'pyright'}
 -- nvim-cmp supports additional completion capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
@@ -318,15 +319,15 @@ cmp.setup {
     end,
   },
   mapping = cmp.mapping.preset.insert {
-    ["<C-j>"] = cmp.mapping(function(fallback)
-      cmp.mapping.abort()
-      local copilot_keys = vim.fn["copilot#Accept"]()
-      if copilot_keys ~= "" then
-        vim.api.nvim_feedkeys(copilot_keys, "i", true)
-      else
-        fallback()
-      end
-    end),
+    --["<C-j>"] = cmp.mapping(function(fallback)
+    --  cmp.mapping.abort()
+    --  local copilot_keys = vim.fn["copilot#Accept"]()
+    --  if copilot_keys ~= "" then
+    --    vim.api.nvim_feedkeys(copilot_keys, "i", true)
+    --  else
+    --    fallback()
+    --  end
+    --end),
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
@@ -405,9 +406,9 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
-  ensure_installed = { 'julia','c', 'cpp', 'lua', 'python', 'markdown', 'markdown_inline', 'yaml'},
+  --ensure_installed = { 'julia','c', 'cpp', 'lua', 'python', 'markdown', 'markdown_inline', 'yaml', 'html', 'javascript'},
 
-  highlight = { enable = true },
+  highlight = { enable = false },
   indent = { enable = true },
   incremental_selection = {
     enable = true,
@@ -430,6 +431,8 @@ require('nvim-treesitter.configs').setup {
         ['if'] = '@function.inner',
         ['ac'] = '@class.outer',
         ['ic'] = '@class.inner',
+        ['il'] = '@loop.inner',
+        ['al'] = '@loop.outer',
       },
     },
     move = {

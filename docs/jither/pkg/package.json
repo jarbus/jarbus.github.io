@@ -1,0 +1,16 @@
+{
+  "name": "jitter",
+  "type": "module",
+  "description": "A WebGPU/WASM image dithering tool",
+  "version": "0.1.0",
+  "files": [
+    "jitter_bg.wasm",
+    "jitter.js",
+    "jitter.d.ts"
+  ],
+  "main": "jitter.js",
+  "types": "jitter.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

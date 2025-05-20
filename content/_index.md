@@ -10,6 +10,8 @@ Featured Projects:
     - A modular, high-performance framework for distributed deep neuroevolution
 - [emergent trade](/blog/emergent-trade)
     - emergent trading between embodied agents using reinforcement learning
+- [jither](/jither/)
+    - Jack's tool for dithering images. Runs locally using web assembly. 
 - [kittyplot](https://github.com/jarbus/kittyplot)
     - a repl-based terminal plotting program
 - [dtree](https://github.com/jarbus/dtree)
