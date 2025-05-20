@@ -31,9 +31,6 @@
             gap: 20px;
             background-color: #000000;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(255,255,255,0.1);
-            margin-bottom: 20px;
         }
         
         .control-group {
@@ -153,26 +150,28 @@
             flex-direction: column;
             gap: 10px;
         }
+
+        #image-upload {
+            font-size: 24px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="controls">
-                <h3>Upload Image</h3>
+                <h1>jither: Jack's dithering tool.</h1>
+                <p>Runs locally using web assembly.</p>
+                Upload Image:
                 <div class="file-input">
                     <input type="file" id="image-upload" accept="image/jpeg, image/png, image/webp, image/bmp">
                     <div id="file-error" style="color: #ff4d4d; display: none;">Only static images (JPEG, PNG, WebP, BMP) are supported.</div>
                 </div>
-            
-                <h3>Color Scheme</h3>
                 <div id="color-scheme">
                     <!-- Color items will be added here dynamically -->
                     <div class="color-item add-color-container">
                         <button id="add-color" title="Add new color">+</button>
                     </div>
                 </div>
-            
-                <h3>Dithering Settings</h3>
                 <div class="slider-container">
                     <label for="dither-strength">Dithering Strength</label>
                     <input type="range" id="dither-strength" min="0" max="1" step="0.05" value="0.75">
