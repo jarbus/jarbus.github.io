@@ -87,6 +87,7 @@
         #add-color:hover {
             background-color: #444444;
         }
+
         
         .delete-color {
             position: absolute;
@@ -143,6 +144,49 @@
         
         input[type="range"] {
             width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #333333;
+            border-radius: 4px;
+            outline: none;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background: #ccffdd;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        input[type="range"]::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            background: #ccffdd;
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+        }
+        
+        input[type="range"]::-webkit-slider-runnable-track {
+            background: linear-gradient(to right, #ccffdd 0%, #ccffdd var(--range-progress, 50%), #333333 var(--range-progress, 50%));
+            border-radius: 4px;
+            height: 8px;
+        }
+        
+        input[type="range"]::-moz-range-track {
+            background: #333333;
+            border-radius: 4px;
+            height: 8px;
+        }
+        
+        input[type="range"]::-moz-range-progress {
+            background: #ccffdd;
+            border-radius: 4px;
+            height: 8px;
         }
         
         .file-input {
@@ -336,8 +380,18 @@
                 reader.readAsDataURL(file);
             });
             
+            // Function to update slider fill
+            function updateSliderFill(slider) {
+                const min = slider.min || 0;
+                const max = slider.max || 100;
+                const value = slider.value;
+                const percentage = ((value - min) / (max - min)) * 100;
+                slider.style.setProperty('--range-progress', `${percentage}%`);
+            }
+            
             // Apply dithering when strength changes
             ditherStrength.addEventListener('input', () => {
+                updateSliderFill(ditherStrength);
                 if (imageData) {
                     applyDithering();
                 }
@@ -345,11 +399,16 @@
             
             // Apply dithering when pixelation level changes
             pixelationLevel.addEventListener('input', () => {
+                updateSliderFill(pixelationLevel);
                 pixelationValue.textContent = `${pixelationLevel.value}x`;
                 if (imageData) {
                     applyDithering();
                 }
             });
+            
+            // Initialize slider fills
+            updateSliderFill(ditherStrength);
+            updateSliderFill(pixelationLevel);
             
             // Download button
             downloadBtn.addEventListener('click', () => {
