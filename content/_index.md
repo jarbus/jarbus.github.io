@@ -13,7 +13,7 @@ Featured Projects:
 - [jither](/jither/)
     - Jack's image dithering tool, runs locally. Built with web assembly. 
 - [jarvis](/jarvis/)
-    - (jar)bus's audio visualizer, runs locally. Built with webGPU. 
+    - (jar)bus's audio (vis)ualizer, runs locally. Built with webGPU. 
 - [kittyplot](https://github.com/jarbus/kittyplot)
     - a repl-based terminal plotting program
 - [dtree](https://github.com/jarbus/dtree)
