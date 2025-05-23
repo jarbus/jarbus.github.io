@@ -2162,4 +2162,467 @@ or just under two and a half days, to be sure their transaction is safe.&lt;/p>
 &lt;li>Doing so inhibits learning for both parties&lt;/li>
 &lt;li>If someone can&amp;rsquo;t convince you of something, try convincing yourself&lt;/li>
 &lt;/ul>
-&lt;p>This is not a fully fleshed out idea of mine, nor is this idea exclusively mine. There are both counter arguments and room for expansion, however I think this is best left up to the reader.&lt;/p></description></item></channel></rss>
+&lt;p>This is not a fully fleshed out idea of mine, nor is this idea exclusively mine. There are both counter arguments and room for expansion, however I think this is best left up to the reader.&lt;/p></description></item><item><title/><link>/jarvis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/jarvis/</guid><description>&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+&lt;meta charset="UTF-8" />
+&lt;title>jarviz&lt;/title>
+&lt;style>
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: black;
+color: white;
+padding: 20px;
+}
+canvas {
+&lt;!-- margin-top: 20px; -->
+background-color: black;
+}
+input[type="file"] {
+margin: 20px 0;
+padding: 10px;
+background-color: black;
+color: white;
+border-radius: 4px;
+border: 1px solid white;
+}
+.controls {
+display: flex;
+gap: 10px;
+margin: 10px 0;
+}
+&lt;/style>
+&lt;/head>
+&lt;body>
+&lt;h1>(jar)bus audio (vis)ualizer&lt;/h1>
+&lt;p>built with webGPU, runs locally.&lt;/p>
+&lt;div class="controls">
+&lt;input type="file" id="file-input" accept="audio/*" />
+&lt;/div>
+&lt;canvas id="gpu-canvas" width="800" height="400" style="background-color: black;">&lt;/canvas>
+&lt;script type="module" src="./index.js">&lt;/script>
+&lt;/body>
+&lt;/html></description></item><item><title/><link>/jither/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/jither/</guid><description>&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+&lt;meta charset="UTF-8">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+&lt;title>Jitter - Image Dithering Tool&lt;/title>
+&lt;style>
+body {
+&lt;!-- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; -->
+max-width: 1000px;
+margin: 0 auto;
+padding: 20px;
+background-color: #000000;
+color: #ffffff;
+}
+h1 {
+text-align: center;
+color: #ffffff;
+}
+.container {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.controls {
+display: flex;
+flex-direction: column;
+gap: 20px;
+background-color: #000000;
+padding: 20px;
+}
+.control-group {
+flex: 1;
+min-width: 200px;
+}
+.control-group h3 {
+margin-top: 0;
+}
+#color-scheme {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+.color-item {
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+}
+.color-item input {
+width: 50px;
+height: 50px;
+padding: 0;
+border: none;
+cursor: pointer;
+}
+.add-color-container {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+}
+#add-color {
+width: 50px;
+height: 50px;
+border-radius: 0;
+background-color: #333333;
+color: white;
+font-size: 24px;
+font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+border: 1px dashed #777777;
+}
+#add-color:hover {
+background-color: #444444;
+}
+.delete-color {
+position: absolute;
+top: -10px;
+right: -10px;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: #ff4d4d;
+color: white;
+font-size: 14px;
+line-height: 1;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+border: 1px solid white;
+}
+button {
+background-color: #e7e7e7;
+color: black;
+border: none;
+padding: 10px 15px;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+}
+button:hover {
+background-color: #d7d7d7;
+}
+.canvas-container {
+background-color: #000000;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+text-align: center;
+}
+canvas {
+max-width: 100%;
+border: 1px solid #444;
+}
+.slider-container {
+display: flex;
+flex-direction: column;
+gap: 5px;
+color: #ffffff;
+}
+input[type="range"] {
+width: 100%;
+-webkit-appearance: none;
+appearance: none;
+height: 8px;
+background: #333333;
+border-radius: 4px;
+outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 18px;
+height: 18px;
+background: #ccffdd;
+border-radius: 50%;
+cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+width: 18px;
+height: 18px;
+background: #ccffdd;
+border-radius: 50%;
+cursor: pointer;
+border: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+background: linear-gradient(to right, #ccffdd 0%, #ccffdd var(--range-progress, 50%), #333333 var(--range-progress, 50%));
+border-radius: 4px;
+height: 8px;
+}
+input[type="range"]::-moz-range-track {
+background: #333333;
+border-radius: 4px;
+height: 8px;
+}
+input[type="range"]::-moz-range-progress {
+background: #ccffdd;
+border-radius: 4px;
+height: 8px;
+}
+.file-input {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+#image-upload {
+font-size: 24px;
+}
+&lt;/style>
+&lt;/head>
+&lt;body>
+&lt;div class="container">
+&lt;div class="controls">
+&lt;h1>jither: Jack's dithering tool.&lt;/h1>
+&lt;p>Runs locally using web assembly.&lt;/p>
+Upload Image:
+&lt;div class="file-input">
+&lt;input type="file" id="image-upload" accept="image/jpeg, image/png, image/webp, image/bmp">
+&lt;div id="file-error" style="color: #ff4d4d; display: none;">Only static images (JPEG, PNG, WebP, BMP) are supported.&lt;/div>
+&lt;/div>
+&lt;div id="color-scheme">
+&lt;!-- Color items will be added here dynamically -->
+&lt;div class="color-item add-color-container">
+&lt;button id="add-color" title="Add new color">+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;div class="slider-container">
+&lt;label for="dither-strength">Dithering Strength&lt;/label>
+&lt;input type="range" id="dither-strength" min="0" max="1" step="0.05" value="0.75">
+&lt;/div>
+&lt;div class="slider-container">
+&lt;label for="pixelation-level">Pixelation Level&lt;/label>
+&lt;input type="range" id="pixelation-level" min="1" max="50" step="1" value="1">
+&lt;span id="pixelation-value">1x&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;div class="canvas-container">
+&lt;canvas id="dither-canvas" width="800" height="600">&lt;/canvas>
+&lt;/div>
+&lt;div class="control-group">
+&lt;button id="download-image">Download Image&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;script type="module">
+import init, { DitherProcessor } from './pkg/jitter.js';
+async function run() {
+await init();
+const canvas = document.getElementById('dither-canvas');
+const ctx = canvas.getContext('2d');
+const imageUpload = document.getElementById('image-upload');
+const ditherStrength = document.getElementById('dither-strength');
+const pixelationLevel = document.getElementById('pixelation-level');
+const pixelationValue = document.getElementById('pixelation-value');
+const colorScheme = document.getElementById('color-scheme');
+const addColorBtn = document.getElementById('add-color');
+const downloadBtn = document.getElementById('download-image');
+// Default color palette
+const defaultColors = ['#000000', '#ffffff', '#ccffdd'];
+// Try to load saved colors from localStorage
+let colors = [];
+try {
+const savedColors = localStorage.getItem('jitter_colors');
+if (savedColors) {
+colors = JSON.parse(savedColors);
+console.log('Loaded saved color scheme:', colors);
+} else {
+colors = [...defaultColors];
+console.log('Using default color scheme');
+}
+} catch (e) {
+console.error('Error loading saved colors:', e);
+colors = [...defaultColors];
+}
+// Initialize color scheme
+colors.forEach(color => addColorToScheme(color));
+// Add a new color input
+function addColorToScheme(color) {
+const colorContainer = document.createElement('div');
+colorContainer.className = 'color-item';
+const input = document.createElement('input');
+input.type = 'color';
+input.value = color || '#000000';
+input.addEventListener('change', () => {
+// Find the index by counting only actual color items (not the add button)
+const colorItems = Array.from(colorScheme.querySelectorAll('.color-item:not(.add-color-container)'));
+const index = colorItems.indexOf(colorContainer);
+colors[index] = input.value;
+saveColorScheme();
+if (imageData) {
+applyDithering();
+}
+});
+const deleteBtn = document.createElement('button');
+deleteBtn.className = 'delete-color';
+deleteBtn.innerHTML = '&amp;times;';
+deleteBtn.title = 'Delete color';
+deleteBtn.addEventListener('click', () => {
+// Find the index by counting only actual color items (not the add button)
+const colorItems = Array.from(colorScheme.querySelectorAll('.color-item:not(.add-color-container)'));
+const index = colorItems.indexOf(colorContainer);
+colors.splice(index, 1);
+colorContainer.remove();
+saveColorScheme();
+if (imageData &amp;&amp; colors.length > 0) {
+applyDithering();
+}
+});
+colorContainer.appendChild(input);
+colorContainer.appendChild(deleteBtn);
+// Insert before the add button (which is the last child)
+const addColorContainer = document.querySelector('.add-color-container');
+colorScheme.insertBefore(colorContainer, addColorContainer);
+}
+// Add color button
+addColorBtn.addEventListener('click', () => {
+addColorToScheme();
+colors.push('#000000');
+saveColorScheme();
+});
+// Save color scheme to localStorage
+function saveColorScheme() {
+try {
+localStorage.setItem('jitter_colors', JSON.stringify(colors));
+console.log('Saved color scheme:', colors);
+} catch (e) {
+console.error('Error saving color scheme:', e);
+}
+}
+let originalImage = null;
+let imageData = null;
+let ditherProcessor = null;
+// Handle image upload
+imageUpload.addEventListener('change', (e) => {
+const file = e.target.files[0];
+if (!file) return;
+const fileError = document.getElementById('file-error');
+// Check file type to reject GIFs and videos
+const validImageTypes = ['image/jpeg', 'image/png', 'image/webp', 'image/bmp'];
+if (!validImageTypes.includes(file.type)) {
+fileError.style.display = 'block';
+imageUpload.value = ''; // Clear the file input
+return;
+}
+fileError.style.display = 'none';
+const reader = new FileReader();
+reader.onload = (event) => {
+originalImage = new Image();
+originalImage.onload = () => {
+// Resize canvas to match image dimensions
+canvas.width = originalImage.width;
+canvas.height = originalImage.height;
+// Draw original image
+ctx.drawImage(originalImage, 0, 0);
+// Get image data
+imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+// Create dither processor
+ditherProcessor = new DitherProcessor(canvas.width, canvas.height);
+// Apply dithering
+applyDithering();
+};
+originalImage.src = event.target.result;
+};
+reader.readAsDataURL(file);
+});
+// Function to update slider fill
+function updateSliderFill(slider) {
+const min = slider.min || 0;
+const max = slider.max || 100;
+const value = slider.value;
+const percentage = ((value - min) / (max - min)) * 100;
+slider.style.setProperty('--range-progress', `${percentage}%`);
+}
+// Apply dithering when strength changes
+ditherStrength.addEventListener('input', () => {
+updateSliderFill(ditherStrength);
+if (imageData) {
+applyDithering();
+}
+});
+// Apply dithering when pixelation level changes
+pixelationLevel.addEventListener('input', () => {
+updateSliderFill(pixelationLevel);
+pixelationValue.textContent = `${pixelationLevel.value}x`;
+if (imageData) {
+applyDithering();
+}
+});
+// Initialize slider fills
+updateSliderFill(ditherStrength);
+updateSliderFill(pixelationLevel);
+// Download button
+downloadBtn.addEventListener('click', () => {
+if (!imageData) return;
+const link = document.createElement('a');
+link.download = 'dithered-image.png';
+link.href = canvas.toDataURL('image/png');
+link.click();
+});
+// Apply dithering to the image using WebAssembly
+function applyDithering() {
+if (!imageData || !ditherProcessor) return;
+console.time('dithering');
+try {
+// Get dithering strength and pixelation level
+const strength = parseFloat(ditherStrength.value);
+const pixelSize = parseInt(pixelationLevel.value);
+// Create a temporary canvas for pixelation
+let processedImageData;
+if (pixelSize > 1) {
+// Apply pixelation
+const tempCanvas = document.createElement('canvas');
+const tempCtx = tempCanvas.getContext('2d');
+// Calculate new dimensions
+const scaledWidth = Math.ceil(canvas.width / pixelSize);
+const scaledHeight = Math.ceil(canvas.height / pixelSize);
+// Set temp canvas size to the scaled down size
+tempCanvas.width = scaledWidth;
+tempCanvas.height = scaledHeight;
+// Draw the original image scaled down
+tempCtx.drawImage(originalImage, 0, 0, scaledWidth, scaledHeight);
+// Draw the pixelated image back to the original size
+ctx.imageSmoothingEnabled = false;
+ctx.drawImage(tempCanvas, 0, 0, scaledWidth, scaledHeight, 0, 0, canvas.width, canvas.height);
+// Get the pixelated image data
+processedImageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+} else {
+// Use original image data if no pixelation
+processedImageData = imageData;
+}
+// Convert colors array to JS array for Rust
+const colorsArray = colors.map(c => c.toString());
+// Call Rust WASM function to perform dithering
+const result = ditherProcessor.dither_image(
+processedImageData.data,
+strength,
+colorsArray
+);
+// Create new ImageData with the result
+const newImageData = new ImageData(
+result,
+canvas.width,
+canvas.height
+);
+// Update canvas with dithered image
+ctx.putImageData(newImageData, 0, 0);
+console.log('Dithering completed successfully');
+} catch (error) {
+console.error('Error during dithering:', error);
+}
+console.timeEnd('dithering');
+}
+}
+run();
+&lt;/script>
+&lt;/body>
+&lt;/html></description></item></channel></rss>
