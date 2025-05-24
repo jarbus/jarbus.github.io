@@ -1,0 +1,15 @@
+{
+  "name": "jarviz",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "jarviz_bg.wasm",
+    "jarviz.js",
+    "jarviz.d.ts"
+  ],
+  "main": "jarviz.js",
+  "types": "jarviz.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
