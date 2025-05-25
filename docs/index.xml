@@ -2166,6 +2166,7 @@ or just under two and a half days, to be sure their transaction is safe.&lt;/p>
 &lt;html lang="en">
 &lt;head>
 &lt;meta charset="UTF-8" />
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" />
 &lt;title>jarviz&lt;/title>
 &lt;style>
 body {
@@ -2174,24 +2175,114 @@ flex-direction: column;
 align-items: center;
 background-color: black;
 color: white;
-padding: 20px;
+padding: 10px;
+margin: 0;
+overflow-x: hidden;
 }
 canvas {
-&lt;!-- margin-top: 20px; -->
+margin-top: 10px;
 background-color: black;
+width: 100%;
+max-width: 800px;
+height: auto;
+touch-action: none;
 }
 input[type="file"] {
-margin: 20px 0;
+margin: 10px 0;
 padding: 10px;
 background-color: black;
 color: white;
 border-radius: 4px;
 border: 1px solid white;
+width: 100%;
+max-width: 300px;
+}
+h1 {
+color: white;
+font-size: 1.5rem;
+margin: 10px 0;
+}
+p {
+margin: 5px 0;
 }
 .controls {
 display: flex;
+flex-wrap: wrap;
+justify-content: center;
 gap: 10px;
 margin: 10px 0;
+width: 100%;
+max-width: 800px;
+}
+button {
+padding: 12px 20px;
+background-color: black;
+color: white;
+border: 1px solid white;
+border-radius: 4px;
+cursor: pointer;
+font-size: 1rem;
+min-width: 80px;
+}
+button:hover {
+background-color: #333;
+}
+button:active {
+background-color: #555;
+}
+#pause-btn {
+background-color: black;
+}
+#pause-btn.paused {
+background-color: #333;
+}
+.mobile-hint {
+margin-top: 10px;
+color: #aaa;
+font-size: 0.8rem;
+text-align: center;
+}
+.progress-container {
+width: 100%;
+max-width: 800px;
+margin: 10px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.slider {
+width: 100%;
+height: 10px;
+-webkit-appearance: none;
+background: linear-gradient(to right, #ccffdd 0%, #ccffdd 0%, #333 0%);
+outline: none;
+border-radius: 5px;
+margin: 10px 0;
+}
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background: white;
+cursor: pointer;
+}
+.slider::-moz-range-thumb {
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background: white;
+cursor: pointer;
+}
+.slider:disabled {
+opacity: 0.5;
+cursor: not-allowed;
+}
+.time-display {
+color: white;
+font-size: 0.8rem;
+margin-top: 5px;
 }
 &lt;/style>
 &lt;/head>
@@ -2199,9 +2290,16 @@ margin: 10px 0;
 &lt;h1>(jar)bus audio (vis)ualizer&lt;/h1>
 &lt;p>built with webGPU, runs locally.&lt;/p>
 &lt;div class="controls">
-&lt;input type="file" id="file-input" accept="audio/*" />
+&lt;input type="file" id="file-input" accept="audio/*,.mp3,.m4a,.wav,.aac" />
+&lt;button id="pause-btn">Pause&lt;/button>
 &lt;/div>
 &lt;canvas id="gpu-canvas" width="800" height="400" style="background-color: black;">&lt;/canvas>
+&lt;div class="progress-container">
+&lt;input type="range" id="seek-slider" min="0" max="100" value="0" step="0.1" class="slider" disabled>
+&lt;div class="time-display">
+&lt;span id="current-time">0:00&lt;/span> / &lt;span id="duration">0:00&lt;/span>
+&lt;/div>
+&lt;/div>
 &lt;script type="module" src="./index.js">&lt;/script>
 &lt;/body>
 &lt;/html></description></item><item><title/><link>/jither/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/jither/</guid><description>&lt;!DOCTYPE html>
@@ -2320,7 +2418,8 @@ box-shadow: 0 2px 4px rgba(255,255,255,0.1);
 text-align: center;
 }
 canvas {
-max-width: 100%;
+width: 100%;
+height: 100%;
 border: 1px solid #444;
 }
 .slider-container {
@@ -2402,7 +2501,7 @@ Upload Image:
 &lt;/div>
 &lt;div class="slider-container">
 &lt;label for="pixelation-level">Pixelation Level&lt;/label>
-&lt;input type="range" id="pixelation-level" min="1" max="50" step="1" value="1">
+&lt;input type="range" id="pixelation-level" min="1" max="20" step="0.1" value="1">
 &lt;span id="pixelation-value">1x&lt;/span>
 &lt;/div>
 &lt;/div>
@@ -2453,9 +2552,7 @@ const input = document.createElement('input');
 input.type = 'color';
 input.value = color || '#000000';
 input.addEventListener('change', () => {
-// Find the index by counting only actual color items (not the add button)
-const colorItems = Array.from(colorScheme.querySelectorAll('.color-item:not(.add-color-container)'));
-const index = colorItems.indexOf(colorContainer);
+const index = Array.from(colorScheme.children).indexOf(colorContainer);
 colors[index] = input.value;
 saveColorScheme();
 if (imageData) {
@@ -2467,9 +2564,7 @@ deleteBtn.className = 'delete-color';
 deleteBtn.innerHTML = '&amp;times;';
 deleteBtn.title = 'Delete color';
 deleteBtn.addEventListener('click', () => {
-// Find the index by counting only actual color items (not the add button)
-const colorItems = Array.from(colorScheme.querySelectorAll('.color-item:not(.add-color-container)'));
-const index = colorItems.indexOf(colorContainer);
+const index = Array.from(colorScheme.children).indexOf(colorContainer);
 colors.splice(index, 1);
 colorContainer.remove();
 saveColorScheme();
@@ -2479,9 +2574,7 @@ applyDithering();
 });
 colorContainer.appendChild(input);
 colorContainer.appendChild(deleteBtn);
-// Insert before the add button (which is the last child)
-const addColorContainer = document.querySelector('.add-color-container');
-colorScheme.insertBefore(colorContainer, addColorContainer);
+colorScheme.appendChild(colorContainer);
 }
 // Add color button
 addColorBtn.addEventListener('click', () => {
@@ -2500,6 +2593,7 @@ console.error('Error saving color scheme:', e);
 }
 let originalImage = null;
 let imageData = null;
+let originalImageData = null;
 let ditherProcessor = null;
 // Handle image upload
 imageUpload.addEventListener('change', (e) => {
@@ -2523,8 +2617,9 @@ canvas.width = originalImage.width;
 canvas.height = originalImage.height;
 // Draw original image
 ctx.drawImage(originalImage, 0, 0);
-// Get image data
+// Get image data and store original
 imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+originalImageData = imageData;
 // Create dither processor
 ditherProcessor = new DitherProcessor(canvas.width, canvas.height);
 // Apply dithering
@@ -2534,32 +2629,19 @@ originalImage.src = event.target.result;
 };
 reader.readAsDataURL(file);
 });
-// Function to update slider fill
-function updateSliderFill(slider) {
-const min = slider.min || 0;
-const max = slider.max || 100;
-const value = slider.value;
-const percentage = ((value - min) / (max - min)) * 100;
-slider.style.setProperty('--range-progress', `${percentage}%`);
-}
 // Apply dithering when strength changes
 ditherStrength.addEventListener('input', () => {
-updateSliderFill(ditherStrength);
 if (imageData) {
 applyDithering();
 }
 });
 // Apply dithering when pixelation level changes
 pixelationLevel.addEventListener('input', () => {
-updateSliderFill(pixelationLevel);
 pixelationValue.textContent = `${pixelationLevel.value}x`;
 if (imageData) {
 applyDithering();
 }
 });
-// Initialize slider fills
-updateSliderFill(ditherStrength);
-updateSliderFill(pixelationLevel);
 // Download button
 downloadBtn.addEventListener('click', () => {
 if (!imageData) return;
@@ -2575,29 +2657,42 @@ console.time('dithering');
 try {
 // Get dithering strength and pixelation level
 const strength = parseFloat(ditherStrength.value);
-const pixelSize = parseInt(pixelationLevel.value);
+const pixelSize = parseFloat(pixelationLevel.value);
 // Create a temporary canvas for pixelation
 let processedImageData;
 if (pixelSize > 1) {
 // Apply pixelation
 const tempCanvas = document.createElement('canvas');
 const tempCtx = tempCanvas.getContext('2d');
-// Calculate new dimensions
-const scaledWidth = Math.ceil(canvas.width / pixelSize);
-const scaledHeight = Math.ceil(canvas.height / pixelSize);
+// Calculate new dimensions - round pixelSize to 1 decimal place
+const roundedPixelSize = Math.round(pixelSize * 10) / 10;
+const scaledWidth = Math.ceil(originalImage.width / roundedPixelSize);
+const scaledHeight = Math.ceil(originalImage.height / roundedPixelSize);
 // Set temp canvas size to the scaled down size
 tempCanvas.width = scaledWidth;
 tempCanvas.height = scaledHeight;
 // Draw the original image scaled down
 tempCtx.drawImage(originalImage, 0, 0, scaledWidth, scaledHeight);
-// Draw the pixelated image back to the original size
+// Resize the canvas to the scaled dimensions
+// The CSS will ensure it still displays at the same size
+canvas.width = scaledWidth;
+canvas.height = scaledHeight;
+// Copy the pixelated image to the main canvas
 ctx.imageSmoothingEnabled = false;
-ctx.drawImage(tempCanvas, 0, 0, scaledWidth, scaledHeight, 0, 0, canvas.width, canvas.height);
-// Get the pixelated image data
-processedImageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+ctx.drawImage(tempCanvas, 0, 0);
+// Get the pixelated image data at the lower resolution
+processedImageData = ctx.getImageData(0, 0, scaledWidth, scaledHeight);
+// Create new dither processor with the new dimensions
+ditherProcessor = new DitherProcessor(scaledWidth, scaledHeight);
 } else {
 // Use original image data if no pixelation
-processedImageData = imageData;
+processedImageData = originalImageData;
+// Reset canvas to original dimensions if coming from pixelated state
+if (canvas.width !== originalImage.width || canvas.height !== originalImage.height) {
+canvas.width = originalImage.width;
+canvas.height = originalImage.height;
+ditherProcessor = new DitherProcessor(canvas.width, canvas.height);
+}
 }
 // Convert colors array to JS array for Rust
 const colorsArray = colors.map(c => c.toString());
@@ -2613,6 +2708,8 @@ result,
 canvas.width,
 canvas.height
 );
+// Make sure image rendering is crisp when browser scales it up
+ctx.imageSmoothingEnabled = false;
 // Update canvas with dithered image
 ctx.putImageData(newImageData, 0, 0);
 console.log('Dithering completed successfully');
