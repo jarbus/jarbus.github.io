@@ -2,7 +2,7 @@
 title: "jarbus.net"
 ---
 
-Hi, I'm Jack, a graduate student in computer science interested in artificial societies, cultural evolution, machine learning, and decentralization.
+Hi, I'm Jack, a computer science PhD interested in machine learning, computing, decentralization, and artificial societies.
 
 Featured Projects:
 
@@ -31,6 +31,6 @@ Favorite Posts:
 - [Unexpected Benefits of Testing Code](blog/unexpected-benefits-of-testing)
 
 Contact me via:
-* Email: garbus at brandeis dot edu
+* Email: jackgarbus at gmail
 * Mastodon [@jarbus@fosstodon.org](https://fosstodon.org/@jarbus)
 * Github: [@jarbus](https://github.com/jarbus)
