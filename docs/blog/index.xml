@@ -1,5 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on</title><link>/blog/</link><description> (Blogs)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 29 May 2025 17:03:02 -0400</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Low-Rank Factorizations are Indirect Encodings for Deep Neuroevolution</title><link>/blog/neuroevo-lora/</link><pubDate>Thu, 29 May 2025 17:03:02 -0400</pubDate><guid>/blog/neuroevo-lora/</guid><description>&lt;p>My latest paper is available on arxiv: &lt;a href="https://arxiv.org/abs/2504.03037">Low Rank Factorizations are Indirect Encodings for Deep Neuroevolution&lt;/a>.&lt;/p>
-&lt;p>The general idea is that we can search for stronger neural networks in a gradient-free fashion by restricting search to networks of low-rank. We show that it works well for language modeling reinforcement learning tasks. It&amp;rsquo;s essentially a crossover between the following papers:&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on</title><link>/blog/</link><description> (Blogs)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 19 Jun 2025 09:35:49 -0400</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Everything Matters</title><link>/blog/everything-matters/</link><pubDate>Thu, 19 Jun 2025 09:35:49 -0400</pubDate><guid>/blog/everything-matters/</guid><description>&lt;p>Like many edgy teenagers, I once embraced &lt;a href="https://en.wikipedia.org/wiki/Nihilism">nihilism&lt;/a>—the belief that nothing matters, that existence is fundamentally meaningless. I could write a book on how strongly I subscribed to this area of thought, but that&amp;rsquo;s not the point of this post; you&amp;rsquo;ll have to trust that the following comes from someone who climbed out of the pit:&lt;/p>
+&lt;p>&lt;em>Everything matters.&lt;/em> And that&amp;rsquo;s even scarier.&lt;/p>
+&lt;p>I still don&amp;rsquo;t believe in broad concepts like &amp;ldquo;meaning&amp;rdquo; or &amp;ldquo;fulfillment&amp;rdquo;. I believe in biological reactions that make something feel meaningful or fulfilling. Those reactions are what matters, and I think nihilism&amp;rsquo;s pull is strongest on those who lack them. But we can hack our minds.&lt;/p>
+&lt;p>We want to feel our lives our meaningful, that they are worth living. If your life lacks meaning, there is a good chance you believe one of the following:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Life inherently has no meaning, and nothing will change that.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Life will only have meaning once you have a family, dream job, etc.&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>There&amp;rsquo;s a secret third belief on the table, though&amp;mdash;secret in the sense that everyone knows it, but nearly nobody believes it:&lt;/p>
+&lt;ol start="3">
+&lt;li>&lt;strong>Life has as much meaning as you give it.&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>Each compliment you give to a stranger can make their day. A stranger complimented a jacket I had in September 2024, and I still remember it, because no stranger ever complimented my clothes before.&lt;/p>
+&lt;p>What&amp;rsquo;s crazy is that anyone can do this at any time, most just choose not to. It&amp;rsquo;s free, and usually has positive effects.&lt;/p>
+&lt;p>A few more things that have a huge (but often invisible) return on investment:&lt;/p>
+&lt;ul>
+&lt;li>Remembering someone&amp;rsquo;s birthday (+1 for getting them a gift)&lt;/li>
+&lt;li>Telling someone you&amp;rsquo;re enjoying a gift they got you&lt;/li>
+&lt;li>Remembering small details that someone told you (the project they were working on, their best friend&amp;rsquo;s name, etc)&lt;/li>
+&lt;li>Getting someone flowers (for a partner, milestone, etc)&lt;/li>
+&lt;li>Complimenting strangers (without being creepy)&lt;/li>
+&lt;li>Smiling at people&lt;/li>
+&lt;li>Inviting people to grab dinner&lt;/li>
+&lt;li>Asking genuine questions when listening to someone talk about their passion&lt;/li>
+&lt;li>Checking if someone is OK&lt;/li>
+&lt;/ul>
+&lt;p>People live life believing their actions mostly don&amp;rsquo;t matter. They unnecessarily ghost, show up late, forget important details, back out of commitments, or fail to show up when they&amp;rsquo;re needed. Everyone acts unbothered, but we notice, and it hurts. Why wouldn&amp;rsquo;t the opposite be true?&lt;/p>
+&lt;p>I don&amp;rsquo;t know why I started trying to put effort into the little things&amp;mdash;probably to further convince myself nothing matters and thus justify my position. But that&amp;rsquo;s not how our mind works. We feel meaning when we make others happy, especially others who feel forgotten, because in that moment, we matter to them. At least a little bit.&lt;/p></description></item><item><title>Low-Rank Factorizations are Indirect Encodings for Deep Neuroevolution</title><link>/blog/neuroevo-lora/</link><pubDate>Thu, 29 May 2025 17:03:02 -0400</pubDate><guid>/blog/neuroevo-lora/</guid><description>&lt;p>My latest paper is available on arxiv: &lt;a href="https://arxiv.org/abs/2504.03037">Low Rank Factorizations are Indirect Encodings for Deep Neuroevolution&lt;/a>.&lt;/p>
+&lt;p>The general idea is that we can search for stronger neural networks in a gradient-free fashion by restricting search to networks of low-rank. We show that it works well for language modeling and reinforcement learning tasks. It&amp;rsquo;s essentially a crossover between the following papers:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://arxiv.org/abs/1712.06567">Deep Neuroevolution: Genetic Algorithms Are a Competitive Alternative for Training Deep Neural Networks for Reinforcement Learning&lt;/a>.&lt;/li>
