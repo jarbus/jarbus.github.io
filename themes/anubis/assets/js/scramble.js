@@ -1,5 +1,5 @@
 //const chars = '!<>\/[]{}=+*^?#_$%&();:@"\~|0';
-const chars = '>+*^#1234567890)_{[~';
+const chars = '>+*^#1234567890_{[~JxQzLPrOIhVSC=@\&';
 
 function scrambleText(el) {
   const targetText = el.dataset.original || el.textContent;
@@ -17,7 +17,7 @@ function scrambleText(el) {
   // Calculate interval based on inverse of string length
   // Use a base value of 500 and divide by length, with min of 10ms and max of 100ms
   //const intervalDuration = Math.max(10, Math.min(50, Math.floor(500 / original.length)));
-  const intervalDuration = Math.max(5, Math.min(50, Math.floor(500 / original.length)));
+  const intervalDuration = Math.max(20, Math.min(100, Math.floor(800 / original.length)));
   
   const interval = setInterval(() => {
     // If all positions are decoded, clear the interval and exit
