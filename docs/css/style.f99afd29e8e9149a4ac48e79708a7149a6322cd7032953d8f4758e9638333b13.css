@@ -419,7 +419,7 @@ article figcaption {
 .terms {
     list-style-type: none;
     padding: 0;
-    line-height: 2em;
+    line-height: 1em;
 }
 .pagination {
     display: flex;

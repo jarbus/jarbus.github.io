@@ -1,4 +1,8 @@
 {{ define "main" }}
+
+    Hi, I'm Jack, a computer science PhD interested in machine learning, computing, decentralization, and artificial societies.
+    <br>
+    <br>
     <div style="text-align: center;">Newest Post: {{ range ( where .Site.RegularPages "Type" "blog" | first 1 ) }} <a href="{{ .Permalink }}">{{ .Title }}</a> {{end}}</div>
     <div class="homepage-content">
         {{ .Content }}

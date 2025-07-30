@@ -2,8 +2,6 @@
 title: "jarbus.net"
 ---
 
-Hi, I'm Jack, a computer science PhD interested in machine learning, computing, decentralization, and artificial societies.
-
 Featured Projects:
 
 - [Jevo.jl](/Jevo.jl/dev)
