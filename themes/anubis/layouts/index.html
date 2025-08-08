@@ -1,9 +1,22 @@
 {{ define "main" }}
 
-    Hi, I'm Jack, a computer science PhD interested in machine learning, computing, decentralization, and artificial societies.
+    <div>
+    <!-- <div style="float: left; margin-right: 20px;"> -->
+    <!--     <img src="/me.png" style="width: 200px; height: auto;"> -->
+    <!-- </div> -->
+<div style="display:flex;align-items:center">
+  <div style="flex:0 0 30%; margin-right:20px;">
+    <img src="./me.png" style="width:100%; max-width:200px; margin-left: auto; height:auto; display:block;">
+  </div>
+  <div style="flex:1 0;">
+    Hi, my name's Jack. I have a PhD in Computer Science and work on AI compilers at AMD in San Jose, California. 
+  </div>
+</div>
+
+
+
     <br>
-    <br>
-    <div style="text-align: center;">Newest Post: {{ range ( where .Site.RegularPages "Type" "blog" | first 1 ) }} <a href="{{ .Permalink }}">{{ .Title }}</a> {{end}}</div>
+    <div style="text-align: center;clear:left;">Newest Post: {{ range ( where .Site.RegularPages "Type" "blog" | first 1 ) }} <a href="{{ .Permalink }}">{{ .Title }}</a> {{end}}</div>
     <div class="homepage-content">
         {{ .Content }}
     </div>
