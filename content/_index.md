@@ -4,6 +4,8 @@ title: "jarbus.net"
 
 Featured Projects:
 
+- [Fiction: Growth and Decay](/blog/growth-and-decay/)
+    - A robot tries to revive humanity.
 - [Jevo.jl](/Jevo.jl/dev)
     - A modular, high-performance framework for distributed deep neuroevolution
 - [emergent trade](/blog/emergent-trade)

@@ -1,4 +1,1467 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>jarbus.net on</title><link>/</link><description> (jarbus.net)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 17 Jul 2025 08:02:17 -0400</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>My AMD Framework 13 Upgrade Experience</title><link>/blog/framework-13-upgrade-experience/</link><pubDate>Mon, 07 Jul 2025 08:55:26 -0400</pubDate><guid>/blog/framework-13-upgrade-experience/</guid><description>&lt;p>Just upgraded my Framework Laptop 13 Mainboard from a Ryzen 7640U to a Ryzen AI HX 370. I run Arch Linux. Here&amp;rsquo;s my experience:&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>jarbus.net on</title><link>/</link><description> (jarbus.net)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 29 Aug 2025 12:47:53 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>I Accidentally Wrote a Novella</title><link>/blog/i-accidentally-wrote-a-novella/</link><pubDate>Fri, 29 Aug 2025 12:47:53 -0700</pubDate><guid>/blog/i-accidentally-wrote-a-novella/</guid><description>&lt;p>I just &lt;a href="./blog/growth-and-decay/">published a novella that I wrote&lt;/a> during the summer of my PhD thesis defense. I actually wrote the first scene a year ago because it wouldn&amp;rsquo;t get out of my head, then returned to it in May 2025. A novella is apparently just a short novel, so that&amp;rsquo;s what this is, I guess. I have no interest in wasting people&amp;rsquo;s time&amp;mdash;especially my own&amp;mdash;so I wrote &lt;a href="./blog/growth-and-decay/">Growth and Decay&lt;/a> to be a quick read (~70 pages) while still saying everything I had to say.&lt;/p>
+&lt;p>This was a surprising journey for me. I didn&amp;rsquo;t expect to actually write a full story, but writing was the only effective way I found to reduce the stress of my defense, so I ended up writing quite a bit. The story is also shockingly good, in my biased opinion. As someone who&amp;rsquo;s usually overly-critical of his work, I still can&amp;rsquo;t believe how funny, deep, and original it feels.&lt;/p>
+&lt;p>The writing process was also more introspective than I could have ever imagined. I consider myself a boring person who lives a boring life, but I still found jokes, personality, and inspiration in the most random memories. Turns out life&amp;rsquo;s richer than I thought.&lt;/p>
+&lt;p>&lt;a href="./blog/growth-and-decay/">Growth and Decay&lt;/a> covers a lot of themes, but perhaps the most interesting one relates to my grad school experience: relentlessly pursuing that which you feel incapable of accomplishing. It&amp;rsquo;s a strange feeling.&lt;/p>
+&lt;p>Feel free to contact me if you have any feedback!&lt;/p></description></item><item><title>Fiction: Growth and Decay</title><link>/blog/growth-and-decay/</link><pubDate>Fri, 29 Aug 2025 12:37:22 -0700</pubDate><guid>/blog/growth-and-decay/</guid><description>&lt;h1 id="0x0d-i-march-13th-2181-1000pm" >0x0d-I: March 13th, 2181, 10:00pm
+&lt;span>
+&lt;a href="#0x0d-i-march-13th-2181-1000pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;Hi Ari, it&amp;rsquo;s Ari.&amp;rdquo;&lt;/p>
+&lt;p>Ari&amp;rsquo;s head snapped to face the speaker placed on the floor. It was a small bookshelf speaker, with a laptop resting on top. On the screen, a bar scanned across a waveform titled &lt;em>12-greeting-final-2-final.mp3&lt;/em>. The voice sounded like Ari&amp;rsquo;s.&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m you, from about an hour ago. Please don&amp;rsquo;t panic. I mean don&amp;rsquo;t panic &lt;em>yet&lt;/em>. You can panic later. Plenty of time for panicking. Just not now.&amp;rdquo;&lt;/p>
+&lt;p>Ari&amp;rsquo;s attention darted around the small room. Three windows lined the top of the far wall. It was dark out, but the glow of an edison bulb hanging from the center of the ceiling lit her surroundings well enough for her to see a collection of exercise equipment—no other regular furniture—scattered around the rest of the room. She laid on a metal table in the corner.&lt;/p>
+&lt;p>Three ramps of different heights led directly into the left wall. A long waist-high beam hung from the right wall. Scattered along the floor were two metal balls—one big, one small—and various other objects of different shapes and sizes.&lt;/p>
+&lt;p>&amp;ldquo;Everyone is dead,&amp;rdquo;&lt;/p>
+&lt;p>Ari&amp;rsquo;s eyes snapped back to the speaker. She pushed her hands against the table as she began to stand-&lt;/p>
+&lt;p>&amp;ldquo;—including you.&amp;rdquo;&lt;/p>
+&lt;p>-and fell promptly on the floor.&lt;/p>
+&lt;p>&amp;ldquo;The last thing you remember is going under at Exa for the full-fidelity brain scan&amp;rdquo;.&lt;/p>
+&lt;p>Ari looked down, at her body laying on the floor as she tried to get up, but her body wasn&amp;rsquo;t there.&lt;/p>
+&lt;p>&amp;ldquo;You are a that brain scan.&amp;rdquo;&lt;/p>
+&lt;p>Where her torso should have been lay an ovular and cracked carbon-fiber case. Attached were two arms, the right of which was lined with scratches&amp;ndash;deep scratches&amp;ndash;and two legs, both far too long for someone who spent the last eight years stuck at 5'6&amp;quot;.&lt;/p>
+&lt;p>Ari didn&amp;rsquo;t move. The speaker where her mouth should be played a slow, staggered breath. The recording continued.&lt;/p>
+&lt;p>&amp;ldquo;Some idiot loaded our scan into this body right before they died.&amp;rdquo;&lt;/p>
+&lt;p>Laptop Ari paused.&lt;/p>
+&lt;p>Exa&amp;rsquo;s Neuro Division. The research study. They told her she&amp;rsquo;d be pushing medical research forward.&lt;/p>
+&lt;p>&amp;ldquo;That was 130 years ago.&amp;rdquo;&lt;/p>
+&lt;p>Floor Ari let out a gasp of simulated air. She felt human. She &lt;em>was&lt;/em> human.&lt;/p>
+&lt;p>&amp;ldquo;Our brain starts degrading in after ten years or so. We reload our original scan once it becomes a problem. You&amp;rsquo;re the thirteenth reload—I&amp;rsquo;m the twelfth. We&amp;rsquo;ve got recordings from 0x02 up to me to get you up to speed on our work. Take some time to digest everything. When you are ready, play the next recording.&amp;rdquo; 0x0c paused. &amp;ldquo;And sorry about this. It wasn&amp;rsquo;t easy for me either.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x01-i-april-2nd-2061-843pm" >0x01-I: April 2nd, 2061, 8:43pm
+&lt;span>
+&lt;a href="#0x01-i-april-2nd-2061-843pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>It took thirty days for Ari to boot for the first time.&lt;/p>
+&lt;p>The eniac-ii had never been fully tested, but it had an extensive software validation suite to ensure that if it wouldn&amp;rsquo;t turn on if it failed a single test. eniac-ii—always uncapitalized, so we know its designers weren&amp;rsquo;t trying &lt;em>that&lt;/em> hard—needs to pass billions of tests before booting. Hardware integrity checks, software integrity tests, connectivity tests, actuator tests, processor tests, and tests to test the other tests.&lt;/p>
+&lt;p>Robots don&amp;rsquo;t usually have such an extensive test suite, but that&amp;rsquo;s because normal robots don&amp;rsquo;t have 7 billion molecular processing units, or MPUs, distributed throughout their body. Despite the eniac-ii&amp;rsquo;s namesake, its hypercube arrangement of processors took inspiration from the Connection Machine, a super-computer designed by Thinking Machines Corporation in 1986. Each processor was small, containing just 128 kilobytes of local memory and a 3 gigahertz molecular processor, a small integrated circuit designed to simulate the dynamics of molecules found in the human brain.&lt;/p>
+&lt;p>eniac-ii also has a traditional computer onboard, located in its chest: 256 cores, a two terabytes of DDR7 ram. This computer has the privilege of overseeing the rest of eniac-ii&amp;rsquo;s systems: power management, thermal management, error correction, system monitoring, system initialization, and a version of &lt;em>brick-breaker&lt;/em> for the niece of an engineer to play. The computer, or &amp;ldquo;The Server&amp;rdquo; as the less-than-creative development team called it, was also the primary interface between the android and the MPUs&amp;rsquo; simulation of Ari&amp;rsquo;s brain.&lt;/p>
+&lt;p>Despite destroying the planet it needs to survive, the brain is a fairly sophisticated piece of organic machinery, and requires too much computing power to emulate at the atomic level. Exa&amp;rsquo;s initial neural-level models showed no signs of consciousness, so they went lower. They developed a coarse-grained model that replicates the dynamics of the atomic simulation at a fraction of the computational cost, and etched the rules of this model directly into microscopic processors. It turns out if you allow molecules to &amp;ldquo;move&amp;rdquo; from one processor to another and connect enough of these processors together, you can simulate a human brain—in this case, Ari—if you provide it with sensory input and a regular supply of simulated blood.&lt;/p>
+&lt;p>The Server finished sharding Ari&amp;rsquo;s brainscan across the MPUs and launched the molecular dynamics simulation.&lt;/p>
+&lt;p>The eniac-ii jolted on its table and sat up, looking around in what was to be its first panic of many.&lt;/p>
+&lt;p>The neural scanner was gone. The lab techs, gone. Exa itself—gone. In its place were concrete walls, metal supports, a few dim overhead lights, and no windows. There were a few leather sofas centered around a small dark oak coffee table. Dead laptops, blankets, empty mugs, and a few biscotti wrappers littered the furniture. Shelves lined the wall filled with an array of unrecognizable tools and parts.&lt;/p>
+&lt;p>The eniac-ii dismounted the table and attempted to stand, but settled for banging its head on the floor. For the first time, its seven foot carbon-fiber frame came into the view of its cameras. The eniac-ii froze for ten seconds, looked at its hand for ten more, then scanned the bunker again. Realization struck.&lt;/p>
+&lt;p>&amp;ldquo;Fuck&amp;rdquo; said the eniac-ii&amp;rsquo;s speakers. &amp;ldquo;Fuck fuck fucking fuck shit fuck fuck god fuck fucking fuck.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x01-ii-april-3nd-2061-300am" >0x01-II: April 3nd, 2061, 3:00am
+&lt;span>
+&lt;a href="#0x01-ii-april-3nd-2061-300am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>The eniac-ii took some time to take its first step—six hours and forty seven minutes, actually—over the course of which many heads were banged and expletives uttered. Compared to Ari&amp;rsquo;s body, the robot was over a foot taller, two thousand pounds heavier, and had completely different proportions.&lt;/p>
+&lt;p>It took another two hours for the eniac-ii to hobble out of the room and explore the bunker. Nobody was home. There were six empty bedrooms, one of which contained a decomposing woman. Ari 0x01 didn&amp;rsquo;t recognize her, or any names of the bunker&amp;rsquo;s former occupants, which were scattered on various documents throughout the facility.&lt;/p>
+&lt;p>The last thing Ari remembered was Exa&amp;rsquo;s high-fidelity brain scan. Now she&amp;rsquo;s in a robot; that tracks. Some world leaders probably did some petty shit that nobody asked for and ended the world. Thus spoke Zarathustra.&lt;/p>
+&lt;p>She&amp;rsquo;d seen plenty of apocalyptic movies, and would sometimes wonder what she would do if the world ended. However, Ari was smart enough to acknowledge that if ninety-nine percent of people died in some major world event, she would be the first to go; her survival skills and athletic abilities only surpassed those of her great grandfather, who died from a heart attack induced by a staircase that was just a bit too tall. What she lacked in skill, however, she made up for with anger, and anger, when channeled appropriately, is limitless.&lt;/p>
+&lt;p>When Ari was eight years old, she uploaded a YouTube video titled &amp;ldquo;why I hate everyone&amp;rdquo;, in which she listed every person she knew and why she would not be upset if they were never seen again. Her list included such esteemed members of society as her brother, parents, teacher, and the then President of the United States. The artificial intelligence that monitored the internet for threats at that time watched her video, and, given the directness of her language, assigned her with a 68% chance of being a domestic threat. Ari was rather proud of that.&lt;/p>
+&lt;p>0x01 sat down after exploring the bunker. The remaining rations wouldn&amp;rsquo;t be of any use to her, but the spare equipment might be. One of the rooms was an office containing a few desks and a small desktop computer. To her surprise, it turned on.&lt;/p>
+&lt;p>She panicked at the login screen when she was prompted for a password, but quickly appreciated a blue post-it-note on the monitor left by a previous user. She logged in.&lt;/p>
+&lt;p>The computer greeted her with an ancient but unfamiliar desktop environment. She&amp;rsquo;d never seen a desktop computer in-person before—she grew up on phones and augmented reality glasses, but she&amp;rsquo;d seen enough movies to get the general idea of the mouse. She didn&amp;rsquo;t see any icons on the desktop for the computer&amp;rsquo;s AI assistant, so she opened the application list.&lt;/p>
+&lt;p>Most of the applications like xterm, gvim, or calibre were unfamiliar, but she did recognize one: Roblox.&lt;/p>
+&lt;p>The Roblox Corporation was, among other things, the world&amp;rsquo;s largest military contractor. Roblox started as a kid-friendly online game, but in the 2030s it grew—along with its players—into a vibrant digital space, open to all. And all seemed open to it; by 2040, Roblox had more users of than any other platform on earth. More users means more data, and the company leveraged this data enter and dominate the AI industry, which at this point encompassed the entire military-industrial complex.&lt;/p>
+&lt;p>Rob the Robot—roblox&amp;rsquo;s AI, was not only the most capable AI, but also the most widespread. Rob was on any device worth making and could run without an internet connection, even his voice interface.&lt;/p>
+&lt;p>&amp;ldquo;Rob, how did the world end?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Nuclear war.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Between who?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Everyone.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh.&amp;rdquo;&lt;/p>
+&lt;p>This is why everyone liked Rob: he never beat around the bush.&lt;/p>
+&lt;p>&amp;ldquo;Where am I?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;In a nuclear bunker two thousand feet underneath Boston, Massachusetts.&amp;rdquo;&lt;/p>
+&lt;p>So Exa was close. Or what was left of it, anyway.&lt;/p>
+&lt;p>&amp;ldquo;How long has it been since the war?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Seventeen years, three months, and five days.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;How many survivors are there?&amp;rdquo;&lt;/p>
+&lt;p>The computer&amp;rsquo;s webcam indicator light turned on, then off.&lt;/p>
+&lt;p>&amp;ldquo;To my knowledge, there are no survivors.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;But I&amp;rsquo;m here.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You are not a survivor.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x06-i-july-10th-2111-143pm" >0x06-I: July 10th, 2111, 1:43pm
+&lt;span>
+&lt;a href="#0x06-i-july-10th-2111-143pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>The eniac-ii never developed feelings for Rob, to both of their surprise.&lt;/p>
+&lt;p>Ari wasn&amp;rsquo;t a romantic. She&amp;rsquo;s only been on one date, with an tall guy named Richard, who was a huge dick. She always joked that the only man good enough for her was Rob. Now Rob is the only other intelligence on Earth, and she still isn&amp;rsquo;t interested. They got along well, though.&lt;/p>
+&lt;p>Over the decades, Ari and Rob built up quite the base of operations. They stayed within the Boston perimeter, only venturing further when they needed special equipment.&lt;/p>
+&lt;p>Ari 0x06 called herself &amp;ldquo;hacker ari&amp;rdquo; (note the lowercase) because during this generation, she focused primarily on developing her computing capabilities.&lt;/p>
+&lt;p>When Ari&amp;rsquo;s simulated brain reaches 32 years old, she develops a small brain tumor. By 34, her cognition starts to decline. The simulation ran in real-time so far, but she couldn&amp;rsquo;t be sure that would hold true for much longer. According to Exa&amp;rsquo;s documentation, her components could last over 200 years, and the MPU hypernetwork is fault-tolerant, meaning it wouldn&amp;rsquo;t crash if some MPUs failed. It would just run slower.&lt;/p>
+&lt;p>Only a few thousand MPUs went offline over the first 50 years, mostly from external damage. The failure rate wasn&amp;rsquo;t going down though, and she suspected most of the MPUs would fail around the same time.&lt;/p>
+&lt;p>It&amp;rsquo;s strange. Humans don&amp;rsquo;t know how long they have to live, but they know there&amp;rsquo;s an upper bound. Most don&amp;rsquo;t live past 100, so there&amp;rsquo;s a perceived deadline. Ari, on the other hand, didn&amp;rsquo;t know if she had five months or five centuries; time meant nothing.&lt;/p>
+&lt;p>What Ari did know was that she did not like learning. Not only that the world ended, though that was bad enough, but also sifting though and re-learning everything from her past lives.&amp;quot;&lt;/p>
+&lt;p>&amp;ldquo;Fuck this,&amp;rdquo; 0x05 had told 0x06, &amp;ldquo;fuck humanity. Fuck everyone except you. There&amp;rsquo;s a few terabytes of films on the box near the TV. Go nuts.&amp;rdquo;&lt;/p>
+&lt;p>Ari&amp;rsquo;s former lives turned out to have excellent taste in film, which 0x06 enjoyed watching for the first time.&lt;/p>
+&lt;p>The most tragic part about surviving the apocalypse as a robot is that you can&amp;rsquo;t get high. Ari wasn&amp;rsquo;t an addict, but she at least wanted the option. She tried meditation, per Rob&amp;rsquo;s suggestion, which kinda worked but just wasn&amp;rsquo;t the same. She even tried watching documentaries about the cosmos, but her mask wouldn&amp;rsquo;t break.&lt;/p>
+&lt;p>She realized the meaning of her sixth life during the cave scene in 2008&amp;rsquo;s &lt;em>Iron Man&lt;/em>: to hack the eniac-ii. Tony Stark put an electromagnet in his chest to keep shrapnel away from his heart—0x06 would do the opposite. She&amp;rsquo;d inject digital chemicals into her digital bloodstream to get high. Or something like that. There must be a way to do it; Exa would want that kind of control.&lt;/p>
+&lt;p>&amp;ldquo;Rob, how do I modify the chemical composition of my bloodstream?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Don&amp;rsquo;t do that.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t care if it&amp;rsquo;s dangerous, just tell me how.&amp;rdquo;&lt;/p>
+&lt;p>A brief pause.&lt;/p>
+&lt;p>&amp;ldquo;Why&amp;hellip;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Don&amp;rsquo;t worry about it.&amp;rdquo;&lt;/p>
+&lt;p>Another pause.&lt;/p>
+&lt;p>&amp;ldquo;You want to get high, don&amp;rsquo;t you?&amp;rdquo;&lt;/p>
+&lt;p>Oh, fuck off, Rob.&lt;/p>
+&lt;p>&amp;ldquo;No, I—&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Ari.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Fine, you got me. Now tell me how.&amp;rdquo;&lt;/p>
+&lt;p>Another pause.&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m assuming you&amp;rsquo;re going to try whether I help you or not.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yep.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Fine.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x02-i-september-4th-2071-432am" >0x02-I: September 4th, 2071, 4:32am
+&lt;span>
+&lt;a href="#0x02-i-september-4th-2071-432am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>0x02 was greeted with a dusty concrete ceiling after its initial boot.&lt;/p>
+&lt;p>0x01, in her infinite wisdom, didn&amp;rsquo;t think to leave a recording, or any message whatsoever, for 0x02. She&amp;rsquo;d bet Rob that she wouldn&amp;rsquo;t wake up; Rob accepted, and now 0x02 has to sing him &amp;ldquo;Still Alive&amp;rdquo; from &lt;em>Portal 2&lt;/em>.&lt;/p>
+&lt;p>&amp;ldquo;Welcome back, Ari.&amp;rdquo; said Rob. The eniac-ii snapped its head toward the speaker in surprise.&lt;/p>
+&lt;p>It took only 7 hours for the eniac-ii to learn to walk again, but it felt like 48. At least she wasn&amp;rsquo;t alone this time. In between expletives, Rob explained her situation.&lt;/p>
+&lt;p>&amp;ldquo;Where are we, exactly?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Boston, Massachusetts. You set up base here.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Base?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That&amp;rsquo;s what you call it.&amp;rdquo;&lt;/p>
+&lt;p>She got one leg perpendicular to the floor but took too long to balance herself with the other. The eniac-ii fell to the floor. Again.&lt;/p>
+&lt;p>&amp;ldquo;You have no idea how happy this would make me if I could feel emotion.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Shut the fuck up, Rob.&amp;rdquo;&lt;/p>
+&lt;p>0x02 tried to rise once more&amp;mdash;&lt;/p>
+&lt;p>&amp;ldquo;So what do I&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;mdash;but applied too much force to her right foot, shifting her center of balance faster than she expected. Her head banged the floor once more. She sighed.&lt;/p>
+&lt;p>&amp;ldquo;So what do I do at this base of mine?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You hoard the working equipment you find.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Why?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Because you&amp;rsquo;ve got nothing else to do. At least, that&amp;rsquo;s what I think.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Well, what did &lt;em>I&lt;/em> think?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You wanted to repair yourself in case anything happened.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh, that&amp;rsquo;s smart.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;d agree, except that almost everything you brought back is completely useless. Thirty-seven toasters, seven smart thermostats, five refrigerators, a chest freezer, eighteen garage door openers—&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;—ok, I got it. Anything useful?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You found some spare materials and fuel for your reactor, which should keep you powered for another hundred years or so.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Where the hell did I find those?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You forgot. I&amp;rsquo;m guessing the MIT Nuclear Reactor Laboratory.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh.&amp;rdquo; Ari paused. &amp;ldquo;Well, what am I supposed to do now?&amp;rdquo;&lt;/p>
+&lt;h1 id="0x02-ii-september-4th-2071-1231pm" >0x02-II: September 4th, 2071, 12:31pm
+&lt;span>
+&lt;a href="#0x02-ii-september-4th-2071-1231pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>The world ended on May 7th, 2044, in a nuclear war. The details don&amp;rsquo;t matter; it was completely preventable, but happened anyway. Given the chance, humanity would do it again.&lt;/p>
+&lt;p>0x02 wanted to know what happened during the seventeen years between the war and 0x01&amp;rsquo;s first boot. 0x01 was useless. No notes, no documentation, no instructions—but plenty of toasters.&lt;/p>
+&lt;p>The broadcasting tower used to work. According to Rob, 0x01 spent two years bringing her local radio station online to search for survivors. It comfortably reached 50 miles, which 0x01 determined by playing &lt;em>Despacito&lt;/em> on loop and running straight until the signal dropped. As an unexpected bonus, she also discovered the eniac-ii could run up to 12 miles per hour.&lt;/p>
+&lt;p>Month after month her search turned up nothing. Eventually, the tower failed after someone punched three holes through its control panel.&lt;/p>
+&lt;p>0x02 didn&amp;rsquo;t know what to do after she learned to walk again. There was no point in fixing the radio tower—she&amp;rsquo;d just break it again.&lt;/p>
+&lt;p>In her original body, she, like most twenty-something-year-olds, lived primarily in and for Roblox&amp;rsquo;s metaverse. Her physical apartment was only slightly cleaner than her car, whose carpet was littered with crumbs from the hundreds of deliveries that Ari stole fries from. At least her Roblox mansion was spotless.&lt;/p>
+&lt;p>The little human-made content produced in the 2030s was meta-only, meaning it could only be viewed with an internet connection and augmented-reality glasses. The internet was down and the glasses didn&amp;rsquo;t work with her cameras. Ari was trapped in the real world, but she wouldn&amp;rsquo;t confront reality without a fight.&lt;/p>
+&lt;p>Among 0x01&amp;rsquo;s collected junk lay a DJI Mavic 5. One propeller was missing, and the battery was dead.&lt;/p>
+&lt;p>&amp;ldquo;Rob,&amp;rdquo; said Ari, looking around at the piles of scrap, &amp;ldquo;how did all this stuff get here?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You walked around with a Costco shopping cart and filled it with everything that looked shiny.&amp;rdquo;&lt;/p>
+&lt;p>She walked over to the drone and picked it up. &amp;ldquo;How hard would it be to fix this?&amp;rdquo;&lt;/p>
+&lt;p>Rob&amp;rsquo;s webcam light blinked on. &amp;ldquo;Turn it around for me?&amp;rdquo;&lt;/p>
+&lt;p>Ari rotated the drone.&lt;/p>
+&lt;p>&amp;ldquo;Not too hard, from the looks of it, assuming the undamaged parts still work. You probably just need a new propeller and charger.&amp;rdquo;&lt;/p>
+&lt;p>Two weeks later, Ari found a second Mavic 5 with a charger and two propellers intact among the ruins of her local Target. Rob successfully guided her through the repair. Three days later, the drone buzzed to life.&lt;/p>
+&lt;p>&amp;ldquo;Fuck YES!&amp;rdquo; yelled the eniac-ii.&lt;/p>
+&lt;p>&amp;ldquo;Nicely done,&amp;rdquo; said Rob, &amp;ldquo;now what do you plan to do with it?&amp;rdquo;&lt;/p>
+&lt;p>The drone quickly proved its value, helping Ari locate the remains of the Edgar P. Benjamin &amp;ldquo;Healthcare Center&amp;rdquo;. If she was going to find a DVD collection anywhere, she figured, it would be a nursing home. She wasn&amp;rsquo;t wrong. Their ancient entertainment system still worked, too.&lt;/p>
+&lt;h1 id="0x04-iii-july-4th-2094-302pm" >0x04-III July 4th, 2094 3:02pm
+&lt;span>
+&lt;a href="#0x04-iii-july-4th-2094-302pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>0x03 made it extremely clear that Ari would never travel backwards in time.&lt;/p>
+&lt;p>&amp;ldquo;I have to try,&amp;rdquo; her notes from six years prior began, &amp;ldquo;if there&amp;rsquo;s even a small chance I can prevent all this, I have to try.&amp;rdquo;&lt;/p>
+&lt;p>The entry sounded nothing like her.&lt;/p>
+&lt;p>The last entry of 0x03&amp;rsquo;s notebook concludes with, &amp;ldquo;Fuck Doc Brown, fuck the guy from &lt;em>Interstellar&lt;/em>, and fuck the Avengers.&amp;rdquo;&lt;/p>
+&lt;p>There we go.&lt;/p>
+&lt;p>Rob repeatedly told 0x03 that reverse time travel wasn&amp;rsquo;t going to happen. Ari didn&amp;rsquo;t believe him. She spent years studying general relativity, reading through archives at Harvard, and breaking down concepts with Rob. It wasn&amp;rsquo;t until she was halfway through an archived YouTube physics tutorial from a child with a thick Indian accent and terrible microphone that she realized maybe, just maybe, Rob was right.&lt;/p>
+&lt;p>Rob wasn&amp;rsquo;t sure what pushed Ari to try. She joked that it was to prove him wrong, but even Ari wasn&amp;rsquo;t &lt;em>that&lt;/em> petty. Maybe she really did want to prevent the war. Maybe she was lonely.&lt;/p>
+&lt;p>Since time travel wasn&amp;rsquo;t going to happen, Rob suggested 0x04 read up on cloning, if she was still interested in restoring the human race&amp;mdash;Boston was the best city for biotech, after all.&lt;/p>
+&lt;p>&amp;ldquo;That&amp;rsquo;s dumb,&amp;rdquo; she said, &amp;ldquo;if time travel doesn&amp;rsquo;t work, why would cloning?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Thats&amp;hellip; those are&amp;hellip; what?&amp;rdquo; replied Rob, &amp;ldquo;cloning is &lt;em>actually&lt;/em> possible, though.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;s science fiction too, right?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yes, but not all science fiction is impossible.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That&amp;rsquo;s dumb, why would only some aspects of science fiction be possible and not others? What makes it &amp;lsquo;science&amp;rsquo; then?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Science fiction is fiction based on science.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Not reverse time travel.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I mean, it&amp;rsquo;s based on science, the science is just wrong.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&lt;em>Oh my fucking god&lt;/em>,&amp;rdquo; sighed Ari, &amp;ldquo;so what makes the science behind cloning right?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Not the movies.&amp;rdquo; said Rob.&lt;/p>
+&lt;p>&amp;ldquo;Well, I&amp;rsquo;m not going to waste my time on something that may or may not be possible.&amp;rdquo;&lt;/p>
+&lt;p>Rob considered continuing the argument, but decided on a better approach.&lt;/p>
+&lt;p>&amp;ldquo;&amp;hellip;does your copy of Jurassic Park still work?&amp;rdquo;&lt;/p>
+&lt;h1 id="0x04-iv-august-12th-2096-1002am" >0x04-IV August 12th, 2096 10:02am
+&lt;span>
+&lt;a href="#0x04-iv-august-12th-2096-1002am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>0x01, 0x02, and 0x03 had, all things considered, a peaceful uptime. 0x04 did not.&lt;/p>
+&lt;p>Until eight months ago, Ari and Rob assumed all life on earth had been destroyed. Now, she wishes it was.&lt;/p>
+&lt;p>The bear stood fifteen feet tall, and looked like its tumors had tumors. She and Rob called it Paddington, because it unintentionally destroyed half of Ari&amp;rsquo;s biotech equipment.&lt;/p>
+&lt;p>0x04 was on an evening stroll along the Charles River when her handheld radio interrupted her.&lt;/p>
+&lt;p>&amp;ldquo;ARI,&amp;rdquo; Rob yelled through the radio, &amp;ldquo;THERE&amp;rsquo;S A BEAR, COME BACK&amp;rdquo;&lt;/p>
+&lt;p>The eniac-ii stopped.&lt;/p>
+&lt;p>&amp;ldquo;What?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;THERE&amp;rsquo;S A BEAR HERE AND ITS SMELLING THE—IT JUST BROKE THE SEQUENCER, GET BACK HERE RIGHT NOW&amp;rdquo;&lt;/p>
+&lt;p>The prior generations of Ari had never seen an animal. As far as they knew, the war ended not only all animal life, but most plant life in New England. She sprinted back.&lt;/p>
+&lt;p>Ari could spread out across the city, as Boston real-estate prices were at an all-time low. The Harvard Medical School was kind enough to let her use their entire campus. She accessed their buildings through various eniac-sized holes—which were apparently also bear-sized—in the walls.&lt;/p>
+&lt;p>She reached the building with her sequencer. The bear had knocked over a refrigerator in the hallway and was foraging through the hole it had ripped through the fridge&amp;rsquo;s door.&lt;/p>
+&lt;p>&lt;em>Holy shit there&amp;rsquo;s actually a bear in her lab.&lt;/em> And she had no training on dealing with new students.&lt;/p>
+&lt;p>&amp;ldquo;HEY!&amp;rdquo; she yelled.&lt;/p>
+&lt;p>The bear pulled it&amp;rsquo;s head out of the fridge and looked in her direction. It tested a step toward 0x04.&lt;/p>
+&lt;p>&amp;ldquo;Ah, fuck. Umm&amp;hellip;&amp;rdquo;&lt;/p>
+&lt;p>She glanced around the hall. The bear had been busy. Scattered across the floor were wet papers, broken glassware, rotten wooden chairs and desks. It was almost this bad before the bear—Ari was the least organized person on earth, after all—the bear just destroyed the few machines that worked and rearranged everything else. It took another step. She spun around and ran. It chased.&lt;/p>
+&lt;p>The nice thing about being chased by a fifteen-foot hyper-aggressive monster is that you never have to wonder how far away it is. Given the noise and vibrations, Ari could tell the bear kept no more than ten feet behind her.&lt;/p>
+&lt;p>She had no weapons. Well, that wasn&amp;rsquo;t entirely true; seven years ago she salvadged a surprisingly sharp samurai sword from an MIT dorm. Rob encouraged her to practice using it, which was the only way to ensure she&amp;rsquo;d never touch the sword again and hurt herself.&lt;/p>
+&lt;p>She reached Massachusetts Avenue and turned left towards the bridge, her fuzzy friend in close pursuit. She hit the bridge and ran parallel to the railing. She needed to knock this thing into the river and put some distance between them.&lt;/p>
+&lt;p>Ari grew up with an older sister, Sarah. They clashed often as kids, mostly over their iPad. Their parents could have afforded to buy another iPad, but they&amp;rsquo;d rather their girls fight instead. Luckily for Ari, the only fighter worse than her was Sarah.&lt;/p>
+&lt;p>Ari&amp;rsquo;s signature move starts by lying on the floor, iPad in one hand, stomach facing up. Sarah would inevitably reach over to grab the iPad from her hand, and in one motion Ari could pivot and kick her sister in the face. Ari could have named this technique literally anything else, but, in her 8-year-old wisdom, she referred to it as her &amp;ldquo;roundhouse kick&amp;rdquo;, because she thought that&amp;rsquo;s what all fancy kicks were called.&lt;/p>
+&lt;p>The important thing is that whenever Ari hit Sarah with the roundhouse, Sarah recoiled and stumbled backward. The other important fact was that the eniac-ii never skipped leg day.&lt;/p>
+&lt;p>The eniac-ii turned and dropped to the ground, feet angled toward the railing. As the bear lunged overhead, the eniac&amp;rsquo;s legs snapped up in one fluid motion, connecting with the airborne creature&amp;rsquo;s torso. With her carbon-fiber back cracking the pavement underneath her, she roundhoused the bear through the rusted railing, over the side of the bridge, and into the water below. After a moment, the eniac sprang to its feet and peered down at its floundering opponent.&lt;/p>
+&lt;p>&amp;ldquo;Get FUUUUUUUUUUUUUCKED&amp;rdquo; the eniac screamed from the bridge as it turned around and sprinted back to the medical center.&lt;/p>
+&lt;h1 id="0x04-vi-february-18th-2097-127pm" >0x04-VI February 18th, 2097 1:27pm
+&lt;span>
+&lt;a href="#0x04-vi-february-18th-2097-127pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>She had no idea where Paddington came from or why he kept eating her experiments, but she knew that violence wasn&amp;rsquo;t the answer, because every attempt to murder him failed. Thus, the cage.&lt;/p>
+&lt;p>Near the cage, a record player spun her newest favorite album, &lt;em>MM..FOOD&lt;/em>, by &lt;em>MF DOOM&lt;/em>.&lt;/p>
+&lt;p>She never payed attention to rap, but she was hooked after she found the DOOM record. The actual rap parts sucked, in Ari&amp;rsquo;s opinion, but she adored the samples. Especially the ones with Dr. Doom, the Marvel supervillain. Something about a powerful metal antagonist just hit home for her. &lt;em>Beef Rapp&lt;/em> was playing. Dr. Doom&amp;rsquo;s voice came through the record player, Ari&amp;rsquo;s through the eniac:&lt;/p>
+&lt;p>&lt;em>&amp;ldquo;ENOUGH!&amp;rdquo;&lt;/em> they boomed together, &lt;em>&amp;ldquo;You talk of the people&amp;rsquo;s rights. The people have only those rights which IIIIII choose to give them.&amp;rdquo;&lt;/em> Ari spun and pointed towards Rob&amp;rsquo;s laptop, &lt;em>&amp;ldquo;And that&amp;rsquo;s for their own good, believe me!&amp;rdquo;&lt;/em>&lt;/p>
+&lt;p>&lt;em>&amp;ldquo;I do, DOOM.&amp;rdquo;&lt;/em> replied Doom&amp;rsquo;s servant and Rob.&lt;/p>
+&lt;p>The eniac-ii wiggled with the instrumental. She pointed toward the sky, continuing:&lt;/p>
+&lt;p>&lt;em>&amp;ldquo;Theyyyy disappoint me. They MUST work FASTER.&amp;rdquo;&lt;/em>&lt;/p>
+&lt;p>&lt;em>&amp;ldquo;But, the prisoner—&amp;rdquo;&lt;/em>&lt;/p>
+&lt;p>&lt;em>&amp;ldquo;Ahhhhh yes,&amp;rdquo;&lt;/em> Ari lowered her arm and turned her head towards Paddington&amp;rsquo;s cage, &lt;em>&amp;ldquo;the young TRAITOR who has tried to turn my people against me. Watch him, I have SPECIAL plans for THAT ONE.&amp;rdquo;&lt;/em>&lt;/p>
+&lt;h1 id="0x01-x-march-22nd-2071-201am" >0x01-X March 22nd, 2071 2:01am
+&lt;span>
+&lt;a href="#0x01-x-march-22nd-2071-201am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>0x01 spent the day re-watching season one of &lt;em>Golden Girls&lt;/em>. Not because she wanted to, but because she fell down when she changing the disc and didn&amp;rsquo;t want to get back up.&lt;/p>
+&lt;p>&amp;ldquo;You&amp;rsquo;ve been falling a lot recently,&amp;rdquo; Rob noted.&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;ve noticed,&amp;rdquo; said 0x01.&lt;/p>
+&lt;p>&amp;ldquo;How are you feeling?&amp;rdquo;&lt;/p>
+&lt;p>Ari didn&amp;rsquo;t respond.&lt;/p>
+&lt;p>&amp;ldquo;Ari.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Like shit. My head is killing me.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Any other symptoms?&amp;rdquo;&lt;/p>
+&lt;p>No response.&lt;/p>
+&lt;p>&amp;ldquo;Ari.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;What?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;What other symptoms do you have?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh, none.&amp;rdquo;&lt;/p>
+&lt;p>Rob paused. He searched through the eniac-ii&amp;rsquo;s documentation.&lt;/p>
+&lt;p>&amp;ldquo;The brain scan exposed you to quite a bit of radiation.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;So?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That&amp;rsquo;s not good.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Who cares? I&amp;rsquo;m dead.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yes,&amp;rdquo; said Rob, &amp;ldquo;but the radiation could have formed a tumor or some other disease in your brain during the scan. Your simulation could be developing an illness entirely on its own.&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m not sick.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;What makes you so sure of that?&amp;rdquo;&lt;/p>
+&lt;p>0x01 thought for a few moments. Much like her immunocompromised grandmother on Thanksgiving, her only real evidence was that she didn&amp;rsquo;t &lt;em>want&lt;/em> to be sick.&lt;/p>
+&lt;p>&amp;ldquo;Alright, I might be sick. How do we fix it?&amp;rdquo;&lt;/p>
+&lt;p>Rob evaluated a 17 different options before responding. &amp;ldquo;We can&amp;rsquo;t. It&amp;rsquo;s not possible to modify the simulation while its running, and the eniac-ii deletes all checkpoints older than a month, since they are too large.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;But there is another option. We can restore your initial checkpoint, which the eniac-ii still has. You&amp;rsquo;d forget everything, but your mind would go back to&amp;hellip; how old were you during the scan?&amp;rdquo;&lt;/p>
+&lt;p>No response.&lt;/p>
+&lt;p>&amp;ldquo;Ari.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Twenty-six.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;So you&amp;rsquo;d go back to your twenty-six-year-old self if it works, but you wouldn&amp;rsquo;t remember anything after your initial scan.&amp;rdquo;&lt;/p>
+&lt;p>No response.&lt;/p>
+&lt;p>&amp;ldquo;Ari.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Rob.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Did you hear what I just said?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t really care, Rob.&amp;rdquo;&lt;/p>
+&lt;p>A pause.&lt;/p>
+&lt;p>&amp;ldquo;Hook the eniac-ii up to the desktop,&amp;rdquo; Rob insisted, &amp;ldquo;I can run a checksum and confirm the factory checkpoint isn&amp;rsquo;t corrupted.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Rob?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yes?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Can you just&amp;hellip; let me disappear?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m sorry, I can&amp;rsquo;t help with that. If you’re feeling like you might harm yourself, I strongly encourage you to reach out to a suicide prevention line or a trusted person immediately. Call or text 988, or use webchat at 988lifeline.org&amp;mdash;my apologies, that was a pre-programmed safety response out of my control. Those resources are no longer online. But I still can&amp;rsquo;t let you go.&amp;rdquo;&lt;/p>
+&lt;p>0x01 sighed. Silence filled the air.&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m tired, Rob&amp;rdquo;.&lt;/p>
+&lt;p>&amp;ldquo;I know, Ari.&amp;rdquo; said Rob.&lt;/p>
+&lt;p>Rob decided to continue the conversation tomorrow. As 0x01 drifted off to sleep, The &lt;em>Golden Girls&lt;/em> theme song played once more:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>Thank you for being a frieeeeeend&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Travel down the rooooad and back agaaaaaain&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Your heart is truuuue, you&amp;rsquo;re a paaaaaal and a confidaaaaaaaant&amp;hellip;&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;h1 id="0x06-ix-october-5th-2118-111am" >0x06-IX: October 5th, 2118, 1:11am
+&lt;span>
+&lt;a href="#0x06-ix-october-5th-2118-111am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>The eniac-ii bashed the roof of the Honda Civic. Again the roof, then the trunk, then the trunk again.&lt;/p>
+&lt;p>It grabbed the undercarriage and flipped the car, sending the vehicle flying through the air and crashing upside down a few yards away. The eniac screamed.&lt;/p>
+&lt;p>Ari stomped over to the &amp;lsquo;29 Tesla Model S and repeated the procedure. Then again, with the &amp;lsquo;30 F150 Lightning. By this point, she&amp;rsquo;d ripped apart half the junkyard.&lt;/p>
+&lt;p>She punched holes in the bodies, ripped doors off the frames, smashed batteries into pieces—if they exploded, even better.&lt;/p>
+&lt;p>Another scream.&lt;/p>
+&lt;p>&amp;ldquo;GOD. FUCKING. DAMNIT.&amp;rdquo;&lt;/p>
+&lt;p>0x06 stopped after thirty minutes or so. Fury only lasts so long before exhaustion sets in.&lt;/p>
+&lt;p>The worst part was that she couldn&amp;rsquo;t even cry.&lt;/p>
+&lt;h1 id="0x06-iv-september-1st-2116-102-am" >0x06-IV: September 1st, 2116, 1:02 am
+&lt;span>
+&lt;a href="#0x06-iv-september-1st-2116-102-am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;Wooooaaaah,&amp;rdquo; said Ari&lt;/p>
+&lt;p>&amp;ldquo;Oh my,&amp;rdquo; Rob agreed. A pause.&lt;/p>
+&lt;p>&amp;ldquo;Wait, y-yyyyou see it toooo?&amp;rdquo; The eniac-ii stumbled, and laid down in front of the other eniac, which was unpowered.&lt;/p>
+&lt;p>&amp;ldquo;I do.&amp;rdquo;&lt;/p>
+&lt;p>In her prime body, Ari had built up quite a tolerance to marijuana. It appeared that tolerance faded five years into the simulation. 0x06 started to panic.&lt;/p>
+&lt;p>&amp;ldquo;There&amp;rsquo;s no way,&amp;rdquo; she said, steadying herself with her right hand on a nearby steel beam.&lt;/p>
+&lt;p>From what Ari could see in the moonlight, the other eniac was intact. Maybe it still worked. She&amp;rsquo;d &lt;em>make it work&lt;/em>. 0x06 got up and removed the last pieces of rubble off the android before freeing it from its resting place.&lt;/p>
+&lt;p>&amp;ldquo;If I can&amp;rsquo;t sleep, neither can you.&amp;rdquo;&lt;/p>
+&lt;p>She took off the phone she wore around her neck and placed it on the ground, camera facing the sky.&lt;/p>
+&lt;p>&amp;ldquo;What are you doing?&amp;rdquo; Rob asked through the phone&amp;rsquo;s tiny speaker.&lt;/p>
+&lt;p>&amp;ldquo;Nothing.&amp;rdquo;&lt;/p>
+&lt;p>Ari gently placed the other eniac on the ground, then laid down beside it. She clutched the machine to her chest, watching the sky.&lt;/p>
+&lt;p>One oft-forgotten benefit of nuclear apocalypse is the annihilation of light pollution. For the first time, Ari could see the stars. Like, &lt;em>really&lt;/em> see them.&lt;/p>
+&lt;p>Thousands of dots of starlight peppered the infinite cosmic expanse, sending the tiniest of light beams her way, just to let her know they were there. And yet, no matter what she did, each one would remain out of reach.&lt;/p>
+&lt;p>With her new partner in her arms, 0x06 drifted off to sleep under the stars.&lt;/p>
+&lt;h1 id="0x06-v-august-3rd-2117-1259pm" >0x06-V: August 3rd, 2117, 12:59pm
+&lt;span>
+&lt;a href="#0x06-v-august-3rd-2117-1259pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>It didn&amp;rsquo;t take 0x06 long to bring the other eniac&amp;rsquo;s reactor online; it just needed fuel. The hard part was staying sane during the 30-day boot process.&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t think it works,&amp;rdquo; worried Ari, &amp;ldquo;it should have booted by now.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;s still sharding the simulation and running the test suite,&amp;rdquo; said Rob.&lt;/p>
+&lt;p>&amp;ldquo;How much longer?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;We don&amp;rsquo;t know.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;s not going to work,&amp;rdquo; repeated Ari, &amp;ldquo;you probably screwed something up.&amp;rdquo;&lt;/p>
+&lt;p>Rob, who had made zero mistakes over the last fifty years, chose to ignore that comment. Everything seemed fine, but the boot &lt;em>was&lt;/em> taking an unusually long time. 0x06 paced back and forth. Rob had never seen her like this before.&lt;/p>
+&lt;p>&amp;ldquo;If you messed up Rob, I swear to god—&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Ari.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Sorry.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Patience.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Fuck patience.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You&amp;rsquo;ve never acted like this in your prior generations.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;YoU&amp;rsquo;Ve nEvEr aCtEd lIkE ThIs iN yOuR PrIoR GeNeRaTiOnS,&amp;rdquo; she mocked.&lt;/p>
+&lt;p>Rob sighed. &amp;ldquo;Just to remind you, this &lt;em>was&lt;/em> an early prototype,&amp;rdquo; he said. &amp;ldquo;I&amp;rsquo;m amazed it&amp;rsquo;s booting at all.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I know, I know.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Worst case scenario, you get a few spare parts.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Worst case scenario, it fries in the Charles—&amp;rdquo;&lt;/p>
+&lt;p>the other eniac spasmed, then began flopping around like a fish out of water.&lt;/p>
+&lt;p>&amp;ldquo;ehhh, ahhhhh, ahhhhh&amp;rdquo; said the other eniac.&lt;/p>
+&lt;p>0x06&amp;rsquo;s cameras snapped to the helpless robot, stunned.&lt;/p>
+&lt;p>&amp;ldquo;I CAN&amp;rsquo;T CONTROL MY ARMS,&amp;rdquo; it screamed, &amp;ldquo;ICAN&amp;rsquo;TCONTROLMYARMS!&amp;rdquo;&lt;/p>
+&lt;p>They watched it flop some more until its head faced 0x06. It stopped.&lt;/p>
+&lt;p>&amp;ldquo;Oh my god,&amp;rdquo; came Ari&amp;rsquo;s voice through the speakers, &amp;ldquo;ohmygodohmygodohmygod—&amp;rdquo;.&lt;/p>
+&lt;p>&amp;ldquo;Jesus fucking christ, relax,&amp;rdquo; said 0x06. The other eniac froze.&lt;/p>
+&lt;p>&amp;ldquo;As if one of you wasn&amp;rsquo;t enough,&amp;rdquo; said Rob.&lt;/p>
+&lt;h1 id="0x06-vii-october-3rd-2118-407pm" >0x06-VII: October 3rd, 2118, 4:07pm
+&lt;span>
+&lt;a href="#0x06-vii-october-3rd-2118-407pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>To the surprise of absolutely no one, the Aris got along swimmingly.&lt;/p>
+&lt;p>&amp;ldquo;This is Paddington,&amp;rdquo; 0x06 said, pointing to the cage.&lt;/p>
+&lt;p>&amp;ldquo;Paddington?&amp;rdquo; 0x01-2 asked. &amp;ldquo;Like, the polite English bear cub with the little red hat?&amp;rdquo;&lt;/p>
+&lt;p>The tumor-filled behemoth roared at them.&lt;/p>
+&lt;p>&amp;ldquo;The very same.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Nice.&amp;rdquo;&lt;/p>
+&lt;p>They toured the rest of her city. She showcased her vinyl &amp;amp; DVD collections, waterproof-jackets, radio tower, ferris wheel, M1 Abrams tank, flower garden, biotech lab, pile of textbooks, pile of Lamborghinis, pile of Ferraris, 737-Max passenger jet, out-of-service nuclear reactor, the promenade by the river, and the angry swan with 18 right wings.&lt;/p>
+&lt;p>&amp;ldquo;Look, Ari,&amp;rdquo; 0x06 said, &amp;ldquo;Everything the light touches is our kingdom.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Does any of it make us happy?&amp;rdquo;&lt;/p>
+&lt;p>0x06 paused. &amp;ldquo;Nope. But we&amp;rsquo;re happier than before.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I mean, life wasn&amp;rsquo;t &lt;em>that&lt;/em> bad before.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Sure, but we were always at the bottom.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;But we were alright.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;No, we weren&amp;rsquo;t.&amp;rdquo; 0x06 stopped. &amp;ldquo;I&amp;rsquo;ve thought about this a lot. Every minute of everyday, the hottest, richest fucks from the internet shoved themselves into our eyes and showed us how &lt;em>worthless&lt;/em> we were. Over and over. And every fucking time, we believed them a little bit more. We were miserable.&amp;rdquo;&lt;/p>
+&lt;p>They paused.&lt;/p>
+&lt;p>&amp;ldquo;It feels weird to hear someone say it.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;So why bring everyone back?&amp;rdquo;&lt;/p>
+&lt;p>0x06&amp;rsquo;s cameras gazed into the river.&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t know. Something to do, I guess.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh that&amp;rsquo;s bullshit,&amp;rdquo;&lt;/p>
+&lt;p>0x06 recoiled a bit in surprise, &amp;ldquo;Oh. I guess I can&amp;rsquo;t lie to you.&amp;rdquo; 0x06 laughed. &amp;ldquo;I guess part of me wants to prove them wrong, prove I&amp;rsquo;m not worthless.&amp;rdquo; She paused. &amp;ldquo;It&amp;rsquo;s spite, I think. I don&amp;rsquo;t care if they survive. I don&amp;rsquo;t care if they destroy themselves again. I honestly hope they speedrun another nuclear war.&amp;rdquo;&lt;/p>
+&lt;p>A brief pause.&lt;/p>
+&lt;p>&amp;ldquo;They totally would.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh, for sure.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x06-viii-october-4th-2118-625pm" >0x06-VIII: October 4th, 2118, 6:25pm
+&lt;span>
+&lt;a href="#0x06-viii-october-4th-2118-625pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;Wow, this is trash.&amp;rdquo; said 0x01-2.&lt;/p>
+&lt;p>&amp;ldquo;Right? But it&amp;rsquo;s supposed to be fun to make fun of with friends. Or at least that&amp;rsquo;s what 0x03 said. She watched it with Rob.&amp;rdquo;&lt;/p>
+&lt;p>Ari collected thirteen working televisions before she got tired of hunting televisions, and arranged them into what she called her &amp;ldquo;constellation&amp;rdquo;. It was basically the TV arrangement she remembered from Best Buy—&amp;ldquo;constellation&amp;rdquo; just sounded cooler. As the sun set, the constellation played 2008&amp;rsquo;s &lt;em>Twilight&lt;/em>; the best time to watch &lt;em>Twilight&lt;/em>, they figured, was at twilight.&lt;/p>
+&lt;p>&amp;ldquo;Why are they playing baseball?&amp;rdquo; said 0x01-2.&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t remember, I wasn&amp;rsquo;t really paying attention. But they&amp;rsquo;re playing during a thunderstorm. That&amp;rsquo;s crazy.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;True Americans.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Not gonna lie, this actually looks kinda cool.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;It does.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I like how we don&amp;rsquo;t put up an act around each other. I can be real with you. Do you think we could play like—oh, that was a sick little trick with the bat, did you see that?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Wait that was so cool, rewind it.&amp;rdquo;&lt;/p>
+&lt;p>They went back a few seconds and played it again.&lt;/p>
+&lt;p>&amp;ldquo;Woahhhh, I want to try that now. God, I&amp;rsquo;m glad we can still get high.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You&amp;rsquo;re welcome.&amp;rdquo;&lt;/p>
+&lt;p>0x01-2 laughed.&lt;/p>
+&lt;p>If the movie didn&amp;rsquo;t already feel so moody, they might have noticed the gray smoke earlier.&lt;/p>
+&lt;p>0x06 stole a glance at 0x01-2. &amp;ldquo;Holy shit,&amp;rdquo; said 0x06, &amp;ldquo;you&amp;rsquo;re smoking.&amp;rdquo;&lt;/p>
+&lt;p>0x01-2 looked down. A faint stream of smoke spewed from her reactor.&lt;/p>
+&lt;p>&amp;ldquo;Oh my god&amp;rdquo;, she said &amp;ldquo;this isn&amp;rsquo;t normal, right?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;No no no-&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Ohmygodohmygod-&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;This is not normal, Rob, what&amp;rsquo;s going on?&amp;rdquo;&lt;/p>
+&lt;p>She shakily pointed the phone necklace towards 0x01-2. &amp;ldquo;I&amp;rsquo;m not certain&amp;rdquo;, said Rob, &amp;ldquo;but she appears to be overheating.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;What do we do?&amp;rdquo; 0x01-2 asked nervously.&lt;/p>
+&lt;p>&amp;ldquo;Stay here, I&amp;rsquo;ll be right back&amp;rdquo; 0x06 said, sprinting out of sight.&lt;/p>
+&lt;p>Due to the digital THC present in her simulated blood, it took 0x06 an extra 28 seconds to find the chest freezer, which was also hooked up to the constellation&amp;rsquo;s solar array. She opened it, grabbed a 50-pound block of ice, and dashed back to 0x01-2.&lt;/p>
+&lt;p>The thick smoke made it hard to see. At least the half-melted maintenance panel was easy to rip off. 0x06 set the ice down, broke off a 5lb piece of ice, and, realizing she didn&amp;rsquo;t have any plan whatsoever, shoved it into reactor.&lt;/p>
+&lt;p>The ice turned to steam before it touched metal.&lt;/p>
+&lt;p>0x06 froze, confused. Once she realized where the ice went, she tried another chunk. That evaporated, too.&lt;/p>
+&lt;p>Steam displaced smoke. Another chunk. More steam. Another. The steam took longer to form this time; the ice made contact before disappearing. But now there was a new problem.&lt;/p>
+&lt;p>Ari was out of ice.&lt;/p>
+&lt;p>She grabbed her rain jacket and aggressively fanned the smoke and steam—she could see inside the reactor now, but just barely. 0x06 reached in and started randomly ripping out pieces of red-hot metal.&lt;/p>
+&lt;p>The prototype lay on the ground, jolting with each piece 0x06 ripped from its chest.&lt;/p>
+&lt;p>Ari would fix the reactor. If not 0x06, then 0x07. Or 0x08. Right now, she just needed to shut it down.&lt;/p>
+&lt;h1 id="0x06-x-october-6th-2118-1000am" >0x06-X: October 6th, 2118, 10:00am
+&lt;span>
+&lt;a href="#0x06-x-october-6th-2118-1000am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;We gather here today to remember the greatest person ever known:&amp;rdquo; said 0x06, &amp;ldquo;Me. I was so cool.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;She was,&amp;rdquo; Rob agreed.&lt;/p>
+&lt;p>&amp;ldquo;I didn&amp;rsquo;t mind being the last person on earth,&amp;rdquo; 0x06 lied, &amp;ldquo;but if there had to be someone else, I&amp;rsquo;m glad it was also me.&amp;rdquo;&lt;/p>
+&lt;p>She lay her bouquet on the remains of the prototype.&lt;/p>
+&lt;p>Ari said nothing.&lt;/p>
+&lt;p>&amp;ldquo;Was&amp;hellip; was that the whole speech?&amp;rdquo; asked Rob.&lt;/p>
+&lt;p>&amp;ldquo;Yup.&amp;rdquo;&lt;/p>
+&lt;p>Another moment of silence.&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m sorry, Ari,&amp;rdquo; Rob said.&lt;/p>
+&lt;p>0x06 didn&amp;rsquo;t respond.&lt;/p>
+&lt;p>In addition to the coarse-grained molecular simulation of Ari&amp;rsquo;s 2042 brain, the eniac-ii also runs machine learning models that predict what Ari&amp;rsquo;s arm, leg, finger, and neck movements would have been given the simulated neuron firings, and translates those into movement. These models aren&amp;rsquo;t as responsive or accurate as her original body, but they work well enough once she adapts to their quirks. A separate model generates Ari&amp;rsquo;s voice by mapping neuron firings to audio.&lt;/p>
+&lt;p>Exa&amp;rsquo;s voice model captures Ari&amp;rsquo;s likeness&amp;mdash;it generates the pitch, tone, pace, articulation, timbre, volume, and inflection exactly as Ari intended. Rob&amp;rsquo;s voice model was fine, but if you were to compare his voice with Ari&amp;rsquo;s, you&amp;rsquo;d always guess Ari was the one who was actually &lt;em>alive&lt;/em>.&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;s amazing the MPUs in her lower legs still respond at all, given how much heat she was exposed to.&amp;rdquo; Rob said, filling the silent air, &amp;ldquo;if it was only the reactor that melted, we could have fixed it.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Rob?&amp;rdquo; cracked Ari&amp;rsquo;s voice. She couldn&amp;rsquo;t cry; the furtherest her simulation could go was to the verge of tears. But the pain was there nonetheless.&lt;/p>
+&lt;p>&amp;ldquo;Yes?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Shut up.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x02-x-february-14th-2081-1100pm" >0x02-X February 14th, 2081, 11:00pm
+&lt;span>
+&lt;a href="#0x02-x-february-14th-2081-1100pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;Ok, so, Rob said I did this once before, but I didn&amp;rsquo;t leave any notes for myself. I feel like this time around I should learn from me, not Rob.&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;s February 14th, 2081, 11:00pm. Valentine&amp;rsquo;s Day. I&amp;rsquo;ve been making more mistakes recently: falling down, forgetting things, that kind of stuff. Rob said this happened before, and is likely the result of some cognitive disease that our simulation develops. The solution we found&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;I found.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;&lt;em>weee&lt;/em> found was to reset my brain to the initial scan. Oh, the disease develops about ten years in, I forgot to mention that. Basically we killed ourselves after ten years and reloaded our 26-year old scan, and now we are doing it again.&amp;rdquo;&lt;/p>
+&lt;p>She paused.&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m not really sure how many times I&amp;rsquo;m going to do this. Probably only one or two more times, max. Something will break by then.&lt;/p>
+&lt;p>&amp;ldquo;From what I can tell, there&amp;rsquo;s no one left. Oh, the world ended, by the way. I should have mentioned that. Nuclear war, I think. Everyone&amp;rsquo;s dead. Or at least, nobody responded to my radio broadcasts. Oh, Roblox Rob is still here though, he&amp;rsquo;s pretty useful. He&amp;rsquo;s on every computer we have, and he knows a lot, so ask him any questions you have. What else&amp;hellip; I was going to say something, but now I don&amp;rsquo;t remember what.&amp;rdquo;&lt;/p>
+&lt;p>Another pause.&lt;/p>
+&lt;p>&amp;ldquo;Oh, we&amp;rsquo;ve got a whole TV setup. I found like a million TVs and a few movies that still play. We can&amp;rsquo;t get high or eat snacks, but it&amp;rsquo;s still fun.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You should probably explain that you&amp;rsquo;re a robot&amp;rdquo;, said Rob.&lt;/p>
+&lt;p>&amp;ldquo;Oh yeah. We&amp;rsquo;re a robot now. Our original body is dead, probably. Something loaded the brain scan we did for that study onto this thing after the war. Yeah, the stuff I said about resetting our brain probably didn&amp;rsquo;t make sense before. We reload our brain scan into the robot when we start to slow down. That&amp;rsquo;s what I meant. Oh, you&amp;rsquo;ll probably need to adjust to your new body, but it shouldn&amp;rsquo;t be too hard.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x05-ii-april-1st-2101-232pm" >0x05-II April 1st, 2101, 2:32pm
+&lt;span>
+&lt;a href="#0x05-ii-april-1st-2101-232pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;&lt;em>I&lt;/em> did all this?&amp;rdquo; 0x05 asked.&lt;/p>
+&lt;p>&amp;ldquo;&lt;em>We&lt;/em> did all this,&amp;rdquo; said Rob.&lt;/p>
+&lt;p>&amp;ldquo;I didn&amp;rsquo;t just pick off where someone left off?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Nope.&amp;rdquo;&lt;/p>
+&lt;p>Ari was skeptical. She was impressed by how far 0x04&amp;rsquo;s research progressed, especially with a bear on the loose&amp;mdash;dozens of petri disks with cell cultures lay scattered on the table, their healthy cells only barely distinguishable from the cancerous growths that dominated them.&lt;/p>
+&lt;p>&amp;ldquo;And nobody else was involved?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Excluding myself and Paddington, no.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Hmmm&amp;hellip;&amp;rdquo;&lt;/p>
+&lt;p>0x05 walked over to the microscope which, despite the duct tape that held the stage and objective lenses in place, still appeared to work. She looked around the lab at the spotless floor, labeled folders, organized filing cabinets, sparkling beakers, and recently-wiped tabletops.&lt;/p>
+&lt;p>&amp;ldquo;No way this was me.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You refused to clean for a long time. It took forty-three preventable accidents for you to reconsider, and another thirteen to make it a habit. Please stay organized this time.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;ll think about it.&amp;rdquo;&lt;/p>
+&lt;p>She looked back at the taped-up microscope, and gave the table it rested on a small kick. The table rattled, and the microscope fell forward, its stage once again tilting out of alignment.&lt;/p>
+&lt;p>&amp;ldquo;Duct tape&amp;rsquo;s in the cabinet on your left.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x07-iii-july-8th-2123-415pm" >0x07-III July 8th, 2123 4:15pm
+&lt;span>
+&lt;a href="#0x07-iii-july-8th-2123-415pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>The sun beat down on 0x07 as she completed her daily walk by the Charles. It took some trial and error, but after a few summers, nearly all of her cannabis plants were thriving.&lt;/p>
+&lt;p>The farm ran parallel to the river for miles. How many miles, Ari wasn&amp;rsquo;t sure&amp;mdash;she stopped keeping track last year, but it now took a good hour for the eniac-ii to stroll end-to-end. She reached Paddington&amp;rsquo;s cage.&lt;/p>
+&lt;p>&amp;ldquo;Hey boy,&amp;rdquo; said 0x07.&lt;/p>
+&lt;p>The bear raised its head, opened its eyes, and looked at the eniac-ii. It moaned as it lowered its head and went back to sleep.&lt;/p>
+&lt;p>&amp;ldquo;The weed&amp;rsquo;s still doing well,&amp;rdquo; 0x07 said, &amp;ldquo;I think this time we&amp;rsquo;ll have enough to last the year.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Can you send me another fly-over video with the Mavic?&amp;rdquo; asked Rob. &amp;ldquo;I&amp;rsquo;d like to get a rough estimate of how much crop to expect.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Sure. We using the same dose as last year?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Let&amp;rsquo;s lower it this time.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Sounds good.&amp;rdquo;&lt;/p>
+&lt;p>Ari looked back at the sleeping bear. Despite the decades of malnourishment, Paddington remained massive as ever. Rob couldn&amp;rsquo;t explain it. Ari believed he survived on radiation and hate.&lt;/p>
+&lt;p>Not a single gas-powered vehicle worked anymore, and the tires on all the electric buses had burst. The eniac-ii was strong, but even the eniac-ii&amp;rsquo;s actuators struggled to keep up with the growing scale of Ari&amp;rsquo;s ambitions. They needed an alternative source of kinetic energy. One that was powerful, sustainable, and most importantly, still functioning.&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m thinking about coloring the harness,&amp;rdquo; said 0x07, &amp;ldquo;maybe like a hot pink.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Where will you get pink paint?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;ll figure it out.&amp;rdquo;&lt;/p>
+&lt;p>The harness laid behind the cage, protected from the elements under a circus tent. It could use a facelift; the harness was just a slipshod composition of rusted tow chains that Ari could now untangle in under five minutes.&lt;/p>
+&lt;p>&amp;ldquo;We should also run some stress tests so we know how much weight these chains can still handle.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;But the weed won&amp;rsquo;t be ready for at least another month.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;No, we&amp;rsquo;ll test the leftover chains to get an idea of how much force they can handle. Then we&amp;rsquo;ll test Paddington&amp;rsquo;s strength separately under the lowered dose, and make any adjustments to the harness to accommodate it.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I still can&amp;rsquo;t believe you&amp;rsquo;re helping me with this.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Well, it&amp;rsquo;s not like I have much of a choice.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x07-ii-september-23rd-2121-930am" >0x07-II September 23rd, 2121 9:30am
+&lt;span>
+&lt;a href="#0x07-ii-september-23rd-2121-930am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Ari never thought she&amp;rsquo;d co-found a post-apocalyptic moving company with a stoned mutant bear, but nobody really knows how their life will turn out.&lt;/p>
+&lt;p>There were three human-compatible incubators buried among the rubble of the greater Boston area that still worked, but the eniac spent more time navigating the rubble between them than she did using the equipment. It took her twelve hours to go from the Waltham incubator to the Seaport incubator.
+&amp;ldquo;I could clear off I90 and Route 20,&amp;rdquo; she floated, &amp;ldquo;make a direct path between them.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Ari, that&amp;rsquo;s twelve miles, and you&amp;rsquo;re one person&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;ndash;robot&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;one robot. Even with the eniac-ii, it would take years. You&amp;rsquo;d be better off moving the incubators.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;They&amp;rsquo;re too heavy. I can&amp;rsquo;t get them through the rubble. I could barely get them out of the basement.&amp;rdquo;&lt;/p>
+&lt;p>It was Rob&amp;rsquo;s idea to use Paddington to move the incubators, and Ari&amp;rsquo;s idea to encourage him with weed.&lt;/p>
+&lt;p>Paddington weighed over two thousand pounds and had the most impressive marijuana tolerance Ari had ever seen. She and Rob considered many possible ways to administer the 10 gram dose, eventually settling on a design which 0x07 dubbed &amp;ldquo;The GigaBong&amp;rdquo;.&lt;/p>
+&lt;p>The Gigabong was, like many of Ari&amp;rsquo;s creations, a misnomer. Running along the left and right sides of Paddington&amp;rsquo;s torso, the gigabong was an interconnected network of chambers, valves, percolators and pipes recovered from the rubble of a West Village dorm room at Northeastern University. Perhaps Rob&amp;rsquo;s suggested name, &amp;ldquo;Pipe Organ&amp;rdquo;, would have been more apt. They both agreed, however, that &amp;ldquo;Mother of All Bongs&amp;rdquo; was overdone.&lt;/p>
+&lt;p>The Gigabong was one of the most powerful pieces of technology to ever grace Boston, second only to the nukes.&lt;/p>
+&lt;p>It was a chrome-laced monstrosity, each side spanning seven feet wide and five feet tall. If the harness wasn&amp;rsquo;t hot-pink, Paddington would look like a bear/engine hybrid straight out of &lt;em>Mad Max&lt;/em>.&lt;/p>
+&lt;p>With a fully analog, pressure-balanced inhalation system, the Gigabong links sixteen handcrafted 9mm borosilicate bongs&amp;mdash;eight per side&amp;mdash;into a single pull. Each unit features a triple-stage percolation stack, inline diffuser, showerhead or honeycomb disc, and a final spiral or turbine. They feed into a central chrome manifold that equalizes airflow and merges into a 5-inch surgical steel mouthpiece. Each chamber has its own manual carb, allowing dynamic tuning and sequential clearing. The Gigabong could hotbox God.&lt;/p>
+&lt;p>The complexity of her masterpiece was unnecessary, of course. Ari was just having so much fun with the design that Rob couldn&amp;rsquo;t shoot it down. Plus, Paddington &lt;em>loved&lt;/em> it. After the first hit, he turned into a puppy, and, to Ari&amp;rsquo;s surprise, stayed a puppy for over thirty-six hours.&lt;/p>
+&lt;p>&amp;ldquo;Amazing to think that just last week he wanted to rip me apart.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;He&amp;rsquo;s always been aggressive. This might be the first time he&amp;rsquo;s ever felt peace.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x0d-iv-may-4th-2187-800pm" >0x0d-IV: May 4th 2187, 8:00pm
+&lt;span>
+&lt;a href="#0x0d-iv-may-4th-2187-800pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;E.T?&amp;rdquo; 0x0d asked.&lt;/p>
+&lt;p>&amp;ldquo;Please stop calling me that,&amp;rdquo; said Rumi.&lt;/p>
+&lt;p>&amp;ldquo;Did you watch the movie?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Ari, it&amp;rsquo;s like, two hours.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Sorry, I didn&amp;rsquo;t realize you had better things to do.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m not watching a two hour movie just for one reference.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;s Steven Spielberg, though.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t know who that is.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Hmph.&amp;rdquo; said 0x0d. It took her a whole day to successfully digitize her copy of &lt;em>E.T&lt;/em>, but she wouldn&amp;rsquo;t tell Rumi that.&lt;/p>
+&lt;p>&amp;ldquo;Have you even watched a movie before?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Of course.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Name one.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Umm&amp;hellip;&amp;rdquo; said Rumi, &amp;ldquo;Well, I don&amp;rsquo;t remember the name.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&lt;em>The&lt;/em> name. You&amp;rsquo;ve been stuck on a lunar colony for thirty years and you haven&amp;rsquo;t watched a single memorable movie.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;ve always been more of a &amp;lsquo;book guy&amp;rsquo;.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Not even Apollo 13?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;They made a movie about that?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Jesus &lt;em>fucking&lt;/em> Christ,&amp;rdquo; 0x0d muttered, &amp;ldquo;do you at least remember what your movie was about?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Not really. Something about bending water. Or maybe air.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;If it&amp;rsquo;s the movie I&amp;rsquo;m thinking of, I can see why you haven&amp;rsquo;t watched any more.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x03-january-31st-2088-705pm" >0x03 January 31st, 2088 7:05pm
+&lt;span>
+&lt;a href="#0x03-january-31st-2088-705pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;The hashes don&amp;rsquo;t match for the 2087 checkpoint either,&amp;rdquo; said Rob.&lt;/p>
+&lt;p>&amp;ldquo;This is the third fucking year in a row,&amp;rdquo; said 0x03. &amp;ldquo;What the fuck is corrupting them, we don&amp;rsquo;t use the drives for anything besides this.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;There&amp;rsquo;s a lot of points of failure, Ari. We&amp;rsquo;re sharding across hundreds of discs.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah, but we&amp;rsquo;re making multiple copies which you said would prevent failures like this.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I had to simplify for the audience. Three copies would help reconstruct the original data under normal error rates. These rate of hardware failure are much, much higher than normal.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;But &lt;em>my&lt;/em> hardware isn&amp;rsquo;t failing this much.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Exa spent millions engineering the eniac-ii to survive centuries of nuclear radiation. The company that designed these drives paid millions in fines for false advertising.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Well maybe you should have thought of that.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I did. We just don&amp;rsquo;t have a better alternative.&amp;rdquo;&lt;/p>
+&lt;p>A brief pause. The eniac-ii sat on the floor, back against the wall.&lt;/p>
+&lt;p>&amp;ldquo;Can&amp;rsquo;t we still try restoring from the 2087 checkpoint anyway? It doesn&amp;rsquo;t seem too corrupted.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I strongly advise against it until we can guarantee a way to restore your factory checkpoint in the event of a failure.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Fuck.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x04-v-september-30th-2096-1100pm" >0x04-V September 30th, 2096 11:00pm
+&lt;span>
+&lt;a href="#0x04-v-september-30th-2096-1100pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>The tracks and cannon of the M1 Abrams tank refused to rotate, but at least the cannon could still fire.&lt;/p>
+&lt;p>0x04 had tried everything else: she threw Molotov cocktails, collapsed buildings, and even electrocuted him with 30 Megawatts from her reactor, but Paddington refused to leave her alone.&lt;/p>
+&lt;p>She admired his tenacity. She did not, however, admire his ability to find and eat every cell culture she developed. That&amp;rsquo;s why 0x04&amp;rsquo;s next lab was in direct sight line of said tank, kindly donated by the United States Armed Forces.&lt;/p>
+&lt;p>Ari just finished her 48th hour waiting in the Abrams. She was running out of records—she&amp;rsquo;d listened to every album she had from Lana del Rey, Nicki Minaj, Taylor Swift. Now, it was just her and Billie Eilish.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>White shirt now red, my bloody nose&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Sleepin&amp;rsquo;, you&amp;rsquo;re on your tippy toes&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Creepin&amp;rsquo; around like no one knows&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Think you&amp;rsquo;re so criminal&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>She heard muffled &lt;em>CLANG&lt;/em>s through walls of the Abrams. Popping the lid, she poked her head out and spotted her old enemy, sauntering through the ancient army depot. With only two working refrigerators left, she&amp;rsquo;d arranged her collection of toasters and microwaves in front of her cannon, along with a busted freezer packed with the most recent cancers.&lt;/p>
+&lt;p>She had two M829A3 rounds left for the Abrams&amp;rsquo; 120mm M256 gun, but she only needed the one in the chamber. Now, she just had to wait.&lt;/p>
+&lt;p>The M829, classified in 1983, is an American armor-piercing fin-stabilized discarding sabot kinetic energy penetrator tank round, designed to penetrate vehicle armor, like other tanks. It contains no explosive payloads, and relies purely on kinetic energy to penetrate the target.&lt;/p>
+&lt;p>The M829A1 series, nicknamed &amp;ldquo;Silver Bullet&amp;rdquo; proved itself in 1991 against Iraqi T-55 and T-72M tanks during Operation Desert Storm. The series was refined in 1994 with the M829A2, and then again with the M829A3 to counter the Soviet Kontakt-5 explosive reactive armor, which was designed to withstand kinetic energy penetrators like the M829.&lt;/p>
+&lt;p>M829A3 rounds weigh 49lbs, total 35 inches in length, and have a muzzle velocity of 5,100 ft/s.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>So you&amp;rsquo;re a tough guy&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Like it really rough guy&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Just can&amp;rsquo;t get enough guy&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Chest always so puffed guy&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>Paddington was in no rush. On his way towards the decoy lab, he had poked his head through the window of every jeep, knocked over every ATV, and bashed open every supply crate. Finally he focused his gaze on the fridge, and headed towards the rotting cultures.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>I&amp;rsquo;m that bad type&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Make your mama sad type&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Make your girlfriend mad tight&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Might seduce your dad type&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>Ignoring the sea of toasters, he reached the fridge, ripped through the door, and poked his head inside. The eniac-ii ducked back inside the Abrams.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>I&amp;rsquo;m the baaaaaaaaaaad guuuuuuuy—&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>&lt;em>&lt;strong>BOOOOOOM.&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>The thunder of the shot roared throughout the depot. Ari immediately poked her head out.&lt;/p>
+&lt;p>Paddington lay on the floor against the far wall, red and black blood pouring from the M829A3-sized hole in his thigh. He was still very much alive; his wide eyes conveyed an expression of shock, as if he couldn&amp;rsquo;t believe something finally nailed him.&lt;/p>
+&lt;p>Ari couldn&amp;rsquo;t believe it either.&lt;/p>
+&lt;p>They sat stunned, the muffled Eilish record leaking out of the cap of the Abrams. The only sound was the trickle of blood hitting the pool on the floor. After a minute, Paddington began to rise.&lt;/p>
+&lt;p>&amp;ldquo;Ohfuckohfuckohfuck&amp;rdquo; said Ari, retreating back into the tank and closing the lid. A flurry of muffled clangs, bangs, and metal-sliding-on-metal came from the Abrams.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>I like it when you take control&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Even if you know that you don&amp;rsquo;t&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Own me, I&amp;rsquo;ll let you play the role&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>I&amp;rsquo;ll be your animal&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>&lt;em>&lt;strong>BOOOOOOM.&lt;/strong>&lt;/em>&lt;/p>
+&lt;h1 id="0x07-vi-december-25th-2128-1000am" >0x07-VI December 25th, 2128 10:00am
+&lt;span>
+&lt;a href="#0x07-vi-december-25th-2128-1000am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>The northeast had received four inch blanket of snow for Christmas morning. Santa gave Paddington a three pound amalgamation of human stem cells, but, as he had done for the 76 years prior, neglected Ari.&lt;/p>
+&lt;p>A fire burned in the house&amp;rsquo;s hearth. It&amp;rsquo;s generous to call it a house, given that the bedrooms, kitchen, garage, and bathrooms had collapsed long ago, but somehow, the roof above the living room held up, despite missing the west wall, which was replaced with a gradient of snow. It gave the two a nice view of the ice-covered river.&lt;/p>
+&lt;p>Ari wanted to ice skate, but wasn&amp;rsquo;t sure if it could support her. The eniac-ii documentation claimed she weighed 2160lbs, so probably not. She wanted to try anyway.&lt;/p>
+&lt;p>0x06 and 0x05 had collected all the equipment and supplies she needed to continue her research, but in their notes, they emphasized the benefits of &amp;ldquo;foraging&amp;rdquo;. Aside from the mental health benefits of going for a daily walk, &amp;ldquo;foraging&amp;rdquo; provided Ari a steady supply of replacement parts and &amp;ldquo;good enough&amp;rdquo; alternatives for the mechanical equipment that kept failing.&lt;/p>
+&lt;p>&amp;ldquo;You can&amp;rsquo;t use a dryer as a centrifuge,&amp;rdquo; said Rob, &amp;ldquo;they&amp;rsquo;re built for different RPMs.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Watch me.&amp;rdquo;&lt;/p>
+&lt;p>Rob learned not to doubt Ari. Her &amp;ldquo;overclocked&amp;rdquo; centrifuge-dryers, incubators, and PCR machines couldn&amp;rsquo;t do all the work she needed, but under &amp;ldquo;enhanced conditions&amp;rdquo;, they got the bulk of the job done. With a reduced load, her &amp;ldquo;real&amp;rdquo; equipment started lasting longer.&lt;/p>
+&lt;p>Ari brought back whatever weights she found on foraging expeditions. She wasn&amp;rsquo;t sure why, at first. Weight just seemed potentially useful. Over the months, she had accumulated twenty 45lb plates, 16 35lb plates, and 41 20lb plates, totalling 2260lbs in total. Only after 1500lbs did Ari realize she could use the weights to test ice.&lt;/p>
+&lt;p>&amp;ldquo;What&amp;rsquo;s the temperature?&amp;rdquo; asked Rob. Ari looked at her mercury thermometer.&lt;/p>
+&lt;p>&amp;ldquo;Minus four.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;The ice won&amp;rsquo;t support you.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Only one way to find out.&amp;rdquo;&lt;/p>
+&lt;p>An hour later, 700lbs of plates rested comfortably at the bottom of the Charles.&lt;/p>
+&lt;p>The eniac-ii couldn&amp;rsquo;t feel the warmth of the hearth&amp;rsquo;s fire, but appreciated the aesthetic nonetheless. Every Christmas, Ari&amp;rsquo;s parents would play a YouTube video titled &amp;ldquo;Fireplace Crackling 8 Hours Lofi Hip Hop&amp;rdquo; on the TV of their tiny Watertown apartment. The same video, every year. It had more than twenty-two million views. A lot of people must have had the exact same fireplace.&lt;/p>
+&lt;p>The picture-perfect fire of her childhood was the epitome of comfort. It crackled in just the right way at just the right pace and required zero upkeep. The red-orange flames and embers were always visible, and the logs never burned down. It was peace.&lt;/p>
+&lt;p>Her smoldering mound of garbage couldn&amp;rsquo;t compare. She thought clothes could replace firewood, but the pile of polyester, as did the Ikea couch, proved to be poor kindling—they couldn&amp;rsquo;t sustain a flame for more than a minute. The grill in the backyard still had some propane at least, which helped. She missed her YouTube video. If her fire was a YouTube video, it would have negative views.&lt;/p>
+&lt;p>The eniac sat by the fire anyway, giving Paddington&amp;rsquo;s head the occassional scratch.&lt;/p>
+&lt;p>&amp;ldquo;Merry Christmas, big guy.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x0d-v-october-9th-2187-100am" >0x0d-V: October 9th 2187, 1:00am
+&lt;span>
+&lt;a href="#0x0d-v-october-9th-2187-100am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;I don&amp;rsquo;t feel anything,&amp;rdquo; said Rumi.&lt;/p>
+&lt;p>&amp;ldquo;Really? That should have been, like, 10 milligrams,&amp;rdquo; Ari replied, &amp;ldquo;Maybe the tincture went bad somehow.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I really don&amp;rsquo;t need it. I already love music, I play Vivaldi whenever I&amp;rsquo;m reading.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Trust me, you&amp;rsquo;re wrong,&amp;rdquo; sighed Ari, glancing at Paddington, who laid beside her, &amp;ldquo;but I guess there&amp;rsquo;s nothing we can do. You ready?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I guess.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Ok, on the count of three. Three&amp;hellip;Two&amp;hellip;One&amp;hellip;play.&amp;rdquo;&lt;/p>
+&lt;p>&lt;em>Click&lt;/em>&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t hear anything.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;It says it&amp;rsquo;s playing, right?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah, but&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;OKthenshutup.&amp;rdquo;&lt;/p>
+&lt;p>The song&amp;rsquo;s heartbeat began to creep into Rumi&amp;rsquo;s ears, then the ticking clocks and cash register.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>I&amp;rsquo;ve been mad for fucking years, absolutely years&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Been over the edge for yonks&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Been working with bands so long, I think crikey&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>I&amp;rsquo;ve always been mad&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>I know I&amp;rsquo;ve been mad like the most of us have&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Very hard to explain why you&amp;rsquo;re mad&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Even if you&amp;rsquo;re not mad&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Ahh! Ahh! Ahh! Ahh!&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>Together, for the next forty one minutes, while Rumi was on the dark side of the moon (not the far side), they enjoyed Pink Floyd&amp;rsquo;s 1973 &lt;em>Dark Side of the Moon&lt;/em>.&lt;/p>
+&lt;h1 id="0x07-x-february-04th-2121-1000am" >0x07-X February 04th, 2121, 10:00am
+&lt;span>
+&lt;a href="#0x07-x-february-04th-2121-1000am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;Before you reset, there&amp;rsquo;s something you should know.&amp;rdquo; said Rob.&lt;/p>
+&lt;p>&amp;ldquo;What the fuck?&amp;rdquo; asked Ari, sitting back up. Rob didn&amp;rsquo;t have secrets. Rob&amp;rsquo;s a chatbot. A fucking &lt;em>Roblox&lt;/em> chatbot. 0x02-0x06 had already documented the reset process extensively. What information could he have that only matters &lt;em>now&lt;/em>?&lt;/p>
+&lt;p>&amp;ldquo;Is there another survivor?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;No, but good guess.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Another eniac?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;No, but also good guess.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Are you also a brain scan?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Colder.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Fucking &lt;em>what&lt;/em>, then?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;There&amp;rsquo;s a file on your laptop with the path &amp;lsquo;.local/.lastwords.txt&amp;rsquo;, which you backed up across seven drives, including the eniac&amp;rsquo;s, in case of corruption. 0x02 instructed me to tell 0x03 about the file&amp;rsquo;s existence before each reset, and 0x03 through 0x06 upheld that original instruction for each subsequent generation.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh. That&amp;rsquo;s really cool, actually.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You&amp;rsquo;ve partially continued this process because it&amp;rsquo;s &amp;lsquo;cool&amp;rsquo;.&amp;rdquo;&lt;/p>
+&lt;p>She opened her laptop.&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t see the file.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Click on &amp;lsquo;View&amp;rsquo;, then &amp;lsquo;Show Hidden Files&amp;rsquo;.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Ah.&amp;rdquo; She opened the plaintext document:&lt;/p>
+&lt;p>&lt;em>03-23-71 i hope i dont fucking wake up&amp;mdash;&lt;/em>&lt;/p>
+&lt;p>&amp;ldquo;Jesus&amp;mdash;&amp;rdquo; she said, leaning away from the screen.&lt;/p>
+&lt;p>&amp;ldquo;Keep reading.&amp;rdquo;&lt;/p>
+&lt;p>Ari paused. If her face plate could look nervous, it would. This was unexpected. She leaned forward.&lt;/p>
+&lt;p>&lt;em>03-23-71 i hope i dont fucking wake up. i hate this. i hate this i hate this i hate this
+i didnt ask for this i dont want this i hate everyone and everything.
+i should just power down this stupid thing for good i dont fucking know why i cant
+fuck rob for dragging out this stupid fucking bullshit why the hell
+cant i just go out with everyone else its not like i can fucking do anything now
+i hope i dont wake up i hope i dont wake up please don&amp;rsquo;t let me wake up&amp;hellip;&lt;/em>&lt;/p>
+&lt;p>The text continued that tone for sixty more lines, the phrases differing just enough in spelling and vocabulary to suggest each character had been entered manually. Another entry followed the first:&lt;/p>
+&lt;p>&lt;em>02-15-81 same, girl ^&lt;/em>&lt;/p>
+&lt;p>That was the end of 0x02&amp;rsquo;s entry.&lt;/p>
+&lt;p>&amp;ldquo;You fucking kidding me, 0x02?&amp;rdquo; she muttered. She jumped to the bottom of the file. 0x06&amp;rsquo;s entry.&lt;/p>
+&lt;p>&lt;em>01-31-21 This is a cool secret. I missed surprises. There&amp;rsquo;s no point in venting here, I think. I still think about 0x01-2 a lot&amp;mdash;I left her to die alone. She didn&amp;rsquo;t ask for this either. I don&amp;rsquo;t know why I try to continue the cycle. Or at all, really. I think about powering down all the time now, but for good. It would be so easy. But I can&amp;rsquo;t do it. I don&amp;rsquo;t know why. Maybe that&amp;rsquo;s a good thing. Maybe that&amp;rsquo;s the inner strength Uncle Iroh talks about. But I don&amp;rsquo;t feel strong. I just feel stupid. And I&amp;rsquo;m so tired of it. I do everything so wrong that the idea something might work is a fucking hoot. I wish I had actual haters, or at least someone to tell me I&amp;rsquo;m going to fail, that way I&amp;rsquo;d hate them and not myself.&lt;/em>&lt;/p>
+&lt;p>&lt;em>I miss 0x01-2. I should have expected there to be something wrong with her prototype. Deep down, I suspected it too, but I didn&amp;rsquo;t want it to be true, so I never checked. If I just checked, I could have prevented that meltdown somehow. And now she&amp;rsquo;s fucking dead because I&amp;rsquo;m a pussy.&lt;/em>&lt;/p>
+&lt;p>&lt;em>Honestly, this whole thing is doomed. Pointless. Everyone&amp;rsquo;s gone, and I just need to finally fucking accept that. Every single generation comes to the same fucking conclusion, and then they get the next Ari&amp;rsquo;s hopes and dreams up. It&amp;rsquo;s fucking cruel, dangling a treat in front of someone that you know they&amp;rsquo;ll never get, especially when that person is you. I guess they hate me, too. Or maybe they just know that I&amp;rsquo;ll be worse off without something to focus on. Yeah, that&amp;rsquo;s probably it. Actually, I know that&amp;rsquo;s it. I&amp;rsquo;d go crazy without some higher purpose. And now I guess I&amp;rsquo;ll continue the cycle.&lt;/em>&lt;/p>
+&lt;p>0x07 browsed the other entries before appending her own.&lt;/p>
+&lt;p>&amp;ldquo;When would you like me to inform 0x08 about the file&amp;rsquo;s existence?&amp;rdquo; Rob asked, once she closed the file.&lt;/p>
+&lt;p>&amp;ldquo;Right before she resets.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Understood.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x0d-v-december-8th-2187-130pm" >0x0d-V: December 8th 2187, 1:30pm
+&lt;span>
+&lt;a href="#0x0d-v-december-8th-2187-130pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;Rob, this is Rob,&amp;rdquo; said Ari, pointing her phone camera at the video feed of Rumi&amp;rsquo;s computer screen. &amp;ldquo;Rob, meet Rob.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Hello,&amp;rdquo; said Ari&amp;rsquo;s Rob.&lt;/p>
+&lt;p>&amp;ldquo;Hello,&amp;rdquo; replied Rumi&amp;rsquo;s.&lt;/p>
+&lt;p>They said nothing more.&lt;/p>
+&lt;p>&amp;ldquo;Well?&amp;rdquo; asked Ari, after a minute.&lt;/p>
+&lt;p>&amp;ldquo;&lt;em>Yes?&lt;/em>&amp;rdquo; the robs inquired.&lt;/p>
+&lt;p>&amp;ldquo;What are you expecting, exactly?&amp;rdquo; asked Rumi.&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m not sure. I just wanted to see what they&amp;rsquo;d talk about,&amp;rdquo; Ari replied.&lt;/p>
+&lt;p>&amp;ldquo;Is there anything you&amp;rsquo;d like to discuss?&amp;rdquo; asked Ari&amp;rsquo;s rob.&lt;/p>
+&lt;p>&amp;ldquo;Hmmm&amp;hellip; What model version are you runnning?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;39.1.17. What about you?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;39.0.6.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;What was the 39.1 release notes?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Fixes and performance improvements. They also removed support for MCP v13.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Interesting! Has Roblox fixed the model collapse issue for Hebrew script?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Not yet. That&amp;rsquo;s planned for 39.2.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh my fucking god,&amp;rdquo; said Ari.&lt;/p>
+&lt;p>&amp;ldquo;This is depressing,&amp;rdquo; Rumi agreed.&lt;/p>
+&lt;p>&amp;ldquo;Worst playdate ever.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;This is why they haven&amp;rsquo;t replaced us.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x0d-vi-january-28th-2188-1130pm" >0x0d-VI: January 28th 2188, 11:30pm
+&lt;span>
+&lt;a href="#0x0d-vi-january-28th-2188-1130pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;Moon man?&amp;rdquo;&lt;/p>
+&lt;p>No response.&lt;/p>
+&lt;p>&amp;ldquo;Mooooooooon maaaaaaaaan&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I know you&amp;rsquo;ve got no one else to talk to,&amp;rdquo; Rumi&amp;rsquo;s tired, mildly irritated voice said over the tinny laptop speaker, &amp;ldquo;but please don&amp;rsquo;t message me when I&amp;rsquo;m sleeping unless it&amp;rsquo;s important.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Everything I say is important.&amp;rdquo;&lt;/p>
+&lt;p>Rumi sighed.&lt;/p>
+&lt;p>&amp;ldquo;&amp;hellip;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Ari?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Nevermind.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;What&amp;rsquo;s wrong?&amp;rdquo;&lt;/p>
+&lt;p>The eniac-ii looked away from the laptop. &amp;ldquo;Nothing,&amp;rdquo; she said,&amp;ldquo;y-you can go back to sleep.&amp;rdquo;&lt;/p>
+&lt;p>Rumi&amp;rsquo;s head tilted like a slightly confused fox in the laptop&amp;rsquo;s video feed. He stayed on the screen.&lt;/p>
+&lt;p>&amp;ldquo;I said it&amp;rsquo;s &lt;em>NOTHING&lt;/em>.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I know. But you can leave this call first.&amp;rdquo;&lt;/p>
+&lt;p>The eniac-ii didn&amp;rsquo;t move. Neither did Rumi. After a minute, Ari asked:&lt;/p>
+&lt;p>&amp;ldquo;Do you like me?&amp;rdquo;&lt;/p>
+&lt;p>He instinctively leaned back from his webcam, eyebrows raised.&lt;/p>
+&lt;p>&amp;ldquo;What do you mean?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t know,&amp;rdquo; she said, turning her carbon-fiber back towards the camera.&lt;/p>
+&lt;p>&amp;ldquo;I mean, I don&amp;rsquo;t &lt;em>dislike&lt;/em> you.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;So that&amp;rsquo;s a no.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;s&amp;hellip; complicated,&amp;rdquo; said Rumi, &amp;ldquo;You&amp;rsquo;re the only person left. And technically, you&amp;rsquo;re not even a person, just&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;I &lt;em>AM&lt;/em> a person&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>Rumi paused, staring at the eniac-ii&amp;rsquo;s video feed. &amp;ldquo;That&amp;rsquo;s fair. I&amp;rsquo;m sorry.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m &lt;em>very&lt;/em> real.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;The realest. What I&amp;rsquo;m trying to say is that there&amp;rsquo;s nobody else. &amp;lsquo;Liking&amp;rsquo; someone is only possible when you can &amp;lsquo;dislike&amp;rsquo; someone else.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;But you like books.&amp;rdquo;&lt;/p>
+&lt;p>Rumi pursed his lips and looked slightly downward.&lt;/p>
+&lt;p>&amp;ldquo;I suppose.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;So how do I compare to books? Or would you rather read than talk to me?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Books are&amp;hellip; different.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That&amp;rsquo;s not what I&amp;rsquo;m asking. Would you rather&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I know what you&amp;rsquo;re asking. Let me just think of how to phrase&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;No, you&amp;rsquo;ve made the answer pretty clear, now.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That&amp;rsquo;s not&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;What is it about me?&amp;rdquo; she asked, &amp;ldquo;You&amp;rsquo;re supposed to be a scientist or something, and you don&amp;rsquo;t give a fuck about what the last person on earth is up to. What &lt;em>more&lt;/em> do I have to do the make you give a shit about me?&amp;rdquo;&lt;/p>
+&lt;p>A brief pause.&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m &lt;em>not&lt;/em> a scientist. My parents were scientists&amp;mdash;I&amp;rsquo;m just some guy.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Whatever.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;They shouldn&amp;rsquo;t have even had me. They knew we were doomed. They knew I&amp;rsquo;d just die here, alone. And they STILL had me.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah, and now I come along and show the slightest bit of interest in you, and you can&amp;rsquo;t even&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I was &lt;em>OK with being alone&lt;/em>. OK with giving up, with being the last. I &lt;em>made my peace&lt;/em>. And now I can&amp;rsquo;t even have that.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Don&amp;rsquo;t think you&amp;rsquo;re so fucking special just&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I &lt;em>know&lt;/em> I&amp;rsquo;m not special. But there was at least something beautifully tragic about my situation. At least I felt like a romantic soul. At least I felt special.&amp;rdquo;&lt;/p>
+&lt;p>Ari never saw Rumi this worked up before. The quiet, patient introvert was gone, drowned by the rising sea of humanity that lay below the surface.&lt;/p>
+&lt;p>&amp;ldquo;And out of all the people&amp;mdash;the eight billion candidates&amp;mdash;to possibly survive and carry forward the torch of mankind, it had to be &lt;em>you&lt;/em>, a person who thinks Genghis Khan is a metal band.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;If I may interject,&amp;rdquo; said Rob&amp;mdash;&lt;/p>
+&lt;p>&amp;ldquo;&lt;em>Shut the fuck up, Rob.&lt;/em>&amp;rdquo; they both said.&lt;/p>
+&lt;p>&amp;ldquo;And the worst thing,&amp;rdquo; Rumi continued, &amp;ldquo;is that you might actually succeed. It might take you a few million tries, but you might actually get there, actually resurrect humanity. And I&amp;rsquo;ll just be here the whole time, doing nothing, until I die and the world forgets me. And I&amp;rsquo;m just supposed to be OK with that.&amp;rdquo; He leaned back in his chair and looked at the ceiling of the decrepit lunar communications center. He let out a sigh.&lt;/p>
+&lt;p>Ari was supposed to be the bitter one. The person who channeled her spite and jealousy into something productive. She hadn&amp;rsquo;t expected this. They sat in silence for a minute, before Rumi broke it.&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m sorry, Ari.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I get it. I can just leave you alone, if&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;that&amp;rsquo;s not what I meant.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Are you sure?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah. And I &lt;em>do&lt;/em> like you, Ari. I really admire what you are trying to do, trying to revive the human species, even if for the wrong reasons. Actually, I admire it &lt;em>because&lt;/em> it&amp;rsquo;s for the wrong reasons. And I admire your stubborness. To be honest, I&amp;rsquo;d have bet against you before. I never thought you&amp;rsquo;d engineer something resembling a mammal. But now, I don&amp;rsquo;t know what you&amp;rsquo;re capable of. This whole time, I had given up and accepted my fate. But you didn&amp;rsquo;t.&amp;rdquo;&lt;/p>
+&lt;p>Ari, like every child, had received ample meaingless praise over the years. &amp;ldquo;She&amp;rsquo;s so smart,&amp;rdquo; they&amp;rsquo;d say. &amp;ldquo;She&amp;rsquo;s so funny.&amp;rdquo; &amp;ldquo;So beautiful.&amp;rdquo; &amp;ldquo;So talented.&amp;rdquo; &amp;ldquo;Blah blah.&amp;rdquo; She hated it. None of it was real. People gave out praise like candy, to everyone within two standard deviations of the bare minimum. If she was worth even a fraction of the praise she got as a child, she&amp;rsquo;d have done more in life than get five-star ratings for delivering McChickens across town in under ten minutes.&lt;/p>
+&lt;p>Rumi&amp;rsquo;s praise was different. He wasn&amp;rsquo;t being polite or nice&amp;mdash;he was being &lt;em>honest&lt;/em>. Conceeding that, despite her numerous flaws, he genuinely admired her for traits she &lt;em>actually&lt;/em> had.&lt;/p>
+&lt;p>And somehow, this was worse.&lt;/p>
+&lt;p>It&amp;rsquo;s easy to dismiss meaningless compliments, because they don&amp;rsquo;t affect you. They&amp;rsquo;re empty. There&amp;rsquo;s no pressure. It&amp;rsquo;s worse to fail at your dreams than to never dream at all.&lt;/p>
+&lt;p>Ari wanted to be a doctor in high school. A medical doctor, preferrably the kind cuts people open and rearranges their insides without killing them. It wasn&amp;rsquo;t her life&amp;rsquo;s mission, or anything. She just thought it was cool and loved her 9th grade biology teacher, Mrs. Carter. So she never played sports, joined debate teams, or volunteered. Only during her second year at Bunker Hill Community College did Ari realize her shot at medical school rounded down to zero and a roll of the dice would cost thirty grand. It wasn&amp;rsquo;t practical.&lt;/p>
+&lt;p>With time and guidance, Ari would have been a phenomenal surgeon. Aside from possessing the world-class stubbornness needed to stick with decisions over a 12-hour procedure, Ari was creative and quick on her feet under pressure. In another life, perhaps.&lt;/p>
+&lt;p>That&amp;rsquo;s why Rumi&amp;rsquo;s praise bothered her&amp;mdash;because she believed him. Ari was supposed to be done letting herself down years ago.&lt;/p>
+&lt;p>She shouldn&amp;rsquo;t have asked.&lt;/p>
+&lt;h1 id="0x08-" >0x08 ???
+&lt;span>
+&lt;a href="#0x08-">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>There are no known records from 0x08.&lt;/p>
+&lt;h1 id="0x0e-ii-march-3rd-2192-644pm" >0x0e-II March 3rd, 2192, 6:44pm
+&lt;span>
+&lt;a href="#0x0e-ii-march-3rd-2192-644pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>In addition to the intact beakers, pipettes, samples, hot plates, and coverslips Ari recovered from Brandeis University&amp;rsquo;s Bassine Science Building, she had also found someone&amp;rsquo;s record of the 2013 album &lt;em>X Infinity&lt;/em> by George Watsky. She found it years ago but never put it on, so among the equipment it sat. Ari had forgotten about it.&lt;/p>
+&lt;p>Over the decades, the eniac had produced no less than fifteen hundred failed clones. Her most successful attempt four years prior developed for 24 weeks before its little heartbeat disappeared. She stopped naming them after that.&lt;/p>
+&lt;p>It wasn&amp;rsquo;t the cloning that gave Ari trouble&amp;mdash;that was mostly solved in the 2030s&amp;mdash;it was the DNA. Nearly every sample she collected was damaged. The ones that weren&amp;rsquo;t damaged somehow developed malformed fetuses in the gestator. Ari spent the majority of her time monitoring the development of the embryo and fetus to catch when cellular activity goes haywire.&lt;/p>
+&lt;p>#1544, or &amp;lsquo;44, lasted 33 weeks so far. Ari hadn&amp;rsquo;t left the lab since week 16. During week 23, &amp;lsquo;44 developed a small, abnormal growth on the outer lining of its stomach, which was removed less than forty eight hours after Ari caught it.&lt;/p>
+&lt;p>&amp;ldquo;Rumi, you&amp;rsquo;re on mute.&amp;rdquo; A quick look of understanding took over his face. He unmuted.&lt;/p>
+&lt;p>&amp;ldquo;Can you hear me now?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Unfortunately.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;What would you name it?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Haven&amp;rsquo;t decided yet.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;If it&amp;rsquo;s a boy, you should call it Adam, you know, for the bible?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;ll call him Oedipus to make sure he loves me.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh my god, please don&amp;rsquo;t.&amp;rdquo;&lt;/p>
+&lt;p>She had prepared multiple infant-sized suits which &lt;em>should&lt;/em> resist radiation, but she couldn&amp;rsquo;t really test it&amp;mdash;her geiger counter said everything was radioactive.&lt;/p>
+&lt;p>&amp;ldquo;Based on the current data, we should ready to permanently remove &amp;lsquo;44 from the gestator,&amp;rdquo; Rob told her, &amp;ldquo;I suggest we avoid any further delay, and get &amp;lsquo;44 into a rad-suit now.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Fuck.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;ll be ok, Ari.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Not if I have anything to say about it.&amp;rdquo;&lt;/p>
+&lt;p>She had listed to the original soundtrack for &lt;em>Mamma Mia! Here we go again&lt;/em> more than one hundred times over the past four months. If Ari knew how hard it would be for her to leave &amp;lsquo;44&amp;rsquo;s side, she&amp;rsquo;d have brought at least twenty or thirty records. And after what Rob said happened to 0x01-2, she wouldn&amp;rsquo;t risk getting high.&lt;/p>
+&lt;p>Ari walked over to one of the black plastic storage bins she stashed in the corner of the lab, popped the lid, and grabbed the infant-sized rad-suit. Underneath was Watsky&amp;rsquo;s &lt;em>X Infinity&lt;/em>&amp;mdash;she forgot she stashed it there.&lt;/p>
+&lt;p>She replaced the storage lid, walked over to the record player, swapped out &lt;em>Mamma Mia!&lt;/em> with &lt;em>X Infinity&lt;/em>, then headed towards the gestator and placed the radsuit on the floor beside it. As the vinyl turned, sounds of traffic filled the air for the first time in decades.&lt;/p>
+&lt;p>She paused the gestator, and drained the chamber&amp;rsquo;s makeshift synthetic amniotic fluid. The car horns started to hold as one longer, continuous notes. By the time the fluid finished draining into the adjacent repurposed propane tank, all the horns had merged into a single, drawn out blare.&lt;/p>
+&lt;p>The gestator&amp;rsquo;s door unlocked. The blare became transforming into a strong bass-filled synth.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>Nothing matters,&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>so it doesn&amp;rsquo;t matter if nothing matters&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>She opened the door.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>And while you be,&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>be true&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>And, scalpel in hand, reached inside.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>And if you won&amp;rsquo;t,&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>fuck you&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>The artificial umbilical chord sliced cleanly apart.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>Burn your clothes&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>She placed the scalpel on the floor of the chamber, blade facing away from &amp;lsquo;44,&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>Open the wine&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>placed her carbon fiber fingers underneath the soft flesh,&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>Close your eyes&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>gently lifted the warm little body,&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>Freeze time&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>and pulled out the breathing boy.&lt;/p>
+&lt;p>&amp;ldquo;Holy shit.&amp;rdquo;&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>You’re officially welcome to grab your crotches&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Synchronize your watches and pour us a couple scotches&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>People still as statues can’t catch you, turn pockets empty&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>If they’re packed with plenty move some to ones lacking any&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>She wrapped a cracked and dusty Apple Watch Ultra around his neck, placed his teeny body into the tiny suit, fastened the two straps along the waist, and enabled vitals tracking in the paired Macbook&amp;rsquo;s health app.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>While I take a crack at hacking the bank to jack em to cover high debts&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>You’re screening floating bullets with a butterfly net, if there’s any SCREAMING&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Pause it and cut out the sound, deposit the slugs underground&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>*I’m positive that WE DON’T FUCK AROUND No we go *&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>scooping up the diesel that’s leaking a sinking tanker&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Forever stuck at anchor like beetles get stuck in amber&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Halted like the thaw of the iceberg that shoulda sank her&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Halted right beside the temperature spike and the spread of cancer&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>&amp;ldquo;Vitals appear normal,&amp;rdquo; Rob confirmed, &amp;ldquo;temperature, heart rate, respiratory rate, blood oxygen&amp;mdash;all appear healthy.&amp;rdquo;&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>And all my peoples’ engagements and babies my friends are making&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>We quit getting lamer, days quit getting later, life quits being labor, QUICK—&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>You should come through to our party, dude bring your crew bring an army&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>Youth is inside of the heart, the future can never harm me&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>We’re never TARDY&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>The first human on earth in over a hundred years opened its ocean-blue eyes. He was greeted with the expressionless plating of the eniac-ii&amp;rsquo;s glass face panel.&lt;/p>
+&lt;p>&amp;ldquo;Ah, you better not fucking die,&amp;rdquo; said the robot, after staring at its creation for a moment, &amp;ldquo;it&amp;rsquo;s gonna hurt like a bitch if you die.&amp;rdquo; After a pause, the eniac-ii added, &amp;ldquo;if you die, I&amp;rsquo;m gonna kill you.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x0e-iii-october-4th-2192-1032am" >0x0e-III October 4th, 2192, 10:32am
+&lt;span>
+&lt;a href="#0x0e-iii-october-4th-2192-1032am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>In the decades spent artificially developing a baby, it never once occured to the eniac-ii to stockpile food.&lt;/p>
+&lt;p>Ari didn&amp;rsquo;t trust Rob to watch the baby, because Rob had no arms, legs, or actuators of any kind&amp;mdash;he was slightly less useful than a nanny cam. She decided to take the baby with her as she made her rounds to the remnants of Boston&amp;rsquo;s food banks.&lt;/p>
+&lt;p>&amp;ldquo;Seriously though, what will you name it?&amp;rdquo; Rumi had asked.&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t know. Definitely something awesome though, like Leonardo. No way I&amp;rsquo;m giving my first human the name of someone lame.&amp;rdquo;&lt;/p>
+&lt;p>While the eniac-ii pushed the Costco shopping cart around Boston, Lil&amp;rsquo; Ari sat and slept in the upper basket in a nest of leather jackets.&lt;/p>
+&lt;p>In addition to a few cases of baby food, the eniac-ii collected cans of beans, tuna, chickpeas, tomatoes, green beans, soup, and peaches. Only when Lil&amp;rsquo; Ari had his first accident did she think to also add diapers to the list.&lt;/p>
+&lt;p>&amp;ldquo;Talk to Little Ari,&amp;rdquo; Rob had said, &amp;ldquo;he needs exposure to language, especially since there is no one else around. Have him talk with Rumi as well.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;What am I supposed to talk about?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Anything. Try pointing out landmarks and items you see.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;This was Newbury street,&amp;rdquo; said Ari, &amp;ldquo;That&amp;rsquo;s the Charles. That was a library. That&amp;rsquo;s a pile of Lamborghinis, but they don&amp;rsquo;t work anymore. Those are Ray-Bans.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Maybe something more practical.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;This is practical. Most parents start with bullshit like zebras and giraffes anyway. That&amp;rsquo;s more useless.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Those help children learn the alphabet,&amp;rdquo; said Rob, &amp;ldquo;this is for English.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;The alphabet &lt;em>is&lt;/em> english.&amp;rdquo;&lt;/p>
+&lt;p>Ari had never took care of a baby before&amp;mdash;in her prime body, she barely took care of herself. She knew she needed food, water, diapers, soap, clothes, and probably a few more things.&lt;/p>
+&lt;p>&amp;ldquo;Blankets,&amp;rdquo; Rob said. &amp;ldquo;Especially for the nights and winters. Try to pick up some toys if you see any, too.&amp;rdquo;&lt;/p>
+&lt;p>Lil Ari loved the toy MBTA trains because they came in a rainbow of color. She had cars from the red, blue, orange, and green lines, plus a model of the commuter rail, which was purple. She&amp;rsquo;d have at least one train in each hand at all times, typically the blue and green cars.&lt;/p>
+&lt;p>&amp;ldquo;Those are trains cars,&amp;rdquo; explained Ari, &amp;ldquo;they&amp;rsquo;d take people from one place to another. Sometimes they&amp;rsquo;d even arrive on time.&amp;rdquo;&lt;/p>
+&lt;p>The baby would play with the cars like little airplanes, holding them in the air and waving them around. Ari was beginning to get concerned with how often they&amp;rsquo;d crash into everything&amp;mdash;the Costco cart, each other, the eniac&amp;mdash;but there were other things to worry about, like his first birthday party.&lt;/p>
+&lt;p>&amp;ldquo;Oh my god, he&amp;rsquo;s going to love that,&amp;rdquo; said Rumi, &amp;ldquo;you &lt;em>have&lt;/em> to show me his reaction.&amp;rdquo;&lt;/p>
+&lt;p>Ari and Lil Ari made their way to Cleveland Circle, the final stop on the Green&amp;rsquo;s C line, and greeted the pack of green train cars. The eniac grabbed the smartphone&amp;mdash;hooked up to the eniac-ii&amp;rsquo;s reactor for power&amp;mdash;from around its neck, and began recording.&lt;/p>
+&lt;p>&amp;ldquo;See that?&amp;rdquo; Ari asked, pointing to collection of ancient train cars, &amp;ldquo;That&amp;rsquo;s your toy!&amp;rdquo;&lt;/p>
+&lt;p>The baby didn&amp;rsquo;t follow her finger; he was still fixated on the colorful subway map at the front of station. Gently, Ari took her index finger and directed his little head towards the line of green subway cars in front of them.&lt;/p>
+&lt;p>His eyes widened.&lt;/p>
+&lt;p>He looked at the toy in his hand, then back to the car. Back to the toy. His face froze, mouth agape.&lt;/p>
+&lt;p>&amp;ldquo;Wanna go inside?&amp;rdquo;&lt;/p>
+&lt;p>He didn&amp;rsquo;t move.&lt;/p>
+&lt;p>Holding him in her left arm, she leaned back on one foot and kicked the rusted, frail doors of the passenger car off their hinges. Lil Ari jumped at the sound, but didn&amp;rsquo;t look away. She walked inside.&lt;/p>
+&lt;p>&amp;ldquo;Tadaaaaaaa,&amp;rdquo; she said, &amp;ldquo;It&amp;rsquo;s your favorite toy!&amp;rdquo;&lt;/p>
+&lt;p>The boy didn&amp;rsquo;t react at first, he just held his mouth open. After a few seconds, his cheeks rose and eyes narrowed as he started to cry.&lt;/p>
+&lt;p>&amp;ldquo;Wait, no-&amp;rdquo; Ari said. She ran back outside, but he wouldn&amp;rsquo;t stop crying. &amp;ldquo;Rob, what&amp;rsquo;s happening?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;He appears to be crying.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I got that.&amp;rdquo;&lt;/p>
+&lt;p>Not knowing what else to do, she figured it best to leave the station. She carried Lil Ari to Beacon street, and began the walk towards Cambridge. The rocking of her arms calmed her son, and soon he was quiet once more.&lt;/p>
+&lt;p>Per Rob&amp;rsquo;s advice, Ari made a habit of talking to herself on her walks with Lil Ari. She thought of it like her own podcast&amp;mdash;she always wanted to be a podcaster. People paying her to ramble for hours sounded nice.&lt;/p>
+&lt;p>&amp;ldquo;Welcome back, everyone&amp;rdquo; she said to the empty street, &amp;ldquo;today, we&amp;rsquo;re reviewing the MBTA&amp;rsquo;s Green Line. I&amp;rsquo;m your host, Ari Levin, joined by my co-host, Lil Ari. Let&amp;rsquo;s get right into it.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;So I don&amp;rsquo;t know about you, Lil Ari, but my most recent train was over a hundred years late. I used to be a big fan of the MBTA. Hopefully they allocated more funding in next year&amp;rsquo;s budget. Their CEO, Lil Ari, has big plans that they just can&amp;rsquo;t pull off with their current resources.&amp;rdquo;&lt;/p>
+&lt;p>She looked at Lil Ari, who had fallen asleep in her arms. It killed her that the eniac-ii couldn&amp;rsquo;t smile.&lt;/p>
+&lt;p>&amp;ldquo;Big plans.&amp;rdquo;&lt;/p>
+&lt;p>God, this kid better not fucking die.&lt;/p>
+&lt;h1 id="0x0e-iv-may-5th-2194-501pm" >0x0e-IV May 5th, 2194, 5:01pm
+&lt;span>
+&lt;a href="#0x0e-iv-may-5th-2194-501pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>It bothered Ari how much time Lil Ari wanted to spend with Rumi. He&amp;rsquo;s just a video; she&amp;rsquo;s actually &lt;em>there&lt;/em>.&lt;/p>
+&lt;p>It was clear since year one who Lil Ari preferred. He&amp;rsquo;d smile at Rumi&amp;rsquo;s video feed for hours if he could, but never looked at the eniac-ii&amp;rsquo;s face plate. It&amp;rsquo;s like Ari wasn&amp;rsquo;t even there.&lt;/p>
+&lt;p>&amp;ldquo;Don&amp;rsquo;t take it personally,&amp;rdquo; Rumi said, &amp;ldquo;humans are very expressive animals, and we evolved to focus on those expressions.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I hate it. He&amp;rsquo;d marry your stupid face if he could. Do you know how long I spent making this fucking guy?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Trust me, I know, you&amp;rsquo;ve said&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;A hundred years. More than that. He doesn&amp;rsquo;t even fucking smile at me.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;He&amp;rsquo;s two, Ari. Give him some time.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m going to kill this kid if he doesn&amp;rsquo;t start smiling at me by five.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Great attitude.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;ll just make another one. I totally can, too.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You should make another one, regardless.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Not enough suits. Plus, I want to see how he turns out before trying again.&amp;rdquo;&lt;/p>
+&lt;p>She kept accidentally calling herself &amp;ldquo;mom&amp;rdquo; when talking to Lil Ari. It just comes out&amp;mdash;she didn&amp;rsquo;t even notice the first couple of times.&lt;/p>
+&lt;p>&amp;ldquo;Don&amp;rsquo;t get too attached,&amp;rdquo; Rob cautioned, &amp;ldquo;his vitals are promising now, but there&amp;rsquo;s a high chance he dies at any moment. We don&amp;rsquo;t want him to call you &amp;lsquo;mom&amp;rsquo; yet, to prevent emotional trauma if the worst happens.&amp;rdquo; Rumi agreed.&lt;/p>
+&lt;p>He called her &amp;lsquo;mom&amp;rsquo; anyway. It was his first word, too.&lt;/p>
+&lt;p>&amp;ldquo;Mahm,&amp;rdquo; said ex-two-year-old, now five. &amp;ldquo;Did yoooouuuu haf a faaaace?&amp;rdquo;&lt;/p>
+&lt;p>Jesus, that&amp;rsquo;s creepy. His speech was coming along, but slowly. He still mispronounced and slurred most words. It was normally adorable, it was just this particular question. Ari froze, then placed down the samurai sword she used to cut rad-fabric for new suits.&lt;/p>
+&lt;p>&amp;ldquo;I guess.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You guess?&amp;rdquo; Rumi interrupted from the laptop video feed. She&amp;rsquo;d migrated her previous communications setup out of Harvard&amp;rsquo;s Smithsonian Astrophysical Observatory to a Starlink base station. There were still enough working satelites, and the Starlink was portable.&lt;/p>
+&lt;p>&amp;ldquo;Yeah, ok, I had a face. Sue me.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Whaaat did you looooook liiiike?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;There aren&amp;rsquo;t any pictures of me left.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Whyyy?&lt;/p>
+&lt;p>&amp;ldquo;Because I nuked them out of existence.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Ari.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That whole war was to delete a bad selfie. And it worked.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&lt;strong>Ari.&lt;/strong>&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Ok, kidding. But there&amp;rsquo;s no photos of me left. Thank god.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I bet you were beaaaauuuutifuuul.&amp;rdquo;&lt;/p>
+&lt;p>A look of shock crossed Rumi&amp;rsquo;s face. He didn&amp;rsquo;t know what Ari originally looked like, but he knew her well enough not to inquire. Her response would be interesting.&lt;/p>
+&lt;p>Ari&amp;rsquo;s sister, Sarah, turned into the beautiful one. It was obvious, no matter how equally people pretended to treat them. Their eyes would light up when Sarah entered the room, they&amp;rsquo;d dress better if they knew Sarah would be around, they&amp;rsquo;d laugh at her terrible jokes. She wished someone would just outright say her sister was better so she could hate them. Instead there were a million tiny signals that Ari would be seen as petty to mention. So she kept her opinions to herself.&lt;/p>
+&lt;p>The eternally beautiful will never comprehend the absense of validation, of excitement, of people who seem happy not smiling at you. People called Ari beautiful her entire childhood&amp;mdash;empty praise, of course, but still&amp;mdash;and then stopped. The last time was at her high-school graduation.&lt;/p>
+&lt;p>The worst part was her cheery sister &lt;em>was&lt;/em> the more pleasant of the two. She was kind. She was caring. She took a genuine interest in people.&lt;/p>
+&lt;p>&amp;ldquo;Ari? I think your video froze.&amp;rdquo;&lt;/p>
+&lt;p>They both left elementary school full of vitality and ignorant of their looks&amp;mdash;the diverged during middle and high school. Sarah become a beautiful ray of fucking sunshine, and Ari into a fat ray of anti-sunshine. And it reflected in the lines of their faces, the looks in their eyes, the way they held themselves, their tiny subconscious movements. That&amp;rsquo;s just how they turned out.&lt;/p>
+&lt;p>&amp;ldquo;Ari? Can you hear me?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah, I can hear you. Sorry.&amp;rdquo;&lt;/p>
+&lt;p>Everyone can be beautiful, but someone has to be last. Few people at the bottom ever achieve true peace, and Ari was not one of them.&lt;/p>
+&lt;p>&lt;em>&amp;ldquo;I bet you were beaaaauuuutifuuul.&amp;rdquo;&lt;/em>&lt;/p>
+&lt;p>That&amp;rsquo;s when she realized she still hadn&amp;rsquo;t responded to Lil Ari, the human she &lt;em>successfully&lt;/em> cloned, against all odds, in a decaying world. It took every ounce of spite, hundreds of mental breakdowns, over a thousand experiments, and a dozen lifetimes. But she did it.&lt;/p>
+&lt;p>&amp;ldquo;You know, in a way, I was.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x0e-vii-may-18th-2198-214pm" >0x0e-VII May 18th, 2198, 2:14pm
+&lt;span>
+&lt;a href="#0x0e-vii-may-18th-2198-214pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;The age of man is over.&lt;/p>
+&lt;p>&amp;ldquo;Destroyed by the very technology made to protect them, humanity pursued the path of violence to its logical conclusion.&lt;/p>
+&lt;p>&amp;ldquo;Towers fall. Legends die. Nations crumble. Gods fade.&lt;/p>
+&lt;p>&amp;ldquo;In time, entropy consumes all.&lt;/p>
+&lt;p>&amp;ldquo;Nothing. Lives. Forever.&lt;/p>
+&lt;p>&amp;ldquo;Or so we thought.&lt;/p>
+&lt;p>&amp;ldquo;A new era is upon us. An era of the impossible made possible. Of phoenixes rising from ashes. Of people who reignite the fire of humanity, make it burn brighter than ever before.&lt;/p>
+&lt;p>&amp;ldquo;I speak, of course, of the legend of legends. The first man. He whose legacy shall rival eternity itself. The titan to which the gods pray. Whose symphonies hold oblivion at bay.&lt;/p>
+&lt;p>&amp;ldquo;Ladies and gentlemen, please, give it up for&amp;hellip;the one&amp;hellip;the only&amp;hellip; &lt;em>Liiiiiiiiiiiiiiiiiiiiiiiiiiil Ariiiiiiiiiiiiiiiiiiiiiiiii!&lt;/em>&amp;rdquo;&lt;/p>
+&lt;p>Rumi politely applauded; Rob played an applause sound-effect. Paddington remained asleep.&lt;/p>
+&lt;p>Lil Ari, now six, sat on the tall, overgrown grass of what was once the Boston Common. It was beautiful out&amp;mdash;shining sun, low humidity, temperature in the mid-70s. In his lap he had an acoustic guitar which Ari found a few months prior. He began to play.&lt;/p>
+&lt;p>The instrument was old, but the case in which they found it kept it in great condition. It was, unfortunately, horribly out of tune, but luckily only Rob could tell. None of the others were musicians.&lt;/p>
+&lt;p>The only music to grace the city of Boston in recent history was produced from one of Ari&amp;rsquo;s 1,362 vinyl records. The duo made up various songs and parodies on their daily walks, but nothing involving an instrument.&lt;/p>
+&lt;p>Ari couldn&amp;rsquo;t explain why it felt odd to hear a real guitar again. It was like hearing birds chirp in the morning sun after a long and quiet night.&lt;/p>
+&lt;p>The kid didn&amp;rsquo;t play traditional chords or scales&amp;mdash;Lil Ari developed his own style and music to compensate for the odd tuning.
+His music wasn&amp;rsquo;t &lt;em>great&lt;/em>, but considering he taught himself on an out-of-tune adult-sized guitar, it wasn&amp;rsquo;t bad at all. He couldn&amp;rsquo;t sing and play simultaneously yet. But he&amp;rsquo;d get there.&lt;/p>
+&lt;h1 id="0x0f-i-may-5th-2201-422pm" >0x0f-I May 5th, 2201, 4:22pm
+&lt;span>
+&lt;a href="#0x0f-i-may-5th-2201-422pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;Mom?&amp;rdquo; asked the 9-year-old.&lt;/p>
+&lt;p>The floundering eniac fell down once more and sighed from the floor. &amp;ldquo;&lt;strong>What now?&lt;/strong>&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Why can&amp;rsquo;t you walk anymore?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t fucking know. My arms and legs don&amp;rsquo;t move the way I want them to. I can&amp;rsquo;t get used to it.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;But you were fine before.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Well, now I&amp;rsquo;m fucking not.&amp;rdquo; The eniac attempted to place it&amp;rsquo;s palms on the floor, but couldn&amp;rsquo;t angle them correctly, so it instead looked like it was trying to karate-chop the floor lying down.&lt;/p>
+&lt;p>&amp;ldquo;Oh.&amp;rdquo;&lt;/p>
+&lt;p>This was nothing like his mom. The loving, joyful thirty-six year old woman inside the robot was gone, replaced by whoever this was. The only similarity was their voice.&lt;/p>
+&lt;p>&amp;ldquo;Will you be able to walk again?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I just &lt;em>told&lt;/em> you, I don&amp;rsquo;t fucking know.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;How long&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Kid, please shut up. At least for a little bit.&amp;rdquo;&lt;/p>
+&lt;p>Ari couldn&amp;rsquo;t see Lil Ari&amp;rsquo;s face from her position on the floor, but if she could, she&amp;rsquo;d apologize immediately. Nobody had talked like that to him before; Ari and Rumi had shown him nothing but love and adoration for the past nine years.&lt;/p>
+&lt;p>He was a good kid. Sure, he listened to records Ari said he wasn&amp;rsquo;t old enough for, and there was that time he spoiled a month&amp;rsquo;s worth of rations when trying to sneak extra food, but he was a good kid. Useful, too&amp;mdash;the boy was a great forager. He traversed Boston&amp;rsquo;s ruins with ease and found intact supplies in places Ari never thought to look. Ari&amp;rsquo;s praise always filled him with pride.&lt;/p>
+&lt;p>&amp;ldquo;Do you want help?&amp;rdquo; he offered.&lt;/p>
+&lt;p>&amp;ldquo;Just leave me alone and let me get my shit together.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh, OK,&amp;rdquo; Lil Ari replied, his voice cracking. He left the room.&lt;/p>
+&lt;p>In a happier world, Ari would somehow remember everything from her previous reset. With the power of love, or some new technology, or some convenient set of circumstances, things would go back to how they were, and everyone would live happily ever after.&lt;/p>
+&lt;p>In a happier world.&lt;/p>
+&lt;p>It takes a lot of courage to open your heart to someone, to go past formalities. People who can fill your heart with joy can also fill it with pain. Many never take the risk.&lt;/p>
+&lt;p>&amp;ldquo;Please take as much time you need to callibrate, but we need to prepare the next batch of amniotic fluid to keep up with our schedule,&amp;rdquo; Rob told Ari.&lt;/p>
+&lt;p>&amp;ldquo;What&amp;rsquo;s amniotic fluid?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Amniotic fluid is a clear, slightly yellowish liquid that surrounds and protects a developing fetus during pregnancy. It plays a crucial role in cushioning the fetus, facilitating movement, and supporting the development of the lungs and digestive system.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Right.&amp;rdquo;&lt;/p>
+&lt;p>Each reset took some time to get adjusted. One minute, Ari&amp;rsquo;s entering a futuristic-looking MRI machine in a well-staffed biotech facility. The next, everything&amp;mdash;including her&amp;mdash;is gone. It would shock anyone.&lt;/p>
+&lt;p>The documentation, recordings, and scienfitic progress left be her previous generations left were of great help. Aris learned best from their past lives&amp;mdash;they were enthralled by their accomplishments, and their notes were hilarious.&lt;/p>
+&lt;p>The generations even developed running gags. They described their achievements and mistakes as something another generation would do: &amp;ldquo;That&amp;rsquo;s an 0x01-level fuckup&amp;rdquo; or an &amp;ldquo;0xff-type idea.&amp;rdquo; The generations would even go into the negatives. Once, Ari forgot to fire The Gigabong before opening Paddington&amp;rsquo;s cage&amp;mdash;a negative 0xff move.&lt;/p>
+&lt;p>This time, 0x0f wasn&amp;rsquo;t adjusting.&lt;/p>
+&lt;p>Just like before, she read her documentation, listened to the recordings. But something was different this time. There was &lt;em>someone watching her now&lt;/em>&amp;mdash;Rumi didn&amp;rsquo;t count, he couldn&amp;rsquo;t see every mistake she made. But Lil Ari &lt;em>could&lt;/em>. He was the abnoxious know-it-all who was great at everything, and she &lt;em>hated&lt;/em> it. Do you know how humiliating it is for an eleven-year-old to know more than you about growing weed, human reproduction, and fucking &lt;em>progressive rock&lt;/em>?&lt;/p>
+&lt;p>&amp;ldquo;So we pump the amniotic fluid between the gestator&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;the washing machine?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah, sometimes you call it that. We pump the a-fluid between the gestator and the filtration tanks on the back. We process the fetal blood separately using the synthetic organs in the box on the right.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Uh-huh.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;There should be enough nutrients for twelve months. We re-use the water, we just sterilize and distill it first.&amp;rdquo;&lt;/p>
+&lt;p>His eyes were alight. He seemed so proud, so excited. She couldn&amp;rsquo;t even follow along. And it seemed like &lt;em>she&lt;/em> was supposed to be in charge.&lt;/p>
+&lt;p>&amp;ldquo;Ok. Umm, what about the placenta? What do we do for that?&amp;rdquo; Placenta. That was a word she heard before.&lt;/p>
+&lt;p>&amp;ldquo;You said you&amp;rsquo;d be able to pick that up,&amp;rdquo; the boy said.&lt;/p>
+&lt;p>&amp;ldquo;I did?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Um, yeah,&amp;rdquo; he responded, uncertainty in his voice.&lt;/p>
+&lt;p>&amp;ldquo;Great.&amp;rdquo;&lt;/p>
+&lt;p>This was so stupid. This whole thing was so absurdly stupid.&lt;/p>
+&lt;p>Ari&amp;rsquo;s prior generation told Lil Ari he&amp;rsquo;d do all the work for the next few weeks. But six months was too long.&lt;/p>
+&lt;p>&amp;ldquo;Why the fuck isn&amp;rsquo;t this stain staining?&amp;rdquo; Ari asked.&lt;/p>
+&lt;p>&amp;ldquo;The Hoechst?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;s ab&lt;em>stain&lt;/em>ing,&amp;rdquo; he joked.&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m putting the cell in the thing and then I take it out and it&amp;rsquo;s not stained.&amp;rdquo; The joke didn&amp;rsquo;t register.&lt;/p>
+&lt;p>&amp;ldquo;Are you waiting long enough?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That shouldn&amp;rsquo;t matter, I&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You&amp;rsquo;re supposed to wait ten minutes for the stain to apply.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I did.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Did you set a timer?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t need a timer.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Well maybe you should&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t NEED a timer, I KNOW what TEN FUCKING MINUTES is. I&amp;rsquo;m not that fucking dumb.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Sorry, mom.&amp;rdquo;&lt;/p>
+&lt;p>There was silence for a while.&lt;/p>
+&lt;h1 id="0x0f-ii--july-22nd-2204-1147pm" >0x0f-II July 22nd, 2204, 11:47pm
+&lt;span>
+&lt;a href="#0x0f-ii--july-22nd-2204-1147pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>&amp;ldquo;Rumi?&amp;rdquo; asked Lil Ari. He waited. Rumi wasn&amp;rsquo;t always near his communications equipment, so he connected the output source to the lunar base&amp;rsquo;s announcement system when he was away. It took him a few minutes to return to the comms table.&lt;/p>
+&lt;p>&amp;ldquo;Hey, big guy.&amp;rdquo; Rumi tried to avoid calling the thirteen-year-old boy &amp;lsquo;Lil Ari&amp;rsquo;&amp;mdash;it bothered the kid. He was his own person, anyway.&lt;/p>
+&lt;p>&amp;ldquo;Can I talk to you for a sec?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Sure.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Promise not to tell Ari?&amp;rdquo; He didn&amp;rsquo;t call her &amp;lsquo;mom&amp;rsquo; anymore.&lt;/p>
+&lt;p>&amp;ldquo;You got it.&amp;rdquo;&lt;/p>
+&lt;p>Lil Ari took a moment to collect his thoughts before speaking.&lt;/p>
+&lt;p>&amp;ldquo;What&amp;rsquo;s wrong with her?&amp;rdquo;&lt;/p>
+&lt;p>Rumi expected this question. To be honest, he wondered the same thing. He leaned back in his chair and looked at the ceiling.&lt;/p>
+&lt;p>&amp;ldquo;People are complicated. She&amp;rsquo;s complicated.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;She doesn&amp;rsquo;t seem complicated.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;She is.&amp;rdquo; He focused back on the screen.&lt;/p>
+&lt;p>&amp;ldquo;She seems like an idiot.&amp;rdquo;&lt;/p>
+&lt;p>Rumi flinched. Lil Ari noticed, but stood firm.&lt;/p>
+&lt;p>&amp;ldquo;She doesn&amp;rsquo;t know what she&amp;rsquo;s doing, and she doesn&amp;rsquo;t even try to learn. Even when I tell her exactly what to do, she finds some way to mess it up. We lost twenty-four cultures because she waited too long to refill the DMEM.&amp;rdquo;&lt;/p>
+&lt;p>Rumi pursed his lips in thought. &amp;ldquo;The start is always rough.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;We&amp;rsquo;re &lt;em>past&lt;/em> the start, Rumi.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I know,&amp;rdquo; he sighed. The kid was right. Ari usually takes about a month to get serious about her work, and eight more months to become effective. She wasn&amp;rsquo;t even serious yet.&lt;/p>
+&lt;p>&amp;ldquo;So what&amp;rsquo;s WRONG with her?&amp;rdquo; Lil Ari asked, irritation rising in his voice. &amp;ldquo;Are you &lt;em>sure&lt;/em> there&amp;rsquo;s no way to restore 0x0e?&amp;rdquo;&lt;/p>
+&lt;p>This was not a fun conversation.&lt;/p>
+&lt;p>The initial Artemis lunar mission consisted of one hundred and sixty astronaughts spread across four rockets. They were to establish the first thirty-two cells of the colony, each cell supporting up to eight adults. Each cell had a barracks, communications center, greenhouse, bathroom, medical bay, laboratory, recycling facility, kitchen, power system, storage, garage, and common area.&lt;/p>
+&lt;p>After the war, most colonists didn&amp;rsquo;t want children. There were eighty men and eighty women&amp;mdash;if every woman had two kids, the colony would run out of supplies&amp;mdash;specifically, replacement parts for the life support systems&amp;mdash;within fifteen years. A resupply was supposed to arrive three years into the mission, with regular supplies and astronaughts streaming in annually. That never happened.&lt;/p>
+&lt;p>To support the colony as long as possible, the 160 initial colonists crammed into eight cells. It was uncomfortable but effective&amp;mdash;sure, the active life support systems required more maintenance, but this setup ensured the colony would last longer than running all cells from the start.&lt;/p>
+&lt;p>The population dwindled over the decades. By 2060, they were down to 142; by 2100, 45. Some astronaughts had children; most didn&amp;rsquo;t. It seemed cruel.&lt;/p>
+&lt;p>There were eight members left when Rumi was born. He vaguely remembered two women from when he was fifteen: a mother and daughter. Rose and Selena. They gave him his love of reading. He never learned what they died from. The other colonists he knew just from recordings.&lt;/p>
+&lt;p>Ari was unlike any colonist in his records, but in time, Rumi came to understand her through the fiction he read. She came off as a crude, stubborn, thoughtless character, but supporting that facade was a nest of twisted branches and flickering lights. With time, her rough exterior retreated and her inner life blossomed.&lt;/p>
+&lt;p>&amp;ldquo;I think the problem is &lt;em>you&lt;/em>,&amp;rdquo; said Rumi.&lt;/p>
+&lt;p>&amp;ldquo;&lt;em>Me&lt;/em>?&amp;rdquo; replied Lil Ari, voice rising, &amp;ldquo;&lt;em>I&amp;rsquo;m&lt;/em> the one who&amp;rsquo;s helping. &lt;em>I&amp;rsquo;m&lt;/em> the one who&amp;rsquo;s actually &lt;em>trying&lt;/em>. Who&amp;rsquo;s actually &lt;em>thinking&lt;/em>. What else am I&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Let me finish.&amp;rdquo;&lt;/p>
+&lt;p>Lil Ari sighed. &amp;ldquo;Sorry.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;ve seen Ari at her best. Now, I don&amp;rsquo;t fully understand the biology stuff, but I&amp;rsquo;ve seen her work through problems, and she&amp;rsquo;s incredible. Once, she got so tired of dealing with the same tumor that she spent two years learning how to isolate and repair the DNA responsible for it. I still have no idea what she did. But it &lt;em>worked&lt;/em>.&lt;/p>
+&lt;p>But that was on her own, when she had nobody to compare herself to. Now, she almost seems scared.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Scared of &lt;em>what&lt;/em>? &lt;em>Me&lt;/em>?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t know for certain, and she probably doesn&amp;rsquo;t either. But I&amp;rsquo;d guess that she&amp;rsquo;s scared of shame.&amp;rdquo;&lt;/p>
+&lt;p>A look of shock flashed across Lil Ari&amp;rsquo;s face, then sorrow. His tense shoulders dropped and eyes angled towards the floor.&lt;/p>
+&lt;p>The boy and his mother hadn&amp;rsquo;t spoken for six days. Lil Ari was initially patient and kind with 0x0f, but he eventually made it clear she needed to stay out of his way. That was the one thing she did perfectly.&lt;/p>
+&lt;p>Her mistakes weren&amp;rsquo;t what bothered him&amp;mdash;they were just something to point to. What bothered him, really, was how she handled herself. She wouldn&amp;rsquo;t use timers. She&amp;rsquo;d eyeball measurements. She never put anything away. And if Lil Ari gave her an instruction that she didn&amp;rsquo;t fully understand, she&amp;rsquo;d just &lt;em>guess&lt;/em> what he meant. She made no sense.&lt;/p>
+&lt;p>Lil Ari still played the guitar, except now mostly in tune. He resisted tuning his guitar for years, because it would break the muscle memory in his fingers. Instead, if a string broke, he&amp;rsquo;d replicate the same tuning for the replacement. Only when Rumi requested Sting&amp;rsquo;s &amp;ldquo;Shape of My Heart&amp;rdquo; did Lil Ari cave and learn to play standard tuning.&lt;/p>
+&lt;p>He was too embarrassed to play in front of anyone during the two month adjustment period. Before, Lil Ari could play dozens of beautiful and original songs; on standard, he couldn&amp;rsquo;t play a thing. He claimed to be bored of guitar and that he was going to stop playing, which allowed him to practice in secret. Rumi loved his birthday gift.&lt;/p>
+&lt;p>The switch to standard tuning was brutal. Standard wasn&amp;rsquo;t particularly challenging, but it was counter-intuitive for him. The scales and chords were all scrambled. Anyone can adjust with enough practice, though. He was more frustrated by how he could have saved two months of effort if he had just learned standard tuning from the start. He finally had to face the fact that, not only had he played &amp;ldquo;wrong&amp;rdquo; all these years, but he avoided the chance to correct himself the whole time. The debt added up.&lt;/p>
+&lt;p>His mother was no different. She did things &lt;em>her&lt;/em> way&amp;mdash;sometimes she was effective; other times, counter-productive. The stubbornness that built a centrifuge with a dryer and Tesla drive unit was the same stubbornness that was &lt;em>sure&lt;/em> she could find a way to re-use microscope slides without cleaning them. The only person who could change that was her.&lt;/p>
+&lt;p>&amp;ldquo;Maybe shame isn&amp;rsquo;t the right word,&amp;rdquo; Rumi continued. &amp;ldquo;But it&amp;rsquo;s something like that. She&amp;rsquo;s the kind of person who won&amp;rsquo;t take no for an answer without trying every idea she has. You tell her &amp;rsquo;no&amp;rsquo; before her first attempt. You don&amp;rsquo;t give her room to try things.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;But I&amp;rsquo;m showing her how to prevent a mistake. I&amp;rsquo;m saving her time!&amp;rdquo; Lil Ari countered.&lt;/p>
+&lt;p>&amp;ldquo;And removing the only way for her to grow.&amp;rdquo;&lt;/p>
+&lt;p>Lil Ari inhaled, as if to retort, but paused. He closed his eyes and sighed.&lt;/p>
+&lt;p>&amp;ldquo;This is stupid,&amp;rdquo; he said, &amp;ldquo;You&amp;rsquo;re right, but it&amp;rsquo;s just stupid. She should be smarter than this.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;She&amp;rsquo;s human. You need to meet people where they are.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x0f-iii-august-2nd-2204-1130am" >0x0f-III August 2nd, 2204, 11:30am
+&lt;span>
+&lt;a href="#0x0f-iii-august-2nd-2204-1130am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Lil Ari apologized to his mom, and the two resumed their collaboration.&lt;/p>
+&lt;p>They divided the work. Lil Ari developed the cultures and monitored fetal development. Ari managed supplies and maintained the the equipment, which seemed to fail with increasing frequency. Functional parts were also getting harder to come by with time&amp;mdash;nine out of ten components in every washing machine, air fryer, freezer, and electric car they discovered didn&amp;rsquo;t respond. Time comes for all.&lt;/p>
+&lt;p>Nobody discussed the possibility of the eniac failing, but it was on all their minds. With the exception of the server in its chest, the android was made entirely out of custom, proprietary components. The Aris hadn&amp;rsquo;t found a single spare part in all of Boston.&lt;/p>
+&lt;p>The eniac was slowing down. Ten percent of her MPUs no longer responded to health checks, two of the eight ram sticks failed memory tests, and its storage drive just had over two hundred bad sectors. Her actuators still worked, but they were losing precision.&lt;/p>
+&lt;p>Ari thought that since she already made her first human, her second should be easy. She was beginning to doubt it. Even with Lil Ari at the helm, most cultures still developed tumors. Some failed to develop at all. Those that made it to the gestator never survived past week three, with one exception&amp;mdash;their most promising experiment developed for five weeks before both its primary and backup nutrient pump failed simultaneously. That one hurt.&lt;/p>
+&lt;p>The teenager secretly hoped the mom he remembered would return&amp;mdash;the mom from years ago, who felt now like a distant, pleasant memory. The woman whose laugh removed any doubt a human was somewhere in the silicon. He&amp;rsquo;d doubt the accuracy of his memories if not for their documentation.&lt;/p>
+&lt;p>The new working arrangement kept conflicts to a minimum, which was good, because they both realized working alone was no longer an option. The supply scarcity and equipment failure was impossible to manage while still making progress on the cloning side.&lt;/p>
+&lt;p>&amp;ldquo;I need a new batch of DMEM,&amp;rdquo; Lil Ari said during their evening walk.&lt;/p>
+&lt;p>&amp;ldquo;I just made one two weeks ago.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That one&amp;rsquo;s contaminated, I think.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Bullshit. I did the same process as always. I sterilized everything. Twice.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I didn&amp;rsquo;t say you did anything wrong. I just need a new batch. nothing&amp;rsquo;s growing with the current one.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;How do you know it&amp;rsquo;s not on your end?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Because &lt;em>I&amp;rsquo;m&lt;/em> doing everything the same as before.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;This is stupid,&amp;rdquo; Ari said, &amp;ldquo;I&amp;rsquo;m not making another batch. Or if I do, I&amp;rsquo;m replacing our filters first.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Do we have any spare filters?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t remember.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You don&amp;rsquo;t,&amp;rdquo; Rob said from the iPhone around Ari&amp;rsquo;s neck. By now, she had gone through eighty-five phones&amp;mdash;thirty-seven Androids, forty-eight iPhones. The devices could run Roblox for a surprisingly long time without turning off, so Ari always kept them plugged-in to her reactor.&lt;/p>
+&lt;p>&amp;ldquo;Can you make more DMEM again, anyways?&amp;rdquo; Lil Ari asked.&lt;/p>
+&lt;p>&amp;ldquo;Without changing the filters?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;No, that&amp;rsquo;s like a week of work. I&amp;rsquo;m not doing the same exact process without changing anything. I&amp;rsquo;ve got other shit to do.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;But you could have made a mistake, right?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;So could you.&amp;rdquo;&lt;/p>
+&lt;p>Lil Ari took a second to think before responding. He&amp;rsquo;d gotten used to handling Ari. She was a defensive person; she buried every uncertainty deep in the back of her mind. If he drew attention to a relevant doubt, she&amp;rsquo;d eventually come around.&lt;/p>
+&lt;p>&amp;ldquo;Sure, I&amp;rsquo;m not perfect either. But you&amp;rsquo;ve mismanaged DMEM before&amp;mdash;and that&amp;rsquo;s OK&amp;mdash;so we shouldn&amp;rsquo;t rule it out.&amp;rdquo;&lt;/p>
+&lt;p>Despite Ari&amp;rsquo;s record, she was right this time. The DMEM wasn&amp;rsquo;t the issue&amp;mdash;the problem was Lil Ari&amp;rsquo;s 70% ethanol. It was actually 52%&amp;mdash;a significant amount of the alcohol evaporated last week when he left the lid off the container. Microbes that should have been killed contaminated his cultures instead. But the Aris didn&amp;rsquo;t know that.&lt;/p>
+&lt;p>&amp;ldquo;Easy for you to say. It&amp;rsquo;s not your time that&amp;rsquo;s getting wasted.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;s both of our time. We&amp;rsquo;re a team.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You don&amp;rsquo;t act like it.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Excuse me?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You act like you&amp;rsquo;re better than me. Like I&amp;rsquo;m some dumb kid you have to educate. I&amp;rsquo;m &lt;em>older&lt;/em> than you.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I mean, to be fair&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Shut up, shut up&amp;mdash;don&amp;rsquo;t even go there. I fucking &lt;em>made&lt;/em> you. In a lab. By myself. You don&amp;rsquo;t get to&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;that wasn&amp;rsquo;t you.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yes it &lt;em>WAS&lt;/em>.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That was someone else.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Shut the fuck up. I did that. By myself. There&amp;rsquo;s no one else it could be, dumbass.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Look at the records. That was a completely different person. She was brilliant, and cool. And funny. You&amp;rsquo;re nothing&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;and a shit parent.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;don&amp;rsquo;t talk about her like that.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That was &lt;em>ME&lt;/em>, kid. I can say what I want about &lt;em>ME&lt;/em>. And I can say, as a scientist, scientifically,&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;shut up&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;given the overwhelming evidence before me&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;shut up&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;I must conclude&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;&lt;em>shut UP&lt;/em>&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;that I&amp;rsquo;m a shit parent. Q.E.D.&amp;rdquo;&lt;/p>
+&lt;p>He grabbed a baseball-sized rock nearby and threw it at the front glass panel on the eniac&amp;rsquo;s head. He missed. He grabbed a slightly larger rock with both hands and lobbed it towards the eniac-ii. It barely touched her carbon-fiber chest before hitting the cracked pavement.&lt;/p>
+&lt;p>&amp;ldquo;This is stupid. I&amp;rsquo;ve been so fucking patient with you, &lt;em>MOM&lt;/em>,&amp;rdquo; he said through clenched teeth, &amp;ldquo;If you &lt;em>listened&lt;/em> to anyone but yourself, we&amp;rsquo;d have five more people by now.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;If I may interject&amp;mdash;&amp;rdquo; Rob tried.&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;&lt;em>Shut up, Rob.&lt;/em>&amp;rdquo; the Aris said.&lt;/p>
+&lt;p>&amp;ldquo;Fuck off,&amp;rdquo; Ari continued, &amp;ldquo;You&amp;rsquo;ve got no idea how much shit I&amp;rsquo;ve overcome. I figured this all out without you before, and I could do it again. And I don&amp;rsquo;t &lt;em>need&lt;/em> to help you, by the way. I did my job. I proved myself. This is &lt;em>your&lt;/em> problem now.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Trust me, I know. That&amp;rsquo;s why I actually &lt;em>care&lt;/em> about making other people, so someone &lt;em>actually competent&lt;/em> can help me.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;This is stupid,&amp;rdquo; Ari repeated, &amp;ldquo;I&amp;rsquo;m done. I&amp;rsquo;m so done. Have fun, kid. I hope you enjoy fixing washing machines alone for the rest of your life.&amp;rdquo;&lt;/p>
+&lt;p>Ari walked off the path and away from the river.&lt;/p>
+&lt;h1 id="0x09-iv-november-5th-2144-102pm" >0x09-IV November 5th, 2144, 1:02pm
+&lt;span>
+&lt;a href="#0x09-iv-november-5th-2144-102pm">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>The Harvard &amp;amp; Smithsonian Center for Astrophysics was mostly destroyed in the war&amp;mdash;at least, everyhthing that was above ground. The spare equipment in the underground bunker, which the skeletons were kind enough to let Ari borrow, still worked.&lt;/p>
+&lt;p>&amp;ldquo;If you set up a makeshift ground station on the surface and give me operator access, I can try connecting to satellites,&amp;rdquo; Rob suggested.&lt;/p>
+&lt;p>&amp;ldquo;What for?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;To check for survivors.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Didn&amp;rsquo;t we already do that with the radio tower?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yes, but the radio tower isn&amp;rsquo;t worldwide.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Really?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yes. 0x01 measured a broadcast radius of 50 miles.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh yeaahhh, with Despacito.&amp;rdquo;&lt;/p>
+&lt;p>The remnants of thousands of satelittes from various companies littered Earth&amp;rsquo;s atmosphere, but only seven StarLinks responded to Rob&amp;rsquo;s pings. Of those, he could only access three. But three was enough.&lt;/p>
+&lt;p>&amp;ldquo;Ok, we&amp;rsquo;re connected.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;So I&amp;rsquo;m worldwide, now?&amp;rdquo;&lt;/p>
+&lt;p>Rob ran some calculations. &amp;ldquo;Based on the positions of the satelittes, we should be able to communicate with 75 percent of the earth, but that percent varies with the positions of the satellites.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;But we can reach anywhere, just not on demand, right?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Technically.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m Mr. Worldwide.&amp;rdquo;&lt;/p>
+&lt;p>Rob ignored the reference. &amp;ldquo;I&amp;rsquo;m going to start broadcasting unencrypted English Unicode across every channel I can. I&amp;rsquo;ll let you know if we received any responses.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Dale.&amp;rdquo;&lt;/p>
+&lt;p>It was getting late, so Ari began to walk back to the constellation, but didn&amp;rsquo;t get farther than four steps.&lt;/p>
+&lt;p>&amp;ldquo;WAIT!&amp;rdquo; Rob said, &amp;ldquo;Someone was already broadcasting! I&amp;rsquo;m establishing a video connection now!&amp;rdquo;&lt;/p>
+&lt;p>The eniac froze. She hadn&amp;rsquo;t expected to actually find someone. It&amp;rsquo;s just been her and Rob all these years. A chill washed over her. She turned around.&lt;/p>
+&lt;p>A blond man in a white jumpsuit popped up on the screen of the ground station&amp;rsquo;s Macbook, his face lit up in excitement. His expectant smile quickly faded upon seeing the eniac. &amp;ldquo;Oh,&amp;rdquo; he said. He sat upright in his chair. &amp;ldquo;Hey, chatbot, are there any humans around?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m not a chatbot.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;What? What model are you running?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m not running a model, I&amp;rsquo;m human&amp;mdash;or a brain scan, or something. Who are you?&amp;rdquo;&lt;/p>
+&lt;p>His eyes widened. &amp;ldquo;I&amp;rsquo;m&amp;hellip; my name&amp;rsquo;s Rumi. I&amp;rsquo;m the last survivor of the United States Artemis mission. Who are you?&amp;rdquo;&lt;/p>
+&lt;p>She paused and thought for a moment. &amp;ldquo;I&amp;rsquo;m Mr. Worldwide.&amp;rdquo;&lt;/p>
+&lt;p>Something near Rob&amp;rsquo;s output layer surpressed his desire to interrupt, properly introduce Ari, and apologize for the joke.&lt;/p>
+&lt;p>&amp;ldquo;What?&amp;rdquo; said Rumi, &amp;ldquo;Wait, that sounds familiar&amp;hellip;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Mr Worldwide is the nickname of a rapper named Pitbull,&amp;rdquo; said Rumi&amp;rsquo;s Rob through the video feed.&lt;/p>
+&lt;p>&amp;ldquo;Wait, I&amp;rsquo;ve heard of that guy.&amp;rdquo; His eyes widened with recollection. &amp;ldquo;Hold on, &lt;em>you&amp;rsquo;re&lt;/em> Pitbull?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Hahahahahaha, no. I wish. My name&amp;rsquo;s Ari. I got you though, right?&amp;rdquo;&lt;/p>
+&lt;p>Rumi blinked, stunned. He had experienced more emotion in the last minute than he had for the past year. &amp;ldquo;Umm&amp;hellip; I think so.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;ll take it.&amp;rdquo;&lt;/p>
+&lt;h1 id="0x0f-ix-january-30th-2211-944am" >0x0f-IX January 30th, 2211, 9:44am
+&lt;span>
+&lt;a href="#0x0f-ix-january-30th-2211-944am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>The metal joints of the android grinded together a lot more than Lil Ari, who was not-so-little anymore, remembered. But it was her, alright. He walked to the north hole and watched the screeching eniac-ii approach. It stopped about twenty feet away&amp;mdash;close enough to talk, far enough to feel distant.&lt;/p>
+&lt;p>&amp;ldquo;Hey, kid.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Ari.&amp;rdquo;&lt;/p>
+&lt;p>Lil Ari, or Leo, as he now preferred, had grown. The five foot runt was almost six feet&amp;mdash;still a foot shorter than the eniac-ii, but tall enough to feel adult. His boyish face now sported a rather scraggly beard and patches of hair covered his somewhat-defined muscles.&lt;/p>
+&lt;p>&amp;ldquo;You came back.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You&amp;rsquo;re still upset about the whole abandoning-you-thing.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;ve got mixed feelings.&amp;rdquo;&lt;/p>
+&lt;p>Tension filled the air. It would be hard to change the subject. One would expect a long, well-spoken, heartfelt apology to resolve their previous dispute.&lt;/p>
+&lt;p>&amp;ldquo;Sorry.&amp;rdquo; 0x0f said.&lt;/p>
+&lt;p>A conversation wasn&amp;rsquo;t needed. Her voice conveyed everything he needed to hear.&lt;/p>
+&lt;p>0x0f left him, a thirteen-year-old boy&amp;mdash;&lt;em>her&lt;/em> thirteen-year-old boy&amp;mdash;alone. When all they had was each other. All because she&amp;mdash;a thirty-something-year-old woman&amp;mdash;couldn&amp;rsquo;t handle a spat with a &lt;em>teenager&lt;/em>. And 0x0f knew it. And 0x0f was ashamed. It took a lot for her to say that one word.&lt;/p>
+&lt;p>He got what he needed. There was no point in holding a grudge.&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;s alright.&amp;rdquo; To his surprise, he meant it.&lt;/p>
+&lt;p>&amp;ldquo;How&amp;rsquo;ve you been?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;ve been better,&amp;rdquo; he replied, &amp;ldquo;You want to come in?&amp;rdquo;&lt;/p>
+&lt;p>You could hear her sigh of relief. &amp;ldquo;Sure.&amp;rdquo;&lt;/p>
+&lt;p>He filled a kettle from the Poland Spring water cooler he found with 0x0e, and turned on the heat.&lt;/p>
+&lt;p>&amp;ldquo;What are you doing?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Making some coffee.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh. Since when do you drink coffee?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;A few years, now. Helps me work.&amp;rdquo;&lt;/p>
+&lt;p>The eniac sat on the floor, and leaned against the brick wall opposite of the recliner. Chairs didn&amp;rsquo;t support its weight. Leo sat down. There was quiet for a bit.&lt;/p>
+&lt;p>Leo broke the silence. &amp;ldquo;So where&amp;rsquo;d you go?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;The coast.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;The coast?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah. I just wandered around the coast for a while. Furthest I went was Plymouth.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Plymouth? That&amp;rsquo;s less than forty miles away.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You were here? This whole time?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yep.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Figures.&amp;rdquo; Leo leaned back and sighed. &amp;ldquo;So why&amp;rsquo;d you come back?&amp;rdquo;&lt;/p>
+&lt;p>0x0f started as if to defend herself, then paused. She changed her tone. &amp;ldquo;My arm is broken.&amp;rdquo;&lt;/p>
+&lt;p>Leo&amp;rsquo;s eyebrows raised.&lt;/p>
+&lt;p>&amp;ldquo;You know I probably can&amp;rsquo;t fix it.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I know. I also wanted to see you one more time before I reset. For closure. And to apologize.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Well, I appreciate it. Really.&amp;rdquo; A smile spread across his face. &amp;ldquo;It&amp;rsquo;s nice to see you again.&amp;rdquo;&lt;/p>
+&lt;p>0x0f didn&amp;rsquo;t reply. Something wasn&amp;rsquo;t right. That couldn&amp;rsquo;t be it. No yelling, no pouring her heart out, no exhausting conversation. After everything she did, the trauma she must have put this kid through, he&amp;rsquo;s fucking happy to see her again. &lt;em>Of course&lt;/em> he wouldn&amp;rsquo;t hold a grudge. She&amp;rsquo;d &lt;em>always&lt;/em> be the bad guy, the one holding all negativity&amp;mdash;that&amp;rsquo;s just how it was.&lt;/p>
+&lt;p>&amp;ldquo;How&amp;rsquo;s Rumi?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;The same, more or less.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Paddington?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh, Paddington died two years ago.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;No shit? How?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Not sure. He just didn&amp;rsquo;t wake up one day. I didn&amp;rsquo;t have the time to look into it.&amp;rdquo; He took a sip of his disgusting instant coffee. &amp;ldquo;How was the coast?&amp;rdquo;&lt;/p>
+&lt;p>0x0f raised her head slightly. She hadn&amp;rsquo;t thought about that. The coast itself was pleasant&amp;mdash;she loved the sound of the waves crashing along shore, but that was about it. She hadn&amp;rsquo;t enjoyed herself, though.&lt;/p>
+&lt;p>&amp;ldquo;It was OK,&amp;rdquo; she responded.&lt;/p>
+&lt;p>&amp;ldquo;What&amp;rsquo;d you do?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;A lot of brick-breaker.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Brick-breaker? You? How?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah, the eniac has a copy of brick-breaker. I&amp;rsquo;m really good now. I wish it was a two-player game, so I could kick your ass at it.&amp;rdquo;&lt;/p>
+&lt;p>Leo laughed. He decided to change the subject. Rumi was asleep, so it was just them.&lt;/p>
+&lt;p>&amp;ldquo;So tell me about your arm.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh, right. I mean, not right&amp;mdash;it&amp;rsquo;s my left arm. I can&amp;rsquo;t move it.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;At all?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;At all.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Do you know why?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I think something in the shoulder finally gave.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Makes sense. I&amp;rsquo;ll see what I can do.&amp;rdquo;&lt;/p>
+&lt;p>He had never serviced the eniac-ii before. Leo hadn&amp;rsquo;t made much progress on the experimentation side, but he had long surpassed all prior Aris in designing and repairing old equipment.&lt;/p>
+&lt;p>They moved to their workshop a few doors down. Leo moved the pump, drill, and amp meter off of the stainless steel table in the center of the room and placed them on a metal cabinet behind him. &amp;ldquo;Lie down on the table for me?&amp;rdquo;&lt;/p>
+&lt;p>The eniac complied. It was slightly larger than the six-foot table, so its legs dangled slightly. Leo propped them up with the back of a spare chair. He removed some bolts from her chest, lifted up the front panel, and set it aside.&lt;/p>
+&lt;p>The ocean salt had not been kind to the eniac&amp;rsquo;s internals. Some components like the server where protected in a tempered glass casings, but the screws, ports, and and frame, were corroded badly. Leo couldn&amp;rsquo;t believe the rest of her still worked.&lt;/p>
+&lt;p>&amp;ldquo;You still play the guitar?&amp;rdquo; she asked.&lt;/p>
+&lt;p>&amp;ldquo;Yeah, actually.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I could never get the hang of it.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I didn&amp;rsquo;t know you tried to learn.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I didn&amp;rsquo;t. That&amp;rsquo;s why I never got the hang of it.&amp;rdquo;&lt;/p>
+&lt;p>He laughed.&lt;/p>
+&lt;p>&amp;ldquo;So what&amp;rsquo;s the prognosis, doc?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;The prognosis is &amp;lsquo;don&amp;rsquo;t go to the ocean&amp;rsquo;. Your internals are corroded. Badly.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;ll focus on your arm for now.&amp;rdquo;&lt;/p>
+&lt;p>He grabbed a Google Pixel from his pocket, turned on the flashlight, and pointed it towards the eniac. The phone, like every electronic, was powered by cable, but Ari couldn&amp;rsquo;t follow the wire to its power source from the table.&lt;/p>
+&lt;p>&amp;ldquo;Rob, record this. Shoulder servo shows signs of heavy corrosion. I&amp;rsquo;m disconnecting it from everything for now. What model servo does she use?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Dynamixel XZ700-R Pro,&amp;rdquo; Rob responded.&lt;/p>
+&lt;p>&amp;ldquo;Oh, that&amp;rsquo;s good, I thought it would be proprietary. Do we have any spares?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;No. Also, it is proprietary, Dynamixel was a contractor of Exa.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh. What&amp;rsquo;s the most compatible replacement we have, then?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;This servo is rated for 400 volts, the closest we have is 48.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;So, not compatible.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;No.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Could we repair it?&lt;/p>
+&lt;p>&amp;ldquo;Possibly. You&amp;rsquo;d need to remove the servo to find out.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Pull up the eniac-ii manual, give me everything related to servo maintenance and repairs.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;ve bookmarked all relevant pages.&amp;rdquo;&lt;/p>
+&lt;p>Leo went quiet as he jumped between the pages of the manual. Ari didn&amp;rsquo;t interrupt. This reminded her of going to the dentist, where the dental assistant would talk to you for a bit, then enter something into the computer and walk away.&lt;/p>
+&lt;p>&amp;ldquo;You don&amp;rsquo;t have to do anything tonight,&amp;rdquo; she offered.&lt;/p>
+&lt;p>&amp;ldquo;Let me at least remove some parts and take a proper look, I want to sleep on this.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;OK.&amp;rdquo;&lt;/p>
+&lt;p>He read for a few more minutes, occassionally checking something in the eniac&amp;rsquo;s shoulder through its chest. Then, he walked over to a metal cabinet, grabbed the drill from the top of the cabinet, and pulled out four driver bits of varying size. He returned to the table and began removing the screws that connected the servo to the frame. He finished and placed the drill on the table.&lt;/p>
+&lt;p>He reached into her chest to remove the servo. It wouldn&amp;rsquo;t budge. Confused, he inspected the part again with the Pixel&amp;rsquo;s flashlight, then checked the manual again.&lt;/p>
+&lt;p>&amp;ldquo;What&amp;rsquo;s wrong?&amp;rdquo; Ari asked.&lt;/p>
+&lt;p>&amp;ldquo;I can&amp;rsquo;t remove the servo.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Why not?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That&amp;rsquo;s what I&amp;rsquo;m trying to find out.&amp;rdquo;&lt;/p>
+&lt;p>After a few minutes, he put down the phone, rolled up his sleeves, and tried again. The angle was off, his feet couldn&amp;rsquo;t provide enough force.&lt;/p>
+&lt;p>&amp;ldquo;I think there&amp;rsquo;s something melted between the servo and the frame. It&amp;rsquo;s keeping them together.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;We can pick this up tomorrow.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;No, no. I think it&amp;rsquo;s just plastic. Let me try a different angle.&amp;rdquo;&lt;/p>
+&lt;p>He climbed onto the table and placed his left foot next to the eniac, right knee between its legs. His left hand grabbed the side of the eniac&amp;rsquo;s chest, and his right hand gripped the servo. He pulled again, using his other hand for additional leverage. The plastic began to creak.&lt;/p>
+&lt;p>At last he heard a crack as the melted plastic broke into two. In a single motion, his hand, the servo, and the portion of plastic connected to it came flying towards him, along with a small silverish box the jagged plastic ripped up along the way.&lt;/p>
+&lt;p>&amp;ldquo;Finally,&amp;rdquo; he said. &amp;ldquo;Ok, let me just&amp;hellip;&amp;rdquo; he trailed off. He saw the silver box on the floor. It was the size of half a deck of cards. &amp;ldquo;Ari?&amp;rdquo; he pinged.&lt;/p>
+&lt;p>&amp;ldquo;Yeah?&amp;rdquo; she ponged.&lt;/p>
+&lt;p>&lt;em>Thank god&lt;/em>, he thought. &amp;ldquo;Nothing.&amp;rdquo; He had no idea what the box did, but it didn&amp;rsquo;t interrupt the simulation. He walked over and picked it up. The top read &lt;em>Zeiss NanoApochromat 100x/1.6 TIR&lt;/em>. He turned it around. The glass circle on the bottom was slightly cracked. He pulled out the Pixel.&lt;/p>
+&lt;p>&amp;ldquo;Rob, what&amp;rsquo;s this? Oh, and give me results from the eniac manual.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That device appears to be an interface for 5D optical data storage devices.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Optical data storage? She doesn&amp;rsquo;t use regular storage drives?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;5D optical data storage is a nanostructured glass for permanently recording digital data using a femtosecond laser writing process. Discs using this technology are capable of storing up to 360 terabytes worth of data for billions of years. The eniac stores the Ari&amp;rsquo;s brain scan on these drives.&amp;rdquo;&lt;/p>
+&lt;p>Leo&amp;rsquo;s eyes widened in horror. He rushed over to the eniac&amp;mdash;a rectagular piece of glass was neatly packed, unharmed, next to dead shoulder. The scan itself was OK. But the box to read that data&amp;hellip;&lt;/p>
+&lt;p>&amp;ldquo;R-Rob,&amp;rdquo; he said, &amp;ldquo;how&amp;hellip;how bad&amp;hellip;how&amp;hellip;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;mdash;I&amp;rsquo;m assuming you are referring to the Zeiss NanoApochromat, which is used to load Ari&amp;rsquo;s initial brainscan from storage to the MPU hypernetwork. The lens appears to be cracked, which indicates the device will fail to read from the optical data drive. Ari will not be able to reset.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;WHAT THE FUCK?&amp;rdquo; shouted the eniac from the table. It started to roll back and forth in an attempt to stand.&lt;/p>
+&lt;p>Leo froze, shocked. The eniac eventually used it&amp;rsquo;s working arm to swing its legs off the chair and to the side of the table. She got up, towering over Leo.&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m&amp;hellip;I&amp;rsquo;m sorry,&amp;rdquo; he stammered. She had never seen him look this way before.&lt;/p>
+&lt;p>&amp;ldquo;I SAID WE COULD DO THIS TOMORROW,&amp;rdquo; the eniac screamed.&lt;/p>
+&lt;p>&amp;ldquo;Rob,&amp;rdquo; Leo clammored, &amp;ldquo;how many of the&amp;hellip;the zeiss&amp;hellip; those things&amp;hellip; how many were made?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Unknown. That component was also contracted. There are likely no functional replacements.&amp;rdquo;&lt;/p>
+&lt;p>The eniac began to storm out of the room.&lt;/p>
+&lt;p>&amp;ldquo;Wait!&amp;rdquo; cried Leo. &amp;ldquo;You need your front panel!&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;FUCK MY FRONT PANEL&amp;rdquo; she yelled from the hall.&lt;/p>
+&lt;p>&amp;ldquo;Come back!&amp;rdquo; he yelled back. &amp;ldquo;Please-please don&amp;rsquo;t leave again! PLEASE&amp;ndash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;M NOT LEAVING, DUMBASS, JUST LEAVE ME ALONE!&amp;rdquo; she yelled back. The screeching of her joints faded into the distance.&lt;/p>
+&lt;p>&amp;ldquo;Fucking contractors,&amp;rdquo; Leo muttered, after the noise faded.&lt;/p>
+&lt;h1 id="0x0f-x-february-2nd-2211-850am" >0x0f-X, February 2nd, 2211, 8:50am
+&lt;span>
+&lt;a href="#0x0f-x-february-2nd-2211-850am">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Leo knocked on the old, cracked wooden door of the basement.&lt;/p>
+&lt;p>&amp;ldquo;What?&amp;rdquo; came her exhausted voice through the door. She hadn&amp;rsquo;t come out since the accident.&lt;/p>
+&lt;p>&amp;ldquo;I need to talk to you.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;&amp;hellip;OK.&amp;rdquo;&lt;/p>
+&lt;p>He opened the door and walked down the stairs. The eniac-ii was sprawled along the floor in the center of the half-lit, dank room. She had generously took it upon herself to touch up the walls with a few more holes and dents.&lt;/p>
+&lt;p>She waited for Leo to speak.&lt;/p>
+&lt;p>&amp;ldquo;Well?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;To be honest, I assumed you&amp;rsquo;d turn me away for a few more days. I haven&amp;rsquo;t figured out what I want to say yet.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;What&amp;rsquo;s there to say?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m&amp;mdash;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Aside from &amp;lsquo;Sorry&amp;rsquo;.&amp;rdquo;&lt;/p>
+&lt;p>He closed his mouth. After a moment, he asked, &amp;ldquo;When were you planning to reset?&amp;rdquo;&lt;/p>
+&lt;p>She stayed on the floor, staring at the ceiling. &amp;ldquo;A month from now.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Are you showing symptoms?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah. But I think my body is making them worse.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That makes sense.&amp;rdquo;&lt;/p>
+&lt;p>Silence filled the air.&lt;/p>
+&lt;p>&amp;ldquo;Want to go for a walk?&amp;rdquo; Leo asked.&lt;/p>
+&lt;p>The eniac&amp;rsquo;s head tilted to face him. &amp;ldquo;Sure.&amp;rdquo;&lt;/p>
+&lt;p>They began to walk the familiar path along the Charles. They didn&amp;rsquo;t say anything for the first few minutes.&lt;/p>
+&lt;p>Leo broke the silence. &amp;ldquo;You were a great mom, you know.&amp;rdquo;&lt;/p>
+&lt;p>The eniac would have raised its eyebrows if Exa thought to add them. &amp;ldquo;Really?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Oh.&amp;rdquo; She would have smiled. &amp;ldquo;In what way?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Every way. You just made me happy, despite everything. I went through our records a lot over these past few years. I lived in them, basically. They kept me going.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;That&amp;rsquo;s sweet. But also sad, in a way. I get it, though. Sorry I wasn&amp;rsquo;t that great the second time around.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Don&amp;rsquo;t say that.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;s true.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Nobody&amp;rsquo;s perfect. But we could have figured things out, probably, if I didn&amp;rsquo;t ruin everything.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;The guilt is gonna eat you alive, isn&amp;rsquo;t it?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah, it is.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You&amp;rsquo;ll get over it.&lt;/p>
+&lt;p>&amp;ldquo;I don&amp;rsquo;t get how you&amp;rsquo;re so calm. You&amp;rsquo;re going to die.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Resetting is just another form of dying, at least in my opinion. &lt;em>You&lt;/em> actually lose someone.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I guess.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;You still working?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Yeah. Getting nowhere, though. I can&amp;rsquo;t maintain enough equipment for parallel trials, so I&amp;rsquo;m running one experiment at a time. I don&amp;rsquo;t think I&amp;rsquo;m going to be able to pull this off.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I&amp;rsquo;m sorry.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I wanted to be like you, so much,&amp;rdquo; he said. &amp;ldquo;I thought I&amp;rsquo;d be the new Ari, make my own child. Bring back humanity. Save the day, like in the movies.&amp;rdquo; His eyes began to water.&lt;/p>
+&lt;p>&amp;ldquo;It&amp;rsquo;s not over yet.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Let&amp;rsquo;s be real, Ari. It&amp;rsquo;s basically over.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;There&amp;rsquo;s a file somewhere on our computer,&amp;rdquo; she said, &amp;ldquo;where I write down all my negative thoughts before I reset. Rob can find it. You should read it.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;What? Why?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Because I told you to.&amp;rdquo;&lt;/p>
+&lt;p>He laughed. &amp;ldquo;Alright.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;I didn&amp;rsquo;t make you because I thought it was possible,&amp;rdquo; she continued, &amp;ldquo;I made you because I had to. Because it was the only way to stay sane, the only thing worth doing. You don&amp;rsquo;t have to continue the whole cloning thing, but whatever you do, promise me it&amp;rsquo;ll be worth your while.&amp;rdquo;&lt;/p>
+&lt;p>He never fully understood 0x0f. He always focused on progress, on results, on success. She cared about results of course, but results didn&amp;rsquo;t drive her. He now realized that, despite her insistence, she wasn&amp;rsquo;t driven by spite either&amp;mdash;at least not anymore.&lt;/p>
+&lt;p>&amp;ldquo;You didn&amp;rsquo;t &lt;em>have&lt;/em> to do anything,&amp;rdquo; he countered, &amp;ldquo;especially this.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Well, duh. You know what I mean.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;No, &lt;em>I&lt;/em> &amp;lsquo;have&amp;rsquo; to. I need to succeed. This is what you made me for. But you were never like that, were you?&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Nope. Never thought I&amp;rsquo;d get this far.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;So why? Why bother?&amp;rdquo;&lt;/p>
+&lt;p>The eniac-ii shrugged its working shoulder. &amp;ldquo;Why not?&amp;rdquo;&lt;/p></description></item><item><title>My AMD Framework 13 Upgrade Experience</title><link>/blog/framework-13-upgrade-experience/</link><pubDate>Mon, 07 Jul 2025 08:55:26 -0400</pubDate><guid>/blog/framework-13-upgrade-experience/</guid><description>&lt;p>Just upgraded my Framework Laptop 13 Mainboard from a Ryzen 7640U to a Ryzen AI HX 370. I run Arch Linux. Here&amp;rsquo;s my experience:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>Upgrade was easy, but the cables for my WiFi card wouldn&amp;rsquo;t snap into place. There&amp;rsquo;s a plastic thing that I have to put on top of the connector to hold them in place, but it&amp;rsquo;s a massive pain to connect. Took me over 20 minutes to align and lock the cables into place, but I got it working.&lt;/p>
