@@ -1346,7 +1346,7 @@ There are no known records from 0x08.
 
 # 0x0e-II March 3rd, 2192, 6:44pm
 
-In addition to the intact beakers, pipettes, samples, hot plates, and coverslips Ari recovered from Brandeis University's Bassine Science Building, she had also found someone's record of the 2013 album *X Infinity* by George Watsky. She found it years ago but never put it on, so among the equipment it sat. Ari had forgotten about it.
+In addition to the intact beakers, pipettes, samples, hot plates, and coverslips Ari recovered from Brandeis University's Bassine Science Building, she had also found an old record of the 2013 album *X Infinity* by George Watsky. Though she found it years ago she never put it on. Ari had forgotten about it.
 
 Over the decades, the eniac had produced no less than fifteen hundred failed clones. Her most successful attempt four years prior developed for 24 weeks before its little heartbeat disappeared. She stopped naming them after that.
 
@@ -1354,7 +1354,7 @@ It wasn't the cloning that gave Ari trouble---that was mostly solved in the 2030
 
 #1544, or '44, lasted 33 weeks so far. Ari hadn't left the lab since week 16. During week 23, '44 developed a small, abnormal growth on the outer lining of its stomach, which was removed less than forty eight hours after Ari caught it. 
 
-"Rumi, you're on mute." A quick look of understanding took over his face. He unmuted.
+"Rumi, you're on mute." 
 
 "Can you hear me now?"
 
@@ -1364,7 +1364,7 @@ It wasn't the cloning that gave Ari trouble---that was mostly solved in the 2030
 
 "Haven't decided yet."
 
-"If it's a boy, you should call it Adam, you know, for the bible?"
+"If it's a boy, you should call it Adam, you know, for the Bible?"
 
 "I'll call him Oedipus to make sure he loves me."
 
@@ -1382,13 +1382,13 @@ She had prepared multiple infant-sized suits which *should* resist radiation, bu
 
 She had listed to the original soundtrack for *Mamma Mia! Here we go again* more than one hundred times over the past four months. If Ari knew how hard it would be for her to leave '44's side, she'd have brought at least twenty or thirty records. And after what Rob said happened to 0x01-2, she wouldn't risk getting high.
 
-Ari walked over to one of the black plastic storage bins she stashed in the corner of the lab, popped the lid, and grabbed the infant-sized rad-suit. Underneath was Watsky's *X Infinity*---she forgot she stashed it there.
+Ari walked over to one of the black plastic storage bins she stashed in the corner of the lab, popped the lid, and grabbed the small rad-suit. Underneath was Watsky's *X Infinity*---she'd forgotten she'd stashed it there.
 
-She replaced the storage lid, walked over to the record player, swapped out *Mamma Mia!* with *X Infinity*, then headed towards the gestator and placed the radsuit on the floor beside it. As the vinyl turned, sounds of traffic filled the air for the first time in decades.
+After carefully replacing the storage lid, Ari swapped *Mamma Mia!* with X Infinity and placed the rad suit on the floor. The vinyl began to turn, and sounds of traffic filled the air for the first time in decades.
 
-She paused the gestator, and drained the chamber's makeshift synthetic amniotic fluid. The car horns started to hold as one longer, continuous notes. By the time the fluid finished draining into the adjacent repurposed propane tank, all the horns had merged into a single, drawn out blare.
+She paused the gestator, and drained the chamber's makeshift synthetic amniotic fluid. The car horns began to blend into one long, continuous note. The fluid finished draining into the adjacent repurposed propane tank.
 
-The gestator's door unlocked. The blare became transforming into a strong bass-filled synth. 
+The gestator's door unlocked. The blare transformed into a strong bass-filled synth. 
 
 > *Nothing matters,*
 
@@ -1426,19 +1426,7 @@ and pulled out the breathing boy.
 
 "Holy shit."
 
-> *You’re officially welcome to grab your crotches*
-
-> *Synchronize your watches and pour us a couple scotches*
-
-> *People still as statues can’t catch you, turn pockets empty*
-
-> *If they’re packed with plenty move some to ones lacking any*
-
 She wrapped a cracked and dusty Apple Watch Ultra around his neck, placed his teeny body into the tiny suit, fastened the two straps along the waist, and enabled vitals tracking in the paired Macbook's health app.
-
-> *While I take a crack at hacking the bank to jack em to cover high debts*
-
-> *You’re screening floating bullets with a butterfly net, if there’s any SCREAMING*
 
 > *Pause it and cut out the sound, deposit the slugs underground*
 
@@ -1466,21 +1454,23 @@ She wrapped a cracked and dusty Apple Watch Ultra around his neck, placed his te
 
 The first human on earth in over a hundred years opened its ocean-blue eyes. He was greeted with the expressionless plating of the eniac-ii's glass face panel.
 
-"Ah, you better not fucking die," said the robot, after staring at its creation for a moment, "it's gonna hurt like a bitch if you die." After a pause, the eniac-ii added, "if you die, I'm gonna kill you."
+"Ah, you better not fucking die," said the robot, after staring at its creation for a moment, "It's gonna hurt like a bitch if you die." After a pause, the eniac-ii added, "If you die, I'm gonna kill you."
 
 # 0x0e-III October 4th, 2192, 10:32am
 
 In the decades spent artificially developing a baby, it never once occured to the eniac-ii to stockpile food.
 
-Ari didn't trust Rob to watch the baby, because Rob had no arms, legs, or actuators of any kind---he was slightly less useful than a nanny cam. She decided to take the baby with her as she made her rounds to the remnants of Boston's food banks.
+Ari didn't trust Rob to watch the baby, because Rob had no arms, legs, or actuators of any kind. He was slightly less useful than a nanny cam. She decided to take the baby with her as she made her rounds to the remnants of Boston's food banks.
 
 "Seriously though, what will you name it?" Rumi had asked. 
 
 "I don't know. Definitely something awesome though, like Leonardo. No way I'm giving my first human the name of someone lame."
 
-While the eniac-ii pushed the Costco shopping cart around Boston, Lil' Ari sat and slept in the upper basket in a nest of leather jackets.
+While the eniac-ii pushed the Costco shopping cart around Boston, Lil' Ari sat and slept in the upper basket, in a nest of leather jackets.
 
 In addition to a few cases of baby food, the eniac-ii collected cans of beans, tuna, chickpeas, tomatoes, green beans, soup, and peaches. Only when Lil' Ari had his first accident did she think to also add diapers to the list.
+
+Nine out of every ten cans she found were bad. The only good ones left were in basements, doomsday-prepper bunkers, and occasionally, fridges. She had no idea why someone kept their canned food in their refridgerator, but appreciated it nonetheless.
 
 "Talk to Little Ari," Rob had said, "he needs exposure to language, especially since there is no one else around. Have him talk with Rumi as well."
 
@@ -1502,15 +1492,15 @@ Ari had never took care of a baby before---in her prime body, she barely took ca
 
 "Blankets," Rob said. "Especially for the nights and winters. Try to pick up some toys if you see any, too."
 
-Lil Ari loved the toy MBTA trains because they came in a rainbow of color. She had cars from the red, blue, orange, and green lines, plus a model of the commuter rail, which was purple. She'd have at least one train in each hand at all times, typically the blue and green cars. 
+Lil Ari loved the toy MBTA trains because they came in a rainbow of color. He had cars from the red, blue, orange, and green lines, plus a model of the commuter rail, which was purple. He'd have at least one train in each hand at all times, usually the blue and green cars. 
 
 "Those are trains cars," explained Ari, "they'd take people from one place to another. Sometimes they'd even arrive on time."
 
-The baby would play with the cars like little airplanes, holding them in the air and waving them around. Ari was beginning to get concerned with how often they'd crash into everything---the Costco cart, each other, the eniac---but there were other things to worry about, like his first birthday party.
+The baby played with the cars like little airplanes, holding them in the air and waving them around. Ari was beginning to get concerned with how often they'd crash into everything---the Costco cart, each other, the eniac---but there were other things to worry about, like his first birthday party.
 
 "Oh my god, he's going to love that," said Rumi, "you *have* to show me his reaction."
 
-Ari and Lil Ari made their way to Cleveland Circle, the final stop on the Green's C line, and greeted the pack of green train cars. The eniac grabbed the smartphone---hooked up to the eniac-ii's reactor for power---from around its neck, and began recording.
+Ari and Lil Ari made their way to Cleveland Circle, the final stop on the Green's C line, and greeted the pack of green train cars. The eniac grabbed the smartphone from around its neck, and began recording.
 
 "See that?" Ari asked, pointing to collection of ancient train cars, "That's your toy!" 
 
@@ -1552,17 +1542,25 @@ God, this kid better not fucking die.
 
 # 0x0e-IV May 5th, 2194, 5:01pm
 
-It bothered Ari how much time Lil Ari wanted to spend with Rumi. He's just a video; she's actually *there*. 
+It bothered Ari how much time Lil Ari wanted to spend with Rumi. He was just a video; she was actually *there*. 
 
 It was clear since year one who Lil Ari preferred. He'd smile at Rumi's video feed for hours if he could, but never looked at the eniac-ii's face plate. It's like Ari wasn't even there.
 
 "Don't take it personally," Rumi said, "humans are very expressive animals, and we evolved to focus on those expressions."
 
-"I hate it. He'd marry your stupid face if he could. Do you know how long I spent making this fucking guy?"
+"I hate it. He'd marry your stupid face if he could. Do you know how long I've spent making this fucking guy?"
 
 "Trust me, I know, you've said---"
 
-"A hundred years. More than that. He doesn't even fucking smile at me."
+"A hundred years. More than that."
+
+"---well technically, the current version of you only---"
+
+"---nonono, let me have this for a second, let me just be dramatic and complain."
+
+Rumi sighed. "Alright."
+
+"I spend a HUNDRED YEARS working my ASS OFF revive THE HUMAN RACE, and he doesn't even fucking smile at me."
 
 "He's two, Ari. Give him some time."
 
@@ -1582,9 +1580,9 @@ She kept accidentally calling herself "mom" when talking to Lil Ari. It just com
 
 He called her 'mom' anyway. It was his first word, too.
 
-"Mahm," said ex-two-year-old, now five. "Did yoooouuuu haf a faaaace?"
+"Mahm," said the ex-two-year-old, now five. "Did yoooouuuu haf a faaaace?"
 
-Jesus, that's creepy. His speech was coming along, but slowly. He still mispronounced and slurred most words. It was normally adorable, it was just this particular question. Ari froze, then placed down the samurai sword she used to cut rad-fabric for new suits.  
+Jesus, that's creepy. His speech was coming along, but slowly. He still mispronounced and slurred most words, which was adorable for any other question. Ari froze, then placed down the samurai sword she used to cut rad-fabric for new suits.  
 
 "I guess."
 
@@ -1612,7 +1610,7 @@ Jesus, that's creepy. His speech was coming along, but slowly. He still misprono
 
 A look of shock crossed Rumi's face. He didn't know what Ari originally looked like, but he knew her well enough not to inquire. Her response would be interesting.
 
-Ari's sister, Sarah, turned into the beautiful one. It was obvious, no matter how equally people pretended to treat them. Their eyes would light up when Sarah entered the room, they'd dress better if they knew Sarah would be around, they'd laugh at her terrible jokes. She wished someone would just outright say her sister was better so she could hate them. Instead there were a million tiny signals that Ari would be seen as petty to mention. So she kept her opinions to herself.
+Ari's sister, Sarah, turned into the beautiful one. It was obvious, no matter how equally people pretended to treat them. Their eyes would light up when Sarah entered the room, they'd dress better if they knew Sarah would be around, they'd laugh at her terrible jokes. She wished someone would just outright say her sister was better so she could hate them. Instead they just gave off a million tiny signals that Ari would be seen as petty to mention individually. So she kept her opinions to herself.
 
 The eternally beautiful will never comprehend the absense of validation, of excitement, of people who seem happy not smiling at you. People called Ari beautiful her entire childhood---empty praise, of course, but still---and then stopped. The last time was at her high-school graduation.
 
@@ -1620,7 +1618,7 @@ The worst part was her cheery sister *was* the more pleasant of the two. She was
 
 "Ari? I think your video froze."
 
-They both left elementary school full of vitality and ignorant of their looks---the diverged during middle and high school. Sarah become a beautiful ray of fucking sunshine, and Ari into a fat ray of anti-sunshine. And it reflected in the lines of their faces, the looks in their eyes, the way they held themselves, their tiny subconscious movements. That's just how they turned out. 
+They both left elementary school full of vitality and ignorant of their looks---they diverged during middle and high school. Sarah become a beautiful ray of fucking sunshine, and Ari into a fat ray of anti-sunshine. And it reflected in the lines of their faces, the looks in their eyes, the way they held themselves, their tiny subconscious movements. That's just how they turned out. 
 
 "Ari? Can you hear me?"
 
@@ -1654,9 +1652,9 @@ That's when she realized she still hadn't responded to Lil Ari, the human she *s
 
 "Ladies and gentlemen, please, give it up for...the one...the only... *Liiiiiiiiiiiiiiiiiiiiiiiiiiil Ariiiiiiiiiiiiiiiiiiiiiiiii!*"
 
-Rumi politely applauded; Rob played an applause sound-effect. Paddington remained asleep.
+Rumi politely applauded; Rob played an applause sound-effect. Paddington remained asleep. He's been sleeping a lot, lately.
 
-Lil Ari, now six, sat on the tall, overgrown grass of what was once the Boston Common. It was beautiful out---shining sun, low humidity, temperature in the mid-70s. In his lap he had an acoustic guitar which Ari found a few months prior. He began to play. 
+Lil Ari, now six, sat on the tall, overgrown grass of what was once the Boston Common. It was beautiful out---shining sun, low humidity, temperature in the mid-70s. In his lap he held an acoustic guitar which Ari had found a few months prior. He began to play. 
 
 The instrument was old, but the case in which they found it kept it in great condition. It was, unfortunately, horribly out of tune, but luckily only Rob could tell. None of the others were musicians. 
 
@@ -1719,13 +1717,13 @@ It takes a lot of courage to open your heart to someone, to go past formalities.
 
 Each reset took some time to get adjusted. One minute, Ari's entering a futuristic-looking MRI machine in a well-staffed biotech facility. The next, everything---including her---is gone. It would shock anyone. 
 
-The documentation, recordings, and scienfitic progress left be her previous generations left were of great help. Aris learned best from their past lives---they were enthralled by their accomplishments, and their notes were hilarious. 
+The documentation, recordings, and scienfitic progress left be her previous generations left were of great help. Aris learned best from their past lives. It's one thing to learn from an accomplished teacher---it's another when that person was you. Plus, her notes were hilarious. 
 
 The generations even developed running gags. They described their achievements and mistakes as something another generation would do: "That's an 0x01-level fuckup" or an "0xff-type idea." The generations would even go into the negatives. Once, Ari forgot to fire The Gigabong before opening Paddington's cage---a negative 0xff move.
 
 This time, 0x0f wasn't adjusting.
 
-Just like before, she read her documentation, listened to the recordings. But something was different this time. There was *someone watching her now*---Rumi didn't count, he couldn't see every mistake she made. But Lil Ari *could*. He was the abnoxious know-it-all who was great at everything, and she *hated* it. Do you know how humiliating it is for an eleven-year-old to know more than you about growing weed, human reproduction, and fucking *progressive rock*? 
+Just like before, she read her documentation, listened to the recordings. But something was different this time. There was *someone watching her now*---Rumi didn't count, he couldn't see every mistake she made. But Lil Ari *could*. He was the obnoxious know-it-all who was great at everything, and she *hated* it. Do you know how humiliating it is for an eleven-year-old to know more than you about growing weed, human reproduction, and fucking *progressive rock*? 
 
 "So we pump the amniotic fluid between the gestator---"
 
@@ -1863,7 +1861,7 @@ Lil Ari still played the guitar, except now mostly in tune. He resisted tuning h
 
 He was too embarrassed to play in front of anyone during the two month adjustment period. Before, Lil Ari could play dozens of beautiful and original songs; on standard, he couldn't play a thing. He claimed to be bored of guitar and that he was going to stop playing, which allowed him to practice in secret. Rumi loved his birthday gift. 
 
-The switch to standard tuning was brutal. Standard wasn't particularly challenging, but it was counter-intuitive for him. The scales and chords were all scrambled. Anyone can adjust with enough practice, though. He was more frustrated by how he could have saved two months of effort if he had just learned standard tuning from the start. He finally had to face the fact that, not only had he played "wrong" all these years, but he avoided the chance to correct himself the whole time. The debt added up.
+The switch to standard tuning was brutal. Standard wasn't particularly challenging, but it was counter-intuitive for him. The scales and chords were all scrambled. He finally had to face the fact that, not only had he played "wrong" all these years, but he avoided the chance to correct himself the whole time. The debt added up.
 
 His mother was no different. She did things *her* way---sometimes she was effective; other times, counter-productive. The stubbornness that built a centrifuge with a dryer and Tesla drive unit was the same stubbornness that was *sure* she could find a way to re-use microscope slides without cleaning them. The only person who could change that was her.
 
@@ -1886,7 +1884,7 @@ Lil Ari apologized to his mom, and the two resumed their collaboration.
 
 They divided the work. Lil Ari developed the cultures and monitored fetal development. Ari managed supplies and maintained the the equipment, which seemed to fail with increasing frequency. Functional parts were also getting harder to come by with time---nine out of ten components in every washing machine, air fryer, freezer, and electric car they discovered didn't respond. Time comes for all.
 
-Nobody discussed the possibility of the eniac failing, but it was on all their minds. With the exception of the server in its chest, the android was made entirely out of custom, proprietary components. The Aris hadn't found a single spare part in all of Boston.  
+Nobody discussed the possibility of the eniac failing, but it was on all their minds. With the exception of the server in its chest, the android was made entirely out of custom, proprietary components that hadn't been replaced in a hundred and fifty years. The Aris hadn't found a single spare part in all of Boston.  
 
 The eniac was slowing down. Ten percent of her MPUs no longer responded to health checks, two of the eight ram sticks failed memory tests, and its storage drive just had over two hundred bad sectors. Her actuators still worked, but they were losing precision. 
 
@@ -2152,7 +2150,7 @@ Leo's eyebrows raised.
 
 "Not sure. He just didn't wake up one day. I didn't have the time to look into it." He took a sip of his disgusting instant coffee. "How was the coast?"
 
-0x0f raised her head slightly. She hadn't thought about that. The coast itself was pleasant---she loved the sound of the waves crashing along shore, but that was about it. She hadn't enjoyed herself, though.
+0x0f raised her head slightly. The coast itself was pleasant---she loved the sound of the waves crashing along the shore, but that was about it. She hadn't enjoyed herself, though.
 
 "It was OK," she responded. 
 
@@ -2182,11 +2180,13 @@ Leo laughed. He decided to change the subject. Rumi was asleep, so it was just t
 
 He had never serviced the eniac-ii before. Leo hadn't made much progress on the experimentation side, but he had long surpassed all prior Aris in designing and repairing old equipment.
 
-They moved to their workshop a few doors down. Leo moved the pump, drill, and amp meter off of the stainless steel table in the center of the room and placed them on a metal cabinet behind him. "Lie down on the table for me?"
+They moved to their workshop a few doors down. Leo moved the pump, drill, and amp meter off of the stainless steel table in the center of the room and placed them on a metal cabinet behind him.
 
-The eniac complied. It was slightly larger than the six-foot table, so its legs dangled slightly. Leo propped them up with the back of a spare chair. He removed some bolts from her chest, lifted up the front panel, and set it aside.
+"Lie down on the table for me?"
 
-The ocean salt had not been kind to the eniac's internals. Some components like the server where protected in a tempered glass casings, but the screws, ports, and and frame, were corroded badly. Leo couldn't believe the rest of her still worked.
+The eniac complied. It was slightly larger than the six-foot table which caused its legs to dangle. Leo propped them up with the back of a spare chair. He removed some bolts from her chest, lifted up the front panel, and set it aside.
+
+The ocean salt had not been kind to the eniac's internals. Some components, like the server, were protected in a tempered glass casings, but the screws, ports, and and frame were corroded badly. Leo couldn't believe the rest of her still worked.
 
 "You still play the guitar?" she asked.
 
@@ -2242,7 +2242,7 @@ Leo went quiet as he jumped between the pages of the manual. Ari didn't interrup
 
 "OK."
 
-He read for a few more minutes, occassionally checking something in the eniac's shoulder through its chest. Then, he walked over to a metal cabinet, grabbed the drill from the top of the cabinet, and pulled out four driver bits of varying size. He returned to the table and began removing the screws that connected the servo to the frame. He finished and placed the drill on the table.
+He read for a few more minutes, occassionally checking something in the eniac's shoulder through its chest. Then, he walked over to a metal cabinet, grabbed the drill from the top of the cabinet, and pulled out four driver bits of varying size. He returned to the table and began removing the screws that connected the servo to the frame. When he finished, he placed the drill on the table.
 
 He reached into her chest to remove the servo. It wouldn't budge. Confused, he inspected the part again with the Pixel's flashlight, then checked the manual again. 
 
@@ -2278,7 +2278,7 @@ At last he heard a crack as the melted plastic broke into two. In a single motio
 
 "Optical data storage? She doesn't use regular storage drives?"
 
-"5D optical data storage is a nanostructured glass for permanently recording digital data using a femtosecond laser writing process. Discs using this technology are capable of storing up to 360 terabytes worth of data for billions of years. The eniac stores the Ari's brain scan on these drives."
+"5D optical data storage is a nanostructured glass for permanently recording digital data using a femtosecond laser writing process. Discs using this technology are capable of storing up to 360 terabytes worth of data for billions of years. The eniac stores Ari's brain scan on these drives."
 
 Leo's eyes widened in horror. He rushed over to the eniac---a rectagular piece of glass was neatly packed, unharmed, next to dead shoulder. The scan itself was OK. But the box to read that data...
 
@@ -2307,8 +2307,6 @@ The eniac began to storm out of the room.
 "Come back!" he yelled back. "Please-please don't leave again! PLEASE--"
 
 "I'M NOT LEAVING, DUMBASS, JUST LEAVE ME ALONE!" she yelled back. The screeching of her joints faded into the distance.
-
-"Fucking contractors," Leo muttered, after the noise faded.
 
 # 0x0f-X, February 2nd, 2211, 8:50am
 
@@ -2354,7 +2352,7 @@ They began to walk the familiar path along the Charles. They didn't say anything
 
 Leo broke the silence. "You were a great mom, you know."
 
-The eniac would have raised its eyebrows if Exa thought to add them. "Really?"
+The eniac would have raised its eyebrows if Exa had thought to add them. "Really?"
 
 "Yeah."
 
@@ -2416,4 +2414,22 @@ He never fully understood 0x0f. He always focused on progress, on results, on su
 
 "So why? Why bother?"
 
-The eniac-ii shrugged its working shoulder. "Why not?"
+The eniac-ii shrugged its working shoulder. "I don't know. I guess my previous generations just never gave up."
+
+"But you had working equipment. At the rate my equipment fails, I won't be able to run experiments soon. What the hell am I supposed to do then?" 
+
+"That's your choice."
+
+"I don't care what I do. I just don't want to be alone again." he said, voice shaking. He too was beginning to break.
+
+"Do something that makes you happy," Ari encouraged, "something that gives you a reason to get up in the morning. You liked music when you were little."
+
+"But what if that doesn't work? What if I stop liking music? What if I'm not able to be happy?"
+
+For a moment, Ari returned to her original life. She remembered the anger she used to have, the anger towards the world. Towards herself. The anger drove her 35 miles over the speed limit on her deliveries, and her depression that secretly hoped for the worst.
+
+Each reset of Ari had been more surprised than the last, not just by her sudden unfamiliar situation, but also by the fact that she was actually doing something with herself, something she could be proud of. Pride was an unfamiliar but welcome feeling, one she didn't have to wait for success to feel.
+
+Sure, the Aris had been lonely, and the first few generations had a rough time finding their footing. She'd never consider herself a happy person, but she learned to find joy in the little things. Joy from humor, from music, from facing new challenges and exceeding your limits. All things considered, Ari could have ended up much worse.
+
+"You'll be alright," she said. "I know it."
