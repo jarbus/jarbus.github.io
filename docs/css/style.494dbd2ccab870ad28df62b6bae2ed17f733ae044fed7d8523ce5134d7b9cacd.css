@@ -538,9 +538,24 @@ ul.language-select>li, ul.footer-menu>li {
   color: var(--font-color);
   font-size: var(--button-font-size);
   font-family: unifont;
-  width: max-content;
-  max-width: 80vw;
 }
+
+/* .toc-menu { */
+/*   display: none; */
+/*   position: absolute; */
+/*   top: 100%; */
+/*   left: 50vw; */
+/*   transform: translateX(-50%); */
+/*   max-height: 70vh; */
+/*   overflow-y: auto; */
+/*   background: var(--bg-color); */
+/*   border: 1px solid var(--table-border-color); */
+/*   border-radius: 6px; */
+/*   padding: 0.5rem 1rem; */
+/*   box-shadow: 0 2px 8px rgba(0,0,0,0.15); */
+/*   width: 250px; */
+/*   font-size: var(--dropdown-font-size); */
+/* } */
 
 .toc-menu {
   display: none;
