@@ -6,13 +6,13 @@
 &lt;/ul&gt;
 &lt;p&gt;I&amp;rsquo;ll be presenting it virtually for the &lt;a href="https://newk-gecco.github.io/"&gt;Neuroevolution@Work&lt;/a&gt; workshop at &lt;a href="https://gecco-2025.sigevo.org/HomePage"&gt;GECCO 2025&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>From REINFORCE to R1: an Abridged Genealogy of Reinforcement Learning</title><link>//localhost:1313/blog/from-reinforce-to-r1-an-abridged-genealogy/</link><pubDate>Fri, 21 Feb 2025 19:58:43 -0500</pubDate><guid>//localhost:1313/blog/from-reinforce-to-r1-an-abridged-genealogy/</guid><description>&lt;p&gt;Starting from REINFORCE, the original deep reinforcement learning algorithm, we will trace the evolution of policy gradient methods to the Group Relative Policy Optimization algorithm used to train &lt;a href="https://github.com/deepseek-ai/DeepSeek-R1"&gt;Deepseek r1&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This post ignores the LLM side of things, less-related developments in RL, and most of the equations used for these algorithms, but captures the essence and intuition of the RL-timeline without wasting your time. This is all self-study, so feel free to send me any corrections/suggestions.&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;h1 id="table-of-contents" &gt;Table of Contents
+&lt;h2 id="table-of-contents" &gt;Table of Contents
 &lt;span&gt;
 &lt;a href="#table-of-contents"&gt;
 &lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;/svg&gt;
 &lt;/a&gt;
 &lt;/span&gt;
-&lt;/h1&gt;&lt;ol&gt;
+&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a href="#reinforcement-learning-101"&gt;Reinforcement Learning 101&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#reinforce"&gt;REINFORCE&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#from-reinforce-to-actor-critic"&gt;From REINFORCE to Actor-Critic&lt;/a&gt;&lt;/li&gt;
@@ -20,42 +20,42 @@
 &lt;li&gt;&lt;a href="#from-advantage-actor-critic-to-proximal-policy-optimization-ppo"&gt;From Advantage Actor-Critic to Proximal Policy Optimization (PPO)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#from-proximal-policy-optimization-to-group-relative-policy-optimization"&gt;From Proximal Policy Optimization to Group Relative Policy Optimization&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id="reinforcement-learning-101" &gt;Reinforcement Learning 101
+&lt;h2 id="reinforcement-learning-101" &gt;Reinforcement Learning 101
 &lt;span&gt;
 &lt;a href="#reinforcement-learning-101"&gt;
 &lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;/svg&gt;
 &lt;/a&gt;
 &lt;/span&gt;
-&lt;/h1&gt;&lt;p&gt;Reinforcement learning is a subfield of machine learning that can learn without human data. Instead, an agent can learn through interacting with its environment by taking actions and receiving rewards based on its actions. The agent wants to maximize its reward.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;Reinforcement learning is a subfield of machine learning that can learn without human data. Instead, an agent can learn through interacting with its environment by taking actions and receiving rewards based on its actions. The agent wants to maximize its reward.&lt;/p&gt;
 &lt;p&gt;Specifically, an environment at time $t$ with state $s_t$ sends an observation, $o_t$, to an agent, which produces probabilities to select an action, $a_t$, based on the observation. The environment transitions to a new state, $s_{t+1}$, and the agent receives a reward, $r_{t+1}$, based on the action it took. The agent&amp;rsquo;s goal is to learn a policy, $\pi(a_t|o_t)$ that maximizes the expected sum of rewards, $R = \sum_{t=0}^T \gamma^t r_t$, where $T$ is the number of steps in the trajectory (sequence of states, actions, and rewards from the start to the end of an episode), and $\gamma$ is a discount factor, which reduces the value of rewards the farther into the future they are. There are ways to perform reinforcement learning without neural networks, but we will focus on deep reinforcement learning, where all policy actions are determined by a neural network with parameters $\theta$.&lt;/p&gt;
-&lt;h1 id="reinforce" &gt;REINFORCE
+&lt;h2 id="reinforce" &gt;REINFORCE
 &lt;span&gt;
 &lt;a href="#reinforce"&gt;
 &lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;/svg&gt;
 &lt;/a&gt;
 &lt;/span&gt;
-&lt;/h1&gt;&lt;p&gt;The original policy gradient, and the basis for all policy gradient methods, is the &lt;a href="https://dilithjay.com/blog/reinforce-a-quick-introduction-with-code"&gt;REINFORCE&lt;/a&gt; algorithm. REINFORCE samples trajectories from the environment, which it uses to directly compute the gradient of the policy:&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;The original policy gradient, and the basis for all policy gradient methods, is the &lt;a href="https://dilithjay.com/blog/reinforce-a-quick-introduction-with-code"&gt;REINFORCE&lt;/a&gt; algorithm. REINFORCE samples trajectories from the environment, which it uses to directly compute the gradient of the policy:&lt;/p&gt;
 $$
 \theta_{t+1} = \theta_t + \alpha R_t \sum_{t=0}^T \nabla_\theta \log \pi(a_t|o_t)
 $$&lt;p&gt;where $\alpha$ is the learning rate, and $R_t$ is the remaining discounted reward&amp;ndash;also called a return&amp;ndash;from the current state given by $R_t = \sum_{t&amp;rsquo;=t}^T \gamma^{t&amp;rsquo;-t} r_{t&amp;rsquo;}$.&lt;/p&gt;
 &lt;p&gt;REINFORCE simply &amp;ldquo;reinforces&amp;rdquo; the actions proportional to the reward they receive. This is the most intuitive reinforcement learning algorithm, but it has high variance, which leads us to actor critics.&lt;/p&gt;
 &lt;p&gt;I struggled with the concept of variance in RL for a while, but it&amp;rsquo;s essentially the amount of randomness in the reward signal. When you are trying to learn purely from experience, rewards from a given state can vary wildly between trajectories depending on how the environment plays out, so we need a lot of samples to get a rough idea of what the &amp;ldquo;true&amp;rdquo; reward is for a given state. Actor-critic methods reduce this variance by using another neural network called a &amp;ldquo;critic&amp;rdquo; to estimate the value of a state. It turns out that using a consistent estimator, like a neural network, stabilizes learning, as the learning signal doesn&amp;rsquo;t fluctuate as much between samples.&lt;/p&gt;
-&lt;h1 id="from-reinforce-to-actor-critic" &gt;From REINFORCE to Actor-Critic
+&lt;h2 id="from-reinforce-to-actor-critic" &gt;From REINFORCE to Actor-Critic
 &lt;span&gt;
 &lt;a href="#from-reinforce-to-actor-critic"&gt;
 &lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;/svg&gt;
 &lt;/a&gt;
 &lt;/span&gt;
-&lt;/h1&gt;&lt;p&gt;As mentioned, actor-critic methods use neural networks to estimate reward. This results in more stable learning compared to using trajectories directly. The actor is just the policy from REINFORCE, and the critic is a new, separate network that estimates the return given the current policy. We won&amp;rsquo;t cover the training of the critic here, but just assume it&amp;rsquo;s just a neural network that takes observations $o_i$ as input and estimates the return $R$ for the actor.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;As mentioned, actor-critic methods use neural networks to estimate reward. This results in more stable learning compared to using trajectories directly. The actor is just the policy from REINFORCE, and the critic is a new, separate network that estimates the return given the current policy. We won&amp;rsquo;t cover the training of the critic here, but just assume it&amp;rsquo;s just a neural network that takes observations $o_i$ as input and estimates the return $R$ for the actor.&lt;/p&gt;
 &lt;p&gt;At it&amp;rsquo;s core, actor-critic is just REINFORCE, but $R_t$ is computed by another neural network, which is trained using the actual returns from the environment.&lt;/p&gt;
 &lt;p&gt;As a bonus, we can now update actors without requiring the full trajectory, since we are using an estimate instead of the true return.&lt;/p&gt;
-&lt;h1 id="from-actor-critic-to-advantage-actor-critic-a2c" &gt;From Actor-Critic to Advantage Actor-Critic (A2C)
+&lt;h2 id="from-actor-critic-to-advantage-actor-critic-a2c" &gt;From Actor-Critic to Advantage Actor-Critic (A2C)
 &lt;span&gt;
 &lt;a href="#from-actor-critic-to-advantage-actor-critic-a2c"&gt;
 &lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;/svg&gt;
 &lt;/a&gt;
 &lt;/span&gt;
-&lt;/h1&gt;&lt;p&gt;The next step in the evolution of policy gradient methods is the Advantage Actor-Critic (A2C) algorithm. Now we introduce the &lt;em&gt;advantage function&lt;/em&gt;, which is the difference between the return and the value estimate of the state:&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;The next step in the evolution of policy gradient methods is the Advantage Actor-Critic (A2C) algorithm. Now we introduce the &lt;em&gt;advantage function&lt;/em&gt;, which is the difference between the return and the value estimate of the state:&lt;/p&gt;
 $$
 A_t = r + \gamma V(o_{t+1}) - V(o_t)
 $$&lt;p&gt;where $V(o_i)$ is the value estimate of the state computed by our critic at time $i$.&lt;/p&gt;
@@ -64,26 +64,26 @@ $$&lt;p&gt;where $V(o_i)$ is the value estimate of the state computed by our cri
 $$
 \theta_{t+1} = \theta_t + \alpha A_t \sum_{t=0}^T \nabla_\theta \log \pi(a_t|o_t)
 $$&lt;p&gt;where $A_t$ is the advantage function computed using the critic network. This further stabilizes learning.&lt;/p&gt;
-&lt;h1 id="from-advantage-actor-critic-to-proximal-policy-optimization-ppo" &gt;From Advantage Actor-Critic to Proximal Policy Optimization (PPO)
+&lt;h2 id="from-advantage-actor-critic-to-proximal-policy-optimization-ppo" &gt;From Advantage Actor-Critic to Proximal Policy Optimization (PPO)
 &lt;span&gt;
 &lt;a href="#from-advantage-actor-critic-to-proximal-policy-optimization-ppo"&gt;
 &lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;/svg&gt;
 &lt;/a&gt;
 &lt;/span&gt;
-&lt;/h1&gt;&lt;p&gt;Skipping over many other developments, we jump directly from A2C to Proximal Policy Optimization (PPO). PPO uses the advantage function to update the policy, but just by a little bit, by introducing a &lt;em&gt;clipping&lt;/em&gt; term that limits the size of the update. This prevents the policy from changing its behavior too much in a given update, which might otherwise destabilize training and cause the policy to forget some learned behaviors.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;Skipping over many other developments, we jump directly from A2C to Proximal Policy Optimization (PPO). PPO uses the advantage function to update the policy, but just by a little bit, by introducing a &lt;em&gt;clipping&lt;/em&gt; term that limits the size of the update. This prevents the policy from changing its behavior too much in a given update, which might otherwise destabilize training and cause the policy to forget some learned behaviors.&lt;/p&gt;
 &lt;p&gt;PPO prevents behaviors from changing too much by ensuring that the probability of taking an action in a given state doesn&amp;rsquo;t change too much, using a ratio of the new policy to the old policy, $\frac{\pi_\theta(a_t|o_t)}{\pi_{\theta_{\text{old}}}(a_t|o_t)}$. When the probabilities don&amp;rsquo;t change, $ \frac{\pi_\theta(a_t|o_t)}{\pi_{\theta_{\text{old}}}(a_t|o_t)}= \mathbf{1}$, but if the probabilities change, $\frac{\pi_\theta(a_t|o_t)}{\pi_{\theta_{\text{old}}}(a_t|o_t)}$ will range between 0 and $\infty$. PPO clips the ratio to a range of $[1-\epsilon, 1+\epsilon]$, where $\epsilon$ is a hyperparameter we choose between 0 and 1 to determine the max percentage by which a probability can change.&lt;/p&gt;
 &lt;p&gt;The PPO update is then:&lt;/p&gt;
 $$
 \theta_{t+1} = \theta_t + \alpha \nabla_\theta \mathbb{E}_t \left[ \min( \frac{\pi_\theta(a_t|o_t)}{\pi_{\theta_{\text{old}}}(a_t|o_t)}
 A_t, \text{clip}(\frac{\pi_\theta(a_t|o_t)}{\pi_{\theta_{\text{old}}}(a_t|o_t)} , 1-\epsilon, 1+\epsilon) A_t) \right]
 $$&lt;p&gt;This adds a lot of terms to our update, but hopefully the jump from A2C to PPO is visible.&lt;/p&gt;
-&lt;h1 id="from-proximal-policy-optimization-to-group-relative-policy-optimization" &gt;From Proximal Policy Optimization to Group Relative Policy Optimization
+&lt;h2 id="from-proximal-policy-optimization-to-group-relative-policy-optimization" &gt;From Proximal Policy Optimization to Group Relative Policy Optimization
 &lt;span&gt;
 &lt;a href="#from-proximal-policy-optimization-to-group-relative-policy-optimization"&gt;
 &lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;/svg&gt;
 &lt;/a&gt;
 &lt;/span&gt;
-&lt;/h1&gt;&lt;p&gt;Finally, we arrive at Group Relative Policy Optimization (GRPO), the algorithm used to train Deepseek r1. This algorithm is used strictly in language modeling, so the ability to update before the end of a sequence doesn&amp;rsquo;t really matter; all that matters is the stability and efficiency. Unlike prior algorithms, GRPO&amp;rsquo;s main contribution isn&amp;rsquo;t that it further stabilizes learning, but that it reduces memory and computation requirements drastically.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;Finally, we arrive at Group Relative Policy Optimization (GRPO), the algorithm used to train Deepseek r1. This algorithm is used strictly in language modeling, so the ability to update before the end of a sequence doesn&amp;rsquo;t really matter; all that matters is the stability and efficiency. Unlike prior algorithms, GRPO&amp;rsquo;s main contribution isn&amp;rsquo;t that it further stabilizes learning, but that it reduces memory and computation requirements drastically.&lt;/p&gt;
 &lt;p&gt;Turns out, for language modeling, we don&amp;rsquo;t actually need the critic network, which saves us 50% of the memory and computation required to run reinforcement learning. We can just take all the other non-critic enhancements since REINFORCE and apply them in large batches , which is what GRPO does.&lt;/p&gt;
 $$
 \frac{1}{G}\sum_{i=1}^G \frac{1}{|o_i|} \sum_{t=1}^{|o_i|} \min \left[ \frac{\pi_\theta(o_{i,t}|q, o_{i,\lt t})}{\pi_{\theta_{\text{old}}}(o_{i,t}|q, o_{i,\lt t})} \hat{A}_{i,t}, \text{clip}\left(\frac{\pi_\theta(o_{i,t}|q, o_{i,\lt t})}{\pi_{\theta_{\text{old}}}(o_{i,t}|q, o_{i,\lt t})}, 1-\epsilon, 1+\epsilon\right) \hat{A}_{i,t} \right] - \beta D_{\text{KL}}\left[\pi_\theta \, \| \, \pi_{\text{ref}}
