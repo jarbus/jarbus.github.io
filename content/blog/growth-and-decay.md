@@ -3,7 +3,7 @@ title: "Fiction: Growth and Decay"
 date: 2025-08-29T12:37:22-07:00
 ---
 
-# 0x0d-I: March 13th, 2181, 10:00pm
+## 0x0d-I: March 13th, 2181, 10:00pm
 
 "Hi Ari, it's Ari."
 
@@ -45,7 +45,7 @@ Floor Ari let out a gasp of simulated air. She felt human. She *was* human.
 
 "Our brain starts degrading in after ten years or so. We reload our original scan once it becomes a problem. You're the thirteenth reload—I'm the twelfth. We've got recordings from 0x02 up to me to get you up to speed on our work. Take some time to digest everything. When you are ready, play the next recording." 0x0c paused. "And sorry about this. It wasn't easy for me either."
 
-# 0x01-I: April 2nd, 2061, 8:43pm
+## 0x01-I: April 2nd, 2061, 8:43pm
 
 It took thirty days for Ari to boot for the first time.
 
@@ -67,7 +67,7 @@ The eniac-ii dismounted the table and attempted to stand, but settled for bangin
 
 "Fuck" said the eniac-ii's speakers. "Fuck fuck fucking fuck shit fuck fuck god fuck fucking fuck."
 
-# 0x01-II: April 3nd, 2061, 3:00am
+## 0x01-II: April 3nd, 2061, 3:00am
 
 
 The eniac-ii took some time to take its first step—six hours and forty seven minutes, actually—over the course of which many heads were banged and expletives uttered. Compared to Ari's body, the robot was over a foot taller, two thousand pounds heavier, and had completely different proportions.
@@ -124,7 +124,7 @@ The computer's webcam indicator light turned on, then off.
 
 "You are not a survivor."
 
-# 0x06-I: July 10th, 2111, 1:43pm
+## 0x06-I: July 10th, 2111, 1:43pm
 
 The eniac-ii never developed feelings for Rob, to both of their surprise.
 
@@ -182,7 +182,7 @@ Another pause.
 
 "Fine."
 
-# 0x02-I: September 4th, 2071, 4:32am
+## 0x02-I: September 4th, 2071, 4:32am
 
 0x02 was greeted with a dusty concrete ceiling after its initial boot.
 
@@ -238,7 +238,7 @@ She got one leg perpendicular to the floor but took too long to balance herself 
 
 "Oh." Ari paused. "Well, what am I supposed to do now?"
 
-# 0x02-II: September 4th, 2071, 12:31pm
+## 0x02-II: September 4th, 2071, 12:31pm
 
 The world ended on May 7th, 2044, in a nuclear war. The details don't matter; it was completely preventable, but happened anyway. Given the chance, humanity would do it again.
 
@@ -276,7 +276,7 @@ Two weeks later, Ari found a second Mavic 5 with a charger and two propellers in
 
 The drone quickly proved its value, helping Ari locate the remains of the Edgar P. Benjamin "Healthcare Center". If she was going to find a DVD collection anywhere, she figured, it would be a nursing home. She wasn't wrong. Their ancient entertainment system still worked, too.
 
-# 0x04-III July 4th, 2094 3:02pm
+## 0x04-III July 4th, 2094 3:02pm
 
 0x03 made it extremely clear that Ari would never travel backwards in time.
 
@@ -320,7 +320,7 @@ Rob considered continuing the argument, but decided on a better approach.
 
 "...does your copy of Jurassic Park still work?"
 
-# 0x04-IV August 12th, 2096 10:02am
+## 0x04-IV August 12th, 2096 10:02am
 
 0x01, 0x02, and 0x03 had, all things considered, a peaceful uptime. 0x04 did not.
 
@@ -370,7 +370,7 @@ The eniac-ii turned and dropped to the ground, feet angled toward the railing. A
 
 "Get FUUUUUUUUUUUUUCKED" the eniac screamed from the bridge as it turned around and sprinted back to the medical center.
 
-# 0x04-VI February 18th, 2097 1:27pm
+## 0x04-VI February 18th, 2097 1:27pm
 
 She had no idea where Paddington came from or why he kept eating her experiments, but she knew that violence wasn't the answer, because every attempt to murder him failed. Thus, the cage.
 
@@ -390,7 +390,7 @@ The eniac-ii wiggled with the instrumental. She pointed toward the sky, continui
 
 *"Ahhhhh yes,"* Ari lowered her arm and turned her head towards Paddington's cage, *"the young TRAITOR who has tried to turn my people against me. Watch him, I have SPECIAL plans for THAT ONE."*
 
-# 0x01-X March 22nd, 2071 2:01am
+## 0x01-X March 22nd, 2071 2:01am
 
 0x01 spent the day re-watching season one of *Golden Girls*. Not because she wanted to, but because she fell down when she changing the disc and didn't want to get back up.
 
@@ -488,7 +488,7 @@ Rob decided to continue the conversation tomorrow. As 0x01 drifted off to sleep,
 
 > *Your heart is truuuue, you're a paaaaaal and a confidaaaaaaaant...*
 
-# 0x06-IX: October 5th, 2118, 1:11am
+## 0x06-IX: October 5th, 2118, 1:11am
 
 The eniac-ii bashed the roof of the Honda Civic. Again the roof, then the trunk, then the trunk again.
 
@@ -506,7 +506,7 @@ Another scream.
 
 The worst part was that she couldn't even cry.
 
-# 0x06-IV: September 1st, 2116, 1:02 am
+## 0x06-IV: September 1st, 2116, 1:02 am
 
 "Wooooaaaah," said Ari
 
@@ -538,7 +538,7 @@ Thousands of dots of starlight peppered the infinite cosmic expanse, sending the
 
 With her new partner in her arms, 0x06 drifted off to sleep under the stars.
 
-# 0x06-V: August 3rd, 2117, 12:59pm
+## 0x06-V: August 3rd, 2117, 12:59pm
 
 It didn't take 0x06 long to bring the other eniac's reactor online; it just needed fuel. The hard part was staying sane during the 30-day boot process.
 
@@ -592,7 +592,7 @@ They watched it flop some more until its head faced 0x06. It stopped.
 
 "As if one of you wasn't enough," said Rob.
 
-# 0x06-VII: October 3rd, 2118, 4:07pm
+## 0x06-VII: October 3rd, 2118, 4:07pm
 
 To the surprise of absolutely no one, the Aris got along swimmingly.
 
@@ -644,7 +644,7 @@ A brief pause.
 
 "Oh, for sure."
 
-# 0x06-VIII: October 4th, 2118, 6:25pm
+## 0x06-VIII: October 4th, 2118, 6:25pm
 
 "Wow, this is trash." said 0x01-2.
 
@@ -712,7 +712,7 @@ The prototype lay on the ground, jolting with each piece 0x06 ripped from its ch
 
 Ari would fix the reactor. If not 0x06, then 0x07. Or 0x08. Right now, she just needed to shut it down.
 
-# 0x06-X: October 6th, 2118, 10:00am
+## 0x06-X: October 6th, 2118, 10:00am
 
 "We gather here today to remember the greatest person ever known:" said 0x06, "Me. I was so cool."
 
@@ -746,7 +746,7 @@ Exa's voice model captures Ari's likeness---it generates the pitch, tone, pace, 
 
 "Shut up."
 
-# 0x02-X February 14th, 2081, 11:00pm
+## 0x02-X February 14th, 2081, 11:00pm
 
 "Ok, so, Rob said I did this once before, but I didn't leave any notes for myself. I feel like this time around I should learn from me, not Rob.
 
@@ -770,7 +770,7 @@ Another pause.
 
 "Oh yeah. We're a robot now. Our original body is dead, probably. Something loaded the brain scan we did for that study onto this thing after the war. Yeah, the stuff I said about resetting our brain probably didn't make sense before. We reload our brain scan into the robot when we start to slow down. That's what I meant. Oh, you'll probably need to adjust to your new body, but it shouldn't be too hard."
 
-# 0x05-II April 1st, 2101, 2:32pm
+## 0x05-II April 1st, 2101, 2:32pm
 
 "*I* did all this?" 0x05 asked.
 
@@ -800,7 +800,7 @@ She looked back at the taped-up microscope, and gave the table it rested on a sm
 
 "Duct tape's in the cabinet on your left."
 
-# 0x07-III July 8th, 2123 4:15pm
+## 0x07-III July 8th, 2123 4:15pm
 
 The sun beat down on 0x07 as she completed her daily walk by the Charles. It took some trial and error, but after a few summers, nearly all of her cannabis plants were thriving. 
 
@@ -842,7 +842,7 @@ The harness laid behind the cage, protected from the elements under a circus ten
 
 "Well, it's not like I have much of a choice."
 
-# 0x07-II September 23rd, 2121 9:30am
+## 0x07-II September 23rd, 2121 9:30am
 
 Ari never thought she'd co-found a post-apocalyptic moving company with a stoned mutant bear, but nobody really knows how their life will turn out.
 
@@ -875,7 +875,7 @@ The complexity of her masterpiece was unnecessary, of course. Ari was just havin
 
 "He's always been aggressive. This might be the first time he's ever felt peace."
 
-# 0x0d-IV: May 4th 2187, 8:00pm
+## 0x0d-IV: May 4th 2187, 8:00pm
 
 "E.T?" 0x0d asked.
 
@@ -917,7 +917,7 @@ The complexity of her masterpiece was unnecessary, of course. Ari was just havin
 
 "If it's the movie I'm thinking of, I can see why you haven't watched any more."
 
-# 0x03 January 31st, 2088 7:05pm
+## 0x03 January 31st, 2088 7:05pm
 
 "The hashes don't match for the 2087 checkpoint either," said Rob.
 
@@ -945,7 +945,7 @@ A brief pause. The eniac-ii sat on the floor, back against the wall.
 
 "Fuck."
 
-# 0x04-V September 30th, 2096 11:00pm
+## 0x04-V September 30th, 2096 11:00pm
 
 The tracks and cannon of the M1 Abrams tank refused to rotate, but at least the cannon could still fire.
 
@@ -1017,7 +1017,7 @@ They sat stunned, the muffled Eilish record leaking out of the cap of the Abrams
 
 ***BOOOOOOM.***
 
-# 0x07-VI December 25th, 2128 10:00am
+## 0x07-VI December 25th, 2128 10:00am
 
 The northeast had received four inch blanket of snow for Christmas morning. Santa gave Paddington a three pound amalgamation of human stem cells, but, as he had done for the 76 years prior, neglected Ari.
 
@@ -1055,7 +1055,7 @@ The eniac sat by the fire anyway, giving Paddington's head the occassional scrat
 
 "Merry Christmas, big guy."
 
-# 0x0d-V: October 9th 2187, 1:00am
+## 0x0d-V: October 9th 2187, 1:00am
 
 "I don't feel anything," said Rumi.
 
@@ -1099,7 +1099,7 @@ The song's heartbeat began to creep into Rumi's ears, then the ticking clocks an
 
 Together, for the next forty one minutes, while Rumi was on the dark side of the moon (not the far side), they enjoyed Pink Floyd's 1973 *Dark Side of the Moon*. 
 
-# 0x07-X February 04th, 2121, 10:00am
+## 0x07-X February 04th, 2121, 10:00am
 
 "Before you reset, there's something you should know." said Rob.
 
@@ -1170,7 +1170,7 @@ That was the end of 0x02's entry.
 
 "Understood."
 
-# 0x0d-V: December 8th 2187, 1:30pm
+## 0x0d-V: December 8th 2187, 1:30pm
 
 "Rob, this is Rob," said Ari, pointing her phone camera at the video feed of Rumi's computer screen. "Rob, meet Rob."
 
@@ -1212,7 +1212,7 @@ They said nothing more.
 
 "This is why they haven't replaced us."
 
-# 0x0d-VI: January 28th 2188, 11:30pm
+## 0x0d-VI: January 28th 2188, 11:30pm
 
 "Moon man?"
 
@@ -1340,11 +1340,11 @@ That's why Rumi's praise bothered her---because she believed him. Ari was suppos
 
 She shouldn't have asked.
 
-# 0x08 ???
+## 0x08 ???
 
 There are no known records from 0x08.
 
-# 0x0e-II March 3rd, 2192, 6:44pm
+## 0x0e-II March 3rd, 2192, 6:44pm
 
 In addition to the intact beakers, pipettes, samples, hot plates, and coverslips Ari recovered from Brandeis University's Bassine Science Building, she had also found an old record of the 2013 album *X Infinity* by George Watsky. Though she found it years ago she never put it on. Ari had forgotten about it.
 
@@ -1352,7 +1352,7 @@ Over the decades, the eniac had produced no less than fifteen hundred failed clo
 
 It wasn't the cloning that gave Ari trouble---that was mostly solved in the 2030s---it was the DNA. Nearly every sample she collected was damaged. The ones that weren't damaged somehow developed malformed fetuses in the gestator. Ari spent the majority of her time monitoring the development of the embryo and fetus to catch when cellular activity goes haywire.
 
-#1544, or '44, lasted 33 weeks so far. Ari hadn't left the lab since week 16. During week 23, '44 developed a small, abnormal growth on the outer lining of its stomach, which was removed less than forty eight hours after Ari caught it. 
+##1544, or '44, lasted 33 weeks so far. Ari hadn't left the lab since week 16. During week 23, '44 developed a small, abnormal growth on the outer lining of its stomach, which was removed less than forty eight hours after Ari caught it. 
 
 "Rumi, you're on mute." 
 
@@ -1456,7 +1456,7 @@ The first human on earth in over a hundred years opened its ocean-blue eyes. He 
 
 "Ah, you better not fucking die," said the robot, after staring at its creation for a moment, "It's gonna hurt like a bitch if you die." After a pause, the eniac-ii added, "If you die, I'm gonna kill you."
 
-# 0x0e-III October 4th, 2192, 10:32am
+## 0x0e-III October 4th, 2192, 10:32am
 
 In the decades spent artificially developing a baby, it never once occured to the eniac-ii to stockpile food.
 
@@ -1540,7 +1540,7 @@ She looked at Lil Ari, who had fallen asleep in her arms. It killed her that the
 
 God, this kid better not fucking die. 
 
-# 0x0e-IV May 5th, 2194, 5:01pm
+## 0x0e-IV May 5th, 2194, 5:01pm
 
 It bothered Ari how much time Lil Ari wanted to spend with Rumi. He was just a video; she was actually *there*. 
 
@@ -1632,7 +1632,7 @@ That's when she realized she still hadn't responded to Lil Ari, the human she *s
 
 "You know, in a way, I was."
 
-# 0x0e-VII May 18th, 2198, 2:14pm
+## 0x0e-VII May 18th, 2198, 2:14pm
 
 "The age of man is over.
 
@@ -1665,7 +1665,7 @@ Ari couldn't explain why it felt odd to hear a real guitar again. It was like he
 The kid didn't play traditional chords or scales---Lil Ari developed his own style and music to compensate for the odd tuning. 
 His music wasn't *great*, but considering he taught himself on an out-of-tune adult-sized guitar, it wasn't bad at all. He couldn't sing and play simultaneously yet. But he'd get there.
 
-# 0x0f-I May 5th, 2201, 4:22pm
+## 0x0f-I May 5th, 2201, 4:22pm
 
 "Mom?" asked the 9-year-old.
 
@@ -1781,7 +1781,7 @@ Ari's prior generation told Lil Ari he'd do all the work for the next few weeks.
 
 There was silence for a while.
 
-# 0x0f-II  July 22nd, 2204, 11:47pm
+## 0x0f-II  July 22nd, 2204, 11:47pm
 
 "Rumi?" asked Lil Ari. He waited. Rumi wasn't always near his communications equipment, so he connected the output source to the lunar base's announcement system when he was away. It took him a few minutes to return to the comms table.
 
@@ -1878,7 +1878,7 @@ Lil Ari inhaled, as if to retort, but paused. He closed his eyes and sighed.
 "She's human. You need to meet people where they are."
 
 
-# 0x0f-III August 2nd, 2204, 11:30am
+## 0x0f-III August 2nd, 2204, 11:30am
 
 Lil Ari apologized to his mom, and the two resumed their collaboration.
 
@@ -1992,7 +1992,7 @@ He grabbed a baseball-sized rock nearby and threw it at the front glass panel on
 
 Ari walked off the path and away from the river.
 
-# 0x09-IV November 5th, 2144, 1:02pm
+## 0x09-IV November 5th, 2144, 1:02pm
 
 The Harvard & Smithsonian Center for Astrophysics was mostly destroyed in the war---at least, everyhthing that was above ground. The spare equipment in the underground bunker, which the skeletons were kind enough to let Ari borrow, still worked. 
 
@@ -2062,7 +2062,7 @@ Rumi blinked, stunned. He had experienced more emotion in the last minute than h
 
 "I'll take it."
 
-# 0x0f-IX January 30th, 2211, 9:44am
+## 0x0f-IX January 30th, 2211, 9:44am
 
 The metal joints of the android grinded together a lot more than Lil Ari, who was not-so-little anymore, remembered. But it was her, alright. He walked to the north hole and watched the screeching eniac-ii approach. It stopped about twenty feet away---close enough to talk, far enough to feel distant.
 
@@ -2308,7 +2308,7 @@ The eniac began to storm out of the room.
 
 "I'M NOT LEAVING, DUMBASS, JUST LEAVE ME ALONE!" she yelled back. The screeching of her joints faded into the distance.
 
-# 0x0f-X, February 2nd, 2211, 8:50am
+## 0x0f-X, February 2nd, 2211, 8:50am
 
 Leo knocked on the old, cracked wooden door of the basement.
 

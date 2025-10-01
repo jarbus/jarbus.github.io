@@ -8,7 +8,7 @@ Starting from REINFORCE, the original deep reinforcement learning algorithm, we 
 
 This post ignores the LLM side of things, less-related developments in RL, and most of the equations used for these algorithms,  but captures the essence and intuition of the RL-timeline without wasting your time. This is all self-study, so feel free to send me any corrections/suggestions.[^1]
 
-# Table of Contents
+## Table of Contents
 
 1. [Reinforcement Learning 101](#reinforcement-learning-101)
 2. [REINFORCE](#reinforce)
@@ -20,13 +20,13 @@ This post ignores the LLM side of things, less-related developments in RL, and m
 
 [^1]: I know I'm pretty loose with the notations--I prefer this to adding a ton of extra symbols that don't contribute much.
 
-# Reinforcement Learning 101
+## Reinforcement Learning 101
 
 Reinforcement learning is a subfield of machine learning that can learn without human data. Instead, an agent can learn through interacting with its environment by taking actions and receiving rewards based on its actions. The agent wants to maximize its reward.
 
 Specifically, an environment at time $t$ with state $s_t$ sends an observation, $o_t$, to an agent, which produces probabilities to select an action, $a_t$, based on the observation. The environment transitions to a new state, $s_{t+1}$, and the agent receives a reward, $r_{t+1}$, based on the action it took. The agent's goal is to learn a policy, $\pi(a_t|o_t)$ that maximizes the expected sum of rewards, $R = \sum_{t=0}^T \gamma^t r_t$, where $T$ is the number of steps in the trajectory (sequence of states, actions, and rewards from the start to the end of an episode), and $\gamma$ is a discount factor, which reduces the value of rewards the farther into the future they are. There are ways to perform reinforcement learning without neural networks, but we will focus on deep reinforcement learning, where all policy actions are determined by a neural network with parameters $\theta$.
 
-# REINFORCE
+## REINFORCE
 
 The original policy gradient, and the basis for all policy gradient methods, is the [REINFORCE](https://dilithjay.com/blog/reinforce-a-quick-introduction-with-code) algorithm. REINFORCE samples trajectories from the environment, which it uses to directly compute the gradient of the policy:
 
@@ -40,7 +40,7 @@ REINFORCE simply "reinforces" the actions proportional to the reward they receiv
 
 I struggled with the concept of variance in RL for a while, but it's essentially the amount of randomness in the reward signal. When you are trying to learn purely from experience, rewards from a given state can vary wildly between trajectories depending on how the environment plays out, so we need a lot of samples to get a rough idea of what the "true" reward is for a given state. Actor-critic methods reduce this variance by using another neural network called a "critic" to estimate the value of a state. It turns out that using a consistent estimator, like a neural network, stabilizes learning, as the learning signal doesn't fluctuate as much between samples.
 
-# From REINFORCE to Actor-Critic
+## From REINFORCE to Actor-Critic
 
 As mentioned, actor-critic methods use neural networks to estimate reward. This results in more stable learning compared to using trajectories directly. The actor is just the policy from REINFORCE, and the critic is a new, separate network that estimates the return given the current policy. We won't cover the training of the critic here, but just assume it's just a neural network that takes observations $o_i$ as input and estimates the return $R$ for the actor.
 
@@ -48,7 +48,7 @@ At it's core, actor-critic is just REINFORCE, but $R_t$ is computed by another n
 
 As a bonus, we can now update actors without requiring the full trajectory, since we are using an estimate instead of the true return.
 
-# From Actor-Critic to Advantage Actor-Critic (A2C)
+## From Actor-Critic to Advantage Actor-Critic (A2C)
 
 The next step in the evolution of policy gradient methods is the Advantage Actor-Critic (A2C) algorithm. Now we introduce the *advantage function*, which is the difference between the return and the value estimate of the state:
 
@@ -68,7 +68,7 @@ $$
 
 where $A_t$ is the advantage function computed using the critic network. This further stabilizes learning.
 
-# From Advantage Actor-Critic to Proximal Policy Optimization (PPO)
+## From Advantage Actor-Critic to Proximal Policy Optimization (PPO)
 
 Skipping over many other developments, we jump directly from A2C to Proximal Policy Optimization (PPO). PPO uses the advantage function to update the policy, but just by a little bit, by introducing a *clipping* term that limits the size of the update. This prevents the policy from changing its behavior too much in a given update, which might otherwise destabilize training and cause the policy to forget some learned behaviors. 
 
@@ -83,7 +83,7 @@ $$
 
 This adds a lot of terms to our update, but hopefully the jump from A2C to PPO is visible.
 
-# From Proximal Policy Optimization to Group Relative Policy Optimization
+## From Proximal Policy Optimization to Group Relative Policy Optimization
 
 Finally, we arrive at Group Relative Policy Optimization (GRPO), the algorithm used to train Deepseek r1. This algorithm is used strictly in language modeling, so the ability to update before the end of a sequence doesn't really matter; all that matters is the stability and efficiency. Unlike prior algorithms, GRPO's main contribution isn't that it further stabilizes learning, but that it reduces memory and computation requirements drastically.
 

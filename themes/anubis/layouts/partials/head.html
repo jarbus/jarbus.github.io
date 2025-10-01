@@ -52,6 +52,7 @@
 {{- end }}
 
 {{ partial "resource.html" (dict "context" . "type" "js" "filename" "js/scramble.js") }}
+{{ partial "resource.html" (dict "context" . "type" "js" "filename" "js/toc.js") }}
 
 {{ if isset .Site.Params "webmentions" }}
     {{ if isset .Site.Params.webmentions "login"  }}

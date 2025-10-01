@@ -15,11 +15,17 @@
                 {{ partial "post-language-switcher.html" . }}
             </header>
         </div>
-        {{ if .Params.toc }}
         <aside>
-            {{ .TableOfContents }}
+            {{ $toc := .TableOfContents }}
+            {{ if gt (len (findRE "<li" $toc)) 1 }}
+            <div class="toc-dropdown" aria-label="Table of contents">
+              <button class="toc-button">☰ Contents</button>
+              <nav class="toc-menu">
+                {{ $toc | safeHTML }}
+              </nav>
+            </div>
+            {{ end }}
         </aside>
-        {{ end }}
         <div class="content e-content">
             {{ .Content }}
         </div>

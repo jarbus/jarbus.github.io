@@ -7,7 +7,7 @@ If all goes well, I'll leave Brandeis University with a PhD degree in computer s
 
 I write this out of self-interest; students after me will represent our university in years to come, and it's in my best interest for them to be as effective as possible.
 
-# NON-TECHNICAL
+## NON-TECHNICAL
 
 * Students often lack crucial skills. Technical students may lack communication skills, or social butterflies may lack depth. Some lack both. This doesn't really matter, in my opinion, if they are **willing to learn**. Just like neural networks, they may be all over the place initially, but students who reflect on your feedback will (eventually) be worth more than those who never update their parameters. Don't give up on those who listen and try; they often just need the right kind of mentorship.
 
@@ -48,9 +48,9 @@ I write this out of self-interest; students after me will represent our universi
 * **Each lab should have at least one student who is friendly with the rest of the department.** Students often suffer in silence, and a well-connected social graph is critical for detecting and addressing serious problems. 
 
 
-# TECHNICAL
+## TECHNICAL
 
-## AI
+### AI
 * Keep (relatively) up to date with the latest developments, even if they aren't relevant to your current project; they may prove critical for your next one.
 
 * Understand the purpose of every layer in a foundation model, every stage of training, and how inputs and outputs are represented and sampled. Don't skip these.
@@ -65,7 +65,7 @@ I write this out of self-interest; students after me will represent our universi
 
 
 
-## NOT AI
+### NOT AI
 * Learn your tools, whether it's Vim, Bash, PyTorch, VsCode, or even ChatGPT. They have many useful features that you likely aren't aware of---Vim and Bash especially.
 
 * Test your code using specific input/output examples, especially the mathematical sections which may produce incorrect data instead of a crash. Seriously, [test your code](https://jarbus.net/blog/unexpected-benefits-of-testing/).
