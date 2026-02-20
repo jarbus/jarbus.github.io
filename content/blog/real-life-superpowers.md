@@ -117,7 +117,7 @@ Everyone can read and write and speak, but few do it well, and that makes it a c
 Now more than ever, our world needs *real* people.
 People with not just an original voice, but an effective voice.
 
-Communication and curiosity are a super power.
+Communication and curiosity are a superpower.
 
 You can't put these traits on a resume, but you can't fake them in a conversation either, which, in the age of AI, is more valuable than ever. 
 
