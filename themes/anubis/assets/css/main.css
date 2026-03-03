@@ -11,11 +11,11 @@
     --dropdown-font-size: 1rem;
     --button-font-size: 1rem;
     --bg-color: #000006;
-    --link-color: #ccffdd;
-    --link-state-color: #ccffdd;
+    --link-color: #e9ffe9;
+    --link-state-color: #e9ffe9;
     --link-state-border-color: rgba(204,  255,  221,  0.5);
     --thead-bg-color: #000006;
-    --table-border-color: #ccffdd;
+    --table-border-color: #e9ffe9;
     --nav-bg-color: #000006;
     --nav-link-color: #b6b6b6;
     --pre-color: #f8f8f2;
@@ -28,7 +28,7 @@
     --switcher-color: #333;
     --switcher-bg-color: #000006;
     --svg-color: #ccc;
-    --svg-state-color: #ccffdd;
+    --svg-state-color: #e9ffe9;
 }
 
 @media(max-width:840px) {
@@ -48,6 +48,7 @@ body {
     -webkit-font-smoothing: antialiased;
     color: var(--font-color);
     background: var(--bg-color);
+    text-shadow: 0 0 20px color-mix(in srgb, var(--font-color) 50%, transparent);
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
     display: block;
@@ -70,14 +71,14 @@ h3 {
 }
 a {
     color: var(--link-color);
-    text-shadow: 0 0 5px rgba(204, 255, 221, 0.7), 0 0 8px rgba(204, 255, 221, 0.3);
+    text-shadow: 0 0 5px color-mix(in srgb, var(--link-color) 70%, transparent), 0 0 8px color-mix(in srgb, var(--link-color) 30%, transparent);
     text-decoration: underline;
     position: relative;
     transition: color 0.3s, text-shadow 0.3s;
 }
 a:hover, a:focus, a:active {
     color: var(--link-state-color);
-    text-shadow: 0 0 8px rgba(204, 255, 221, 0.9), 0 0 12px rgba(204, 255, 221, 0.7), 0 0 15px rgba(204, 255, 221, 0.5);
+    text-shadow: 0 0 8px color-mix(in srgb, var(--link-color) 90%, transparent), 0 0 12px color-mix(in srgb, var(--link-color) 70%, transparent), 0 0 15px color-mix(in srgb, var(--link-color) 50%, transparent);
 }
 a:active, a:hover {
     outline: 0;
