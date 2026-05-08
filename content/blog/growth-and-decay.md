@@ -3,8 +3,6 @@ title: "Fiction: Growth and Decay"
 date: 2025-08-29T12:37:22-07:00
 ---
 
-I'm looking to post this story on RoyalRoad.com
-
 ## 0x0d-I: March 13th, 2181, 10:00pm
 
 "Hi Ari, it's Ari."
