@@ -8,6 +8,11 @@ publishDir: "docs"
 minify:
   minifyOutput: true
 
+security:
+  allowContent:
+  - ^text/markdown$
+  - ^text/html$
+
 pagination:
   pagerSize: 10
 
