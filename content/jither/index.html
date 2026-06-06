@@ -1,61 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jitter - Image Dithering Tool</title>
-    <style>
-        body {
-            <!-- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; -->
+---
+---
+<style>
+        body:has(#jither-app) > .container {
+            max-width: 1000px;
+        }
+
+        #jither-app {
             max-width: 1000px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #000000;
-            color: #ffffff;
+            color: var(--font-color);
         }
         
-        h1 {
+        #jither-app h1 {
             text-align: center;
-            color: #ffffff;
+            color: var(--font-color);
         }
         
-        .container {
+        #jither-app .container {
             display: flex;
             flex-direction: column;
             gap: 20px;
+            max-width: none;
+            width: 100%;
         }
         
-        .controls {
+        #jither-app .controls {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            background-color: #000000;
+            background-color: color-mix(in srgb, var(--bg-color) 94%, var(--font-color));
             padding: 20px;
         }
         
-        .control-group {
+        #jither-app .control-group {
             flex: 1;
             min-width: 200px;
         }
         
-        .control-group h3 {
+        #jither-app .control-group h3 {
             margin-top: 0;
         }
         
-        #color-scheme {
+        #jither-app #color-scheme {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
         
-        .color-item {
+        #jither-app .color-item {
             display: flex;
             flex-direction: column;
             align-items: center;
             position: relative;
         }
         
-        .color-item input {
+        #jither-app .color-item input {
             width: 50px;
             height: 50px;
             padding: 0;
@@ -63,33 +62,33 @@
             cursor: pointer;
         }
         
-        .add-color-container {
+        #jither-app .add-color-container {
             display: inline-flex;
             align-items: center;
             justify-content: center;
         }
         
-        #add-color {
+        #jither-app #add-color {
             width: 50px;
             height: 50px;
             border-radius: 0;
-            background-color: #333333;
-            color: white;
+            background-color: var(--bg-color);
+            color: var(--font-color);
             font-size: 24px;
             font-weight: bold;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 0;
-            border: 1px dashed #777777;
+            border: 1px dashed var(--table-border-color);
         }
         
-        #add-color:hover {
-            background-color: #444444;
+        #jither-app #add-color:hover {
+            color: var(--link-state-color);
         }
 
         
-        .delete-color {
+        #jither-app .delete-color {
             position: absolute;
             top: -10px;
             right: -10px;
@@ -108,100 +107,100 @@
             border: 1px solid white;
         }
         
-        button {
-            background-color: #e7e7e7;
-            color: black;
-            border: none;
+        #jither-app button {
+            background-color: var(--bg-color);
+            color: var(--font-color);
+            border: 1px solid var(--table-border-color);
             padding: 10px 15px;
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
         }
-        
-        button:hover {
-            background-color: #d7d7d7;
+
+        #jither-app button:hover {
+            color: var(--link-state-color);
         }
-        
-        .canvas-container {
-            background-color: #000000;
+
+        #jither-app .canvas-container {
+            background-color: color-mix(in srgb, var(--bg-color) 94%, var(--font-color));
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+            box-shadow: 0 2px 4px color-mix(in srgb, var(--font-color) 12%, transparent);
             text-align: center;
         }
         
-        canvas {
+        #jither-app canvas {
             width: 100%;
             height: 100%;
-            border: 1px solid #444;
+            border: 1px solid var(--table-border-color);
         }
         
-        .slider-container {
+        #jither-app .slider-container {
             display: flex;
             flex-direction: column;
             gap: 5px;
-            color: #ffffff;
+            color: var(--font-color);
         }
         
-        input[type="range"] {
+        #jither-app input[type="range"] {
             width: 100%;
             -webkit-appearance: none;
             appearance: none;
             height: 8px;
-            background: #333333;
+            background: var(--hr-color);
             border-radius: 4px;
             outline: none;
         }
         
-        input[type="range"]::-webkit-slider-thumb {
+        #jither-app input[type="range"]::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
             width: 18px;
             height: 18px;
-            background: #ccffdd;
+            background: var(--link-color);
             border-radius: 50%;
             cursor: pointer;
         }
         
-        input[type="range"]::-moz-range-thumb {
+        #jither-app input[type="range"]::-moz-range-thumb {
             width: 18px;
             height: 18px;
-            background: #ccffdd;
+            background: var(--link-color);
             border-radius: 50%;
             cursor: pointer;
             border: none;
         }
         
-        input[type="range"]::-webkit-slider-runnable-track {
-            background: linear-gradient(to right, #ccffdd 0%, #ccffdd var(--range-progress, 50%), #333333 var(--range-progress, 50%));
+        #jither-app input[type="range"]::-webkit-slider-runnable-track {
+            background: linear-gradient(to right, var(--link-color) 0%, var(--link-color) var(--range-progress, 50%), var(--hr-color) var(--range-progress, 50%));
             border-radius: 4px;
             height: 8px;
         }
         
-        input[type="range"]::-moz-range-track {
-            background: #333333;
+        #jither-app input[type="range"]::-moz-range-track {
+            background: var(--hr-color);
             border-radius: 4px;
             height: 8px;
         }
         
-        input[type="range"]::-moz-range-progress {
-            background: #ccffdd;
+        #jither-app input[type="range"]::-moz-range-progress {
+            background: var(--link-color);
             border-radius: 4px;
             height: 8px;
         }
         
-        .file-input {
+        #jither-app .file-input {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
 
-        #image-upload {
+        #jither-app #image-upload {
             font-size: 24px;
+            color: var(--font-color);
         }
-    </style>
-</head>
-<body>
+</style>
+<div id="jither-app">
     <div class="container">
         <div class="controls">
                 <h1>jither: Jack's dithering tool.</h1>
@@ -258,6 +257,7 @@
             
             // Try to load saved colors from localStorage
             let colors = [];
+
             try {
                 const savedColors = localStorage.getItem('jitter_colors');
                 if (savedColors) {
@@ -492,5 +492,4 @@
         
         run();
     </script>
-</body>
-</html>
+</div>

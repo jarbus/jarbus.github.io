@@ -1,7 +1,44 @@
+<button class="theme-switcher" type="button" aria-label="Toggle color theme">theme: system</button>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-document.documentElement.setAttribute('data-theme', 'dark')
-showContent()
+    const button = document.querySelector('.theme-switcher');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function getTheme() {
+        try {
+            return localStorage.getItem('theme') || 'system';
+        } catch {
+            return 'system';
+        }
+    }
+
+    function applyTheme(theme) {
+        const resolvedTheme = theme === 'system' ? (systemDark.matches ? 'dark' : 'light') : theme;
+        document.documentElement.setAttribute('data-theme', resolvedTheme);
+        button.textContent = 'theme: ' + theme;
+    }
+
+    button.addEventListener('click', function() {
+        const nextTheme = getTheme() === 'system' ? 'light' : getTheme() === 'light' ? 'dark' : 'system';
+        try {
+            if (nextTheme === 'system') {
+                localStorage.removeItem('theme');
+            } else {
+                localStorage.setItem('theme', nextTheme);
+            }
+        } catch {
+        }
+        applyTheme(nextTheme);
+    });
+
+    systemDark.addEventListener('change', function() {
+        if (getTheme() === 'system') {
+            applyTheme('system');
+        }
+    });
+
+    applyTheme(getTheme());
+    showContent();
 })
 function showContent() {
     document.body.style.visibility = 'visible';

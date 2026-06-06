@@ -112,7 +112,7 @@ async function run() {
       
       // Update slider fill
       const percentage = seekSlider.value;
-      seekSlider.style.background = `linear-gradient(to right, #ccffdd 0%, #ccffdd ${percentage}%, #333 ${percentage}%)`;
+      seekSlider.style.background = `linear-gradient(to right, var(--link-color) 0%, var(--link-color) ${percentage}%, var(--hr-color) ${percentage}%)`;
     });
     
     seekSlider.addEventListener("change", function() {
@@ -122,7 +122,7 @@ async function run() {
         
         // Update slider fill
         const percentage = seekSlider.value;
-        seekSlider.style.background = `linear-gradient(to right, #ccffdd 0%, #ccffdd ${percentage}%, #333 ${percentage}%)`;
+        seekSlider.style.background = `linear-gradient(to right, var(--link-color) 0%, var(--link-color) ${percentage}%, var(--hr-color) ${percentage}%)`;
         
         // Remove the current onended handler before stopping to prevent it firing
         audioSource.onended = null;

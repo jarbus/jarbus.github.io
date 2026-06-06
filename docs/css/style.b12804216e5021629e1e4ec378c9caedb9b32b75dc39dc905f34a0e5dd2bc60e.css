@@ -38,7 +38,7 @@
     --hr-color: #333;
     --pagination-link-color: #b6b6b6;
     --post-info-color: grey;
-    --switcher-color: #e9ffe9;
+    --switcher-color: #333;
     --svg-color: #ccc;
     --svg-state-color: #e9ffe9;
     --text-shadow: 0 0 20px color-mix(in srgb, var(--font-color) 50%, transparent);
@@ -59,7 +59,7 @@
         --hr-color: #333;
         --pagination-link-color: #b6b6b6;
         --post-info-color: grey;
-        --switcher-color: #e9ffe9;
+        --switcher-color: #333;
         --svg-color: #ccc;
         --svg-state-color: #e9ffe9;
         --text-shadow: 0 0 20px color-mix(in srgb, var(--font-color) 50%, transparent);
@@ -198,20 +198,6 @@ header h2 {
 }
 .site-title {
     white-space: nowrap;
-}
-.theme-image {
-    display: block;
-    margin: 0 auto;
-    max-height: 20vh;
-}
-.theme-image-light {
-    display: none;
-}
-[data-theme="light"] .theme-image-dark {
-    display: none;
-}
-[data-theme="light"] .theme-image-light {
-    display: block;
 }
 header nav:not(:empty) {
     background: var(--bg-color);

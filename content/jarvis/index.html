@@ -1,48 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-  <title>jarviz</title>
-  <style>
-    body {
+---
+---
+<style>
+    #jarvis-app {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: black;
-      color: white;
-      padding: 10px;
-      margin: 0;
+      color: var(--font-color);
       overflow-x: hidden;
     }
-    canvas {
+
+    #jarvis-app canvas {
       margin-top: 10px;
-      background-color: black;
+      background-color: var(--bg-color);
       width: 100%;
       max-width: 800px;
       height: auto;
       touch-action: none;
     }
-    input[type="file"] {
+
+    #jarvis-app input[type="file"] {
       margin: 10px 0;
       padding: 10px;
-      background-color: black;
-      color: white;
+      background-color: var(--bg-color);
+      color: var(--font-color);
       border-radius: 4px;
-      border: 1px solid white;
+      border: 1px solid var(--table-border-color);
       width: 100%;
       max-width: 300px;
     }
-    h1 {
-      color: white;
+
+    #jarvis-app h1 {
+      color: var(--font-color);
       font-size: 1.5rem;
       margin: 10px 0;
     }
-    p {
+
+    #jarvis-app p {
       margin: 5px 0;
     }
-    .controls {
+
+    #jarvis-app .controls {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -51,35 +48,43 @@
       width: 100%;
       max-width: 800px;
     }
-    button {
+
+    #jarvis-app button {
       padding: 12px 20px;
-      background-color: black;
-      color: white;
-      border: 1px solid white;
+      background-color: var(--bg-color);
+      color: var(--font-color);
+      border: 1px solid var(--table-border-color);
       border-radius: 4px;
       cursor: pointer;
       font-size: 1rem;
       min-width: 80px;
+      text-align: center;
     }
-    button:hover {
-      background-color: #333;
+
+    #jarvis-app button:hover {
+      color: var(--link-state-color);
     }
-    button:active {
-      background-color: #555;
+
+    #jarvis-app button:active {
+      border-color: var(--link-state-color);
     }
-    #pause-btn {
-      background-color: black;
+
+    #jarvis-app #pause-btn {
+      background-color: var(--bg-color);
     }
-    #pause-btn.paused {
-      background-color: #333;
+
+    #jarvis-app #pause-btn.paused {
+      color: var(--link-state-color);
     }
-    .mobile-hint {
+
+    #jarvis-app .mobile-hint {
       margin-top: 10px;
-      color: #aaa;
+      color: var(--post-info-color);
       font-size: 0.8rem;
       text-align: center;
     }
-    .progress-container {
+
+    #jarvis-app .progress-container {
       width: 100%;
       max-width: 800px;
       margin: 10px 0;
@@ -87,51 +92,55 @@
       flex-direction: column;
       align-items: center;
     }
-    .slider {
+
+    #jarvis-app .slider {
       width: 100%;
       height: 10px;
       -webkit-appearance: none;
-      background: linear-gradient(to right, #ccffdd 0%, #ccffdd 0%, #333 0%);
+      background: linear-gradient(to right, var(--link-color) 0%, var(--link-color) 0%, var(--hr-color) 0%);
       outline: none;
       border-radius: 5px;
       margin: 10px 0;
     }
-    .slider::-webkit-slider-thumb {
+
+    #jarvis-app .slider::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background: white;
+      background: var(--font-color);
       cursor: pointer;
     }
-    .slider::-moz-range-thumb {
+
+    #jarvis-app .slider::-moz-range-thumb {
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background: white;
+      background: var(--font-color);
       cursor: pointer;
     }
-    .slider:disabled {
+
+    #jarvis-app .slider:disabled {
       opacity: 0.5;
       cursor: not-allowed;
     }
-    .time-display {
-      color: white;
+
+    #jarvis-app .time-display {
+      color: var(--font-color);
       font-size: 0.8rem;
       margin-top: 5px;
     }
-  </style>
-</head>
-<body>
+</style>
 
+<div id="jarvis-app">
   <h1>(jar)bus audio (vis)ualizer</h1>
-        <p>built with webGPU, runs locally.</p>
+  <p>built with webGPU, runs locally.</p>
   <div class="controls">
     <input type="file" id="file-input" accept="audio/*,.mp3,.m4a,.wav,.aac" />
     <button id="pause-btn">Pause</button>
   </div>
-  <canvas id="gpu-canvas" width="800" height="400" style="background-color: black;"></canvas>
+  <canvas id="gpu-canvas" width="800" height="400"></canvas>
 
   <div class="progress-container">
     <input type="range" id="seek-slider" min="0" max="100" value="0" step="0.1" class="slider" disabled>
@@ -140,5 +149,4 @@
     </div>
   </div>
   <script type="module" src="./index.js"></script>
-</body>
-</html>
+</div>

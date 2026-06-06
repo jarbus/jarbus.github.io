@@ -3520,31 +3520,31 @@ real numbers to a vector of probabilities which sum to 1, and is defined as:&lt;
 exponentiation of large numbers, which can lead to overflow. Crucially,
 underflow is not an issue, because exp(x) approaches zero when x is a large
 negative number.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#b6a0ff"&gt;import&lt;/span&gt; numpy &lt;span style="color:#b6a0ff"&gt;as&lt;/span&gt; np
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#b6a0ff"&gt;def&lt;/span&gt; &lt;span style="color:#feacd0"&gt;unstable_softmax&lt;/span&gt;(x):
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; fx_unstable &lt;span style="color:#00d3d0"&gt;=&lt;/span&gt; np&lt;span style="color:#00d3d0"&gt;.&lt;/span&gt;exp(x)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b6a0ff"&gt;return&lt;/span&gt; fx_unstable &lt;span style="color:#00d3d0"&gt;/&lt;/span&gt; np&lt;span style="color:#00d3d0"&gt;.&lt;/span&gt;sum(fx_unstable)
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#000;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5317ac"&gt;import&lt;/span&gt; numpy &lt;span style="color:#5317ac"&gt;as&lt;/span&gt; np
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5317ac"&gt;def&lt;/span&gt; &lt;span style="color:#721045"&gt;unstable_softmax&lt;/span&gt;(x):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; fx_unstable &lt;span style="color:#00538b"&gt;=&lt;/span&gt; np&lt;span style="color:#00538b"&gt;.&lt;/span&gt;exp(x)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#5317ac"&gt;return&lt;/span&gt; fx_unstable &lt;span style="color:#00538b"&gt;/&lt;/span&gt; np&lt;span style="color:#00538b"&gt;.&lt;/span&gt;sum(fx_unstable)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The following implementation is stable however, because there is no
 exponentiation of large numbers:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#b6a0ff"&gt;def&lt;/span&gt; &lt;span style="color:#feacd0"&gt;stable_softmax&lt;/span&gt;(x):
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; fx_stable &lt;span style="color:#00d3d0"&gt;=&lt;/span&gt; x &lt;span style="color:#00d3d0"&gt;-&lt;/span&gt; np&lt;span style="color:#00d3d0"&gt;.&lt;/span&gt;max(x)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b6a0ff"&gt;return&lt;/span&gt; np&lt;span style="color:#00d3d0"&gt;.&lt;/span&gt;exp(fx_stable) &lt;span style="color:#00d3d0"&gt;/&lt;/span&gt; np&lt;span style="color:#00d3d0"&gt;.&lt;/span&gt;sum(np&lt;span style="color:#00d3d0"&gt;.&lt;/span&gt;exp(fx_stable))
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#000;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5317ac"&gt;def&lt;/span&gt; &lt;span style="color:#721045"&gt;stable_softmax&lt;/span&gt;(x):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; fx_stable &lt;span style="color:#00538b"&gt;=&lt;/span&gt; x &lt;span style="color:#00538b"&gt;-&lt;/span&gt; np&lt;span style="color:#00538b"&gt;.&lt;/span&gt;max(x)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#5317ac"&gt;return&lt;/span&gt; np&lt;span style="color:#00538b"&gt;.&lt;/span&gt;exp(fx_stable) &lt;span style="color:#00538b"&gt;/&lt;/span&gt; np&lt;span style="color:#00538b"&gt;.&lt;/span&gt;sum(np&lt;span style="color:#00538b"&gt;.&lt;/span&gt;exp(fx_stable))
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Instead, the max of the vector is subtracted from each element. This does not
 change the result of the softmax after the division as this subtraction is also
 performed in the denominator, thus cancelling out.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s compare the two implementations:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00d3d0"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style="color:#00d3d0"&gt;=&lt;/span&gt; np&lt;span style="color:#00d3d0"&gt;.&lt;/span&gt;array([&lt;span style="color:#00bcff"&gt;6.0&lt;/span&gt;, &lt;span style="color:#00d3d0"&gt;-&lt;/span&gt;&lt;span style="color:#00bcff"&gt;3&lt;/span&gt;, &lt;span style="color:#00bcff"&gt;15&lt;/span&gt;], dtype&lt;span style="color:#00d3d0"&gt;=&lt;/span&gt;np&lt;span style="color:#00d3d0"&gt;.&lt;/span&gt;float32)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00d3d0"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; stable_softmax(a)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[&lt;span style="color:#00bcff"&gt;1.2339458e-04&lt;/span&gt; &lt;span style="color:#00bcff"&gt;1.5228101e-08&lt;/span&gt; &lt;span style="color:#00bcff"&gt;9.9987662e-01&lt;/span&gt;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00d3d0"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; unstable_softmax(a)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[&lt;span style="color:#00bcff"&gt;1.2339458e-04&lt;/span&gt; &lt;span style="color:#00bcff"&gt;1.5228101e-08&lt;/span&gt; &lt;span style="color:#00bcff"&gt;9.9987656e-01&lt;/span&gt;]
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#000;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00538b"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style="color:#00538b"&gt;=&lt;/span&gt; np&lt;span style="color:#00538b"&gt;.&lt;/span&gt;array([&lt;span style="color:#0000c0"&gt;6.0&lt;/span&gt;, &lt;span style="color:#00538b"&gt;-&lt;/span&gt;&lt;span style="color:#0000c0"&gt;3&lt;/span&gt;, &lt;span style="color:#0000c0"&gt;15&lt;/span&gt;], dtype&lt;span style="color:#00538b"&gt;=&lt;/span&gt;np&lt;span style="color:#00538b"&gt;.&lt;/span&gt;float32)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00538b"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; stable_softmax(a)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[&lt;span style="color:#0000c0"&gt;1.2339458e-04&lt;/span&gt; &lt;span style="color:#0000c0"&gt;1.5228101e-08&lt;/span&gt; &lt;span style="color:#0000c0"&gt;9.9987662e-01&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00538b"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; unstable_softmax(a)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[&lt;span style="color:#0000c0"&gt;1.2339458e-04&lt;/span&gt; &lt;span style="color:#0000c0"&gt;1.5228101e-08&lt;/span&gt; &lt;span style="color:#0000c0"&gt;9.9987656e-01&lt;/span&gt;]
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As you can see, the results are mostly equal, save for a few digits.
 Now let&amp;rsquo;s look at what happens with 16 bits of precision:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00d3d0"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style="color:#00d3d0"&gt;=&lt;/span&gt; np&lt;span style="color:#00d3d0"&gt;.&lt;/span&gt;array([&lt;span style="color:#00bcff"&gt;6.0&lt;/span&gt;, &lt;span style="color:#00d3d0"&gt;-&lt;/span&gt;&lt;span style="color:#00bcff"&gt;3&lt;/span&gt;, &lt;span style="color:#00bcff"&gt;15&lt;/span&gt;], dtype&lt;span style="color:#00d3d0"&gt;=&lt;/span&gt;np&lt;span style="color:#00d3d0"&gt;.&lt;/span&gt;float16)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00d3d0"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; unstable_softmax(a)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[ &lt;span style="color:#00bcff"&gt;0.&lt;/span&gt; &lt;span style="color:#00bcff"&gt;0.&lt;/span&gt; nan]
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00d3d0"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; stable_softmax(a)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[ &lt;span style="color:#00bcff"&gt;1.234e-04&lt;/span&gt; &lt;span style="color:#00bcff"&gt;0.000e+00&lt;/span&gt; &lt;span style="color:#00bcff"&gt;1.000e+00&lt;/span&gt;]
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#000;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00538b"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style="color:#00538b"&gt;=&lt;/span&gt; np&lt;span style="color:#00538b"&gt;.&lt;/span&gt;array([&lt;span style="color:#0000c0"&gt;6.0&lt;/span&gt;, &lt;span style="color:#00538b"&gt;-&lt;/span&gt;&lt;span style="color:#0000c0"&gt;3&lt;/span&gt;, &lt;span style="color:#0000c0"&gt;15&lt;/span&gt;], dtype&lt;span style="color:#00538b"&gt;=&lt;/span&gt;np&lt;span style="color:#00538b"&gt;.&lt;/span&gt;float16)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00538b"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; unstable_softmax(a)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[ &lt;span style="color:#0000c0"&gt;0.&lt;/span&gt; &lt;span style="color:#0000c0"&gt;0.&lt;/span&gt; nan]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00538b"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; stable_softmax(a)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[ &lt;span style="color:#0000c0"&gt;1.234e-04&lt;/span&gt; &lt;span style="color:#0000c0"&gt;0.000e+00&lt;/span&gt; &lt;span style="color:#0000c0"&gt;1.000e+00&lt;/span&gt;]
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When working with 16 bits of precision, we observe that exp(15) produces a numerical overflow
 which turns the third element into a NaN. This is because exp(15) produces a value that can
 not be represented by a float16.&lt;/p&gt;
@@ -4242,50 +4242,41 @@ or just under two and a half days, to be sure their transaction is safe.&lt;/p&g
 &lt;li&gt;Doing so inhibits learning for both parties&lt;/li&gt;
 &lt;li&gt;If someone can&amp;rsquo;t convince you of something, try convincing yourself&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This is not a fully fleshed out idea of mine, nor is this idea exclusively mine. There are both counter arguments and room for expansion, however I think this is best left up to the reader.&lt;/p&gt;</description></item><item><title/><link>/jarvis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>jarbus@tutanota.com (jarbus)</author><guid>/jarvis/</guid><description>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-&lt;meta charset="UTF-8" /&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
-&lt;title&gt;jarviz&lt;/title&gt;
-&lt;style&gt;
-body {
+&lt;p&gt;This is not a fully fleshed out idea of mine, nor is this idea exclusively mine. There are both counter arguments and room for expansion, however I think this is best left up to the reader.&lt;/p&gt;</description></item><item><title/><link>/jarvis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>jarbus@tutanota.com (jarbus)</author><guid>/jarvis/</guid><description>&lt;style&gt;
+#jarvis-app {
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: black;
-color: white;
-padding: 10px;
-margin: 0;
+color: var(--font-color);
 overflow-x: hidden;
 }
-canvas {
+#jarvis-app canvas {
 margin-top: 10px;
-background-color: black;
+background-color: var(--bg-color);
 width: 100%;
 max-width: 800px;
 height: auto;
 touch-action: none;
 }
-input[type="file"] {
+#jarvis-app input[type="file"] {
 margin: 10px 0;
 padding: 10px;
-background-color: black;
-color: white;
+background-color: var(--bg-color);
+color: var(--font-color);
 border-radius: 4px;
-border: 1px solid white;
+border: 1px solid var(--table-border-color);
 width: 100%;
 max-width: 300px;
 }
-h1 {
-color: white;
+#jarvis-app h1 {
+color: var(--font-color);
 font-size: 1.5rem;
 margin: 10px 0;
 }
-p {
+#jarvis-app p {
 margin: 5px 0;
 }
-.controls {
+#jarvis-app .controls {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -4294,35 +4285,36 @@ margin: 10px 0;
 width: 100%;
 max-width: 800px;
 }
-button {
+#jarvis-app button {
 padding: 12px 20px;
-background-color: black;
-color: white;
-border: 1px solid white;
+background-color: var(--bg-color);
+color: var(--font-color);
+border: 1px solid var(--table-border-color);
 border-radius: 4px;
 cursor: pointer;
 font-size: 1rem;
 min-width: 80px;
+text-align: center;
 }
-button:hover {
-background-color: #333;
+#jarvis-app button:hover {
+color: var(--link-state-color);
 }
-button:active {
-background-color: #555;
+#jarvis-app button:active {
+border-color: var(--link-state-color);
 }
-#pause-btn {
-background-color: black;
+#jarvis-app #pause-btn {
+background-color: var(--bg-color);
 }
-#pause-btn.paused {
-background-color: #333;
+#jarvis-app #pause-btn.paused {
+color: var(--link-state-color);
 }
-.mobile-hint {
+#jarvis-app .mobile-hint {
 margin-top: 10px;
-color: #aaa;
+color: var(--post-info-color);
 font-size: 0.8rem;
 text-align: center;
 }
-.progress-container {
+#jarvis-app .progress-container {
 width: 100%;
 max-width: 800px;
 margin: 10px 0;
@@ -4330,50 +4322,49 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
-.slider {
+#jarvis-app .slider {
 width: 100%;
 height: 10px;
 -webkit-appearance: none;
-background: linear-gradient(to right, #ccffdd 0%, #ccffdd 0%, #333 0%);
+background: linear-gradient(to right, var(--link-color) 0%, var(--link-color) 0%, var(--hr-color) 0%);
 outline: none;
 border-radius: 5px;
 margin: 10px 0;
 }
-.slider::-webkit-slider-thumb {
+#jarvis-app .slider::-webkit-slider-thumb {
 -webkit-appearance: none;
 appearance: none;
 width: 20px;
 height: 20px;
 border-radius: 50%;
-background: white;
+background: var(--font-color);
 cursor: pointer;
 }
-.slider::-moz-range-thumb {
+#jarvis-app .slider::-moz-range-thumb {
 width: 20px;
 height: 20px;
 border-radius: 50%;
-background: white;
+background: var(--font-color);
 cursor: pointer;
 }
-.slider:disabled {
+#jarvis-app .slider:disabled {
 opacity: 0.5;
 cursor: not-allowed;
 }
-.time-display {
-color: white;
+#jarvis-app .time-display {
+color: var(--font-color);
 font-size: 0.8rem;
 margin-top: 5px;
 }
 &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
+&lt;div id="jarvis-app"&gt;
 &lt;h1&gt;(jar)bus audio (vis)ualizer&lt;/h1&gt;
 &lt;p&gt;built with webGPU, runs locally.&lt;/p&gt;
 &lt;div class="controls"&gt;
 &lt;input type="file" id="file-input" accept="audio/*,.mp3,.m4a,.wav,.aac" /&gt;
 &lt;button id="pause-btn"&gt;Pause&lt;/button&gt;
 &lt;/div&gt;
-&lt;canvas id="gpu-canvas" width="800" height="400" style="background-color: black;"&gt;&lt;/canvas&gt;
+&lt;canvas id="gpu-canvas" width="800" height="400"&gt;&lt;/canvas&gt;
 &lt;div class="progress-container"&gt;
 &lt;input type="range" id="seek-slider" min="0" max="100" value="0" step="0.1" class="slider" disabled&gt;
 &lt;div class="time-display"&gt;
@@ -4381,86 +4372,81 @@ margin-top: 5px;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type="module" src="./index.js"&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</description></item><item><title/><link>/jither/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>jarbus@tutanota.com (jarbus)</author><guid>/jither/</guid><description>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-&lt;title&gt;Jitter - Image Dithering Tool&lt;/title&gt;
-&lt;style&gt;
-body {
-&lt;!-- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; --&gt;
+&lt;/div&gt;</description></item><item><title/><link>/jither/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>jarbus@tutanota.com (jarbus)</author><guid>/jither/</guid><description>&lt;style&gt;
+body:has(#jither-app) &gt; .container {
+max-width: 1000px;
+}
+#jither-app {
 max-width: 1000px;
 margin: 0 auto;
-padding: 20px;
-background-color: #000000;
-color: #ffffff;
+color: var(--font-color);
 }
-h1 {
+#jither-app h1 {
 text-align: center;
-color: #ffffff;
+color: var(--font-color);
 }
-.container {
+#jither-app .container {
 display: flex;
 flex-direction: column;
 gap: 20px;
+max-width: none;
+width: 100%;
 }
-.controls {
+#jither-app .controls {
 display: flex;
 flex-direction: column;
 gap: 20px;
-background-color: #000000;
+background-color: color-mix(in srgb, var(--bg-color) 94%, var(--font-color));
 padding: 20px;
 }
-.control-group {
+#jither-app .control-group {
 flex: 1;
 min-width: 200px;
 }
-.control-group h3 {
+#jither-app .control-group h3 {
 margin-top: 0;
 }
-#color-scheme {
+#jither-app #color-scheme {
 display: flex;
 flex-wrap: wrap;
 gap: 10px;
 }
-.color-item {
+#jither-app .color-item {
 display: flex;
 flex-direction: column;
 align-items: center;
 position: relative;
 }
-.color-item input {
+#jither-app .color-item input {
 width: 50px;
 height: 50px;
 padding: 0;
 border: none;
 cursor: pointer;
 }
-.add-color-container {
+#jither-app .add-color-container {
 display: inline-flex;
 align-items: center;
 justify-content: center;
 }
-#add-color {
+#jither-app #add-color {
 width: 50px;
 height: 50px;
 border-radius: 0;
-background-color: #333333;
-color: white;
+background-color: var(--bg-color);
+color: var(--font-color);
 font-size: 24px;
 font-weight: bold;
 display: flex;
 align-items: center;
 justify-content: center;
 padding: 0;
-border: 1px dashed #777777;
+border: 1px dashed var(--table-border-color);
 }
-#add-color:hover {
-background-color: #444444;
+#jither-app #add-color:hover {
+color: var(--link-state-color);
 }
-.delete-color {
+#jither-app .delete-color {
 position: absolute;
 top: -10px;
 right: -10px;
@@ -4478,88 +4464,88 @@ justify-content: center;
 cursor: pointer;
 border: 1px solid white;
 }
-button {
-background-color: #e7e7e7;
-color: black;
-border: none;
+#jither-app button {
+background-color: var(--bg-color);
+color: var(--font-color);
+border: 1px solid var(--table-border-color);
 padding: 10px 15px;
 border-radius: 4px;
 cursor: pointer;
 font-size: 16px;
 }
-button:hover {
-background-color: #d7d7d7;
+#jither-app button:hover {
+color: var(--link-state-color);
 }
-.canvas-container {
-background-color: #000000;
+#jither-app .canvas-container {
+background-color: color-mix(in srgb, var(--bg-color) 94%, var(--font-color));
 padding: 20px;
 border-radius: 8px;
-box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+box-shadow: 0 2px 4px color-mix(in srgb, var(--font-color) 12%, transparent);
 text-align: center;
 }
-canvas {
+#jither-app canvas {
 width: 100%;
 height: 100%;
-border: 1px solid #444;
+border: 1px solid var(--table-border-color);
 }
-.slider-container {
+#jither-app .slider-container {
 display: flex;
 flex-direction: column;
 gap: 5px;
-color: #ffffff;
+color: var(--font-color);
 }
-input[type="range"] {
+#jither-app input[type="range"] {
 width: 100%;
 -webkit-appearance: none;
 appearance: none;
 height: 8px;
-background: #333333;
+background: var(--hr-color);
 border-radius: 4px;
 outline: none;
 }
-input[type="range"]::-webkit-slider-thumb {
+#jither-app input[type="range"]::-webkit-slider-thumb {
 -webkit-appearance: none;
 appearance: none;
 width: 18px;
 height: 18px;
-background: #ccffdd;
+background: var(--link-color);
 border-radius: 50%;
 cursor: pointer;
 }
-input[type="range"]::-moz-range-thumb {
+#jither-app input[type="range"]::-moz-range-thumb {
 width: 18px;
 height: 18px;
-background: #ccffdd;
+background: var(--link-color);
 border-radius: 50%;
 cursor: pointer;
 border: none;
 }
-input[type="range"]::-webkit-slider-runnable-track {
-background: linear-gradient(to right, #ccffdd 0%, #ccffdd var(--range-progress, 50%), #333333 var(--range-progress, 50%));
+#jither-app input[type="range"]::-webkit-slider-runnable-track {
+background: linear-gradient(to right, var(--link-color) 0%, var(--link-color) var(--range-progress, 50%), var(--hr-color) var(--range-progress, 50%));
 border-radius: 4px;
 height: 8px;
 }
-input[type="range"]::-moz-range-track {
-background: #333333;
+#jither-app input[type="range"]::-moz-range-track {
+background: var(--hr-color);
 border-radius: 4px;
 height: 8px;
 }
-input[type="range"]::-moz-range-progress {
-background: #ccffdd;
+#jither-app input[type="range"]::-moz-range-progress {
+background: var(--link-color);
 border-radius: 4px;
 height: 8px;
 }
-.file-input {
+#jither-app .file-input {
 display: flex;
 flex-direction: column;
 gap: 10px;
 }
-#image-upload {
+#jither-app #image-upload {
 font-size: 24px;
+color: var(--font-color);
 }
 &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
+&lt;div id="jither-app"&gt;
 &lt;div class="container"&gt;
 &lt;div class="controls"&gt;
 &lt;h1&gt;jither: Jack's dithering tool.&lt;/h1&gt;
@@ -4801,5 +4787,4 @@ console.timeEnd('dithering');
 }
 run();
 &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</description></item></channel></rss>
+&lt;/div&gt;</description></item></channel></rss>
