@@ -28,43 +28,43 @@
 
 [data-theme="dark"] {
     --font-family: unifont, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
-    --font-color: #fafffb;
-    --bg-color: #000006;
-    --link-color: #e9ffe9;
+    --font-color: #e8e8e4;
+    --bg-color: #020203;
+    --link-color: #d8f0d8;
     --link-state-color: #e9ffe9;
-    --table-border-color: #e9ffe9;
-    --nav-link-color: #b6b6b6;
-    --bq-color: #ccc;
-    --hr-color: #333;
-    --pagination-link-color: #b6b6b6;
-    --post-info-color: grey;
-    --switcher-color: #e9ffe9;
-    --svg-color: #ccc;
+    --table-border-color: #d8f0d8;
+    --nav-link-color: #a8a8a6;
+    --bq-color: #b8b8b6;
+    --hr-color: #2a2a2c;
+    --pagination-link-color: #a8a8a6;
+    --post-info-color: #8a8a88;
+    --switcher-color: #d8f0d8;
+    --svg-color: #b8b8b6;
     --svg-state-color: #e9ffe9;
-    --text-shadow: 0 0 20px color-mix(in srgb, var(--font-color) 50%, transparent);
-    --link-shadow: 0 0 5px color-mix(in srgb, var(--link-color) 70%, transparent), 0 0 8px color-mix(in srgb, var(--link-color) 30%, transparent);
-    --link-state-shadow: 0 0 8px color-mix(in srgb, var(--link-color) 90%, transparent), 0 0 12px color-mix(in srgb, var(--link-color) 70%, transparent), 0 0 15px color-mix(in srgb, var(--link-color) 50%, transparent);
+    --text-shadow: 0 0 16px color-mix(in srgb, var(--font-color) 30%, transparent);
+    --link-shadow: 0 0 4px color-mix(in srgb, var(--link-color) 45%, transparent), 0 0 7px color-mix(in srgb, var(--link-color) 20%, transparent);
+    --link-state-shadow: 0 0 6px color-mix(in srgb, var(--link-color) 65%, transparent), 0 0 10px color-mix(in srgb, var(--link-color) 45%, transparent), 0 0 13px color-mix(in srgb, var(--link-color) 30%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
         --font-family: unifont, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
-        --font-color: #fafffb;
-        --bg-color: #000006;
-        --link-color: #e9ffe9;
+        --font-color: #e8e8e4;
+        --bg-color: #020203;
+        --link-color: #d8f0d8;
         --link-state-color: #e9ffe9;
-        --table-border-color: #e9ffe9;
-        --nav-link-color: #b6b6b6;
-        --bq-color: #ccc;
-        --hr-color: #333;
-        --pagination-link-color: #b6b6b6;
-        --post-info-color: grey;
-        --switcher-color: #e9ffe9;
-        --svg-color: #ccc;
+        --table-border-color: #d8f0d8;
+        --nav-link-color: #a8a8a6;
+        --bq-color: #b8b8b6;
+        --hr-color: #2a2a2c;
+        --pagination-link-color: #a8a8a6;
+        --post-info-color: #8a8a88;
+        --switcher-color: #d8f0d8;
+        --svg-color: #b8b8b6;
         --svg-state-color: #e9ffe9;
-        --text-shadow: 0 0 20px color-mix(in srgb, var(--font-color) 50%, transparent);
-        --link-shadow: 0 0 5px color-mix(in srgb, var(--link-color) 70%, transparent), 0 0 8px color-mix(in srgb, var(--link-color) 30%, transparent);
-        --link-state-shadow: 0 0 8px color-mix(in srgb, var(--link-color) 90%, transparent), 0 0 12px color-mix(in srgb, var(--link-color) 70%, transparent), 0 0 15px color-mix(in srgb, var(--link-color) 50%, transparent);
+        --text-shadow: 0 0 16px color-mix(in srgb, var(--font-color) 30%, transparent);
+        --link-shadow: 0 0 4px color-mix(in srgb, var(--link-color) 45%, transparent), 0 0 7px color-mix(in srgb, var(--link-color) 20%, transparent);
+        --link-state-shadow: 0 0 6px color-mix(in srgb, var(--link-color) 65%, transparent), 0 0 10px color-mix(in srgb, var(--link-color) 45%, transparent), 0 0 13px color-mix(in srgb, var(--link-color) 30%, transparent);
     }
 }
 
