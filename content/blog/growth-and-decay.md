@@ -3,6 +3,8 @@ title: "Fiction: Growth and Decay"
 date: 2025-08-29T12:37:22-07:00
 ---
 
+[epub](/Growth-and-Decay.epub) [pdf](/Growth-and-Decay.pdf)
+
 ## 0x0d-I: March 13th, 2181, 10:00pm
 
 "Hi Ari, it's Ari."
